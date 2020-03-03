@@ -1,0 +1,17 @@
+Projects
+	projectId(pk)
+	title
+	description
+	pictures
+	owner
+	goalAmount
+	currentAmount
+	time
+
+Users
+	userId(pk)
+	userIcon
+	name
+	e-mail
+	credits
+
