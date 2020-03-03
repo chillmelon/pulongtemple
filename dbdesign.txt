@@ -14,4 +14,11 @@ Users
 	name
 	e-mail
 	credits
+	role
 
+Transactions
+	transactionID(pk)
+	pId(fk)
+	uId(fk)
+	amount
+	message
