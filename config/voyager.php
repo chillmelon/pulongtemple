@@ -28,6 +28,7 @@ return [
 
     'controllers' => [
         'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+        'namespace' => 'App/Http/Controllers/ProjectsController'
     ],
 
     /*
@@ -43,6 +44,7 @@ return [
 
     'models' => [
         //'namespace' => 'App\\',
+        'namespace' => 'App/Projects',
     ],
 
     /*
