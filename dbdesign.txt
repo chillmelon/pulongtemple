@@ -1,0 +1,28 @@
+Projects
+	id	pk
+	title
+	content
+	create_at
+	update_at
+	starter
+
+Updates
+	id  pk
+	Project_ID(fk)
+	content
+	create_at
+	update_at
+
+Users
+	id
+	Facebook_ID
+	name
+	password  hashed
+	create_at
+	update_at
+
+Pictures
+	id
+	Project_ID
+	location
+	create_at
