@@ -43,7 +43,7 @@ return [
 
     'models' => [
         //'namespace' => 'App\\',
-        'namespace' => 'App/Projects',
+        'namespace' => 'App',
     ],
 
     /*
