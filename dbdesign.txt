@@ -9,6 +9,14 @@ Projects
 	deadline
 	starter(user_ID)
 
+FAQ
+	id pk
+	project_id(fk)
+	title
+	answer
+	create_at
+	update_at
+
 Updates
 	id  pk
 	project_id(fk)
@@ -20,7 +28,7 @@ Donations
 	id pk
 	user_id
 	amount
-	commet
+	comment
 	project_id
 
 Ecpay(api)*
