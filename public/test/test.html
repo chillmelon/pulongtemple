@@ -7,131 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>project page</title>
   <!-- javascript -->
+  <script src="../js/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <!-- progress bar -->
-  <script type="text/javascript">
-  $(function() {
-
-    $(".progress").each(function() {
-
-      var value = $(this).attr('data-value');
-      var left = $(this).find('.progress-left .progress-bar');
-      var right = $(this).find('.progress-right .progress-bar');
-
-      if (value > 0) {
-        if (value <= 50) {
-          right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)');
-        } else {
-          right.css('transform', 'rotate(180deg)');
-          left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)');
-        }
-      }
-
-    });
-
-    function percentageToDegrees(percentage) {
-
-      return percentage / 100 * 360;
-
-    }
-
-  });
-  </script>
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- css -->
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <link href="../css/style.css" rel="stylesheet">
   <!-- style -->
   <style type="text/css">
-  .main {
-    margin-top: 56px;
-  }
-
-  .col-sm-12 {
-    padding: 0;
-  }
-
-  .carousel .carousel-item {
-    height: 300px;
-  }
-
-  .carousel .carousel-item img {
-    min-height: 300px;
-    max-height: 400px;
-    object-fit: cover;
-  }
-
-  /*progress bar*/
-  .progress {
-    width: 150px;
-    height: 150px;
-    background: none;
-    position: relative;
-    margin: 15px;
-  }
-
-  .progress::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #eee;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .progress>span {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-  }
-
-  .progress .progress-left {
-    left: 0;
-  }
-
-  .progress .progress-bar {
-    width: 100%;
-    height: 100%;
-    background: none;
-    border-width: 6px;
-    border-style: solid;
-    position: absolute;
-    top: 0;
-  }
-
-  .progress .progress-left .progress-bar {
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
-  }
-
-  .progress .progress-right {
-    right: 0;
-  }
-
-  .progress .progress-right .progress-bar {
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
-  }
-
-  .progress .progress-value {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
   </style>
 </head>
 
@@ -159,7 +43,7 @@
   <div class="container-fluid main">
     <div class="row">
       <!-- carousel -->
-      <div class="col-sm-12 col-md-8">
+      <div class="col-sm-12 col-md-8 carousel">
         <div class="carousel slide" data-ride="carousel" id="carousel-demo">
           <ol class="carousel-indicators">
             <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
@@ -194,35 +78,39 @@
         </div>
       </div>
       <!-- title -->
-      <div class="col-sm-8 col-md-8 order-md-2">
+      <div class="col-sm-8 col-md-8 order-md-2 title">
         <div class="row">
           <div class="col-md-12">
           </div>
         </div>
         <div class="page-header">
           <h1>
-            <b>Pulong Temple</b>
+            <b>埔隆宮-炭烤土司大王</b>
             <br>
-            <small>埔隆宮-炭烤土司大王</small>
+            <small>Pulong Temple</small>
           </h1>
         </div>
-        <h3>
-          We need your donation.
-        </h3>
       </div>
       <!-- progress -->
-      <div class="col-sm-4 col-md-4 order-md-1">
-        <!-- Progress bar 2 -->
-        <div class="progress mx-auto" data-value="35">
-          <span class="progress-left">
-            <span class="progress-bar border-danger"></span>
-          </span>
-          <span class="progress-right">
-            <span class="progress-bar border-danger"></span>
-          </span>
-          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-            <div class="h2 font-weight-bold">35<sup class="small">%</sup></div>
+      <div class="col-sm-4 col-md-4 order-md-1 progress-custum">
+        <!-- Progress bar -->
+        <div class="wrapper">
+          <!-- <span class="instructions">The progress bubble below can transition between red, orange, and green depending on the current percentage.</span>
+          <span class="instructions">Go ahead and try it out by using the text box below.</span> -->
+          <div class="green">
+            <div class="progress">
+              <div class="inner">
+                <div class="percent"><span>67</span>%</div>
+                <div class="water"></div>
+                <div class="glare"></div>
+              </div>
+            </div>
           </div>
+          <span>Enter Percentage: <input type="text" placeholder="67" id="percent-box">%</span>
+          <!-- <section id="copyright">
+            <div>(c) 2015 June Hanabi - <a href="https://opensource.org/licenses/MIT">License MIT</a> </div>
+            <div>Work is modified and inspired from <a href="https://codepen.io/JamieDixon/pen/Pqrjvv">Jamie Dixon's pen</a></div>
+          </section> -->
         </div>
         <!-- END -->
         <div class="col-sm-12">
@@ -231,9 +119,9 @@
         </div>
       </div>
     </div>
-    <!-- discription -->
     <div class="row">
       <div class="col-md-12">
+        <!-- discription -->
         <p class="lead">
           　　埔隆宮為了成功轉型成為斂財集團
           在埔里酒廠對面新開了一間宵夜炭烤土司
@@ -241,6 +129,7 @@
           預計3/15開幕，當天會在店內舉辦開幕派對
           懇請各位賞光捧場，本店必蓬蓽生輝。
         </p>
+        <!-- updation -->
         <div id="card-357437">
           <div class="card">
             <div class="card-header">
@@ -285,7 +174,8 @@
             </div>
           </div>
         </div>
-        <table class="table table-striped">
+        <!-- donation -->
+        <table class="table table-striped donation">
           <thead>
             <tr>
               <th>
@@ -379,7 +269,7 @@
         <br>
         <p>Whatch more project...</p>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-sm-6 col-md-4">
             <div class="card">
               <img class="card-img-top" alt="Bootstrap Thumbnail First" src="https://www.layoutit.com/img/people-q-c-600-200-1.jpg">
               <div class="card-block">
@@ -395,7 +285,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-6 col-md-4">
             <div class="card">
               <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://www.layoutit.com/img/city-q-c-600-200-1.jpg">
               <div class="card-block">
@@ -411,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-6 col-md-4">
             <div class="card">
               <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://www.layoutit.com/img/sports-q-c-600-200-1.jpg">
               <div class="card-block">
@@ -431,6 +321,51 @@
       </div>
     </div>
   </div>
+  <!-- scripts -->
+  <script type="text/javascript">
+  var colorInc = 100 / 3;
+
+  $(function() {
+    $("#percent-box").click(function() {
+      $(this).select();
+    });
+
+    $("#percent-box").keyup(function() {
+      var val = $(this).val();
+
+      if (val != "" &&
+        !isNaN(val) &&
+        val <= 100 &&
+        val >= 0) {
+        console.log(val);
+
+        var valOrig = val;
+        val = 100 - val;
+
+        if (valOrig == 0) {
+          $("#percent-box").val(0);
+          $(".progress .percent").text(0 + "%");
+        } else $(".progress .percent").text(valOrig + "%");
+
+        $(".progress").parent().removeClass();
+        $(".progress .water").css("top", val + "%");
+
+        if (valOrig < colorInc * 1)
+          $(".progress").parent().addClass("red");
+        else if (valOrig < colorInc * 2)
+          $(".progress").parent().addClass("orange");
+        else
+          $(".progress").parent().addClass("green");
+      } else {
+        $(".progress").parent().removeClass();
+        $(".progress").parent().addClass("green");
+        $(".progress .water").css("top", 100 - 67 + "%");
+        $(".progress .percent").text(67 + "%");
+        $("#percent-box").val("");
+      }
+    });
+  });
+  </script>
 </body>
 
 </html>
