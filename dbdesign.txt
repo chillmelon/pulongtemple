@@ -1,28 +1,37 @@
 Projects
 	id	pk
 	title
-	content
+	content(ckediter)
+	cover_photo
 	create_at
 	update_at
-	starter
+	goal_amount
+	deadline
+	starter(user_ID)
 
 Updates
 	id  pk
-	Project_ID(fk)
+	project_id(fk)
 	content
 	create_at
 	update_at
 
+Donations
+	id pk
+	user_id
+	amount
+	commet
+	project_id
+
+Ecpay(api)*
+	id pk
+	donation_id fk
+
 Users
 	id
-	Facebook_ID
+	Facebook_ID(api)
 	name
 	password  hashed
+	email
 	create_at
 	update_at
-
-Pictures
-	id
-	Project_ID
-	location
-	create_at
