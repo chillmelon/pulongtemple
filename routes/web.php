@@ -16,12 +16,8 @@
 // });
 
 Route::get('/', 'ProjectsController@index')->name('projects');
-
-Route::get('/fblogin', function () {
-	return view('fblogin');
-});
 Auth::routes(['verify' => true]);
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Route::resource('projects', 'ProjectsController');
 
 Route::group(['prefix' => 'admin'], function () {
