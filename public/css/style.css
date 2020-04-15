@@ -66,9 +66,10 @@ input::selection {
   -o-box-orient: vertical;
   flex-direction: column;
   height: 75%;
+  padding-bottom: 25px
 }
 .green {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .green .progress,
 .red .progress,
@@ -212,7 +213,7 @@ input::selection {
   transition: all 1s ease;
 }
 .red {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .red .progress {
   border: 5px solid #ed3b3b;
@@ -236,7 +237,7 @@ input::selection {
   text-shadow: 0 0 10px #7a0b0b;
 }
 .orange {
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 .orange .progress {
   border: 5px solid #f07c3e;
@@ -292,33 +293,105 @@ input::selection {
   margin-top: 56px;
 }
 
-.carousel{
-  /*padding: 0;*/
-}
-
 .carousel .carousel-item {
   height: 300px;
 }
 
-.carousel .carousel-item img {
-  min-height: 300px;
-  max-height: 400px;
-  object-fit: cover;
+.imgbox {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.imgbox-inner {
+  width: 100%;
+  padding-top: 66.66667%;
+  height: 0;
+  position: relative;
+}
+
+.imgbox .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 25%;
+}
+
+.intro {
+  padding: 15px;
 }
 
 .title {
-  padding: 30px;
+  padding: 0;
+}
+
+.status {
+  padding: 0 15px;
+}
+
+.goal {
+  padding: 0;
+}
+
+.discription {
+  padding: 15px 0;
+}
+
+.progress_circle {
+  padding: 15px;
 }
 
 .donation {
   background-color: white;
 }
 
+.gutter {
+  padding: 15px;
+}
+
+/*fixed*/
+.mydiv {
+    margin-left: 200px;
+    width: 180px;
+    height: auto;
+    background: #ff5555;
+    overflow: auto;
+}
+
+
+.content {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -o-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flexbox !important;
+    display: flex !important;
+    display: box !important;
+    flex-direction: row;
+}
+
 @media (min-width: 768px){
-  .carousel {
-    padding: 10px 5px;
+  .imgbox {
+    padding: 15px 15px;
   }
-  .progress-custum {
-    padding: 20px 0;
+  .status {
+    /*padding: 0;*/
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgbox {
+    padding: 30px 30px 0 30px;
+  }
+  .intro {
+    padding: 30px 15px 15px 15px;
+  }
+  .discription {
+    /*padding-left: 30px;*/
   }
 }
