@@ -61,6 +61,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            .project {
+                height: 300;
+                width: 300;
+            }
         </style>
     </head>
     <body>

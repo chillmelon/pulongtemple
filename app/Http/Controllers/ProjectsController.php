@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Projects;
+use App\projects;
 use Illuminate\Http\Request;
 class ProjectsController extends Controller
 {
@@ -101,4 +101,5 @@ class ProjectsController extends Controller
         Projects::where('id',$id)->delete();
         return redirect('projects');
     }
+    // donate
 }

@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    <h1>Your Project:</h1>
+                    <a href="{{ route() }}">your donations</a>
+                    <a href="">your projects</a>
                 </div>
             </div>
         </div>

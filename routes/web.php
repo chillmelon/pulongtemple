@@ -19,7 +19,10 @@ Route::get('/', 'ProjectsController@index')->name('projects');
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 Route::resource('projects', 'ProjectsController');
-
+Route::view('/thankyou','thankyou');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('donate/{id}', 'DonatesController@create');
+Route::post('donate/{id}', 'DonatesController@store')->name('donates.store');

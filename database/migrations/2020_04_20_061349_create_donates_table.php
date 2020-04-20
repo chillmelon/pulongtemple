@@ -2,9 +2,10 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Query\Expression;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProjectsTable extends Migration
+class CreateDonatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +14,16 @@ class CreateProjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('donates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title',30);
-            $table->string('content',255);
-            $table->string('image')->nullable();
-            $table->integer('process');
-            $table->integer('goal');
+            $table->unsignedBigInteger('project_id');
+            $table->foreign('project_id')->references('id')->on('projects');
+            // $table->string('name');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            $table->datetime('deadline');
+            // $table->string('email');
+            $table->integer('amount');
+            $table->string('comment');
             $table->timestamps();
         });
     }
@@ -34,6 +35,6 @@ class CreateProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Projects');
+        Schema::dropIfExists('donates');
     }
 }
