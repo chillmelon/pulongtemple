@@ -25,3 +25,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 Route::get('donate/{id}', 'DonatesController@create');
 Route::post('donate/{id}', 'DonatesController@store')->name('donates.store');
+Route::post('/pay', 'PaymentsController@test');
+Route::get('/pay', 'PaymentsController@index');
