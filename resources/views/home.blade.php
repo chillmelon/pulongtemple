@@ -13,8 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <a href="{{ route() }}">your donations</a>
+                    <a href="">your donations</a>
                     <a href="">your projects</a>
                 </div>
             </div>

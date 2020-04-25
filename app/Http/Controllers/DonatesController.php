@@ -27,6 +27,9 @@ class DonatesController extends Controller
     public function create($id)
     {
         $data['project_info'] = Projects::where('id',$id)->first();
+        if (is_null(auth()->user())) {
+            return view('auth.login');
+        }
         $data['user_info'] = auth()->user();
         return view('donates.donate', $data);
     }

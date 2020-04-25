@@ -23,6 +23,5 @@ Route::view('/thankyou','thankyou');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
 Route::get('donate/{id}', 'DonatesController@create');
 Route::post('donate/{id}', 'DonatesController@store')->name('donates.store');

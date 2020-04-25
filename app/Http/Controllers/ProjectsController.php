@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\projects;
+use App\Projects;
 use Illuminate\Http\Request;
 class ProjectsController extends Controller
 {
