@@ -10,5 +10,5 @@ class Projects extends Model
      'title',
      'content',
     ];
-    public $table = 'projects'; 
+    public $table = 'Projects'; 
 }
