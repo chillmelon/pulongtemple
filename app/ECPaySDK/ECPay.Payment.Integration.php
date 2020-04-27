@@ -636,7 +636,6 @@ abstract class ECPay_Aio
         return $szHtml;
     }
 }
-
 /**
 *  產生訂單
 */

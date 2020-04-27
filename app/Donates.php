@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Donates extends Model
 {
     protected $fillable = [
+     'id',
      'project_id',
      'user_id',
-     // 'name',
-     // 'email',
      'amount',
      'comment',
+     'uuid',
     ];
     public $table = 'donates'; 
 }

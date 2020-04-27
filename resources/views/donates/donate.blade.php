@@ -1,7 +1,7 @@
 @extends('layout')
 @section('mainContent')
 	<h2>Donate Projects</h2>
-	<form method="POST" action="{{ route('donates.store', $project_info->id) }}" name="donation">
+	<form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
 		@csrf
 		name
 		<input type="hidden" name="project_id" value = "{{ $project_info->id }}">
