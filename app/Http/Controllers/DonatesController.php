@@ -63,7 +63,6 @@ class DonatesController extends Controller
             array_push($obj->Send['Items'], array('Name' => request('name'), 'Price' => request('amount'), 'Currency' => "元", 'Quantity' => (int) "1",));
             //送訂單給ECPay
             $SDK_Return = $obj->CreateTrade();
-            dd($SDK_Return);
             //拿到返回參數
             $SDK_Return['SPCheckOut']  = $SPCheckOut_Url ;
             $SDK_Return['PaymentType'] = 'CREDIT' ;
