@@ -11,21 +11,6 @@ use App\Http\Controllers\PaymentsController;
 
 class DonatesController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create($id)
     {
         $data['project_info'] = Projects::where('id',$id)->first();
@@ -53,7 +38,7 @@ class DonatesController extends Controller
         return view('donates.ecpay',$result);
     }
 
-    public function Check($doantion)
+    public function Check($donation)
     {
         $SPCheckOut_Url    = 'https://payment-stage.ecpay.com.tw/SP/SPCheckOut' ;
 
@@ -68,16 +53,17 @@ class DonatesController extends Controller
             $obj->EncryptType = '1';                                                 //CheckMacValue加密類型，請固定填入1，使用SHA256加密
             
             //基本參數(請依系統規劃自行調整)
-            $obj->Send['ReturnURL']         = "https://3df63440.ngrok.io/callback" ;   //付款完成通知回傳的網址
-            $obj->Send['MerchantTradeNo']   = $doantion['uuid'];                        //訂單編號
+            $obj->Send['ReturnURL']         = "https://7bb623ad.ngrok.io/callback" ;   //付款完成通知回傳的網址
+            $obj->Send['MerchantTradeNo']   = $donation['uuid'];                        //訂單編號
             $obj->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');                     //交易時間
-            $obj->Send['TotalAmount']       = $doantion['amount'];                       //交易金額
+            $obj->Send['TotalAmount']       = $donation['amount'];                       //交易金額
             $obj->Send['TradeDesc']         = "very good" ;                            //交易描述
             $obj->Send['ChoosePayment']     = \ECPay_PaymentMethod::ALL ;              //付款方式:全功能
             //訂單的商品資料
             array_push($obj->Send['Items'], array('Name' => request('name'), 'Price' => request('amount'), 'Currency' => "元", 'Quantity' => (int) "1",));
             //送訂單給ECPay
             $SDK_Return = $obj->CreateTrade();
+            dd($SDK_Return);
             //拿到返回參數
             $SDK_Return['SPCheckOut']  = $SPCheckOut_Url ;
             $SDK_Return['PaymentType'] = 'CREDIT' ;
@@ -90,7 +76,8 @@ class DonatesController extends Controller
 
     public function callback(Request $request)
     {
+        echo $request;
         $uuid = $request->MerchantTradeNo;
-        Donates::where('uuid',$uuid)->update(['paid'=>'1']);
+        Donates::where('uuid',$uuid)->firstOrFail()->update(['paid'=>'1']);
     }
 }
