@@ -77,7 +77,7 @@ class DonatesController extends Controller
     {
         echo $request;
         $uuid = $request->MerchantTradeNo;
-        Donates::where('uuid',$uuid)->firstOrFail()->update(['paid'=>'1']);
+        Donates::where('uuid',$uuid)->update(['paid'=>'1']);
         return "ok";
     }
 }
