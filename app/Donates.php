@@ -14,5 +14,5 @@ class Donates extends Model
      'comment',
      'uuid',
     ];
-    public $table = 'donates'; 
+    public $table = 'Donates'; 
 }

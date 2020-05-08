@@ -53,7 +53,7 @@ class DonatesController extends Controller
             $obj->EncryptType = '1';                                                 //CheckMacValue加密類型，請固定填入1，使用SHA256加密
             
             //基本參數(請依系統規劃自行調整)
-            $obj->Send['ReturnURL']         = "http://www.pulongtemple.wtf/callback" ;   //付款完成通知回傳的網址
+            $obj->Send['ReturnURL']         = "https://28ebfe96.ngrok.io/callback" ;   //付款完成通知回傳的網址
             $obj->Send['MerchantTradeNo']   = $donation['uuid'];                        //訂單編號
             $obj->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');                     //交易時間
             $obj->Send['TotalAmount']       = $donation['amount'];                       //交易金額
@@ -75,9 +75,21 @@ class DonatesController extends Controller
 
     public function callback(Request $request)
     {
-        echo $request;
         $uuid = $request->MerchantTradeNo;
-        Donates::where('uuid',$uuid)->update(['paid'=>'1']);
-        return "ok";
+        $rcode = $request->RtnCode;
+        if ($rcode=='1'){
+            Donates::where('uuid',$uuid)->update(['paid'=>'1']);
+            $projectID = Donates::where('uuid',$uuid)->pluck('project_id');
+            $total_amount = Donates::where('project_id', $projectID)->where('paid','1')->sum('amount');
+            Projects::where('id',$projectID)->update(['total_amount'=>$total_amount]);
+            return "OK 1";
+        }
+        $url=$request->fullUrl();
+        $ip=$request->ip();
+        $r=new \App\Request();
+        $r->ip=$ip;
+        $r->url=$url;
+        $r->request=json_encode($request->all());
+        $r->save();
     }
 }

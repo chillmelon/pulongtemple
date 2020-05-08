@@ -14,16 +14,16 @@ class CreateDonatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('donates', function (Blueprint $table) {
+        Schema::create('Donates', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('project_id');
-            $table->foreign('project_id')->references('id')->on('projects');
-            // $table->string('name');
+            $table->foreign('project_id')->references('id')->on('Projects');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
-            // $table->string('email');
             $table->integer('amount');
             $table->string('comment');
+            $table->string('uuid');
+            $table->boolean('paid');
             $table->timestamps();
         });
     }
