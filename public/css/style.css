@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  position: relative;
 }
 html,
 body {
-  height: 100%;
+  /*height: 100%;*/
 }
 body {
   background-color: #1a1a1a;
@@ -287,14 +288,45 @@ input::selection {
 }
 /*end*/
 
-
-
-.main{
-  margin-top: 56px;
+/*hr*/
+hr.new {
+  margin: 5px;
+  color: #8C8C8C;
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #FFFFDE;
+    background-image: linear-gradient(to right, #FFFFDE, #1a1a1a, #FFFFDE);
 }
 
-.carousel .carousel-item {
-  height: 300px;
+hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    margin: 5px;
+    border: none;
+    border-top: medium double #8C8C8C;
+    color: #8C8C8C;
+    text-align: center;
+}
+/*hr.style-eight:after {
+    content: "puli.found.me";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: #1a1a1a;
+}
+*/
+
+/*custom*/
+.top {
+/**/
+}
+
+.navbar {
+  background-color: #1a1a1a;
 }
 
 .imgbox {
@@ -349,34 +381,14 @@ input::selection {
   background-color: white;
 }
 
-.gutter {
-  padding: 15px;
-}
-
-/*fixed*/
-.mydiv {
-    margin-left: 200px;
-    width: 180px;
-    height: auto;
-    background: #ff5555;
-    overflow: auto;
-}
 
 
-.content {
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -o-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-    display: flexbox !important;
-    display: flex !important;
-    display: box !important;
-    flex-direction: row;
-}
 
-@media (min-width: 768px){
-  .imgbox {
+@media (min-width: 992px){
+  .top {
+    width: 90%;
+  }
+  .top .imgbox {
     padding: 15px 15px;
   }
   .status {
@@ -385,7 +397,7 @@ input::selection {
 }
 
 @media (min-width: 1200px) {
-  .imgbox {
+  .top .imgbox {
     padding: 30px 30px 0 30px;
   }
   .intro {
