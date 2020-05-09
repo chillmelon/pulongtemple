@@ -54,7 +54,7 @@ class ProjectsController extends Controller
     public function show($id)
     {
         $data['project_info'] = Projects::where('id',$id)->first();
-        return view('projects.show', $data);
+        return view('projects.view', $data);
     }
 
     /**
