@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Pulongtemple</title>
         {{-- scripts --}}
         <script type="text/javascript" src="../js/fblogin.js"></script>
         <!-- Fonts -->
@@ -88,9 +88,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    PuliFundMe
-                </div>
+                
                 <div class="container">
                     @yield('mainContent')
                 </div>

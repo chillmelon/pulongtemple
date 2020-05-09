@@ -27,8 +27,6 @@ Route::resource('projects', 'ProjectsController');
 //Donate and Pay
 Route::get('donate/{id}', 'DonatesController@create');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
-Route::post('/pay', 'PaymentsController@Check')->name('Payment.check');
-Route::get('/pay', 'PaymentsController@index');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');

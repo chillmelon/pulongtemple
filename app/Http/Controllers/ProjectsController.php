@@ -53,8 +53,7 @@ class ProjectsController extends Controller
      */
     public function show($id)
     {
-        $where = array('id' => $id);
-        $data['project_info'] = Projects::where($where)->first();
+        $data['project_info'] = Projects::where('id',$id)->first();
         return view('projects.show', $data);
     }
 
