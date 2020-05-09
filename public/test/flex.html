@@ -1,0 +1,76 @@
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<title>首页</title>
+
+<style>
+
+    .mydiv {
+        margin-left: 200px;
+        width: 180px;
+        height: auto;
+        background: #ff5555;
+        overflow: auto;
+    }
+
+
+    .content {
+        display: -webkit-box !important;
+        display: -moz-box !important;
+        display: -o-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flexbox !important;
+        display: flex !important;
+        display: box !important;
+        flex-direction: row;
+    }
+</style>
+
+
+<div class="content">
+
+    <div class="text-center" style="height:1800px;background:#abcdff;width:500px;">
+        新年好
+    </div>
+
+    <div>
+        <div class="mydiv" id="rightdiv">
+            <div style="width:180px;height:300px;background:#00ff00; flex: auto;">
+                hello girl1
+            </div>
+            <div style="width:180px;height:300px;background:#0abcde;margin-top:30px; flex: auto;">
+                hello girl2
+            </div>
+            <div style="width:180px;height:300px;background:#ccff00;margin-top:30px; flex: auto;">
+                hello girl3
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    $(window).scroll(function () {
+
+        //获取滚动条的高度
+        var scrollTop = $(this).scrollTop();
+        //获取一个屏幕的高度
+        var windowHeight = document.body.clientHeight;
+
+        console.log("div本身的高度:" + $('#rightdiv').height());
+        console.log("距离顶部的的位置" + scrollTop);
+
+        //把需要的div滚动到底部就固定div不让移动了
+        if (scrollTop > $('#rightdiv').height() - windowHeight) {
+            $("#rightdiv").css("position", "fixed"); //固定div让其不随着滚动条的滚动而滚动
+            $("#rightdiv").css("bottom", "10px");
+        }
+        else {
+            $("#rightdiv").css("position", "static");//恢复div可以跟随滚动条滚动
+        }
+
+    });
+
+</script>
