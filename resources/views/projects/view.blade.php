@@ -102,6 +102,7 @@
   <!-- medium navbar -->
   <nav class="navbar navbar-expand-md navbar-dark sticky-top ">
     <a class="navbar-brand" href="#">Sticky top</a>
+    <a href="/donate/{{ $id }}">Donate</a>
   </nav>
   <!-- content -->
   <div class="imgbox col-sm-12 col-lg-8">

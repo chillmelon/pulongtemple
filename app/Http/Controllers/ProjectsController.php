@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Projects;
 use App\Donates;
-use Illuminate\Http\Request;
-class ProjectsController extends Controller
+class ProjectsController
 {
     // 首頁畫面
     public function index()
@@ -23,7 +22,6 @@ class ProjectsController extends Controller
         // mysql資料叫出來轉成unix_timestamps
         $deadline = strtotime( $project_info->deadline );
         // 計算差再轉成日數
-        $time_left=date('d',$deadline - time());
         $project_info['time_left']=date('d',$deadline - time());
         return view('projects.view', $project_info);
     }
