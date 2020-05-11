@@ -60,15 +60,12 @@ class DonatesController extends Controller
             $obj->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');                     //交易時間
             $obj->Send['TotalAmount']       = $donation['amount'];                       //交易金額
             $obj->Send['TradeDesc']         = "very good" ;                            //交易描述
-            $obj->Send['ChoosePayment']     = \ECPay_PaymentMethod::ALL ;              //付款方式:全功能
+            $obj->Send['ChoosePayment']     = 'ALL' ;              //付款方式:全功能
             //訂單的商品資料
             array_push($obj->Send['Items'], array('Name' => request('name'), 'Price' => request('amount'), 'Currency' => "元", 'Quantity' => (int) "1",));
             //送訂單給ECPay
             $SDK_Return = $obj->CreateTrade();
-            //拿到返回參數
-            $SDK_Return['SPCheckOut']  = $SPCheckOut_Url ;
-            $SDK_Return['PaymentType'] = 'CREDIT' ;
-            
+            //拿到返回參數            
             return $SDK_Return;
         } catch (Exception $e) {
             echo $e->getMessage();
