@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ $title }}</title>
+  <title>project page</title>
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <!-- bootstrap -->
@@ -14,27 +14,25 @@
   <!-- custom -->
   <script src="../js/script.js"></script>
   <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/progress.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#">Puli.Found.Me</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ url('/') }}">首頁 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('login') }}">登入</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ route('register') }}">註冊</a>
-        </li>
-      </ul>
+  <nav class="nav-top u-cf">
+    <div class="logo">
+      <a class="btn" href="#">
+        <img src="" alt="">Pulong-Temple
+      </a>
+    </div>
+    <ul class="login">
+      <li class="">
+        <a class="btn" href="#">登入</a>
+      </li>
+      <li class="">
+        <a class="btn" href="#">註冊</a>
+      </li>
+    </ul>
     </div>
   </nav>
   <div class="container-fluid top">
@@ -50,7 +48,7 @@
         <!-- title -->
         <div class="title">
           <h3>
-            <b>{{ $title }}</b>
+            <b>埔隆宮-炭烤土司大王</b>
             <br>
             <small> by Pulong Temple</small>
           </h3>
@@ -60,89 +58,104 @@
         <div class="row status">
           <!-- goal -->
           <div class="goal col-6 col-sm-8 col-lg-6">
-            <h3><b>NT${{ $total_amount }}</b></h3>
-              <h6>目標 NT${{ $goal }}</h6>
-              <h6>贊助人數 {{ $supporter }} 人</h6>
+            <h3><b>NT$6,700</b>
+              <h3 />
+              <h6>目標 NT$100,00</h6>
+              <h6>贊助人數 3 人</h6>
               <hr class="new" color="#8C8C8C">
-              <h6>剩餘時間 {{ $time_left }} 天</h6>
-              <h6>{{ $created_at }}<br>– {{ $deadline }}</h6>
+
+              <!-- bar timer -->
+
+
+
+              <h6>剩餘時間 2 天</h6>
+              <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6>
           </div>
           <!-- Progress bar -->
-          <div class="progress_circle col-6 col-sm-4 col-lg-6">
+          <div class="progress-circle col-6 col-sm-4 col-lg-6">
             <div class="green">
               <div class="progress">
                 <div class="inner">
-                  <div class="percent"><span>{{ $progress }}</span>%</div>
+                  <div class="percent"><span>67</span>%</div>
                   <div class="water"></div>
                   <div class="glare"></div>
                 </div>
               </div>
             </div>
-            <!-- <span>Enter Percentage: <input type="text" placeholder="67" id="percent-box">%</span> -->
-            <!-- copyright: progress bar  -->
-            <!-- <section id="copyright">
-              <div>(c) 2015 June Hanabi - <a href="https://opensource.org/licenses/MIT">License MIT</a> </div>
-              <div>Work is modified and inspired from <a href="https://codepen.io/JamieDixon/pen/Pqrjvv">Jamie Dixon's pen</a></div>
-            </section> -->
-            <!-- END -->
-            <!-- <div class="col-sm-12">
-            <a href="#" class="btn btn-block btn-danger" type="button">Donate</a>
-            </div> -->
           </div>
         </div>
         <!-- description -->
         <div class="description">
           <p class="lead">
-            　　{{ $content }}
+            　　埔隆宮為了成功轉型成為斂財集團
+            在埔里酒廠對面新開了一間宵夜炭烤土司
+            作為推廣活動與洗腦大眾的外展據點
+            預計3/15開幕，當天會在店內舉辦開幕派對
+            懇請各位賞光捧場，本店必蓬蓽生輝。
           </p>
         </div>
       </div>
     </div>
   </div>
   <!-- medium navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark sticky-top ">
-    <a class="navbar-brand" href="#">Sticky top</a>
-    <a href="/donate/{{ $id }}">Donate</a>
+  <nav class="navbar navbar-expand navbar-dark sticky-top nav-mid">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link " href="#">專案內容<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">更新</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">留言</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">常見問答</a>
+      </li>
+    </ul>
+    </div>
   </nav>
-  <!-- content -->
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+  <!--bottom content -->
+  <div class="bottom">
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
   </div>
   <!-- scripts -->
