@@ -1,0 +1,13 @@
+deploy_to_test:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - 'which ssh-agent || ( apk update -y && apk add openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan 35.221.170.129 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh -t root@35.221.170.129 "update"
