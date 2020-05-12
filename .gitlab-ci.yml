@@ -10,4 +10,4 @@ deploy_to_test:
     - ssh-keyscan 35.221.170.129 >> ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -t root@35.221.170.129 "update"
+    - ssh -t jason@35.221.170.129 "whoami"
