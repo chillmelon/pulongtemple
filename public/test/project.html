@@ -14,27 +14,25 @@
   <!-- custom -->
   <script src="../js/script.js"></script>
   <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/progress.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#">Puli.Found.Me</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">登入</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">註冊</a>
-        </li>
-      </ul>
+  <nav class="nav-top u-cf">
+    <div class="logo">
+      <a class="btn" href="#">
+        <img src="" alt="">Pulong-Temple
+      </a>
+    </div>
+    <ul class="login">
+      <li class="">
+        <a class="btn" href="#">登入</a>
+      </li>
+      <li class="">
+        <a class="btn" href="#">註冊</a>
+      </li>
+    </ul>
     </div>
   </nav>
   <div class="container-fluid top">
@@ -65,11 +63,16 @@
               <h6>目標 NT$100,00</h6>
               <h6>贊助人數 3 人</h6>
               <hr class="new" color="#8C8C8C">
+
+              <!-- bar timer -->
+
+
+
               <h6>剩餘時間 2 天</h6>
               <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6>
           </div>
           <!-- Progress bar -->
-          <div class="progress_circle col-6 col-sm-4 col-lg-6">
+          <div class="progress-circle col-6 col-sm-4 col-lg-6">
             <div class="green">
               <div class="progress">
                 <div class="inner">
@@ -79,16 +82,6 @@
                 </div>
               </div>
             </div>
-            <!-- <span>Enter Percentage: <input type="text" placeholder="67" id="percent-box">%</span> -->
-            <!-- copyright: progress bar  -->
-            <!-- <section id="copyright">
-              <div>(c) 2015 June Hanabi - <a href="https://opensource.org/licenses/MIT">License MIT</a> </div>
-              <div>Work is modified and inspired from <a href="https://codepen.io/JamieDixon/pen/Pqrjvv">Jamie Dixon's pen</a></div>
-            </section> -->
-            <!-- END -->
-            <!-- <div class="col-sm-12">
-            <a href="#" class="btn btn-block btn-danger" type="button">Donate</a>
-            </div> -->
           </div>
         </div>
         <!-- description -->
@@ -105,48 +98,64 @@
     </div>
   </div>
   <!-- medium navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark sticky-top ">
-    <a class="navbar-brand" href="#">Sticky top</a>
+  <nav class="navbar navbar-expand navbar-dark sticky-top nav-mid">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link " href="#">專案內容<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">更新</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">留言</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">常見問答</a>
+      </li>
+    </ul>
+    </div>
   </nav>
-  <!-- content -->
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+  <!--bottom content -->
+  <div class="bottom">
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
-  </div>
-  <div class="imgbox col-sm-12 col-lg-8">
-    <div class="imgbox-inner">
-      <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+    <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox-inner">
+        <div class="image" style="background-image: url('../image/pulongTemple.png');"></div>
+      </div>
     </div>
   </div>
   <!-- scripts -->
