@@ -2,7 +2,7 @@ deploy_to_test:
   stage: deploy
   image: alpine:latest
   before_script:
-    - 'which ssh-agent || ( apk update -y && apk add openssh-client -y )'
+    - 'which ssh-agent || ( apk update -q && apk add openssh-client -q )'
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
