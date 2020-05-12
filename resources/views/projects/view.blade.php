@@ -108,8 +108,8 @@
       <li class="nav-item">
         <a class="nav-link" href="#">常見問答</a>
       </li>
-      <li>
-        <a href="/donate/{{ $id }}">Donate</a>
+      <li class="nav-item">
+        <a class="nav-link" href="/donate/{{ $id }}">Donate</a>
       </li>
     </ul>
     </div>
