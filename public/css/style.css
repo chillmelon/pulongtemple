@@ -155,7 +155,7 @@ hr.style-eight {
   height: 60px;
   width: 340px;
   color: #930000;
-  background-color: #FF5151;
+  background-color: #FF7575;
   font-family: Impact, Arial Black, Courier New;
   font-size: 32px;
   font-weight: 600;
@@ -165,8 +165,8 @@ hr.style-eight {
 }
 
 .donate a:hover {
-  color: #FF0000;
-  border: #FF0000 3px solid;
+  color: #AE0000;
+  border: #AE0000 5px groove;
 }
 
 .donate .btn {
