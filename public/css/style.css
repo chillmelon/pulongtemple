@@ -124,7 +124,8 @@ hr.style-eight {
 
 .login li:hover .btn:after,
 .nav-item:hover .nav-link:after,
-.active .nav-link:after {
+.active .nav-link:after,
+.btn:active:after {
   width: 100%;
 }
 
