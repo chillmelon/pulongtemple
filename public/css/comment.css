@@ -34,7 +34,7 @@ tr:nth-child(even) {
 .usr-img {
   width: 50px;
   height: 50px;
-  margin: 8px;
+  margin: 6px;
 }
 
 .cmt-all {
@@ -43,6 +43,13 @@ tr:nth-child(even) {
 
 .cmt {
   padding: 8px 0;
+}
+
+.cmt-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .cmt-content {
@@ -55,7 +62,7 @@ tr:nth-child(even) {
 
 .usr-imgbox {
   display: inline-block;
-  padding: 4px 0;
+  padding: 8px 4px;
 }
 
 
