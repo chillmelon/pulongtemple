@@ -8,7 +8,7 @@
 
 body {
   background-color: #1a1a1a;
-  font-family: sans-serif;
+  font-family: Impact, Courier New, 微軟正黑體, Arial Black;
   font-size: 15px;
   color: #ccc;
 }
@@ -246,13 +246,24 @@ hr.style-eight {
 }
 
 .bottom-content {
-  /*margin: 15px;*/
+  padding-top: 15px;
 }
 
 .nav-mid {
   flex-wrap: wrap;
 }
 
+/*min-top*/
+.top-img {
+  justify-content: center;
+  padding: 8px;
+  margin: 0;
+}
+
+.img-min {
+  width: 270px;
+  height: 180px;
+}
 
 
 /*@media*/

@@ -1,0 +1,65 @@
+.bottom-content {
+  color: #BEBEBE;
+  font-family: Courier New, 微軟正黑體, Arial Black;
+}
+
+table {
+  border-collapse: collapse;
+  border: 8px #4F4F4F double;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+  height: 73px;
+  padding: 8px;
+
+}
+
+th {
+  height: 56px;
+}
+
+tr:nth-child(even) {
+  background-color: #212121;
+}
+
+.usr {
+  position: absolute;
+  left: 40%;
+  padding: 0;
+}
+
+.usr-img {
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+}
+
+.cmt-all {
+  padding: 16px 0;
+}
+
+.cmt {
+  padding: 8px 0;
+}
+
+.cmt-content {
+  display: inline;
+}
+
+.gallery .usr-img {
+  margin: 0;
+}
+
+.usr-imgbox {
+  display: inline-block;
+  padding: 4px 0;
+}
+
+
+.usr-name {
+  color: #F0F0F0;
+  font-size: 18px;
+}
