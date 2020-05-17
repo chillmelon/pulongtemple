@@ -154,11 +154,12 @@ hr.style-eight {
   display: flex;
   height: 60px;
   width: 340px;
-  color: #CE0000;
-  font-family: Courier New, Impact, Arial Black;
+  color: #930000;
+  background-color: #FF5151;
+  font-family: Impact, Arial Black, Courier New;
   font-size: 32px;
   font-weight: 600;
-  border: #CE0000 3px solid;
+  border: #CE0000 5px solid;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -168,12 +169,14 @@ hr.style-eight {
   border: #FF0000 3px solid;
 }
 
+.donate .btn {
+  padding: 0;
+}
+
 .donate a span {
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
 
 /*layout*/
