@@ -271,6 +271,11 @@ hr.style-eight {
 
 /*@media*/
 @media (min-width: 576px) {
+  .img-min {
+    width: auto;
+    height: auto;
+  }
+
   .nav-mid {
     height: 85px;
   }
