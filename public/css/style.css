@@ -154,9 +154,9 @@ hr.style-eight {
   height: 60px;
   width: 340px;
   color: #CE0000;
-  font-family: Impact;
+  font-family: Courier New, Impact, Arial Black;
   font-size: 32px;
-  font-weight: 200;
+  font-weight: 600;
   border: #CE0000 3px solid;
   left: 50%;
   transform: translateX(-50%);
