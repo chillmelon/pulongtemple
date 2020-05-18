@@ -18,15 +18,19 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
     use AuthenticatesUsers;
-
+    public function showLoginForm()
+    {
+        session()->put('url.intended',url()->previous());
+        return view('auth.login');
+    }
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
     protected $redirectTo = '/projects';
+
 
     /**
      * Create a new controller instance.
@@ -35,7 +39,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        session(['url.intended' => url()->previous()]);
         $this->middleware('guest')->except('logout');
+        $this->redirectTo = session()->get('url.intended');
     }
 }
