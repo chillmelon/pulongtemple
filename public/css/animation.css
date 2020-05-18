@@ -1,6 +1,6 @@
 .wave-btn {
     overflow: hidden;
-    transition: all 1s;
+    /*transition: all .2s;*/
 }
 
 .wave-btn:before {
@@ -9,8 +9,8 @@
     width: 720px;
     height: 720px;
     border-radius: 300px;
-    background-color: #FFD2D2;
-    opacity: .3;
+    background-color: #CE0000;
+    opacity: .1;
 
     top: 40px;
     left: 50%;

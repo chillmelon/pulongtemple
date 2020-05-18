@@ -154,19 +154,19 @@ hr.style-eight {
   display: flex;
   height: 60px;
   width: 340px;
-  color: #930000;
-  background-color: #FF7575;
-  font-family: Impact, Arial Black, Courier New;
-  font-size: 32px;
-  font-weight: 600;
-  border: #CE0000 5px solid;
+  color: #FFD2D2;
+  background-color: #600000;
+  font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
+  font-size: 20px;
+  font-weight: 800;
+  border: #4D0000 3px solid;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .donate a:hover {
-  color: #AE0000;
-  border: #AE0000 5px groove;
+  color: #FFFFFF;
+  border: #4D0000 4px solid;
 }
 
 .donate .btn {
