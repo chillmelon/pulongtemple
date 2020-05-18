@@ -164,21 +164,22 @@ hr.style-eight {
 }*/
 
 .donate a {
-  width: 100%;
+  width: 330px;
+  height: 50px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: #000 3px solid;
+}
+
+.donate span {
   color: #000000;
   font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
   font-size: 20px;
   font-weight: 800;
-  border-radius: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.donate span {
-  display: inline-block;
-  border: #000 3px solid;
-  /*transform: scale(.8);*/
+  top: -8px;
 }
 
 .donate a:hover {
@@ -312,8 +313,18 @@ hr.style-eight {
 
 
   .donate a {
-    width: 200px;
-    height: 60px;
+    width: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .donate {
+    right: 40px;
+    width: 340px
+  }
+
+  .donate a {
+    width: 330px;
   }
 }
 
@@ -342,16 +353,6 @@ hr.style-eight {
     min-width: 100px;
     padding: 0 8px;
   }
-
-  .donate {
-    right: 40px;
-    width: 340px
-  }
-
-  .donate a {
-    width: 340px;
-  }
-
 }
 
 @media (min-width: 1200px) {
