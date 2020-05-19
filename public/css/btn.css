@@ -1,0 +1,178 @@
+.nav-link {
+  font-family: 微軟正黑體;
+  padding: 16px 8px;
+}
+
+.btn {
+  color: rgba(255, 255, 255, .5);
+  display: inline-block;
+  line-height: 59px;
+  font-size: 18px;
+  font-family: 微軟正黑體;
+  padding: 0px 24px;
+  margin-right: 4px;
+}
+
+.btn:after,
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #D0D0D0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+
+/* donate */
+.donate {
+  display: block;
+  width: 340px;
+  height: 60px;
+  margin-top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donate a {
+  width: 100%;
+}
+
+.donate .btn {
+  padding: 0;
+}
+
+.donate span {
+  font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
+  font-size: 20px;
+  font-weight: 800;
+}
+/* btn-1 */
+
+.btn-1 {
+  background-color: #ADADAD;
+}
+
+.btn-1 a {
+  width: 330px;
+  height: 50px;
+  border: #000 3px solid;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-1 span {
+  color: #000000;
+  top: -8px;
+}
+
+.btn-1 a span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* btn-2 */
+
+.btn-2 {
+  background: linear-gradient(180deg, rgba(0,116,79,1) 0%, rgba(0,74,110,1) 70%);
+  border-radius: 35px;
+  box-shadow: 1px 1px 5px 2px #004a6e;
+}
+
+.btn-2 span {
+  color: #fff .9;
+}
+
+/* btn-3 */
+.btn-3 {
+  top: 2px;
+  border: #008a62 3px solid;
+  border-radius: 0;
+  box-shadow: 0.5px 0.5px 3px 1px #008a62;
+}
+
+
+.btn-3 span {
+  color: #008a62;
+  text-shadow: 0.5px 0.5px 20px #000000;
+  font-weight: 800;
+}
+
+/* hover & active */
+
+.logo a .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity;
+}
+
+.logo:hover a .swap-on-hover__front-image {
+  opacity: 0;
+}
+
+.btn:hover {
+  color: #D0D0D0;
+  text-decoration: none;
+}
+
+.btn-1 a:hover {
+  color: #000;
+}
+
+.btn-2:hover {
+  color: #fff;
+}
+
+.login li:hover .btn:after,
+.nav-item:hover .nav-link:after,
+.active .nav-link:after,
+.btn:active:after {
+  width: 100%;
+}
+
+
+/*@media*/
+
+@media (min-width: 576px) {
+  .donate {
+    margin: 0;
+    top: 6px;
+    width: 200px;
+    position: absolute;
+    transform: none;
+    left: auto;
+    right: 24px;
+  }
+
+  .btn-1 a {
+    width: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .donate {
+    right: 40px;
+    width: 340px
+  }
+
+  .btn-1 a {
+    width: 330px;
+  }
+}
+
+@media (min-width: 992px) {
+  /**/
+}
+
+@media (min-width: 1200px) {
+  .donate {
+    right: 100px;
+  }
+
+
+}
