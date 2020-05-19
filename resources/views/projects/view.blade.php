@@ -59,7 +59,7 @@
           <!-- goal -->
           <div class="goal col-6 col-sm-8 col-lg-6">
             <h3><b>NT${{ $total_amount }}</b>
-              <h3 />
+              </h3>
               <h6>目標 NT${{ $goal }}</h6>
               <h6>贊助人數 {{ $supporter }} 人</h6>
               <hr class="new" color="#8C8C8C">
