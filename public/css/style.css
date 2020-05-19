@@ -146,27 +146,45 @@ hr.style-eight {
 
 .donate {
   display: block;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.donate a {
-  display: flex;
-  height: 60px;
   width: 340px;
-  color: #930000;
-  background-color: #FF7575;
-  font-family: Impact, Arial Black, Courier New;
-  font-size: 32px;
-  font-weight: 600;
-  border: #CE0000 5px solid;
+  height: 60px;
+  margin-top: 8px;
+  background-color: #ADADAD;
   left: 50%;
   transform: translateX(-50%);
 }
 
+/*.donate {
+  display: flex;
+  width: 330px;
+  height: 50px;
+  margin: 5px;
+  background-color: #ADADAD;
+  border: #000000 2px solid;
+}*/
+
+.donate a {
+  width: 330px;
+  height: 50px;
+  border-radius: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: #000 3px solid;
+}
+
+.donate span {
+  color: #000000;
+  font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
+  font-size: 20px;
+  font-weight: 800;
+  top: -8px;
+}
+
 .donate a:hover {
-  color: #AE0000;
-  border: #AE0000 5px groove;
+  color: #000;
+  /*border: # 4px solid;*/
 }
 
 .donate .btn {
@@ -286,14 +304,27 @@ hr.style-eight {
 
   .donate {
     margin: 0;
-    width: auto;
+    width: 200px;
     position: absolute;
+    transform: none;
+    left: auto;
     right: 24px;
   }
 
+
   .donate a {
-    width: 200px;
-    height: 60px;
+    width: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  .donate {
+    right: 40px;
+    width: 340px
+  }
+
+  .donate a {
+    width: 330px;
   }
 }
 
@@ -322,15 +353,6 @@ hr.style-eight {
     min-width: 100px;
     padding: 0 8px;
   }
-
-  .donate {
-    right: 40px;
-  }
-
-  .donate a {
-    width: 340px;
-  }
-
 }
 
 @media (min-width: 1200px) {
