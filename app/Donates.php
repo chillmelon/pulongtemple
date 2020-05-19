@@ -25,4 +25,7 @@ class Donates extends Model
     		'uuid'=>$this->uuid
     	];
     }
+    public function project(){
+        return $this->belongsTo('App\projects','project_id');
+    }
 }

@@ -7,9 +7,11 @@ class DonateRepository
 	{
 		return Donates::all();
 	}
-	public function findByUserId($user_id)
+	public function findByUser($user_id)
 	{
-		$donates = Donates::where('user_id', $user_id)->get();
+		$donates = Donates::where('user_id', $user_id)
+								->with('project')
+								->get();
 		return $donates;
 	}
 	public function findByProject($project_id)

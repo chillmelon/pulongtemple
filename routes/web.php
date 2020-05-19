@@ -18,6 +18,7 @@
 //Management
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/dashboard', 'MembersController@index')->name('home')->middleware('verified');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -31,8 +32,10 @@ Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
 //Members
-Route::get('/mydonates', 'MembersController@myDonates')->middleware('verified');
+Route::get('/mydonations', 'MembersController@myDonates')->middleware('verified');
 Route::get('/myprojects', 'MembersController@myProjects')->middleware('verified');
+Route::get('/myprofile', 'MembersController@myProfile')->middleware('verified');
+Route::get('/myprofile/edit', 'MembersController@edit')->middleware('verified');
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');
