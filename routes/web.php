@@ -30,6 +30,9 @@ Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
+//Members
+Route::get('/mydonates', 'MembersController@myDonates')->middleware('verified');
+Route::get('/myprojects', 'MembersController@myProjects')->middleware('verified');
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');

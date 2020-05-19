@@ -17,8 +17,12 @@ class ProjectRepository
 	}
 	public function findByUser($user_id)
 	{
-		$project = Projects::where('user_id', $user_id)
-			->all();
+		$project = Projects::where('user_id', $user_id)->get();
 		return $project;
+	}
+	public function update($project_id,$update)
+	{
+		$project = Projects::where('id', $project_id);
+		$project->update($update);
 	}
 }

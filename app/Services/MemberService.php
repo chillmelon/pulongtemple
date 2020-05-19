@@ -6,6 +6,7 @@ use App\Repositories\ProjectRepository;
 class MemberService
 {
     private $user_id;
+
     public function __construct(
     DonateRepository $donateRepository,
     ProjectRepository $drojectRepository
@@ -13,10 +14,13 @@ class MemberService
     {
         $this->donateRepository = $donateRepository;
         $this->projectRepository = $drojectRepository;
-        $this->user_id = auth()->user()['id'];
     }
-
-    public function all(){
-        dd($this);
+    public function donates($user_id=null){
+        $donates = $this->donateRepository->findByUser($user_id);
+        return $donates;
+    }
+    public function projects($user_id=null){
+        $projects = $this->projectRepository->findByUser($user_id);
+        return $projects;
     }
 }

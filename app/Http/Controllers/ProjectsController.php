@@ -18,7 +18,6 @@ class ProjectsController
     public function show($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return $project;
-        // return view('projects.view',$project);
+        return view('projects.view',$project);
     }
 }

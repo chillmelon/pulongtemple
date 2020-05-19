@@ -61,15 +61,14 @@
             <h3><b>NT${{ $total_amount }}</b>
               </h3>
               <h6>目標 NT${{ $goal }}</h6>
-              <h6>贊助人數 {{ $supporter }} 人</h6>
+              <h6>贊助人數 {{ $supporters }} 人</h6>
               <hr class="new" color="#8C8C8C">
 
               <!-- bar timer -->
 
 
 
-              <h6>剩餘時間 {{ $time_left }} 天</h6>
-              <h6>{{ $created_at }}<br>– {{ $deadline }}</h6>
+              <h6>剩餘時間 {{ $days_left }} 天</h6>
           </div>
           <!-- Progress bar -->
           <div class="progress-circle col-6 col-sm-4 col-lg-6">

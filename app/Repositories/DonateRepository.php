@@ -5,15 +5,11 @@ class DonateRepository
 {
 	public function all()
 	{
-		return Donates::all()
-			->map(function($Donate){
-				return $Donate->format();
-			});
+		return Donates::all();
 	}
-	public function findByUser($user_id)
+	public function findByUserId($user_id)
 	{
-		$donates = Donates::where('user_id', $user_id)
-			->all();
+		$donates = Donates::where('user_id', $user_id)->get();
 		return $donates;
 	}
 	public function findByProject($project_id)
@@ -22,5 +18,14 @@ class DonateRepository
 			->where('paid',1)
 			->get();
 		return $donates;
+	}
+	public function create($donation)
+	{
+		Donates::create($donation);
+	}
+	public function update($uuid, $update)
+	{
+		$donate = Donates::where('uuid',$uuid);
+		$donate->update($update);
 	}
 }
