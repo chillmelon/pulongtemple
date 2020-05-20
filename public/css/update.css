@@ -1,0 +1,10 @@
+.update {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: #5B5B5B 3px ridge;
+}
+
+.more-btn {
+  display: block;
+  margin: 8px;
+}

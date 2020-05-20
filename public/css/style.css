@@ -74,6 +74,11 @@ hr.style-eight {
   background-position: 0 25%;
 }
 
+.width-img {
+  width: 100%;
+  padding: 24px 0;
+}
+
 .nav-top,
 .navbar {
   background-color: #1a1a1a;
@@ -133,7 +138,7 @@ hr.style-eight {
 }
 
 .title {
-  padding: 0;
+  /*padding: 0;*/
 }
 
 .status {
@@ -168,7 +173,7 @@ hr.style-eight {
 
 .nav-mid {
   flex-wrap: wrap;
-  /*padding-bottom: 20px;*/
+  padding-bottom: 20px;
 }
 
 /*min-top*/
