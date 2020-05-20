@@ -12,7 +12,7 @@
         <img class="width-img" src="https://s3-ap-northeast-1.amazonaws.com/zeczec-prod/asset_179720_image_original.jpg?1589528089">
         <span>S6 Pure 掃地機器人【✨提・前・出・貨・公告✨】原訂於 6 月開始出貨，在我們積極和工廠聯繫後，目前爭取到「前三波預購訂單」主機提前出貨！📍提前出貨方案請見以下——【5/19 開始依序出貨】► 限時 24 hr，加贈可水洗＋一次...</span>
         <div class="more-btn">
-          <a class="btn btn-4" href="/projects/{{$id}}/update-1">更多內容...</a>
+          <a class="btn btn-4" href="/updates/1">更多內容...</a>
         </div>
       </div>
       {{-- update-2 --}}
