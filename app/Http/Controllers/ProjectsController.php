@@ -18,6 +18,21 @@ class ProjectsController
     public function show($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.view',$project);
+        return view('projects.content',$project);
+    }
+    public function showUpdates($project_id)
+    {
+        $project = $this->projectService->detail($project_id);
+        return view('projects.updates',$project);
+    }
+    public function showComments($project_id)
+    {
+        $project = $this->projectService->detail($project_id);
+        return view('projects.comments',$project);
+    }
+    public function faq($project_id)
+    {
+        $project = $this->projectService->detail($project_id);
+        return view('projects.faq',$project);
     }
 }

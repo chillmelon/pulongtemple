@@ -1,5 +1,5 @@
 @extends('layout')
-@section('mainContent')
+@section('content')
 	<h2>Donate Projects</h2>
 	<form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
 		@csrf

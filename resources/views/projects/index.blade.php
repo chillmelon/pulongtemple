@@ -1,5 +1,5 @@
 @extends('layout')
-@section('mainContent')
+@section('content')
 <div class="title m-b-md">
 	埔隆宮
 </div>
