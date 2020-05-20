@@ -25,8 +25,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/', 'ProjectsController@index')->name('projects');
 Route::resource('projects', 'ProjectsController');
 Route::get('projects/{id}', 'ProjectsController@show');
-Route::get('projects/{id}/updates', 'ProjectsController@updates');
-Route::get('projects/{id}/comments', 'ProjectsController@comments');
+Route::get('projects/{id}/updates', 'ProjectsController@showUpdates');
+Route::get('projects/{id}/comments', 'ProjectsController@showComments');
 Route::get('projects/{id}/faq', 'ProjectsController@faq');
 //Donate and Pay
 Route::get('donate/{id}', 'DonatesController@create')->middleware('verified');
