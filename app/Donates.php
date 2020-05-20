@@ -14,5 +14,18 @@ class Donates extends Model
      'comment',
      'uuid',
     ];
-    public $table = 'Donates'; 
+    protected $table = 'Donates'; 
+    public function format(){
+    	return [
+    		'id'=>$this->id,
+    		'project_id'=>$this->project_id,
+    		'user_id'=>$this->user_id,
+    		'amount'=>$this->amount,
+    		'comment'=>$this->comment,
+    		'uuid'=>$this->uuid
+    	];
+    }
+    public function project(){
+        return $this->belongsTo('App\projects','project_id');
+    }
 }

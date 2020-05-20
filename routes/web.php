@@ -18,6 +18,7 @@
 //Management
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::get('/dashboard', 'MembersController@index')->name('home')->middleware('verified');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -25,11 +26,16 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/', 'ProjectsController@index')->name('projects');
 Route::resource('projects', 'ProjectsController');
 //Donate and Pay
-Route::get('donate/{id}', 'DonatesController@create');
+Route::get('donate/{id}', 'DonatesController@create')->middleware('verified');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
+//Members
+Route::get('/mydonations', 'MembersController@myDonates')->middleware('verified');
+Route::get('/myprojects', 'MembersController@myProjects')->middleware('verified');
+Route::get('/myprofile', 'MembersController@myProfile')->middleware('verified');
+Route::get('/myprofile/edit', 'MembersController@edit')->middleware('verified');
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');

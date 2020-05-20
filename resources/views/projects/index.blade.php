@@ -1,13 +1,17 @@
 @extends('layout')
-@section('mainContent')
-	<div class="title m-b-md">
-        埔隆宮
-    </div>
+@section('content')
+<div class="title m-b-md">
+	埔隆宮
+</div>
+<div class="flex-center position-ref">
+	<table style="border: 1px solid black;">
 	@foreach($projects as $project)
-	<div class="project">
-		<h3><a href="projects/{{ $project->id }}">{{$project->title}}</a></h3>
-		{{-- <img src="/storage/{{ $project->image }}"> --}}
-		<a>{{ $project->total_amount/$project->goal }}</a>
-	</div>
+		<tr>
+			<td><a href="projects/{{$project['id']}}">{{$project['title']}}</a></td>
+			<td><img src="/storage/{{ $project['cover'] }}"></td>
+			<td><a>{{ $project['progress'] }}</a></td>
+		</tr>
 	@endforeach
+</table>
+</div>
 @endsection
