@@ -74,6 +74,11 @@ hr.style-eight {
   background-position: 0 25%;
 }
 
+.width-img {
+  width: 100%;
+  padding: 24px 0;
+}
+
 .nav-top,
 .navbar {
   background-color: #1a1a1a;
@@ -89,112 +94,8 @@ hr.style-eight {
   text-align: center;
 }
 
-.nav-link {
-  font-family: 微軟正黑體;
-  padding: 16px 8px;
-}
-
-.btn {
-  color: rgba(255, 255, 255, .5);
-  display: inline-block;
-  line-height: 59px;
-  font-size: 18px;
-  font-family: 微軟正黑體;
-  padding: 0px 24px;
-  margin-right: 4px;
-}
-
-.btn:hover {
-  color: #D0D0D0;
-  text-decoration: none;
-}
-
-.btn:after,
-.nav-link:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #D0D0D0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.3s;
-}
-
-.login li:hover .btn:after,
-.nav-item:hover .nav-link:after,
-.active .nav-link:after,
-.btn:active:after {
-  width: 100%;
-}
-
-.logo a .swap-on-hover__front-image {
-  z-index: 9999;
-  transition: opacity;
-}
-
-.logo:hover a .swap-on-hover__front-image {
-  opacity: 0;
-}
-
 .pages {
   display: block;
-  /*left: 50%;*/
-  /*transform: translateX(-50%);*/
-}
-
-.donate {
-  display: block;
-  width: 340px;
-  height: 60px;
-  margin-top: 8px;
-  background-color: #ADADAD;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/*.donate {
-  display: flex;
-  width: 330px;
-  height: 50px;
-  margin: 5px;
-  background-color: #ADADAD;
-  border: #000000 2px solid;
-}*/
-
-.donate a {
-  width: 330px;
-  height: 50px;
-  border-radius: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: #000 3px solid;
-}
-
-.donate span {
-  color: #000000;
-  font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
-  font-size: 20px;
-  font-weight: 800;
-  top: -8px;
-}
-
-.donate a:hover {
-  color: #000;
-  /*border: # 4px solid;*/
-}
-
-.donate .btn {
-  padding: 0;
-}
-
-.donate a span {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 /*layout*/
@@ -237,7 +138,7 @@ hr.style-eight {
 }
 
 .title {
-  padding: 0;
+  /*padding: 0;*/
 }
 
 .status {
@@ -272,6 +173,7 @@ hr.style-eight {
 
 .nav-mid {
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 /*min-top*/
@@ -300,31 +202,6 @@ hr.style-eight {
 
   .nav-link {
     font-size: 18px;
-  }
-
-  .donate {
-    margin: 0;
-    width: 200px;
-    position: absolute;
-    transform: none;
-    left: auto;
-    right: 24px;
-  }
-
-
-  .donate a {
-    width: 190px;
-  }
-}
-
-@media (min-width: 768px) {
-  .donate {
-    right: 40px;
-    width: 340px
-  }
-
-  .donate a {
-    width: 330px;
   }
 }
 
@@ -378,13 +255,4 @@ hr.style-eight {
   .discription {
     /*padding-left: 30px;*/
   }
-
-  .donate {
-    right: 150px;
-  }
-
-  .donate a {
-    /*width: 320px;*/
-  }
-
 }
