@@ -22,14 +22,17 @@ class ProjectsController
     }
     public function showUpdates($project_id)
     {
-        return view('projects.updates');
+        $project = $this->projectService->detail($project_id);
+        return view('projects.updates',$project);
     }
     public function showComments($project_id)
     {
-        return view('projects.comments');
+        $project = $this->projectService->detail($project_id);
+        return view('projects.comments',$project);
     }
     public function faq($project_id)
     {
-        return view('projects.faq');
+        $project = $this->projectService->detail($project_id);
+        return view('projects.faq',$project);
     }
 }
