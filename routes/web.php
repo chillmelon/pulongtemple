@@ -33,3 +33,6 @@ Route::get('/ecpay', function (){
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');
+Route::get('lkk', function(){
+    return view('projects.project');
+});
