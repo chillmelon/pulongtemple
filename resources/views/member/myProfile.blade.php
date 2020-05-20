@@ -1,5 +1,5 @@
 @extends('layout')
-@section('mainContent')
+@section('content')
 <table>
 	<tr>
 		<td>{{ $profile->name }}</td>

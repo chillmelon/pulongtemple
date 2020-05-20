@@ -1,2 +1,5 @@
 @extends('layout')
-@yield('mainContent')
+@section('content')
+<h1>Fuck</h1>
+@yield('fuck')
+@endsection

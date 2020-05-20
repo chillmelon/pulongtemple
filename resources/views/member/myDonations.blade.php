@@ -1,5 +1,5 @@
 @extends('layout')
-@section('mainContent')
+@section('content')
 <h1>我的捐款</h1>
 <table style="border: 1px solid black;">
 <tr>
