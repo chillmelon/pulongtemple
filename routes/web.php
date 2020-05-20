@@ -28,12 +28,15 @@ Route::get('projects/{id}', 'ProjectsController@show');
 Route::get('projects/{id}/updates', 'ProjectsController@showUpdates');
 Route::get('projects/{id}/comments', 'ProjectsController@showComments');
 Route::get('projects/{id}/faq', 'ProjectsController@faq');
+
 //Donate and Pay
 Route::get('donate/{id}', 'DonatesController@create')->middleware('verified');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
+//Updates
+Route::get('updates/{id}', 'UpdateController@show');
 //Members
 Route::get('/mydonations', 'MembersController@myDonates')->middleware('verified');
 Route::get('/myprojects', 'MembersController@myProjects')->middleware('verified');
