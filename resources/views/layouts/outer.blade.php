@@ -31,10 +31,10 @@
     </div>
     <ul class="login">
       <li class="">
-        <a class="btn" href="#">登入</a>
+        <a class="btn" href="{{ route('login') }}">登入</a>
       </li>
       <li class="">
-        <a class="btn" href="#">註冊</a>
+        <a class="btn" href="{{ route('register') }}">註冊</a>
       </li>
     </ul>
     </div>
