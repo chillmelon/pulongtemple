@@ -1,13 +1,18 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use App\Services\ProjectService;
 use Illuminate\Http\Request;
 
 class UpdateController extends Controller
 {
-    public function show($id)
+    public function __construct(
+        ProjectService $projectService
+    ){
+        $this->projectService = $projectService;
+    }
+    public function show($project_id)
     {
-    	return view('updates.view');
+    	$projects = $this->projectService->detail($project_id);
+    	return view('updates.view', $projects);
     }
 }
