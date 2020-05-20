@@ -1,6 +1,9 @@
 @extends("layouts.outer")
+
+@section("body")
+
 @yield("summary")
-@section("nav-mid")
+
 <!-- medium navbar -->
 <nav class="navbar navbar-expand navbar-dark sticky-top nav-mid">
   <div class="pages">
@@ -23,5 +26,7 @@
     <a class="btn btn-3 wave-btn" href="#"><span>贊&emsp;助&emsp;$</span></a>
   </div>
 </nav>
-@endsection
+
 @yield("sub-content")
+
+@endsection

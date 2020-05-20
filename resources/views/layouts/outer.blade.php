@@ -24,9 +24,9 @@
   <!--top navbar -->
   <nav class="nav-top u-cf">
     <div class="logo">
-      <a href="../test/view.blade.html">
-        <img class="swap-on-hover__front-image" src="../image/logo_final.png">
-        <img class="swap-on-hover__back-image" src="../image/logo_final.gif">
+      <a href="/">
+        <img class="swap-on-hover__front-image" src="{{asset('image/logo_final.png')}}">
+        <img class="swap-on-hover__back-image" src="{{asset('image/logo_final.gif')}}">
       </a>
     </div>
     <ul class="login">
@@ -40,7 +40,7 @@
     </div>
   </nav>
   {{-- @yield("top-content") --}}
-  @yield("nav-mid")
+  @yield("body")
 </body>
 
 </html>

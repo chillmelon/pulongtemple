@@ -63,7 +63,7 @@
 active
 @endsection
 @section("content-current")
-current
+<span class="sr-only">(current)</span>
 @endsection
 
 
