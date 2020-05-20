@@ -19,6 +19,7 @@ class LoginController extends Controller
     |
     */
     use AuthenticatesUsers;
+    // 
     public function showLoginForm()
     {
         session()->put('url.intended',url()->previous());
@@ -40,6 +41,6 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        $this->redirectTo = session()->get('url.intended');
+        $this->redirectTo = redirect()->intended('/projects');
     }
 }

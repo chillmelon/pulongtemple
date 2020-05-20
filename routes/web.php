@@ -26,7 +26,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/', 'ProjectsController@index')->name('projects');
 Route::resource('projects', 'ProjectsController');
 //Donate and Pay
-Route::get('donate/{id}', 'DonatesController@create');
+Route::get('donate/{id}', 'DonatesController@create')->middleware('verified');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');

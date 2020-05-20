@@ -22,9 +22,6 @@ class DonatesController extends Controller
 
     public function create($project_id=null)
     {
-        if (is_null(auth()->user())) {
-            return view('auth.login');
-        }
         $data['project_info'] = $this->projectService->detail($project_id);
         $data['user_info'] = auth()->user();
         return view('donates.donate', $data);
