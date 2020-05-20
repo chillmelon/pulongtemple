@@ -1,61 +1,62 @@
 @extends("projects.project")
+
 @section("summary")
 <div class="container-fluid top-content">
-  <div class="row">
-    <!-- image_main -->
-    <div class="imgbox col-sm-12 col-lg-8">
-      <div class="imgbox-inner">
-        <div class="image" style="background-image: url("{{asset('image/pulongTemple.png')}}");"></div>
-      </div>
-    </div>
-    <!-- intro -->
-    <div class="intro col-sm-12 col-lg-4">
-      <!-- title -->
-      <div class="title">
-        <h3>
-        <b>埔隆宮-炭烤土司大王</b>
-        <br>
-        <small> by Pulong Temple</small>
-        </h3>
-        <hr class="style-eight">
-      </div>
-      <!-- status -->
-      <div class="row status">
-        <!-- goal -->
-        <div class="goal col-6 col-sm-8 col-lg-6">
-          <h3><b>NT$6,700</b></h3>
-          <h6>&emsp;目標 NT$100,00</h6>
-          <hr class="new" color="#8C8C8C">
-          <h3>&emsp;3 <small>人贊助</small></h3>
-          <hr class="new" color="#8C8C8C">
-          <h3>&emsp;2 <small>天剩餘</small></h3>
-          <!-- <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6> -->
+    <div class="row">
+      <!-- image_main -->
+      <div class="imgbox col-sm-12 col-lg-8">
+        <div class="imgbox-inner">
+          <div class="image" style="background-image: url('{{asset('image/pulongTemple.png')}}');"></div>
         </div>
-        <!-- Progress bar -->
-        <div class="progress-circle col-6 col-sm-4 col-lg-6">
-          <div class="green">
-            <div class="progress">
-              <div class="inner">
-                <div class="percent"><span>30</span>%</div>
-                <div class="water"></div>
-                <div class="glare"></div>
+      </div>
+      <!-- intro -->
+      <div class="intro col-sm-12 col-lg-4">
+        <!-- title -->
+        <div class="title">
+          <h3>
+            <b>埔隆宮-炭烤土司大王</b>
+            <br>
+            <small> by Pulong Temple</small>
+          </h3>
+          <hr class="style-eight">
+        </div>
+        <!-- status -->
+        <div class="row status">
+          <!-- goal -->
+          <div class="goal col-6 col-sm-8 col-lg-6">
+            <h3><b>NT$6,700</b></h3>
+            <h6>&emsp;目標 NT$100,00</h6>
+            <hr class="new" color="#8C8C8C">
+            <h3>&emsp;3 <small>人贊助</small></h3>
+            <hr class="new" color="#8C8C8C">
+            <h3>&emsp;2 <small>天剩餘</small></h3>
+            <!-- <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6> -->
+          </div>
+          <!-- Progress bar -->
+          <div class="progress-circle col-6 col-sm-4 col-lg-6">
+            <div class="green">
+              <div class="progress">
+                <div class="inner">
+                  <div class="percent"><span>30</span>%</div>
+                  <div class="water"></div>
+                  <div class="glare"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- description -->
-      <div class="description">
-        <p class="lead">
-          埔隆宮為了成功轉型成為斂財集團
-          在埔里酒廠對面新開了一間宵夜炭烤土司
-          作為推廣活動與洗腦大眾的外展據點
-          預計3/15開幕，當天會在店內舉辦開幕派對
-          懇請各位賞光捧場，本店必蓬蓽生輝。
-        </p>
+        <!-- description -->
+        <div class="description">
+          <p class="lead">
+            　　埔隆宮為了成功轉型成為斂財集團
+            在埔里酒廠對面新開了一間宵夜炭烤土司
+            作為推廣活動與洗腦大眾的外展據點
+            預計3/15開幕，當天會在店內舉辦開幕派對
+            懇請各位賞光捧場，本店必蓬蓽生輝。
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 </div>
 @endsection
 @section("content-active")
