@@ -27,14 +27,14 @@ class MemberService
         return $projects;
     }
     public function profile($user_id=null){
-        $user = auth()->user();
-        return $user;
+        $user_id = auth()->user()->id;
+        $profile = $this->userRepository->profile($user_id);
+        return $profile;
     }
     public function updateProfile($info=null){
         $user_id = $this->profile()->id;
     }
     public function updateAvatar($request=null){
-
         $user_id = $this->profile()->id;
         if ($request->hasFile('avatar')){
             $avatar = $request->file('avatar');
@@ -45,8 +45,7 @@ class MemberService
             ];
             $this->userRepository->update($user_id, $update);
         };
-
-        // return $avatar;
+        return $this->profile();
     }
     
 }

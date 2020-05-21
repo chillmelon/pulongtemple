@@ -27,11 +27,11 @@ class MembersController extends Controller
     	return view('member.Projects',['projects'=>$projects]);
     }
     public function profile(){
-        $user = $this->memberService->profile();
-        return view('member.Profile',['profile'=>$user]);
+        $profile = $this->memberService->profile();
+        return view('member.Profile',['profile'=>$profile]);
     }
     public function update(Request $request){
-        $this->memberService->updateAvatar($request);
-        return $this->profile();
+        $profile = $this->memberService->updateAvatar($request);
+        return view('member.Profile',['profile'=>$profile]);       
     }
 }
