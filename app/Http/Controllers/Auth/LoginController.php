@@ -23,7 +23,13 @@ class LoginController extends Controller
     // 
     public function showLoginForm()
     {
-        session()->put('url.intended',url()->previous());
+        if (session()->has('url.intended'))
+        {
+            return view('auth.login');
+        }
+        $intended = url()->previous();
+        session()->flush();
+        session()->put('url.intended', $intended);
         return view('auth.login');
     }
     /**

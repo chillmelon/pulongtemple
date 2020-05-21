@@ -12,14 +12,18 @@ class MembersController extends Controller
     	$this->middleware('auth');
         $this->memberService = $memberService;
     }
-    public function index()
-    {
-        return view('member.dashboard');
-    }
     public function donates(){
     	$user_id = auth()->user()['id'];
     	$donates = $this->memberService->donates($user_id);
     	return view('member.Donations',['donates'=>$donates]);
+    }
+    public function guest(){
+        session()->put('url.intended',url()->full());
+        return view('auth.guest');
+    }
+    public function index()
+    {
+        return view('member.dashboard');
     }
     public function projects(){
     	$user_id = auth()->user()['id'];

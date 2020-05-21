@@ -11,9 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 //Management
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
@@ -30,11 +27,12 @@ Route::get('projects/{id}/comments', 'ProjectsController@showComments');
 Route::get('projects/{id}/faq', 'ProjectsController@faq');
 
 //Donate and Pay
-Route::get('donate/{id}', 'DonatesController@create')->middleware('verified');
+Route::get('donate/{id}', 'DonatesController@create')->middleware('auth');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
+Route::get('guest', 'MembersController@guest');
 //Updates
 Route::get('updates/{id}', 'UpdateController@show');
 //Members
