@@ -31,6 +31,7 @@ Route::get('projects/{id}/faq', 'ProjectsController@faq');
 
 //Donate and Pay
 Route::get('donate/{id}', 'DonatesController@create')->middleware('auth');
+Route::get('donate/{id}/guest', 'DonatesController@create');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
