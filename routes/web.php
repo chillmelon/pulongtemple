@@ -11,6 +11,9 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 //Management
 Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
@@ -32,7 +35,6 @@ Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
-Route::get('guest', 'MembersController@guest');
 //Updates
 Route::get('updates/{id}', 'UpdateController@show');
 //Members
