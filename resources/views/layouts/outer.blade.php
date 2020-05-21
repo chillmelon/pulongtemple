@@ -30,12 +30,9 @@
       </a>
     </div>
     <ul class="login">
-      <li class="">
-        <a class="btn" href="{{ route('login') }}">登入</a>
-      </li>
-      <li class="">
-        <a class="btn" href="{{ route('register') }}">註冊</a>
-      </li>
+
+      @yield("login&out")
+
     </ul>
     </div>
   </nav>
