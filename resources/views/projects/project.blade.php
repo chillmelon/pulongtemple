@@ -4,7 +4,7 @@
 {{-- has login --}}
 @auth
   <li class="">
-    <a class="btn" href="{{ url('/dashboard') }}">個人頁面</a>
+    <a class="btn" href="{{ url('/dashboard') }}">{{ auth()->user()->name }}</a>
   </li>
   <li class="">
     <a class="btn" href="{{ route('logout') }}"
