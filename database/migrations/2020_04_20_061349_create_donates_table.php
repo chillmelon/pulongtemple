@@ -21,7 +21,7 @@ class CreateDonatesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('amount');
-            $table->string('comment');
+            $table->string('comment')->nullable();
             $table->string('uuid');
             $table->boolean('paid');
             $table->timestamps();
