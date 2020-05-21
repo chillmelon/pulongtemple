@@ -26,6 +26,6 @@ class Donates extends Model
     	];
     }
     public function project(){
-        return $this->belongsTo('App\projects','project_id');
+        return $this->belongsTo('App\Projects','project_id');
     }
 }

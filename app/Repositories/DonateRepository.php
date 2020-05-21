@@ -10,6 +10,7 @@ class DonateRepository
 	public function findByUser($user_id)
 	{
 		$donates = Donates::where('user_id', $user_id)
+								->with('paid',1)
 								->with('project')
 								->get();
 		return $donates;
