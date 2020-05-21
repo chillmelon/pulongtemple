@@ -1,6 +1,8 @@
 deploy_to_test:
   stage: deploy
   image: alpine:latest
+  only:
+    - master
   before_script:
     - 'which ssh-agent || ( apk update -q && apk add openssh-client -q )'
     - eval $(ssh-agent -s)
