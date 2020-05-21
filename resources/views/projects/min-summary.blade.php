@@ -38,9 +38,3 @@
 </div>
 
 @endsection
-
-
-
-@section("sub-content")
-@yield("sub-content")
-@endsection

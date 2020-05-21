@@ -38,14 +38,14 @@
       <li class="nav-item @yield('content-active')">
         <a class="nav-link " href="/projects/{{$id}}">專案內容@yield("content-current")</a>
       </li>
-      <li class="nav-item @yield('update-active')">
-        <a class="nav-link" href="/projects/{{$id}}/updates">更新@yield("update-current")</a>
+      <li class="nav-item @yield('updates-active')">
+        <a class="nav-link" href="/projects/{{$id}}/updates">更新@yield("updates-current")</a>
       </li>
-      <li class="nav-item @yield('comment-active')">
-        <a class="nav-link" href="/projects/{{$id}}/comments">留言@yield("comment-current")</a>
+      <li class="nav-item @yield('comments-active')">
+        <a class="nav-link" href="/projects/{{$id}}/comments">留言@yield("comments-current")</a>
       </li>
-      <li class="nav-item @yield('QA-active')">
-        <a class="nav-link @yield('QA-active')" href="/projects/{{$id}}/faq">常見問答@yield("QA-current")</a>
+      <li class="nav-item @yield('faq-active')">
+        <a class="nav-link" href="/projects/{{$id}}/faq">常見問答@yield("faq-current")</a>
       </li>
     </ul>
   </div>

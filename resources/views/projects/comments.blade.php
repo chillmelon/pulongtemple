@@ -1,5 +1,13 @@
 @extends("projects.min-summary")
 
+
+@section("comments-active")
+active
+@endsection
+@section("comments-current")
+<span class="sr-only">(current)</span>
+@endsection
+
 @section("sub-content")
 
 <div class="container-fluid bottom-content">
