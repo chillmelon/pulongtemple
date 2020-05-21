@@ -36,7 +36,6 @@
     </ul>
     </div>
   </nav>
-  {{-- @yield("top-content") --}}
   @yield("body")
 </body>
 

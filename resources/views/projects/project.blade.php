@@ -1,6 +1,7 @@
 @extends("layouts.outer")
 
 @section("login&out")
+{{-- has login --}}
 @auth
   <li class="">
     <a class="btn" href="{{ url('/dashboard') }}">個人頁面</a>
@@ -15,6 +16,7 @@
         @csrf
     </form>
   </li>
+{{-- has log out --}}
 @else
   <li class="">
     <a class="btn" href="{{ route('login') }}">登入</a>
