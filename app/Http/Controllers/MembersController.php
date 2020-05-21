@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 use App\Services\MemberService;
 
+use Illuminate\Http\Request;
+
 class MembersController extends Controller
 {
 	public function __construct(
@@ -14,18 +16,22 @@ class MembersController extends Controller
     {
         return view('member.dashboard');
     }
-    public function mydonates(){
+    public function donates(){
     	$user_id = auth()->user()['id'];
     	$donates = $this->memberService->donates($user_id);
-    	return view('member.myDonations',['donates'=>$donates]);
+    	return view('member.Donations',['donates'=>$donates]);
     }
-    public function myprojects(){
+    public function projects(){
     	$user_id = auth()->user()['id'];
     	$projects = $this->memberService->projects($user_id);
-    	return view('member.myProjects',['projects'=>$projects]);
+    	return view('member.Projects',['projects'=>$projects]);
     }
-    public function myprofile(){
+    public function profile(){
         $user = $this->memberService->profile();
-        return view('member.myProfile',['profile'=>$user]);
+        return view('member.Profile',['profile'=>$user]);
+    }
+    public function update(Request $request){
+        $this->memberService->updateAvatar($request);
+        return $this->profile();
     }
 }

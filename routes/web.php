@@ -38,11 +38,17 @@ Route::get('/ecpay', function (){
 //Updates
 Route::get('updates/{id}', 'UpdateController@show');
 //Members
-Route::get('/mydonations', 'MembersController@myDonates')->middleware('verified');
-Route::get('/myprojects', 'MembersController@myProjects')->middleware('verified');
-Route::get('/myprofile', 'MembersController@myProfile')->middleware('verified');
-Route::get('/myprofile/edit', 'MembersController@edit')->middleware('verified');
+Route::get('member/donations', 'MembersController@Donates')->middleware('verified');
+Route::get('member/projects', 'MembersController@Projects')->middleware('verified');
+Route::get('member/profile', 'MembersController@Profile')->middleware('verified');
+Route::post('member/profile', 'MembersController@Update')->middleware('verified');
+Route::get('member/profile/edit', 'MembersController@edit')->middleware('verified');
 //Other
+Route::get('/fuck',function(){
+	$img = Image::make('https://thumbs.dreamstime.com/z/funny-cat-smiling-tongue-very-smile-cardboard-134655541.jpg')
+		->resize(300,300);
+	return $img->response('jpg');
+});
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');
 Route::get('form', function(){

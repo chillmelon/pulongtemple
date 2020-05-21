@@ -5,13 +5,13 @@
 		<div class="window-body" style="text-align:center;">
 		  	<table style="width: 100%;">
 		  		<tr>
-		  			<td><a href="/mydonations">my donations</a></td>
+		  			<td><a href="/member/donations">my donations</a></td>
 		  		</tr>
 		  		<tr>
-		  			<td><a href="/myprojects">my projects</a></td>
+		  			<td><a href="/member/projects">my projects</a></td>
 		  		</tr>
 		  		<tr>
-		  			<td><a href="/myprofile">my profile</a></td>
+		  			<td><a href="/member/profile">my profile</a></td>
 		  		</tr>
 		  	</table>						
 		</div>
