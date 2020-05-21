@@ -21,15 +21,13 @@ class LoginController extends Controller
     */
     use AuthenticatesUsers;
     // 
-    public function showLoginForm()
+    public function showLoginForm(Request $request)
     {
-        if (session()->has('url.intended'))
+        if ($request->block==1)
         {
             return view('auth.login');
         }
-        $intended = url()->previous();
-        session()->flush();
-        session()->put('url.intended', $intended);
+        session()->put('url.intended', url()->previous());
         return view('auth.login');
     }
     /**
@@ -55,11 +53,8 @@ class LoginController extends Controller
     {
         session()->put('url.intended',url()->previous());
         $this->guard()->logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
         return $this->loggedOut($request) ?: redirect('/');
     }
     /**

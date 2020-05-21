@@ -17,10 +17,6 @@ class MembersController extends Controller
     	$donates = $this->memberService->donates($user_id);
     	return view('member.Donations',['donates'=>$donates]);
     }
-    public function guest(){
-        session()->put('url.intended',url()->full());
-        return view('auth.guest');
-    }
     public function index()
     {
         return view('member.dashboard');
