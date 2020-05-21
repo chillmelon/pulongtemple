@@ -45,6 +45,6 @@ Route::get('/myprofile/edit', 'MembersController@edit')->middleware('verified');
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');
-Route::get('lkk', function(){
-    return view('projects.project');
+Route::get('form', function(){
+    return view('auth.form');
 });
