@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
         {{-- No --}}
         <div class="col-12">
-          <a class="btn btn-3" style="width: 100%" href="/donate/#"><span>我&emsp;不&emsp;要&emsp;</span></a>
+          <a class="btn btn-3" style="width: 100%" href="/donate/{{$id}}/guest"><span>我&emsp;不&emsp;要&emsp;</span></a>
         </div>
         <br>
         <br>
