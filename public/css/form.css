@@ -15,11 +15,14 @@
 }
 
 .custom-card input {
-    background-color: #FFFCEC;
+    color: #272727;
+    background-color: #D6D6AD;
 }
 
 
 .custom-card .form-control:focus {
+    color: #272727;
+    background-color: #E8E8D0;
     border-color: #FFED97;
     box-shadow: 0 0 0 2px #FFED97;
 }
@@ -28,12 +31,32 @@
     bottom: 0px;
 }
 
+
+
+/*donate-page*/
+
+.inform {
+    padding: 16px 0;
+}
+
+.to-login {
+    padding: 16px;
+}
+
+.continue {
+    padding: 16px 0;
+}
+
+.donate-form {
+    padding: 0;
+}
+
 .donate-form input {
     margin-bottom: 16px;
 }
 
-.inform {
-    padding: 16px;
+.comment {
+    background-color: #D6D6AD;
 }
 
 .send {
