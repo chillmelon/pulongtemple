@@ -17,6 +17,7 @@
   <link href="{{asset('css/update.css')}}" rel="stylesheet">
   <link href="{{asset('css/comment.css')}}" rel="stylesheet">
   <link href="{{asset('css/qa.css')}}" rel="stylesheet">
+  <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
   <link href="{{asset('css/animation.css')}}" rel="stylesheet">
 
 </head>
