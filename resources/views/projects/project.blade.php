@@ -1,4 +1,4 @@
-@extends("layouts.outer")
+@extends("auth.login-button")
 
 @section("body")
 @yield("summary")

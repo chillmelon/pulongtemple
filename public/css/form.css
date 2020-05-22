@@ -1,0 +1,29 @@
+.c-box {
+    padding: 56px 32px;
+    color: #FFF8D7;
+}
+
+.custom-card {
+    background-color: #1a1a1a;
+    border: #FFF8D7 1px solid;
+    font-size: 18px;
+    font-family: Courier New, 儷黑 Pro, 微軟正黑體;
+}
+
+.custom-card .card-header {
+    border-bottom: #FFF8D7 1px solid;
+}
+
+.custom-card input {
+    background-color: #FFFCEC;
+}
+
+
+.custom-card .form-control:focus {
+    border-color: #FFED97;
+    box-shadow: 0 0 0 2px #FFED97;
+}
+
+.custom-card .btn-box {
+    bottom: 0px;
+}

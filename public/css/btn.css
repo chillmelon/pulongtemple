@@ -78,6 +78,7 @@
   font-size: 20px;
   font-weight: 800;
 }
+
 /* btn-1 */
 
 .btn-1 {
@@ -165,6 +166,18 @@
   border: #08af7e 2px solid;
 }
 
+/* btn-5 */
+.btn-5 {
+  color: #FFF8D7;
+  border: #FFF8D7 1px solid;
+  width: 100%;
+  margin: 4px;
+}
+
+.btn-5:hover {
+  color: #FFED97;
+  border: #FFED97 1.5px solid;
+}
 
 /*@media*/
 
