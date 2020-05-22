@@ -16,11 +16,12 @@
     transform: translate(-50%,-50%);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
     .verifybox {
-        height: ;
+        height: 350px;
     }
     .verify {
-        /*font-size: x-small;*/
+        font-size: 80%;
+        width: 480px;
     }
 }
