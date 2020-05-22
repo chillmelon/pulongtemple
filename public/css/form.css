@@ -15,11 +15,12 @@
 }
 
 .custom-card input {
-    background-color: #FFFCEC;
+    background-color: #D6D6AD;
 }
 
 
 .custom-card .form-control:focus {
+    background-color: #E8E8D0;
     border-color: #FFED97;
     box-shadow: 0 0 0 2px #FFED97;
 }
@@ -34,6 +35,10 @@
 
 .inform {
     padding: 16px;
+}
+
+.comment {
+    background-color: #D6D6AD;
 }
 
 .send {
