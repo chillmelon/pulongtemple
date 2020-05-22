@@ -7,13 +7,12 @@
         <div class="card-header">E-mail 認證中...</div>
         <div class="card-body">
           @if (session('resent'))
-          <div class=".answer">
+          <div class="answer">
             新的一封認證信已寄出。
           </div>
           @endif
-          <h4>
-          認證信已經寄到您的信箱。
-          </h4>
+          <h4>認證信已經寄到您的信箱。</h4>
+          <br>
           如果沒收到的話 👇
           <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
             @csrf
