@@ -7,7 +7,7 @@
         <div class="card-header">E-mail 認證中...</div>
         <div class="card-body">
           @if (session('resent'))
-          <div class="alert alert-success" role="alert">
+          <div class=".answer">
             新的一封認證信已寄出。
           </div>
           @endif
