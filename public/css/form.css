@@ -1,5 +1,5 @@
 .c-box {
-    padding: 56px 32px;
+    padding: 32px 16px;
     color: #FFF8D7;
 }
 
@@ -27,3 +27,16 @@
 .custom-card .btn-box {
     bottom: 0px;
 }
+
+.donate-form input {
+    margin-bottom: 16px;
+}
+
+.inform {
+    padding: 16px;
+}
+
+.send {
+    padding: 8px 64px 4px 64px;
+}
+

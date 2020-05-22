@@ -154,6 +154,10 @@
   color: #08af7e;
 }
 
+.btn-3:active:after {
+  width: 0%;
+}
+
 /* btn-4 */
 .btn-4 {
   margin-top: 8px;
@@ -168,6 +172,10 @@
 .btn-4:hover {
   color: #08af7e;
   border: #08af7e 2px solid;
+}
+
+.btn-4:active:after {
+  width: 0%;
 }
 
 /* btn-5 */
