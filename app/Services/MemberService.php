@@ -31,18 +31,20 @@ class MemberService
         $profile = $this->userRepository->profile($user_id);
         return $profile;
     }
-    public function updateProfile($info=null){
+    public function updateProfile($request=null){
         $user_id = $this->profile()->id;
+        $this->userRepository->update($user_id, $update);
     }
-    public function updateAvatar($request=null){
+    public function update($request=null){
         $user_id = $this->profile()->id;
+        $update = [
+            'name' => $request->name,
+        ];
         if ($request->hasFile('avatar')){
             $avatar = $request->file('avatar');
             $filename = time(). '.' . $avatar->getClientOriginalExtension();
             $img = Image::make($avatar)->resize(300,300)->save( public_path('/storage/users/' . $filename));
-            $update = [
-                'avatar' => '/users/' . $filename
-            ];
+            $update['avatar'] = '/users/' . $filename;
             $this->userRepository->update($user_id, $update);
         };
         return $this->profile();
