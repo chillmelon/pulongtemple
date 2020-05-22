@@ -3,6 +3,11 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+      @auth
+      <br>
+      <br>
+      @else
       <div class="inform">
         <h4>登入會員身分？</h4>
         <br>
@@ -17,6 +22,8 @@
       <div class="continue">
         <h4>太麻煩了，直接贊助 👇</h4>
       </div>
+      @endauth
+
       <div class="c-box donate-form ">
         <div class="card custom-card">
           <div class="card-header">贊助專案：{{ $project_info['title'] }}</div>
