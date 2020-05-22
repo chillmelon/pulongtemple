@@ -23,7 +23,7 @@ class LoginController extends Controller
     // 
     public function showLoginForm(Request $request)
     {
-        if ($request->block==1)
+        if ($request->blocked==1)
         {
             return view('auth.login');
         }
