@@ -31,12 +31,28 @@
     bottom: 0px;
 }
 
-.donate-form input {
-    margin-bottom: 16px;
-}
+
+
+/*donate-page*/
 
 .inform {
+    padding: 16px 0;
+}
+
+.to-login {
     padding: 16px;
+}
+
+.continue {
+    padding: 16px 0;
+}
+
+.donate-form {
+    padding: 0;
+}
+
+.donate-form input {
+    margin-bottom: 16px;
 }
 
 .comment {
