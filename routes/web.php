@@ -42,7 +42,6 @@ Route::get('member/donations', 'MembersController@Donates')->middleware('verifie
 Route::get('member/projects', 'MembersController@Projects')->middleware('verified');
 Route::get('member/profile', 'MembersController@Profile')->name('myprofile')->middleware('verified');
 Route::post('member/profile', 'MembersController@Update')->middleware('verified');
-Route::get('member/profile/edit', 'MembersController@edit')->middleware('verified');
 //Other
 Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');

@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use App\Services\MemberService;
-
 use Illuminate\Http\Request;
 
 class MembersController extends Controller
@@ -30,9 +29,8 @@ class MembersController extends Controller
         $profile = $this->memberService->profile();
         return view('member.Profile',['profile'=>$profile]);
     }
-
     public function update(Request $request){
         $profile = $this->memberService->update($request);
-        return view('member.Profile',['profile'=>$profile]);       
+        return redirect('/member/profile')->with(['profile'=>$profile]);
     }
 }
