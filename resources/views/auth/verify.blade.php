@@ -8,7 +8,7 @@
         <div class="card-body">
           @if (session('resent'))
           <div class="new-email">
-            <h4>新的認證信已寄出。</h4>
+            新的認證信已寄出。
           </div>
           @endif
           <h4>認證信已寄出，請去信箱中點擊認證連結。</h4>
