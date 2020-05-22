@@ -1,8 +1,5 @@
-@extends("layouts.outer")
+@extends("auth.no-login-button")
 
-@section("login-button")
-  <a class="btn" style="visibility: hidden;" href="#"></a>
-@endsection
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
