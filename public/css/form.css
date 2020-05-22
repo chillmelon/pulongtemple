@@ -15,11 +15,13 @@
 }
 
 .custom-card input {
+    color: #272727;
     background-color: #D6D6AD;
 }
 
 
 .custom-card .form-control:focus {
+    color: #272727;
     background-color: #E8E8D0;
     border-color: #FFED97;
     box-shadow: 0 0 0 2px #FFED97;
