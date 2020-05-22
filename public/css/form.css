@@ -67,7 +67,7 @@
 /*verify*/
 .new-email {
   display: inline-block;
-  padding: 8px;
+  margin-bottom: 16px;
   background-color: #3C3C3C;
   border-radius: 4px;
 }
