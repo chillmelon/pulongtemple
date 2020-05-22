@@ -4,7 +4,7 @@
   <div class="row justify-content-center">
     <div class="col-md-8 c-box">
       <div class="card custom-card">
-        <div class="card-header">認證您的E-mail</div>
+        <div class="card-header">E-mail 認證中...</div>
         <div class="card-body">
           @if (session('resent'))
           <div class="alert alert-success" role="alert">
