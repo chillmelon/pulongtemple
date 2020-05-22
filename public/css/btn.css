@@ -56,7 +56,7 @@
 }
 
 .btn:focus {
-  .box-shadow: none;
+  box-shadow: none;
 }
 
 /* donate */
@@ -181,6 +181,10 @@
 .btn-5:hover {
   color: #FFED97;
   border: #FFED97 1.5px solid;
+}
+
+.btn-5:active:after {
+  width: 0%;
 }
 
 /*@media*/
