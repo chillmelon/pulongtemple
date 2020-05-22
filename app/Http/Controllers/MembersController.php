@@ -30,8 +30,9 @@ class MembersController extends Controller
         $profile = $this->memberService->profile();
         return view('member.Profile',['profile'=>$profile]);
     }
+
     public function update(Request $request){
-        $profile = $this->memberService->updateAvatar($request);
+        $profile = $this->memberService->update($request);
         return view('member.Profile',['profile'=>$profile]);       
     }
 }

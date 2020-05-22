@@ -8,6 +8,8 @@
 				@csrf
 				<label>Update Profile Image</label>
 				<input type="file" name="avatar">
+				<label>Name</label>
+				<input type="text" name="name" value="{{ $profile->name }}">
 				<input type="submit">
 			</form>
 		</div>
