@@ -35,7 +35,7 @@ class DonateService
             'name' => 'required',
             'amount' => 'required',
             'email' => 'required',
-            'comment' => 'sometimes, string'
+            'comment' => 'sometimes|string'
         ]);
         $donation=$this->format($donation);
         $this->donateRepository->create($donation);
