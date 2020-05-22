@@ -21,8 +21,8 @@
             @csrf
             贊助人
             <input type="hidden" name="project_id" value = "{{ $project_info['id'] }}">
-            <input type="hidden" name="user_id" value = "{{ $user_info['id'] }}">
-            <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ $user_info['name'] }}" >
+            <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
+            <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}" >
             @error('name')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
@@ -36,7 +36,7 @@
             </span>
             @enderror
             E-mail
-            <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ $user_info['email'] }}">
+            <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ auth()->user()['email'] }}">
             @error('email')
             <span class="invalid-feedback" role="alert">
               <strong>{{ $message }}</strong>
