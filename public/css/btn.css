@@ -55,6 +55,10 @@
   text-decoration: none;
 }
 
+.btn:focus {
+  .box-shadow: none;
+}
+
 /* donate */
 .donate {
   display: block;
