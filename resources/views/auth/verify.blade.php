@@ -6,7 +6,7 @@
       <div class="card custom-card">
         <div class="card-header">
           <div class="verify-box">
-          <pre class="verify">
+            <pre class="verify">
    ___      ___ _______  _______   __    _______ ___  ___
   |"  \    /"  /"     "|/"      \ |" \  /"     "|"  \/"  |
    \   \  //  (: ______):        |||  |(: ______)\   \  /
@@ -21,8 +21,8 @@
        // ___)_|: \.        | //  __'  \  |.  | \  |___
       (:      "|.  \    /:  |/   /  \\  \ /\  |( \_|:  \
        \_______)___|\__/|___(___/    \___|__\_|_)_______)
-          </pre>
-        </div>
+            </pre>
+          </div>
         </div>
         <div class="card-body">
           @if (session('resent'))
