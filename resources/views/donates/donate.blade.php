@@ -1,4 +1,4 @@
-@extends('layouts.outer')
+@extends('auth.login-button')
 @section('body')
 <h2>Donate Projects</h2>
 <div class="row justify-content-center">
