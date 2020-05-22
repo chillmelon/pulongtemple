@@ -1,12 +1,16 @@
-@extends('auth.login-button')
-@section('body')
+@extends("layouts.outer")
+
+@section("login-button")
+  <a class="btn" style="visibility: hidden;" href="#"></a>
+@endsection
+@section("body")
 <div class="row justify-content-center">
   <div class="col-12 col-md-6">
     <h4>說明一下吼</h4>
-    {{-- No --}}
-    {{-- <div class="col-12 no-login">
-      <a class="btn btn-5" href="/donate/{{$id}}"><span>我&emsp;不&emsp;要&emsp;</span></a>
-    </div> --}}
+    {{-- login --}}
+    <div class="col-12 no-login">
+      <a class="btn btn-5" href="{{ route('login') }}"><span>以會員身分贊助</span></a>
+    </div>
     <div class="c-box">
       <div class="card custom-card">
         <div class="card-header">Donate Projects~</div>
