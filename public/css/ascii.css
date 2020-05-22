@@ -1,7 +1,7 @@
+/*verify*/
 .verify-box {
     height: 245px;
 }
-
 
 .verify {
     color: #FFF4C1;
@@ -14,6 +14,49 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+/*thx*/
+.thx-box {
+    margin-top: 32px;
+    height: 245px;
+}
+
+.thx {
+    color: #FFF4C1;
+    font-weight: 800;
+    font-size: 55%;
+    padding: 4px;
+    width: 335px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*login*/
+.login-ascii-box {
+    height: 120px;
+}
+
+.login-ascii {
+    color: #FFF4C1;
+    font-weight: 800;
+    font-size: 55%;
+    padding: 4px;
+    width: 350px;
+}
+
+@media (min-width: 992px) {
+    .thx-box {
+        height: 350px;
+        margin: 56px 0;
+    }
+    .thx {
+        font-size: 100%;
+        width: 450px;
+    }
 }
 
 @media (min-width: 1200px) {
