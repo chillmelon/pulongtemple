@@ -27,7 +27,7 @@
           <tr>
             <td><a class="btn btn-5" href="projects/{{$project['id']}}">{{$project['title']}}</a></td>
             <td><img src="/storage/{{ $project['cover'] }}"></td>
-            <td><a class="btn btn-5">{{ $project['progress'] }}</a></td>
+            <td><a>{{ $project['progress'] }}</a></td>
           </tr>
           @endforeach
         </table>
