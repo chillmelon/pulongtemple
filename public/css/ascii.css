@@ -1,3 +1,22 @@
+/*pulong temple*/
+.pltp-box {
+    margin-top: 32px;
+    height: 250px;
+}
+
+.pltp {
+    color: #FFF4C1;
+    font-weight: 800;
+    font-size: 72%;
+    padding: 4px;
+    width: 340px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /*verify*/
 .verify-box {
     height: 245px;
@@ -48,6 +67,18 @@
     width: 350px;
 }
 
+/*@MEDIA*/
+@media (min-width: 768px) {
+    .pltp-box {
+        height: 310px
+    }
+    .pltp {
+        font-size: 90%;
+        width: 390px;
+    }
+
+}
+
 @media (min-width: 992px) {
     .thx-box {
         height: 350px;
@@ -60,6 +91,14 @@
 }
 
 @media (min-width: 1200px) {
+    .pltp-box {
+        height: 440px
+    }
+    .pltp {
+        font-size: 130%;
+        width: 560px;
+    }
+
     .verify-box {
         height: 350px;
     }
