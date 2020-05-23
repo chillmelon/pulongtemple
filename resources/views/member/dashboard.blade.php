@@ -2,7 +2,7 @@
 @section("body")
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-8">
+    <div class="col-md-8 col-xl-6">
       <div class="">
         <a class="btn btn-5" href="/member/donations">my donations</a>
         <a class="btn btn-5" href="/member/projects">my projects</a>
