@@ -8,26 +8,32 @@
       <br>
       @else
       <div class="inform">
-        <div class="login-ascii-box">
-          <pre class="login-ascii">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="login-ascii-box">
+              <pre class="login-ascii">
  _                       _           ___
 | |       ___     __ _  (_)  _ __   |__ \
 | |      / _ \   / _` | | | | '_ \    / /
 | |___  | (_) | | (_| | | | | | | |  |_|
 |_____|  \___/   \__, | |_| |_| |_|  (_)
                  |___/
-          </pre>
+            </pre>
+            </div>
+          </div>
+          <div class="col-lg-6" style="padding: 16px">
+            <h5>
+            <br>
+            &emsp;登入會員可以記錄每一筆的贊助，<br>
+            &emsp;也可以發起屬於自己的募資專案。
+            </h5>
+          </div>
         </div>
-        <br>
-        <h5>
-        &emsp;登入會員可以記錄每一筆的贊助，<br>
-        &emsp;也可以發起屬於自己的募資專案。
-        </h5>
       </div>
       <div class="to-login">
         <a class="btn btn-5" href="{{ route('login') }}"><span>註冊或登入</span></a>
       </div>
-      <div class="continue">
+      <div style="text-align: center; padding: 16px 0;">
         <h4>太麻煩了，直接贊助 👇</h4>
       </div>
       @endauth
