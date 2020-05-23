@@ -19,6 +19,7 @@
   <link href="{{asset('css/qa.css')}}" rel="stylesheet">
   <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
   <link href="{{asset('css/animation.css')}}" rel="stylesheet">
+  <link href="{{ asset('/css/cropper.css') }}" rel="stylesheet">
 
 </head>
 
