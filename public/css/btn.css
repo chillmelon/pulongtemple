@@ -180,15 +180,15 @@
 
 /* btn-5 */
 .btn-5 {
-  color: #FFF8D7;
-  border: #FFF8D7 1px solid;
+  color: #02DF82;
+  border: #02DF82 1px solid;
   width: 100%;
   margin: 4px;
 }
 
 .btn-5:hover {
-  color: #FFED97;
-  border: #FFED97 1.5px solid;
+  color: #02F78E;
+  border: #02F78E 1.5px solid;
 }
 
 .btn-5:active:after {

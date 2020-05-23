@@ -25,9 +25,9 @@
         <table>
           @foreach($projects as $project)
           <tr>
-            <td><a class="btn btn-4" href="projects/{{$project['id']}}">{{$project['title']}}</a></td>
+            <td><a class="btn btn-5" href="projects/{{$project['id']}}">{{$project['title']}}</a></td>
             <td><img src="/storage/{{ $project['cover'] }}"></td>
-            <td><a class="btn btn-4">{{ $project['progress'] }}</a></td>
+            <td><a class="btn btn-5">{{ $project['progress'] }}</a></td>
           </tr>
           @endforeach
         </table>

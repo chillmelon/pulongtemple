@@ -1,36 +1,39 @@
 .c-box {
     padding: 32px 16px;
-    color: #FFF8D7;
+    color: #02DF82;
 }
 
 .custom-card {
     background-color: #1a1a1a;
-    border: #FFF8D7 1px solid;
+    border: #02DF82 1px solid;
     font-size: 18px;
     font-family: Courier New, 儷黑 Pro, 微軟正黑體;
 }
 
 .custom-card .card-header {
-    border-bottom: #FFF8D7 1px solid;
+    border-bottom: #02DF82 1px solid;
 }
 
 .custom-card input {
-    color: #272727;
-    background-color: #D6D6AD;
+    color: #00290A;
+    background-color: #6BB382;
 }
 
 
 .custom-card .form-control:focus {
-    color: #272727;
-    background-color: #E8E8D0;
-    border-color: #FFED97;
-    box-shadow: 0 0 0 2px #FFED97;
+    color: #00290A;
+    background-color: #C1FFE4;
+    border-color: #7AFEC6;
+    box-shadow: 0 0 0 2px #7AFEC6;
 }
 
 .custom-card .btn-box {
     bottom: 0px;
 }
 
+.form-control {
+    border: 1px solid #02DF82;
+}
 
 
 /*donate-page*/
@@ -56,7 +59,7 @@
 }
 
 .comment {
-    background-color: #D6D6AD;
+    background-color: #6BB382;
 }
 
 .send {
