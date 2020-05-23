@@ -1,7 +1,7 @@
-@extends('layout')
-@section('content')
+@extends("auth.login-button")
+@section("body")
 <h1>我的捐款</h1>
-<table style="border: 1px solid black;">
+<table>
 <tr>
 	<td>交易單號</td>
 	<td>贊助專案</td>

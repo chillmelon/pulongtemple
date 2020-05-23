@@ -1,5 +1,5 @@
-@extends('layout')
-@section('content')
+@extends("auth.login-button")
+@section("body")
 <table>
 <tr>
 	<td>專案名稱</td>
@@ -10,7 +10,7 @@
 </tr>
 @foreach($projects as $project)
 <tr>
-	<td><a href="/projects/{{ $project->id }}">{{ $project->title }}</a></td>
+	<td><a class="btn btn-5" href="/projects/{{ $project->id }}">{{ $project->title }}</a></td>
 	<td>{{ $project->total_amount }}</td>
 	<td>{{ $project->goal }}</td>
 	<td>{{ $project->created_at }}</td>

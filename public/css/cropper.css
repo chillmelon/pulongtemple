@@ -235,6 +235,26 @@
   width: 20px;
 }
 
+/*custom*/
+.label {
+      cursor: pointer;
+    }
+
+    .progress {
+      display: none;
+      margin-bottom: 1rem;
+      width: 30%
+    }
+
+    .alert {
+      display: none;
+      width: 30%
+    }
+
+    .img-container img {
+      max-width: 100%;
+    }
+
 @media (min-width: 768px) {
   .cropper-point.point-se {
     height: 15px;
