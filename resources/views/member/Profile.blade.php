@@ -41,7 +41,7 @@
       @csrf
       <label>Name</label>
       <input type="text" name="name" value="{{ $profile->name }}">
-      <input type="submit" value="fuck">
+      <input type="submit" value="update">
     </form>
     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
