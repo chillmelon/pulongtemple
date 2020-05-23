@@ -51,11 +51,22 @@
 }
 
 .donate-form {
-    padding: 0;
+    padding: 8px;
 }
 
-.donate-form input {
+.donate-form .card-body {
+    padding: 16px 0;
+}
+
+.donate-form input,
+.donate-form textarea {
     margin-bottom: 16px;
+    border-radius: 0;
+}
+
+.donate-form textarea {
+    height: 96px;
+    resize: none;
 }
 
 .comment {
@@ -66,6 +77,24 @@
     padding: 8px 64px 4px 64px;
 }
 
+.amount {
+    text-align: right;
+    font-size: 72px;
+    font-family: Impact, Arial Black;
+    background-image: url("../image/NT.png");
+    background-size: contain;
+    background-position: 16px 0;
+    background-repeat: no-repeat;
+    padding-left: 120px;
+}
+
+.progress-box {
+    padding: 48px 16px;
+}
+
+.progress-box .progress-circle {
+    padding: 32px;
+}
 
 /*verify*/
 .new-email {
