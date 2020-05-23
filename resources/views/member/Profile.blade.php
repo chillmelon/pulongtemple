@@ -30,7 +30,7 @@
   <div class="container">
     <h1>{{ auth()->user()['name'] }}'s Profile</h1>
     <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
-      <img class="rounded" id="avatar" src="/storage{{ $profile->avatar }}" alt="avatar">
+      <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
       <input type="file" class="sr-only" id="input" name="image" accept="image/*">
     </label>
     <div class="progress">
@@ -54,7 +54,7 @@
           </div>
           <div class="modal-body">
             <div class="img-container">
-              <img id="image" src="/storage{{ $profile->avatar }}">
+              <img id="image" src="/storage/{{ $profile->avatar }}">
             </div>
           </div>
           <div class="modal-footer">
