@@ -2,7 +2,7 @@
 @section("body")
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-6 .col-xl-5">
+    <div class="col-md-4 col-xl-3">
       <h1>{{ auth()->user()['name'] }}'s Profile</h1>
       <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
         <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
