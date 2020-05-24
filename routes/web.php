@@ -16,8 +16,6 @@
 // });
 //Management
 Auth::routes(['verify' => true]);
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-Route::get('/dashboard', 'MembersController@index')->name('home')->middleware('verified');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
@@ -41,8 +39,8 @@ Route::get('updates/{id}', 'UpdateController@show');
 //Members
 Route::get('member/donations', 'MembersController@Donates')->middleware('verified');
 Route::get('member/projects', 'MembersController@Projects')->middleware('verified');
-Route::get('member/profile', 'MembersController@Profile')->name('myprofile')->middleware('verified');
-Route::post('member/profile', 'MembersController@Update')->middleware('verified');
+Route::post('/dashboard', 'MembersController@Update')->middleware('verified');
+Route::get('/dashboard', 'MembersController@index')->name('dashboard')->middleware('verified');
 //Other
 Route::post('/callback', 'DonatesController@callback');
 Route::get('form', function(){

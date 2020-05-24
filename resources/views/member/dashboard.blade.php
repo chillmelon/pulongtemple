@@ -15,7 +15,7 @@
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
       </div>
       <div class="alert" role="alert"></div>
-      <form action="/member/profile" method="POST">
+      <form action="/dashboard" method="POST">
         @csrf
         <label>Name</label>
         <input type="text" name="name" value="{{ $profile->name }}">
@@ -115,7 +115,7 @@ $alert.removeClass('alert-success alert-warning');
 canvas.toBlob(function (blob) {
 var formData = new FormData();
 formData.append('avatar', blob,'avatar.jpg');
-$.ajax('/member/profile', {
+$.ajax('/dashboard', {
 method: 'POST',
 data: formData,
 processData: false,
