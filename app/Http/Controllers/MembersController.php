@@ -27,6 +27,6 @@ class MembersController extends Controller
     }
     public function update(Request $request){
         $profile = $this->memberService->update($request);
-        return redirect('/member/profile')->with(['profile'=>$profile]);
+        return redirect('/dashboard')->with(['profile'=>$profile]);
     }
 }
