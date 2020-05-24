@@ -198,6 +198,7 @@
 /*border*/
 .bdr-1 {
   border: #02DF82 1px solid;
+  border-radius: 4px;
 }
 
 /*@media*/
