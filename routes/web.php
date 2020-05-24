@@ -35,6 +35,7 @@ Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
 Route::get('/ecpay', function (){
 	return view('donates.ecpay');
 })->name('ecpay');
+Route::view('/thankyou','donates.thankyou');
 //Updates
 Route::get('updates/{id}', 'UpdateController@show');
 //Members
@@ -43,7 +44,6 @@ Route::get('member/projects', 'MembersController@Projects')->middleware('verifie
 Route::get('member/profile', 'MembersController@Profile')->name('myprofile')->middleware('verified');
 Route::post('member/profile', 'MembersController@Update')->middleware('verified');
 //Other
-Route::view('/thankyou','thankyou');
 Route::post('/callback', 'DonatesController@callback');
 Route::get('form', function(){
     return view('auth.form');
