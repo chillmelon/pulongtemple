@@ -5,9 +5,8 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-
     <div class="card custom-card bdr-1">
-      <div class="card-header">{{ auth()->user()['name'] }}</div>
+      <div class="card-header"><h2>{{ auth()->user()['name'] }}</h2></div>
       <div class="card-body">
         <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
           <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
@@ -25,7 +24,6 @@
             <button class="btn btn-5">更新暱稱</button>
           </form>
         </div>
-
         <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -44,21 +42,14 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary" id="crop">Crop</button>
               </div>
-
             </div>
           </div>
         </div>
         <div class="">
           <a class="btn btn-5" href="/member/donations">我的贊助</a>
           <a class="btn btn-5" href="/member/projects">我的專案</a>
-          {{-- <a class="btn btn-5" href="/member/profile">修改個人檔案</a> --}}
         </div>
       </div>
-    </div>
-
-    <div>
-      <h2></h2>
-
     </div>
   </div>
 </div>
