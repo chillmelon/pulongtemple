@@ -5,49 +5,48 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-    <div class="card custom-card bdr-1">
-      <div class="card-header"><h2>{{ auth()->user()['name'] }}</h2></div>
-      <div class="card-body">
-        <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
-          <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
-          <input type="file" class="sr-only" id="input" name="image" accept="image/*">
-        </label>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-        </div>
-        <div class="alert" role="alert"></div>
-        <div>
+    <div class="col-lg-6">
+      <div class="card custom-card bdr-1 dashboard">
+        <div class="card-header"><h2>{{ auth()->user()['name'] }}</h2></div>
+        <div class="card-body">
+          <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
+            <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
+            <input type="file" class="sr-only" id="input" name="image" accept="image/*">
+          </label>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+          </div>
+          <div class="alert" role="alert"></div>
           <form action="/dashboard" method="POST">
-            @csrf
-            <label>Name</label>
+              @csrf
             <input class="form-control" type="text" name="name" value="{{ $profile->name }}">
-            <button class="btn btn-5">更新暱稱</button>
+            <button class="btn btn-5 update-name">更新</button>
           </form>
-        </div>
-        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Crop the image</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="img-container">
-                  <img id="image" src="/storage/{{ $profile->avatar }}">
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">Crop the image</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                  </button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" id="crop">Crop</button>
+                <div class="modal-body">
+                  <div class="img-container">
+                    <img id="image" src="/storage/{{ $profile->avatar }}">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" id="crop">Crop</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="">
-          <a class="btn btn-5" href="/member/donations">我的贊助</a>
-          <a class="btn btn-5" href="/member/projects">我的專案</a>
+          <div class="">
+            <a class="btn btn-5" href="/member/donations">我的贊助</a>
+            <a class="btn btn-5" href="/member/projects">我的專案</a>
+          </div>
         </div>
       </div>
     </div>

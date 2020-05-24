@@ -111,6 +111,29 @@
   font-size: 24px;
 }
 
+/*dashboard*/
+.dashboard {
+    padding: 16px;
+}
+
+.dashboard .card-header {
+    border: none;
+}
+
+.dashboard form {
+    padding: 0 8px;
+}
+.dashboard .form-control {
+    display: inline-block;
+    width: 65%;
+    height: 60px;
+}
+
+.update-name {
+    display: inline-block;
+    width: 25%;
+    height: 60px;
+}
 
 @media (min-width: 992px) {
     .card-body {
