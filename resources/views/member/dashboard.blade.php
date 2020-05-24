@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div>
-      <h1>{{ auth()->user()['name'] }}'s Profile</h1>
+      <h3>{{ auth()->user()['name'] }}'</h3>
       <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
         <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
         <input type="file" class="sr-only" id="input" name="image" accept="image/*">
