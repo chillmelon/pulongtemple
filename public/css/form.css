@@ -1,16 +1,14 @@
 .c-box {
-    padding: 32px 16px;
     color: #02DF82;
 }
 
 .custom-card {
     background-color: #1a1a1a;
-    border: #02DF82 1px solid;
     font-size: 18px;
     font-family: Courier New, 儷黑 Pro, 微軟正黑體;
 }
 
-.custom-card .card-header {
+.card-header {
     border-bottom: #02DF82 1px solid;
 }
 
@@ -27,8 +25,8 @@
     box-shadow: 0 0 0 2px #7AFEC6;
 }
 
-.custom-card .btn-box {
-    bottom: 0px;
+.btn-box {
+    padding: 16px 24px;
 }
 
 .form-control {
@@ -37,6 +35,11 @@
 
 
 /*donate-page*/
+.donate-box {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
 
 .inform {
     padding: 16px 0;
@@ -47,11 +50,16 @@
 }
 
 .donate-form {
-    padding: 8px;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    border-top: 1px solid #02DF82;
+    border-left: #02DF82 1px solid;
 }
 
-.donate-form .card-body {
+.card-body {
     padding: 16px 0;
+    padding-left: 15px;
 }
 
 .donate-form input,
@@ -85,10 +93,11 @@
 }
 
 .progress-box {
-    padding: 16px 16px;
+    width: 100%;
+    padding: 16px;
 }
 
-.progress-box .progress-circle {
+.progress-circle {
     padding: 32px;
 }
 
@@ -100,4 +109,11 @@
   background-color: #3C3C3C;
   border-radius: 4px;
   font-size: 24px;
+}
+
+
+@media (min-width: 992px) {
+    .card-body {
+        padding-left: 0;
+    }
 }

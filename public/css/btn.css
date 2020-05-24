@@ -195,6 +195,11 @@
   width: 0%;
 }
 
+/*border*/
+.bdr-1 {
+  border: #02DF82 1px solid;
+}
+
 /*@media*/
 
 @media (min-width: 576px) {
