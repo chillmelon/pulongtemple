@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -26,8 +26,12 @@
     }
   </style>
 </head>
-<body>
-  <div class="container">
+<body> --}}
+@extends("auth.login-button")
+
+@section("body")
+
+<div class="container">
     <h1>{{ auth()->user()['name'] }}'s Profile</h1>
     <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
       <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
@@ -64,11 +68,11 @@
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script src="{{ asset('/js/cropper.js') }}"></script>
-  <script>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="{{ asset('/js/cropper.js') }}"></script>
+<script>
 
     window.addEventListener('DOMContentLoaded', function () {
       var avatar = document.getElementById('avatar');
@@ -180,5 +184,7 @@
         }
       });
     });
-  </script>
-</body></html>
+</script>
+
+@endsection
+{{-- </body></html> --}}
