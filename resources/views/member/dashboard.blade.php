@@ -1,6 +1,6 @@
 @extends("auth.login-button")
-<meta name="csrf-token" content="{{ csrf_token() }}">
 @section("meta")
+<meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 @section("body")
 <div class="container">
