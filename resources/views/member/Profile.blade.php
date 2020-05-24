@@ -113,6 +113,7 @@
         cropper = new Cropper(image, {
           aspectRatio: 1,
           viewMode: 2,
+		  minContainerHeight: 200,
         });
       }).on('hidden.bs.modal', function () {
         cropper.destroy();
