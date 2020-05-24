@@ -28,6 +28,10 @@
 </head>
 <body> --}}
 @extends("auth.login-button")
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@section("meta")
+
+@endsection
 
 @section("body")
 
