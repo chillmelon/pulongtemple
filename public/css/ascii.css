@@ -23,7 +23,7 @@
 }
 
 .verify {
-    color: #FFF4C1;
+    color: #01B468;
     font-weight: 800;
     font-size: 55%;
     padding: 4px;
@@ -42,7 +42,7 @@
 }
 
 .thx {
-    color: #FFF4C1;
+    color: #01B468;
     font-weight: 800;
     font-size: 55%;
     padding: 4px;
@@ -56,13 +56,13 @@
 
 /*login*/
 .login-ascii-box {
-    height: 120px;
+    height: 150px;
 }
 
 .login-ascii {
-    color: #FFF4C1;
+    color: #01B468;
     font-weight: 800;
-    font-size: 55%;
+    font-size: 100%;
     padding: 4px;
     width: 350px;
 }

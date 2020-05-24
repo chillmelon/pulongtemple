@@ -8,7 +8,7 @@
         {{-- login --}}
         <div class="col-lg-6 c-box">
           <h5 style="padding: 16px;">已經是會員~</h5>
-          <div class="card custom-card">
+          <div class="card custom-card bdr-1">
             <div class="card-header">登入</div>
             <div class="card-body">
               <form method="POST" action="{{ route('login') }}">
@@ -64,7 +64,7 @@
         {{-- register --}}
         <div class="col-lg-6 c-box">
           <h5 style="padding: 16px;">現在加入~</h5>
-          <div class="card custom-card">
+          <div class="card custom-card bdr-1">
             <div class="card-header">註冊</div>
             <div class="card-body">
               <form method="POST" action="{{ route('register') }}">
