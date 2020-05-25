@@ -83,6 +83,9 @@
                     <strong>{{ $message }}</strong>
                   </span>
                   @enderror
+
+                  @auth
+                  @else
                   &ensp;E-mail(將會收到專案更新資訊)
                   <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ auth()->user()['email'] }}">
                   @error('email')
@@ -90,6 +93,8 @@
                     <strong>{{ $message }}</strong>
                   </span>
                   @enderror
+                  @endauth
+
                   &ensp;留言(選填)
                   <textarea class="form-control comment" type="text" name="comment"></textarea>
                   <div class="send">
