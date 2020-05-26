@@ -33,7 +33,7 @@ class DonateService
         $donation->validate([
             '_token',
             'name' => 'required|string|max:16',
-            'amount' => 'required|integer|max:10',
+            'amount' => 'required|integer|max:1000000',
             'email' => 'required|email|max:30',
             'comment' => 'sometimes|string|max:255'
         ]);
