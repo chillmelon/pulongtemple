@@ -3,10 +3,6 @@
 @section("updates-active")
 active
 @endsection
-@section("updates-current")
-<span class="sr-only">(current)</span>
-@endsection
-
 
 @section("sub-content")
 
@@ -14,7 +10,7 @@ active
   <div class='row'>
     <div class='col-12 col-lg-8'>
       {{-- update-1 --}}
-      <div class="update">
+      <div class="update custom-bdr">
         <h4>📢【提・前・出・貨公告】凡前三波下單，將提前於 5 月中開始依序出貨</h4>
         <span>2020/05/15 18:55</span>
         <img class="width-img" src="https://s3-ap-northeast-1.amazonaws.com/zeczec-prod/asset_179720_image_original.jpg?1589528089">
@@ -24,7 +20,7 @@ active
         </div>
       </div>
       {{-- update-2 --}}
-      <div class="update">
+      <div class="update custom-bdr">
         <h4>【🎉賀！金額金額突破 1,000 萬 🔥】下單抽大獎，小愛同學抱・回・家・</h4>
         <span>2020/05/12 15:39</span>
         <img class="width-img" src="https://s3-ap-northeast-1.amazonaws.com/zeczec-prod/asset_178563_image_original.png?1589269176">
@@ -34,7 +30,7 @@ active
         </div>
       </div>
       {{-- update-3 --}}
-      <div class="update">
+      <div class="update custom-bdr">
         <h4>【優惠倒數中✨限時母親節專屬方案】截至 5/10 23:59</h4>
         <span>2020/05/07 19:55</span>
         <img class="width-img" src="https://s3-ap-northeast-1.amazonaws.com/zeczec-prod/asset_177316_image_original.jpg?1588852266">

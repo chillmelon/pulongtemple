@@ -1,8 +1,3 @@
-.nav-link {
-  font-family: 微軟正黑體;
-  padding: 16px 8px;
-}
-
 .logo a .swap-on-hover__front-image {
   z-index: 9999;
   transition: opacity;
@@ -12,23 +7,13 @@
   opacity: 0;
 }
 
-.login li:hover .btn:after,
-.nav-item:hover .nav-link:after,
-.active .nav-link:after,
-.btn:active:after {
-  width: 100%;
-}
-
 .btn {
-  color: rgba(255, 255, 255, .5);
+  color: #02DF82;
+  border: #02DF82 1px solid;
+  width: 100%;
+  margin: 4px;
   display: inline-block;
-  line-height: 59px;
-  font-size: 18px;
-  font-family: 微軟正黑體;
-  padding: 0;
-  margin-right: 4px;
-  width: 100px;
-  height: 60px;
+  font-family: Courier New, 儷黑 Pro, 微軟正黑體;
 }
 
 .btn span {
@@ -37,26 +22,29 @@
   height: 100%;
 }
 
-.btn:after,
-.nav-link:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #D0D0D0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.3s;
-}
-
 .btn:hover {
-  color: #D0D0D0;
-  text-decoration: none;
+  color: #02F78E;
+  border: #02F78E 1.5px solid;
 }
 
 .btn:focus {
   box-shadow: none;
+}
+
+.nav-link {
+  font-family: 微軟正黑體;
+  color: #01B468 !important;
+}
+
+.nav-link:hover {
+  color: #02F78E !important;
+}
+
+.active {
+  color: #02F78E !important;
+  border: dashed;
+  border-width: 2px;
+  border-color: #01814A;
 }
 
 /* donate */

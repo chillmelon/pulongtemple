@@ -4,7 +4,7 @@
 <div class="container-fluid top-content">
     <div class="row">
       <!-- image_main -->
-      <div class="imgbox col-sm-12 col-lg-8">
+      <div class="imgbox img-main col-sm-12 col-lg-8">
         <div class="imgbox-inner">
           <div class="image" style="background-image: url('{{asset('image/pulongTemple.png')}}');"></div>
         </div>
@@ -48,11 +48,9 @@
         <!-- description -->
         <div class="description">
           <p class="lead">
-            　　埔隆宮為了成功轉型成為斂財集團
-            在埔里酒廠對面新開了一間宵夜炭烤土司
-            作為推廣活動與洗腦大眾的外展據點
-            預計3/15開幕，當天會在店內舉辦開幕派對
-            懇請各位賞光捧場，本店必蓬蓽生輝。
+            　　埔隆宮為了成功轉型成為斂財集團，
+            在埔里酒廠對面新開了一間宵夜炭烤土司，
+            作為推廣活動與洗腦大眾的外展據點。
           </p>
         </div>
       </div>
@@ -61,9 +59,6 @@
 @endsection
 @section("content-active")
 active
-@endsection
-@section("content-current")
-<span class="sr-only">(current)</span>
 @endsection
 
 

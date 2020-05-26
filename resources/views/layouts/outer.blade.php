@@ -23,10 +23,11 @@
   <link href="{{asset('css/progress.css')}}" rel="stylesheet">
   <link href="{{asset('css/update.css')}}" rel="stylesheet">
   <link href="{{asset('css/comment.css')}}" rel="stylesheet">
+  <link href="{{asset('css/member.css')}}" rel="stylesheet">
   <link href="{{asset('css/qa.css')}}" rel="stylesheet">
   <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
   <link href="{{asset('css/animation.css')}}" rel="stylesheet">
-  <link href="{{ asset('/css/cropper.css') }}" rel="stylesheet">
+  <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
 
 </head>
 

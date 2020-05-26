@@ -6,7 +6,7 @@
 <div class="container-fluid top-content">
   <div class="row top-img">
     <!-- image_main -->
-    <div class="imgbox img-min col-sm-6 col-md-6 col-lg-6 ">
+    <div class="imgbox img-main img-min col-sm-6 col-md-6 col-lg-6 ">
       <div class="imgbox-inner">
         <div class="image" style="background-image: url('{{asset('image/pulongTemple.png')}}');"></div>
       </div>

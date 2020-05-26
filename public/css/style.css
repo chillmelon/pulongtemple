@@ -4,6 +4,7 @@
   box-sizing: border-box;
   position: relative;
   list-style-type: none;
+  text-decoration: none;
 }
 
 body {
@@ -50,6 +51,12 @@ hr.style-eight {
 
 /*component*/
 
+.custom-bdr {
+  border: solid;
+  border-width: 2px;
+  border-color: #01814A;
+}
+
 .imgbox {
   width: 100%;
   overflow: hidden;
@@ -82,10 +89,11 @@ hr.style-eight {
 .nav-top,
 .navbar {
   background-color: #1a1a1a;
+  height: 70px;
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
-  border-color: #272727;
+  border-color: rgb(1, 126, 72);
 }
 
 .nav-item {
@@ -134,7 +142,7 @@ hr.style-eight {
 }
 
 .intro {
-  padding: 15px;
+  padding: 24px;
 }
 
 .title {
@@ -174,6 +182,7 @@ hr.style-eight {
 .nav-mid {
   flex-wrap: wrap;
   padding-bottom: 20px;
+  box-shadow: 0 2px 0 1px #1a1a1a;
 }
 
 /*min-top*/
@@ -208,14 +217,28 @@ hr.style-eight {
 @media (min-width: 992px) {
   .nav-top {
     padding: 12px 40px;
+    height: 90px;
   }
 
   .top-content {
     padding: 20px 40px;
   }
 
-  .top-content .imgbox {
+  .img-main {
     padding: 15px;
+  }
+
+  .img-main,
+  .intro {
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(1, 126, 72);
+  }
+
+  .intro {
+    padding: 24px;
+    padding-top: 15px;
+    border-left: none;
   }
 
   .sticky-top {
@@ -246,10 +269,6 @@ hr.style-eight {
 
   .imgbox {
     /*padding: 30px 30px 0 30px;*/
-  }
-
-  .intro {
-    padding: 30px 15px 15px 15px;
   }
 
   .discription {

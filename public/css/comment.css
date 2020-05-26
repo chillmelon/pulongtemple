@@ -3,9 +3,14 @@
   font-family: Courier New, 微軟正黑體, Arial Black;
 }
 
+.rank {
+  border: double;
+  border-width: 7px;
+  border-color: #01814A;
+}
+
 table {
   border-collapse: collapse;
-  border: 8px #4F4F4F double;
   width: 100%;
 }
 

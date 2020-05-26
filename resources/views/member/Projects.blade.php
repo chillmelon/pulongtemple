@@ -2,7 +2,8 @@
 @section("body")
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-xl-6" style="padding-top: 32px;">
+    <div class="my_p col-md-10 col-xl-6">
+      <h3>My Project</h3>
       <table>
         <tr>
           <td>專案名稱</td>

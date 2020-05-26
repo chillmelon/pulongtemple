@@ -6,11 +6,11 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6">
-      <div class="card custom-card bdr-1 dashboard">
+      <div class="card custom-card custom-bdr dashboard">
         <div class="card-header"><h2>{{ auth()->user()['name'] }}</h2></div>
         <div class="card-body">
           <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
-            <img class="rounded" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
+            <img class="rounded img-dashboard" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>
           <div class="progress">
@@ -20,7 +20,7 @@
           <form action="/dashboard" method="POST">
               @csrf
             <input class="form-control" type="text" name="name" value="{{ $profile->name }}">
-            <button class="btn btn-5 update-name">更新</button>
+            <button class="btn update-name">更新</button>
           </form>
           <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -37,8 +37,8 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  <button type="button" class="btn btn-primary" id="crop">Crop</button>
+                  <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn" id="crop">Crop</button>
                 </div>
               </div>
             </div>
