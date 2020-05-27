@@ -5,15 +5,9 @@
 }
 .pltp {
     color: #01B468;
-    font-weight: 800;
     font-size: 70%;
     padding: 4px;
-    width: 335px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin:0;
 }
 
 /*Verify*/
@@ -25,12 +19,6 @@
     font-weight: 800;
     font-size: 55%;
     padding: 4px;
-    width: 335px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 /*Thx*/
@@ -43,12 +31,6 @@
     font-weight: 800;
     font-size: 55%;
     padding: 4px;
-    width: 335px;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
 /*Login*/
@@ -60,45 +42,44 @@
     font-weight: 800;
     font-size: 100%;
     padding: 4px;
-    width: 350px;
 }
 
 
 /*@MEDIA*/
 @media (min-width: 768px) {
     .pltp-box {
-        height: 310px
+        height: 350px
     }
     .pltp {
-        font-size: 90%;
-        width: 425px;
+        font-size: 110%;
     }
-
 }
 @media (min-width: 992px) {
+    .pltp-box {
+        height: 450px;
+    }
+    .pltp {
+        font-size: 140%;
+    }
     .thx-box {
         height: 350px;
         margin: 56px 0;
     }
     .thx {
         font-size: 100%;
-        width: 450px;
     }
 }
 @media (min-width: 1200px) {
     .pltp-box {
-        height: 440px
+        height: 570px;
     }
     .pltp {
-        font-size: 130%;
-        width: 615px;
+        font-size: 180%;
     }
-
     .verify-box {
         height: 350px;
     }
     .verify {
         font-size: 80%;
-        width: 480px;
     }
 }

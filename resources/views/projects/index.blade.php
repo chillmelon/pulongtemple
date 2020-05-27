@@ -2,9 +2,9 @@
 @section('body')
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+    <div class="col-12 col-lg-11 col-xl-9">
       <div class="pltp-box">
-        <pre class="pltp">
+        <pre class="pltp overf-v ab-center">
 ██████╗  ██╗   ██╗ ██╗       ██████╗  ███╗   ██╗  ██████╗
 ██╔══██╗ ██║   ██║ ██║      ██╔═══██╗ ████╗  ██║ ██╔════╝
 ██████╔╝ ██║   ██║ ██║      ██║   ██║ ██╔██╗ ██║ ██║  ███╗
@@ -18,7 +18,6 @@
    ██║    ██╔══╝   ██║╚██╔╝██║ ██╔═══╝  ██║      ██╔══╝
    ██║    ███████╗ ██║ ╚═╝ ██║ ██║      ███████╗ ███████╗
    ╚═╝    ╚══════╝ ╚═╝     ╚═╝ ╚═╝      ╚══════╝ ╚══════╝
-
         </pre>
       </div>
       <div class="rank">
