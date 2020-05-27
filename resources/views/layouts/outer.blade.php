@@ -17,17 +17,12 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   <!-- custom -->
-  <link href="{{asset('css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('css/project.css')}}" rel="stylesheet">
   <link href="{{asset('css/btn.css')}}" rel="stylesheet">
-  <link href="{{asset('css/form.css')}}" rel="stylesheet">
   <link href="{{asset('css/progress.css')}}" rel="stylesheet">
-  <link href="{{asset('css/update.css')}}" rel="stylesheet">
-  <link href="{{asset('css/comment.css')}}" rel="stylesheet">
   <link href="{{asset('css/member.css')}}" rel="stylesheet">
-  <link href="{{asset('css/qa.css')}}" rel="stylesheet">
-  <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
-  <link href="{{asset('css/animation.css')}}" rel="stylesheet">
   <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
+  <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
 
 </head>
 

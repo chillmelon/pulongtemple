@@ -13,7 +13,7 @@
             <img class="rounded img-dashboard" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>
-          <div class="progress">
+          <div class="progress-fuck">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
           </div>
           <div class="alert" role="alert"></div>
