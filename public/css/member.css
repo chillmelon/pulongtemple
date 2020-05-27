@@ -3,9 +3,6 @@
     font-size: 18px;
     font-family: Courier New, 儷黑 Pro, 微軟正黑體;
 }
-.card {
-    border: none;
-}
 .card-header {
     border-bottom: #01814A 2px solid;
 }
@@ -37,6 +34,9 @@
     width: 100%;
     border-radius: 0;
     border-left: #01814A 2px solid;
+}
+.donate-form .card {
+    border: none;
 }
 .donate-form .card-body {
     padding: 16px;
