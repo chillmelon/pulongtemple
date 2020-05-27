@@ -65,6 +65,7 @@ hr.style-eight {
   border: solid;
   border-width: 2px;
   border-color: #01814A;
+  border-radius: 0;
 }
 
 /*image*/
