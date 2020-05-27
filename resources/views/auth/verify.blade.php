@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8 c-box bdr-1">
-      <div class="card custom-card">
+      <div class="card custom-card custom-bdr">
         <div class="card-header">
           <div class="verify-box">
             <pre class="verify">
