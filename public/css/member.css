@@ -1,13 +1,13 @@
 .custom-card {
-    background-color: #1a1a1a;
+    background-color: rgb(0, 0, 0, 0);
     font-size: 18px;
     font-family: Courier New, 儷黑 Pro, 微軟正黑體;
 }
+.card {
+    border: none;
+}
 .card-header {
     border-bottom: #01814A 2px solid;
-}
-.card-body {
-    padding: 24px;
 }
 .custom-card input {
     color: #00290A;
@@ -24,7 +24,6 @@
 
 /*Donate-page*/
 .donate-box {
-    border-radius: 4px;
     overflow: hidden;
     margin-bottom: 32px;
 }
@@ -35,15 +34,12 @@
     padding: 16px;
 }
 .donate-form {
-    padding: 0;
     width: 100%;
     border-radius: 0;
-    border-top: 1px solid #02DF82;
-    border-left: #02DF82 1px solid;
+    border-left: #01814A 2px solid;
 }
-.card-body {
-    padding: 16px 0;
-    padding-left: 15px;
+.donate-form .card-body {
+    padding: 16px;
 }
 .donate-form input,
 .donate-form textarea {
@@ -83,6 +79,9 @@
 .verify-email {
     margin-top: 24px;
 }
+.verify-email .card-body {
+    padding: 24px;
+}
 .new-email {
   display: inline-block;
   margin-bottom: 16px;
@@ -101,7 +100,6 @@
 
 /*Dashboard*/
 .dashboard {
-    padding: 8px 48px;
     margin-top: 24px;
 }
 .dashboard .card-header {
@@ -162,7 +160,7 @@
 
 /*Media Query*/
 @media (min-width: 992px) {
-    .card-body {
-        padding-left: 0;
+    .donate-form .card-body {
+        padding: 32px;
     }
 }

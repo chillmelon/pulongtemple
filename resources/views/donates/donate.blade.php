@@ -37,7 +37,7 @@
         <h4>太麻煩了，直接贊助 👇</h4>
       </div>
       @endauth
-      <div class="donate-box">
+      <div class="donate-box custom-bdr">
         <div class="row">
           {{-- Progress bar --}}
           <div class="progress-box col-lg-4">
@@ -63,7 +63,6 @@
           {{-- donate form --}}
           <div class="c-box col-lg-8 donate-form">
             <div class="card custom-card">
-              {{-- <div class="card-header">贊助專案：{{ $project_info['title'] }}</div> --}}
               <div class="card-body">
                 <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
                   @csrf
