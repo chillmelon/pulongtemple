@@ -6,7 +6,7 @@
       <div class="card custom-card custom-bdr">
         <div class="card-header">
           <div class="verify-box">
-            <pre class="verify">
+            <pre class="verify overf-v ab-center">
    ___      ___ _______  _______   __    _______ ___  ___
   |"  \    /"  /"     "|/"      \ |" \  /"     "|"  \/"  |
    \   \  //  (: ______):        |||  |(: ______)\   \  /

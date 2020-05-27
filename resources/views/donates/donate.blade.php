@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="login-ascii-box">
-              <pre class="login-ascii">
+              <pre class="login-ascii overf-v ab-center">
  _                       _           ___
 | |       ___     __ _  (_)  _ __   |__ \
 | |      / _ \   / _` | | | | '_ \    / /
