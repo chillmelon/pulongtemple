@@ -2,8 +2,8 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-8 c-box custom-bdr">
-      <div class="card custom-card verify-email">
+    <div class="col-md-8 c-box verify-email custom-bdr">
+      <div class="card custom-card">
         <div class="card-header">
           <div class="verify-box">
             <pre class="verify overf-v ab-center">

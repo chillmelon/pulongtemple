@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="thx-box col-12">
-      <pre class="thx">
+      <pre class="thx overf-v ab-center">
  ___________ __    __      __     _____  ___  __   ___
 ("     _   ")" |  | "\    /""\   (\"   \|"  \|/"| /  ")
  )__/  \\__(:  (__)  :)  /    \  |.\\   \    (: |/   /
