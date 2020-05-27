@@ -8,7 +8,7 @@
   </li>
   <li class="">
     <a class="btn" href="{{ route('logout') }}"
-       onclick="event.preventDefault();
+      onclick="event.preventDefault();
       document.getElementById('logout-form').submit();">
       登出
     </a>

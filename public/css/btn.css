@@ -8,8 +8,9 @@
 }
 
 .btn {
-  color: #02DF82;
-  border: #02DF82 1px solid;
+  color: #01B468;
+  border: #01B468 1.5px solid;
+  border-radius: 0;
   width: 100%;
   display: inline-block;
   font-family: Courier New, 儷黑 Pro, 微軟正黑體;
@@ -49,8 +50,6 @@
 /* donate */
 .donate {
   display: block;
-  /*width: 340px;
-  height: 60px;*/
   margin-top: 12px;
   left: 50%;
   transform: translateX(-50%);
@@ -72,81 +71,35 @@
   font-weight: 800;
 }
 
-/* btn-1 */
-
-.btn-1 {
-  background-color: #ADADAD;
-}
-
-.btn-1 a {
-  width: 330px;
-  height: 50px;
-  border: #000 3px solid;
+/* donate .btn */
+.donate .btn {
   border-radius: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.btn-1 span {
-  color: #000000;
-  top: -8px;
-}
-
-.btn-1 a span {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.btn-1 a:hover {
-  color: #000;
-}
-
-/* btn-2 */
-
-.btn-2 {
-  background: linear-gradient(180deg, rgba(0,116,79,1) 0%, rgba(0,74,110,1) 70%);
-  border-radius: 35px;
-  box-shadow: 1px 1px 5px 2px #004a6e;
-}
-
-.btn-2 span {
-  color: #fff .9;
-}
-
-.btn-2:hover {
-  color: #fff;
-}
-
-/* btn-3 */
-.btn-3 {
-  border-radius: 0;
-  border: #008a62 3px solid;
-  box-shadow: 0px 0px 3px 0.2px #008a62;
+  border: #01814A 2px solid;
+  /*box-shadow: 0px 0px 3px 0.2px #01814A;*/
 }
 
 
-.btn-3 span {
-  color: #008a62;
+.donate .btn span {
+  color: #01814A;
   text-shadow: 0.5px 0.5px 20px #000000;
 }
 
-.btn-3:hover {
-  box-shadow: 0px 0px 5px 0.5px #08af7e;
+.donate .btn:hover {
+  border: #01B468 2px solid;
+  /*box-shadow: 0px 0px 5px 0.5px #08af7e;*/
 }
 
-.btn-3:hover span {
-  color: #08af7e;
+.donate .btn:hover span {
+  color: #01B468;
 }
 
-.btn-3:active:after {
-  width: 0%;
+/*donate btn*/
+.login .btn {
+  width: 120px;
 }
 
 /* btn-4 */
-.btn-4 {
+/*.btn-4 {
   margin-top: 8px;
   color: #02DF82;
   border: #02DF82 1px solid;
@@ -160,13 +113,10 @@
   color: #02F78E;
   border: #02F78E 1.5px solid;
 }
-
-.btn-4:active:after {
-  width: 0%;
-}
+*/
 
 /* btn-5 */
-.btn-5 {
+/*.btn-5 {
   color: #02DF82;
   border: #02DF82 1px solid;
   width: 100%;
@@ -181,7 +131,7 @@
 .btn-5:active:after {
   width: 0%;
 }
-
+*/
 /*border*/
 .bdr-1 {
   border: #02DF82 1px solid;
@@ -192,13 +142,17 @@
 
 @media (min-width: 576px) {
   .donate {
-    margin: 0;
+    margin-top: 1.5px;
     top: 6px;
     width: 200px;
     position: absolute;
     transform: none;
     left: auto;
     right: 24px;
+  }
+
+  .donate span {
+    padding: 16px 52px;
   }
 
   .btn-1 a {
@@ -210,6 +164,10 @@
   .donate {
     right: 40px;
     width: 340px
+  }
+
+  .donate span {
+    padding: 16px 122px;
   }
 
   .btn-1 a {

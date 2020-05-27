@@ -22,7 +22,7 @@
     </ul>
   </div>
   <div class="donate">
-    <a class="btn btn-3 wave-btn" href="/donate/{{ $id }}"><span>贊&emsp;助&emsp;$</span></a>
+    <a class="btn wave-btn" href="/donate/{{ $id }}"><span>贊&emsp;助&emsp;$</span></a>
   </div>
 </nav>
 
