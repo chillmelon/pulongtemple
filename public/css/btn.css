@@ -13,6 +13,7 @@
   width: 100%;
   display: inline-block;
   font-family: Courier New, 儷黑 Pro, 微軟正黑體;
+  line-height: 2;
 }
 .btn span {
   display: inline-block;
