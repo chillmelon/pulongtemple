@@ -86,14 +86,20 @@ hr.style-eight {
   padding: 24px 0;
 }
 
+.nav-top {
+  height: 70px;
+}
+
 .nav-top,
 .navbar {
   background-color: #1a1a1a;
-  height: 70px;
+  /*height: 70px;*/
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
   border-color: rgb(1, 126, 72);
+  box-shadow: 0 2px 0 1px #1a1a1a;
+  z-index: 4999;
 }
 
 .nav-item {
@@ -108,10 +114,9 @@ hr.style-eight {
 
 /*layout*/
 .logo {
-  float: left;
-  max-height: 60px;
-  position: relative;
-  margin: 0 auto;
+  top: 50%;
+  padding-left: 16px;
+  transform: translateY(-30px);
 }
 
 .logo img {
@@ -122,7 +127,6 @@ hr.style-eight {
   overflow: hidden;
   width: 60px;
   height: 60px;
-  margin: 0 8px;
 }
 
 .logo a {
@@ -132,13 +136,10 @@ hr.style-eight {
 }
 
 .login {
+  top: 50%;
+  padding-right: 16px;
+  transform: translateY(-50%);
   float: right;
-  padding: 0;
-  margin: 0;
-}
-
-.login li {
-  float: left;
 }
 
 .intro {
@@ -181,8 +182,7 @@ hr.style-eight {
 
 .nav-mid {
   flex-wrap: wrap;
-  padding-bottom: 20px;
-  box-shadow: 0 2px 0 1px #1a1a1a;
+  padding-bottom: 12px;
 }
 
 /*min-top*/

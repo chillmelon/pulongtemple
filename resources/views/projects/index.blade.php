@@ -1,6 +1,6 @@
 @extends('auth.login-button')
 @section('body')
-<div class="container">
+<div class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8 col-xl-6">
       <div class="pltp-box">
