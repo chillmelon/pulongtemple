@@ -8,7 +8,7 @@
         {{-- login --}}
         <div class="col-lg-6 c-box">
           <h5 style="padding: 16px;">已經是會員~</h5>
-          <div class="card custom-card custom-bdr">
+          <div class="card custom-card login-box custom-bdr">
             <div class="card-header">登入</div>
             <div class="card-body">
               <form method="POST" action="{{ route('login') }}">
@@ -46,15 +46,15 @@
                   </div>
                 </div>
                 <div class="form-group row mb-0 btn-box">
-                  <div class="col-md-8 offset-md-4">
-                    <button type="submit" class="btn btn-5">
+                  <div class="col-md-6 offset-md-4 mg-bottom-16">
+                    <button type="submit" class="btn">
                     登入
                     </button>
-                    @if (Route::has('password.request'))
-                    <a class="btn btn-5" href="{{ route('password.request') }}">
+                  </div>
+                  <div class="col-md-6 offset-md-4">
+                    <a class="btn" href="{{ route('password.request') }}">
                       忘記密碼?
                     </a>
-                    @endif
                   </div>
                 </div>
               </form>
@@ -64,7 +64,7 @@
         {{-- register --}}
         <div class="col-lg-6 c-box">
           <h5 style="padding: 16px;">現在加入~</h5>
-          <div class="card custom-card custom-bdr">
+          <div class="card custom-card login-box custom-bdr">
             <div class="card-header">註冊</div>
             <div class="card-body">
               <form method="POST" action="{{ route('register') }}">
@@ -108,9 +108,9 @@
                     <input id="password-confirm" type="password" class="form-control custom-bdr" name="password_confirmation" required autocomplete="new-password">
                   </div>
                 </div>
-                <div class="form-group row mb-0 btn-box">
-                  <div class="col-md-6 offset-md-4">
-                    <button type="submit" class="btn btn-5">
+                <div class="form-group row mb-0">
+                  <div class="col-md-6 offset-md-4 ">
+                    <button type="submit" class="btn">
                     註冊
                     </button>
                   </div>

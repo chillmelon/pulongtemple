@@ -18,6 +18,10 @@ body {
 
 /*Utility*/
 
+.mg-bottom-16 {
+  margin-bottom: 16px;
+}
+
 .u-cf:after {
   content: "";
   display: block;

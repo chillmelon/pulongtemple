@@ -89,42 +89,6 @@
   margin: 8px;
 }
 
-/* btn-4 */
-/*.btn-4 {
-  margin-top: 8px;
-  color: #02DF82;
-  border: #02DF82 1px solid;
-  width: 120px;
-  height: 32px;
-  line-height: 28px;
-  font-size: 16px;
-}
-
-.btn-4:hover {
-  color: #02F78E;
-  border: #02F78E 1.5px solid;
-}
-*/
-
-/* btn-5 */
-/*.btn-5 {
-  color: #02DF82;
-  border: #02DF82 1px solid;
-  width: 100%;
-  margin: 4px;
-}
-
-.btn-5:hover {
-  color: #02F78E;
-  border: #02F78E 1.5px solid;
-}
-
-.btn-5:active:after {
-  width: 0%;
-}
-*/
-
-
 /*Wave btn*/
 
 .wave-btn {

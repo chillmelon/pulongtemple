@@ -2,8 +2,8 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-8 c-box bdr-1">
-      <div class="card custom-card custom-bdr">
+    <div class="col-md-8 c-box">
+      <div class="card custom-card custom-bdr verify-email">
         <div class="card-header">
           <div class="verify-box">
             <pre class="verify overf-v ab-center">
@@ -35,7 +35,7 @@
           如果沒收到的話 👇
           <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
             @csrf
-            <button type="submit" class="btn btn-5">要求新的一封認證信</button>
+            <button type="submit" class="btn">要求新的一封認證信</button>
           </form>
         </div>
       </div>

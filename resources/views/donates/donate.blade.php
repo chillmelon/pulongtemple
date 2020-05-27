@@ -37,7 +37,7 @@
         <h4>太麻煩了，直接贊助 👇</h4>
       </div>
       @endauth
-      <div class="donate-box bdr-1">
+      <div class="donate-box">
         <div class="row">
           {{-- Progress bar --}}
           <div class="progress-box col-lg-4">
