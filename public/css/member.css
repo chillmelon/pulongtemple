@@ -82,6 +82,9 @@
 .verify-email .card-body {
     padding: 24px;
 }
+.verify-email .card-body {
+    padding: 16px;
+}
 .new-email {
   display: inline-block;
   margin-bottom: 16px;
