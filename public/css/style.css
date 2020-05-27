@@ -137,4 +137,8 @@ hr.style-eight {
   padding-right: 16px;
   transform: translateY(-50%);
   float: right;
+  margin: 0;
+}
+.login li {
+  float: left;
 }
