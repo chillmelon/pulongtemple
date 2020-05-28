@@ -1,7 +1,7 @@
 @extends("auth.no-login-button")
 @section("body")
 <div class="container">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center verify-email-outer">
     <div class="col-md-8 c-box verify-email custom-bdr">
       <div class="card custom-card">
         <div class="card-header">
