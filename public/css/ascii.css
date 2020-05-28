@@ -58,7 +58,8 @@
 @media (min-width: 992px) {
     /*pulongTemple*/
     .pltp-box {
-        height: 525px;
+        margin-top: 64px;
+        height: 550px;
     }
     .pltp {
         font-size: 25px;
@@ -75,10 +76,10 @@
 @media (min-width: 1200px) {
     /*pulongTemple*/
     .pltp-box {
-        height: 680px;
+        height: 620px;
     }
     .pltp {
-        font-size: 32px;
+        font-size: 28px;
     }
     /*verifyEmail*/
     .verify-box {
