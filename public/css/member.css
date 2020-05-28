@@ -77,7 +77,7 @@
 
 /*verify-page*/
 .verify-email {
-    padding: 0;
+    padding: 0 8px;
     margin-top: 24px;
 }
 .verify-email .card-body {
