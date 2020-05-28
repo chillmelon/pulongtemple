@@ -44,8 +44,8 @@
             </div>
           </div>
           <div class="">
-            <a class="btn btn-5" href="/member/donations">我的贊助</a>
-            <a class="btn btn-5" href="/member/projects">我的專案</a>
+            <a class="btn mg-bottom-16" href="/member/donations">我的贊助</a>
+            <a class="btn" href="/member/projects">我的專案</a>
           </div>
         </div>
       </div>

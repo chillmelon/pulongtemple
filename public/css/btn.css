@@ -51,7 +51,7 @@
   padding: 0;
 }
 .donate span {
-  padding: 16px 120px;
+  padding: 10px 120px;
   font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
   font-size: 20px;
   font-weight: 800;
@@ -139,7 +139,7 @@
   }
 
   .donate span {
-    padding: 16px 52px;
+    padding: 10px 52px;
   }
 
   .btn-1 a {
@@ -154,7 +154,7 @@
   }
 
   .donate span {
-    padding: 16px 120px;
+    padding: 10px 120px;
   }
 
   .btn-1 a {

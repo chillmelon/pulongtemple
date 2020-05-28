@@ -98,7 +98,7 @@
 
 /*login-page*/
 .login-box {
-    height: 365px;
+    min-height: 365px;
 }
 
 
@@ -123,9 +123,6 @@
     display: inline-block;
     width: 180px;
     height: 60px;
-}
-.dashboard .btn {
-    margin-bottom: 8px;
 }
 .update-name {
     display: inline-block;
