@@ -12,12 +12,11 @@
           <div class="col-lg-6">
             <div class="login-ascii-box">
               <pre class="login-ascii overf-v ab-center">
- _                       _           ___
-| |       ___     __ _  (_)  _ __   |__ \
-| |      / _ \   / _` | | | | '_ \    / /
-| |___  | (_) | | (_| | | | | | | |  |_|
-|_____|  \___/   \__, | |_| |_| |_|  (_)
-                 |___/
+██        ██████    ██████   ██  ███    ██  ██████ 
+██       ██    ██  ██        ██  ████   ██       ██ 
+██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
+██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
+███████   ██████    ██████   ██  ██   ████    ██ 
               </pre>
             </div>
           </div>
@@ -67,7 +66,7 @@
                 <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
                   @csrf
                   <h3>&ensp;輸入金額</h3>
-                  <input class="form-control amount @error('amount') is-invalid @enderror" type="integer" name="amount">
+                  <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                   @error('amount')
                   <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
