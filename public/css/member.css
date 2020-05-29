@@ -56,13 +56,13 @@
 .send {
     padding: 8px 64px 4px 64px;
 }
-.amount {
+.nt {
     text-align: right;
     font-size: 72px;
     font-family: Impact, Arial Black;
     background-image: url("../image/NT.png");
-    background-size: contain;
-    background-position: 16px 0;
+    background-size: 40%;
+    background-position: 8px 50%;
     background-repeat: no-repeat;
     padding-left: 120px;
 }

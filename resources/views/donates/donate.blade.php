@@ -66,7 +66,7 @@
                 <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
                   @csrf
                   <h3>&ensp;輸入金額</h3>
-                  <input class="form-control amount @error('amount') is-invalid @enderror" type="integer" name="amount">
+                  <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                   @error('amount')
                   <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
