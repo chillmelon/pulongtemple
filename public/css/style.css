@@ -20,13 +20,13 @@ html, body {
 
 /*Utility*/
 
-/*.color-primary {
+.color-primary {
   color: #019857;
 }
 .color-sec {
   loading order question
   color: #ccc !important;
-}*/
+}
 .mg-bottom-16 {
   margin-bottom: 16px;
 }
@@ -166,11 +166,24 @@ hr.style-eight {
   visibility: hidden;
   transition: all 0.2s;
 }
+.login > li > a {
+  color: #019858;
+}
+.login span {
+  color: #019858;
+  text-shadow: 2px 2px #0D0D0D;
+}
 .login .dropdown li {
   display: block;
   width: 120px;
   left: 50%;
   transform: translateX(-50%);
+}
+.login > li:hover > a {
+  color: #02F78E;
+}
+.login > li:hover span {
+  color: #02F78E;
 }
 .login > li:hover .dropdown {
   opacity: 1;
@@ -180,11 +193,6 @@ hr.style-eight {
 .login .dropdown > li > a {
   display: block;
   border: none;
-  /*right: 0;*/
-  /*line-height: 24px;*/
-  /*padding: 8px 24px;*/
-  /*color: #fff;*/
-  /*width: 120px;*/
   transition: all 0.2s;
 }
 .login .dropdown > li > a:hover {

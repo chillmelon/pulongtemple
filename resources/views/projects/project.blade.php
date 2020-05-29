@@ -1,6 +1,6 @@
 @extends("auth.login-button")
 
-@section("body")
+@section( "body")
 @yield("summary")
 
 <!-- medium navbar -->
@@ -22,7 +22,7 @@
     </ul>
   </div>
   <div class="donate">
-    <a class="btn wave-btn" href="/donate/{{ $id }}"><span>贊&emsp;助&emsp;$</span></a>
+    <a class="btn  wave-btn" href="/donate/{{ $id }}"><span>贊&emsp;助&emsp;$</span></a>
   </div>
 </nav>
 
