@@ -1,7 +1,5 @@
 @extends("projects.project")
-
 @section("summary")
-
 {{-- min-summary --}}
 <div class="container-fluid top-content">
   <div class="row top-img">
@@ -16,7 +14,7 @@
       <!-- title -->
       <div class="title">
         <h4>
-          埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
+        埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
         </h4>
         <h6 style="font-size: 14px;"> by Pulong Temple</h6>
         <hr class="hr-prime">
@@ -33,7 +31,7 @@
           <h5>2 <small>天剩餘</small></h5>
         </div>
       </div>
+    </div>
   </div>
 </div>
-
-@endsection
+  @endsection
