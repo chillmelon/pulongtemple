@@ -15,4 +15,9 @@ class UpdateController extends Controller
     	$projects = $this->projectService->detail($project_id);
     	return view('updates.view', $projects);
     }
+	public function create($project_id)
+	{
+    	$projects = $this->projectService->detail($project_id);
+		return view('updates.create', ['project' => $project]);
+	}
 }
