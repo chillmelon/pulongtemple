@@ -168,6 +168,8 @@ hr.style-eight {
 }
 .login > li > a {
   color: #019858;
+  font-size: 20px;
+  padding: 0 ;
 }
 .login span {
   color: #019858;
