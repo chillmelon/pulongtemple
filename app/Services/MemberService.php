@@ -31,7 +31,6 @@ class MemberService
         $profile = $this->userRepository->profile($user_id);
         return $profile;
     }
-    
     public function update($request=null){
         $update = $this->validater($request);
         $user_id = $this->profile()->id;
@@ -44,7 +43,6 @@ class MemberService
         $this->userRepository->update($user_id, $update);
         return $this->profile();
     }
-    
     public function validater($request=null){
         return $request->validate([
             'name' => 'sometimes|string|max:16',
