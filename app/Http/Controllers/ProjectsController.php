@@ -35,4 +35,8 @@ class ProjectsController
         $project = $this->projectService->detail($project_id);
         return view('projects.faq',$project);
     }
+	public function create()
+	{
+		return view('projects.create');
+	}
 }
