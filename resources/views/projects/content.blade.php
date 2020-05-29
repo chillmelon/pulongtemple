@@ -14,18 +14,18 @@
         <!-- title -->
         <div class="title">
           <h3>
-            <b>埔隆宮-炭烤土司大王</b>
+            埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
             <br>
-            <small> by Pulong Temple</small>
           </h3>
+          <h6>by Pulong Temple</h6>
           <hr class="style-eight">
         </div>
         <!-- status -->
         <div class="row status">
           <!-- goal -->
           <div class="goal col-6 col-sm-8 col-lg-6">
-            <h3><b>NT$6,700</b></h3>
-            <h6>&emsp;目標 NT$100,00</h6>
+            <h4>NT$6,700</h4>
+            <p style="font-size: 12
             <hr class="new" color="#8C8C8C">
             <h3>&emsp;3 <small>人贊助</small></h3>
             <hr class="new" color="#8C8C8C">

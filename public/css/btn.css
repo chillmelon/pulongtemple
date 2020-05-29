@@ -7,12 +7,13 @@
 }
 
 .btn {
-  color: #01B468;
-  border: #01B468 1.5px solid;
+  color: #019858;
+  border: #019858 1.5px solid;
   border-radius: 0;
   width: 100%;
   display: inline-block;
-  font-family: Courier New, 儷黑 Pro, 微軟正黑體;
+  font-family: 'Share Tech Mono', 'Bungee', monospace,
+               'Noto Sans TC', serif;
   line-height: 2;
 }
 .btn span {
@@ -27,8 +28,8 @@
 }
 
 .nav-link {
-  font-family: 微軟正黑體;
-  color: #01B468 !important;
+  font-family: 'Noto Sans TC', serif;
+  color: #019858 !important;
 }
 .nav-link:hover {
   color: #02F78E !important;
@@ -52,9 +53,9 @@
 }
 .donate span {
   padding: 10px 120px;
-  font-family: Impact, Arial Black, Courier New, 儷黑 Pro, 微軟正黑體;
+  font-family: Impact, Arial Black, 'Noto Serif TC', serif;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 /* donate .btn */
@@ -80,7 +81,7 @@
 }
 
 /*login-btn*/
-.login .btn {
+.login > li > a {
   width: 120px;
 }
 
@@ -88,6 +89,14 @@
 .more-btn {
   display: block;
   margin: 8px;
+}
+
+/*white-btn*/
+.wite-btn {
+  color: #ccc;
+}
+.wite-btn:hover {
+  color: #fff;
 }
 
 /*Wave btn*/
