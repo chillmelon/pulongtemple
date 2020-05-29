@@ -24,12 +24,12 @@
 /*Thx*/
 .thx-box {
     margin-top: 32px;
-    height: 245px;
+    height: 300px;
 }
 .thx {
     color: #01B468;
     font-weight: 800;
-    font-size: 55%;
+    font-size: 8px;
     padding: 4px;
 }
 
@@ -67,11 +67,10 @@
     }
     /*thankYou*/
     .thx-box {
-        height: 350px;
-        margin: 56px 0;
+        height: 450px;
     }
     .thx {
-        font-size: 100%;
+        font-size: 16px;
     }
 }
 @media (min-width: 1200px) {
@@ -88,5 +87,12 @@
     }
     .verify {
         font-size: 16px;
+    }
+    /*thankYou*/
+    .thx-box {
+        height: 520px;
+    }
+    .thx {
+        font-size: 20px;
     }
 }
