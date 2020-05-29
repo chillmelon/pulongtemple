@@ -17,7 +17,6 @@ html, body {
   color: #ccc;
 }
 
-
 /*Utility*/
 
 .color-primary {
@@ -51,6 +50,13 @@ html, body {
 /*Component*/
 
 /*hr*/
+hr.hr-prime {
+  /*height: 5px;*/
+  border-bottom: 1px solid #9D9D9D;
+  padding: 0;
+  margin: 8px 0 16px;
+  color: #8c8c8c !important;
+}
 hr.new {
   margin: 5px 0;
   color: #8C8C8C;

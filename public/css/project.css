@@ -147,6 +147,13 @@ tr:nth-child(even) {
   .nav-link {
     font-size: 18px;
   }
+  .img-main {
+    padding-top: 8px;
+  }
+  .intro {
+    padding: 16px;
+    padding-top: 8px;
+  }
 }
 @media (min-width: 992px) {
   .nav-top {
