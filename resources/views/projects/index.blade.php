@@ -34,6 +34,7 @@
               </div>
               {{-- progress --}}
               <div class="progress-wrap progress" data-progress-percent="67">
+                <span>67%</span>
                 <div class="progress-bar progress"></div>
               </div>
 
