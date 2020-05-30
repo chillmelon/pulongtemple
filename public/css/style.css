@@ -225,7 +225,9 @@ hr.style-eight {
     /*background-color: #ff5e41;*/
 }
 
+
 /*product*/
+
 .product-box {
     padding: 16px;
 }
@@ -268,6 +270,7 @@ hr.style-eight {
     margin-bottom: 16px;
     overflow: hidden;
 }
+
 /*progress*/
 .progress {
     width: 100%;
@@ -302,6 +305,34 @@ hr.style-eight {
 
 .product-progress-nt {
     float: right;
+}
+
+/*project Card*/
+.p-card-box {
+    padding: 16px 0;
+}
+.p-card-head {
+    padding: 8px;
+    border-bottom: #01814A 2px solid;;
+}
+.p-card-body {
+    padding: 8px;
+}
+.p-card-body .btn {
+    width: 60%;
+    font-size: 18px;
+}
+.p-card-nt {
+    float: right;
+    top: 4px;
+    right: 4px;
+}
+.my-project-nt {
+    font-size: 14px;
+}
+.p-card-footer {
+    padding: 8px;
+    font-size: 12px;
 }
 
 /*media query*/

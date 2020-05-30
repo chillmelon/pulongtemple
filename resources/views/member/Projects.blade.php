@@ -4,24 +4,21 @@
   <div class="row justify-content-center">
     <div class="my_p col-md-10 col-xl-6">
       <h3>My Project</h3>
-      <table>
-        <tr>
-          <td>專案名稱</td>
-          <td>現在金額</td>
-          <td>目標金額</td>
-          <td>開始時間</td>
-          <td>結束時間</td>
-        </tr>
-        @foreach($projects as $project)
-        <tr>
-          <td><a class="btn btn-5" href="/projects/{{ $project->id }}">{{ $project->title }}</a></td>
-          <td>{{ $project->total_amount }}</td>
-          <td>{{ $project->goal }}</td>
-          <td>{{ $project->created_at }}</td>
-          <td>{{ $project->deadline }}</td>
-        </tr>
-        @endforeach
-      </table>
+      @foreach($projects as $project)
+      <div class="p-card-box">
+        <div class="p-card custom-bdr">
+          <div class="p-card-head">
+            <div>START {{ $project->created_at }}</div>
+            <div>UNTIL {{ $project->deadline }}</div>
+          </div>
+          <div class="p-card-body">
+            <a class="btn my-project" href="/projects/{{ $project->id }}">{{ $project->title }}</a>
+            <div class="p-card-nt my-project-nt">NT${{ $project->total_amount }}<br>/{{ $project->goal }}</div>
+          </div>
+          {{-- <div class="p-card-footer"></div> --}}
+        </div>
+      </div>
+      @endforeach
     </div>
   </div>
 </div>
