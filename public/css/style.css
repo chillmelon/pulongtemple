@@ -231,7 +231,7 @@ hr.style-eight {
 }
 
 .product {
-    height: 200px;
+    height: 280px;
     padding: 0;
 }
 
@@ -239,15 +239,16 @@ hr.style-eight {
     cursor: pointer;
     border: #02C874 2px solid;
 }
+
 .product:hover .product-head {
-  border-bottom: #02C874 2px solid;
-  color: #02C874;
+    border-bottom: #02C874 2px solid;
+    color: #02C874;
 }
 
 .product-head {
     border-bottom: #01814A 2px solid;
     font-size: 20px;
-    padding: 8px;
+    padding: 16px;
 }
 
 .product-head .btn {
@@ -259,14 +260,44 @@ hr.style-eight {
 }
 
 .product-body {
-    padding: 8px;
+    padding: 16px;
 }
 
-.product-progress {
-    /**/
+.product-content {
+    height: 100px;
+    margin-bottom: 16px;
+}
+/*progress*/
+.progress {
+    width: 100%;
+    height: 4px;
+    border-radius: 0;
+
+}
+.progress-wrap {
+    background: #01B468;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+
+}
+.progress-bar {
+    background: #7B7B7B;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.product-progress-time {
+    float: left;
+}
+
+.product-progress-nt {
+    float: right;
 }
 
 /*media query*/
 @media (min-width: 992px) {
     /**/
 }
+
+
