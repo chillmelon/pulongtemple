@@ -22,7 +22,7 @@ active
         </div>
       </div>
       <div class='mt-child-0 nested-media lh-copy f-17 overflow-hidden'>
-		  {{$update->content}}
+		  {!! $update->content !!}
       </div>
     </div>
   </div>
