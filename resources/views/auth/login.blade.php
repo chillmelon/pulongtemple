@@ -7,7 +7,7 @@
       <div class="row">
         {{-- login --}}
         <div class="col-lg-6 c-box">
-          <h5 style="padding: 16px;">已經是會員~</h5>
+          <h5 style="padding: 16px;">已經是會員</h5>
           <div class="card custom-card login-box custom-bdr">
             <div class="card-header">登入</div>
             <div class="card-body">
@@ -63,7 +63,7 @@
         </div>
         {{-- register --}}
         <div class="col-lg-6 c-box">
-          <h5 style="padding: 16px;">現在加入~</h5>
+          <h5 style="padding: 16px;">現在加入</h5>
           <div class="card custom-card login-box custom-bdr">
             <div class="card-header">註冊</div>
             <div class="card-body">

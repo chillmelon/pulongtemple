@@ -55,7 +55,7 @@
                     </div>
                   </div>
                 </div>
-                <h3>NT${{$project_info['total_amount']}} <small>&ensp;/&ensp;NT${{$project_info['goal']}}</small></h3>
+                <h6>NT${{$project_info['total_amount']}} <small>&ensp;/&ensp;NT${{$project_info['goal']}}</small></h6>
               </div>
             </div>
           </div>

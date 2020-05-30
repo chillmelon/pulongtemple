@@ -147,6 +147,7 @@ tr:nth-child(even) {
   .nav-link {
     font-size: 18px;
   }
+
 }
 @media (min-width: 992px) {
   .nav-top {

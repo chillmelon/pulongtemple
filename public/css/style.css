@@ -8,16 +8,24 @@
   list-style-type: none;
   text-decoration: none;
 }
-body {
+html, body {
   background-color: #1a1a1a;
-  font-family: Impact, Courier New, 微軟正黑體, Arial Black;
-  font-size: 15px;
+  font-family: 'Press Start 2P', 'Share Tech Mono',
+               'Bungee', monospace,
+               'Noto Sans TC', 'Noto Serif TC', serif;
+  font-size: 16px;
   color: #ccc;
 }
 
-
 /*Utility*/
 
+.color-primary {
+  color: #019857;
+}
+.color-sec {
+  loading order question
+  color: #ccc !important;
+}
 .mg-bottom-16 {
   margin-bottom: 16px;
 }
@@ -42,6 +50,13 @@ body {
 /*Component*/
 
 /*hr*/
+hr.hr-prime {
+  /*height: 5px;*/
+  border-bottom: 1px solid #9D9D9D;
+  padding: 0;
+  margin: 8px 0 16px;
+  color: #8c8c8c !important;
+}
 hr.new {
   margin: 5px 0;
   color: #8C8C8C;
@@ -142,6 +157,52 @@ hr.style-eight {
   float: right;
   margin: 0;
 }
-.login li {
-  float: left;
+
+/*dropdown*/
+.login .dropdown {
+  display: block;
+  padding: 8px 0;
+  position: absolute;
+  right: 0;
+  top: 120%;
+  background-color: #1a1a1a;
+  box-shadow: 0px 0px 4px 2px #1a1a1a;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.login > li > a {
+  color: #019858;
+  font-size: 20px;
+  padding: 0 ;
+}
+.login span {
+  color: #019858;
+  text-shadow: 2px 2px #0D0D0D;
+}
+.login .dropdown li {
+  display: block;
+  width: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login > li:hover > a {
+  color: #02F78E;
+}
+.login > li:hover span {
+  color: #02F78E;
+}
+.login > li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 110%;
+}
+.login .dropdown > li > a {
+  display: block;
+  border: none;
+  transition: all 0.2s;
+}
+.login .dropdown > li > a:hover {
+  /*background-color: #ff5e41;*/
 }
