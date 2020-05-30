@@ -1,10 +1,14 @@
 <?php
+
 namespace App;
+
 use Illuminate\Database\Eloquent\Model;
+
 class Updates extends Model
 {
-	protected $table = 'Updates';
+	protected $table = 'updates';
     protected $fillable = [
+     'title',
      'content',
     ];
 	public function project(){

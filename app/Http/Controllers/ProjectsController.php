@@ -12,18 +12,18 @@ class ProjectsController
     public function index()
     {
         $projects = $this->projectService->simple();
-        return view('projects.index', compact('projects'));
+        return view('projects.index', ['projects'=>$projects]);
     }
     // 專案頁面
     public function show($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.content',$project);
+        return view('projects.content',['project'=>$project]);
     }
     public function showUpdates($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.updates',$project);
+        return view('projects.updates',['project'=>$project]);
     }
     public function showComments($project_id)
     {
