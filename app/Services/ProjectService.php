@@ -7,7 +7,7 @@ class ProjectService
     public function __construct(ProjectRepository $projectRepository){
         $this->projectRepository = $projectRepository;
     }
-    
+
     public function all()
     {
         $projects = $this->projectRepository->all();
@@ -32,18 +32,10 @@ class ProjectService
     }
     //count fundraising progress
     public function format($project=null){
-        return [
-            'id'=>$project->id,
-            'title'=>$project->title,
-            'cover'=>$project->image,
-            'content'=>$project->content,
-            'goal'=>$project->goal,
-            'total_amount'=>$project->total_amount,
-            'progress'=>round($project->total_amount/$project->goal*100),
-            'days_left'=>date('d',strtotime( $project->deadline ) - time()),
-            'supporters'=>$project->donates->unique('user_id')->count('user_id'),
-            'starter'=>$project->user->name,
-            'comments'=>$project->donates->map->format()
-        ];
-    }
+		$project->progress=round($project->total_amount/$project->goal*100);
+		$project->days_left=date('d',strtotime( $project->deadline ) - time());
+		$project->supporters=$project->donates->unique('user_id')->count('user_id');
+		$project->starter=$project->user->name;
+		return $project;
+	}
 }

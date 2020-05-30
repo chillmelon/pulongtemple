@@ -3,7 +3,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 class Projects extends Model
 {
-	protected $table = 'Projects'; 
+	protected $table = 'Projects';
     protected $fillable = [
      'title',
      'content',
