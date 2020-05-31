@@ -70,7 +70,7 @@
     padding: 0;
     border-radius: 0;
     border: #01814A 2px solid;
-    /*box-shadow: 0px 0px 3px 0.2px #01814A;*/
+    box-shadow: 0px 0px 3px 0.2px #01814A;
 }
 
 
@@ -81,11 +81,37 @@
 
 .donate .btn:hover {
     border: #01B468 2px solid;
-    /*box-shadow: 0px 0px 5px 0.5px #08af7e;*/
+    box-shadow: 0px 0px 5px 0.5px #08af7e;
 }
 
 .donate .btn:hover span {
     color: #01B468;
+}
+
+/*donated-btn*/
+.donated .btn {
+    border: #EE583A 2px solid;
+    box-shadow: 0px 0px 3px 0.2px #EE583A;
+}
+
+
+.donated .btn span {
+    color: #EE583A;
+    text-shadow: 0.5px 0.5px 20px #000000;
+}
+
+.donated .btn:hover {
+    border: #FF775C 2px solid;
+    box-shadow: 0px 0px 5px 0.5px #FF775C;
+}
+
+.donated .btn:hover span {
+    color: #FF775C;
+}
+
+.donated .wave-btn:before {
+  background-color: #EE583A;
+  box-shadow: 0px 0px 10px 3px #EE583A;
 }
 
 /*login-btn*/
