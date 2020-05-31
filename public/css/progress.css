@@ -1,21 +1,25 @@
 .circle-pg-box {
-    padding: 16px 0;
+    /*min-height: 150px;*/
+}
+
+.status .circle-pg-box {
+    padding-left: 26px;
 }
 
 .circle-pg {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    border: 3px solid #00AEAE;
-    box-shadow: 0 0 20px 0 #00AEAE;
+    border: 5px solid #009474;
+    box-shadow: 0 0 20px 0 #009474;
 }
 
 .circle-pg-inner {
     overflow: hidden;
     z-index: 2;
     border-radius: 50%;
-    width: 134px;
-    height: 134px;
+    width: 130px;
+    height: 130px;
     border: 5px solid #1a1a1a;
 }
 
@@ -26,13 +30,13 @@
     width: 200%;
     height: 200%;
     left: -50%;
-    border-radius: 45%;
+    border-radius: 40%;
 
-    background: rgba(0, 148, 148, 0.5);
-    box-shadow: 0 0 20px #009393;
+    background: rgba(0, 138, 108, 0.5);
+    box-shadow: 0 0 20px #009474;
 
-    -webkit-animation: spin 8s infinite linear;
-    animation: spin 8s infinite linear;
+    -webkit-animation: spin 10s infinite linear;
+    animation: spin 10s infinite linear;
 }
 
 .circle-pg-inner .glare {
@@ -48,9 +52,9 @@
 }
 
 .circle-pg-inner .percent {
-    line-height: 134px;
+    line-height: 130px;
     font-size: 28px;
-    text-shadow: 0 0 10px #00E3E3;
+    text-shadow: 0 0 10px #009474;
 
     position: absolute;
     top: 0;

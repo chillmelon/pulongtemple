@@ -70,12 +70,8 @@
 }
 .progress-box {
     width: 100%;
-    padding: 16px;
+    padding: 32px 0;
 }
-.progress-circle {
-    padding: 32px;
-}
-
 
 /*verify-page*/
 .verify-email-outer {
