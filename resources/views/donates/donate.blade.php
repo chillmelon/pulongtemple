@@ -48,7 +48,7 @@
                   <div class="green">
                     <div class="progress">
                       <div class="inner">
-                        <div class="percent"><span>30</span>%</div>
+                        <div class="percent"><span>67%</span></div>
                         <div class="water"></div>
                         <div class="glare"></div>
                       </div>

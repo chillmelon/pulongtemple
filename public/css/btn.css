@@ -164,6 +164,16 @@
     animation: wave 5s infinite linear;
 }
 
+@keyframes wave {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
 /*dropdown*/
 .login .dropdown {
     display: block;
@@ -214,15 +224,6 @@
     /*background-color: #ff5e41;*/
 }
 
-@keyframes wave {
-    0% {
-        transform: translateX(-50%) rotate(0deg);
-    }
-
-    100% {
-        transform: translateX(-50%) rotate(360deg);
-    }
-}
 
 
 /*Media Query*/
