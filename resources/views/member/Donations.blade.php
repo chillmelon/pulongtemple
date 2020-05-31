@@ -10,11 +10,11 @@
       		<div class="p-card-head">
       			{{ $donation->created_at }}
       		</div>
-      		<div class="p-card-body">
+      		<div class="p-card-body custom-bdr-bm">
       			<a class="btn my-donate" href="/projects/{{ $donation->project->id }}">{{ $donation->project->title }}</a>
       			<div class="p-card-nt">NT${{ $donation->amount }}</div>
       		</div>
-      		<div class="p-card-footer">交易單號:{{ $donation->uuid }}</div>
+      		<div class="p-card-footer"><span style="font-size: 16px;">交易單號</span>:{{ $donation->uuid }}</div>
       	</div>
       </div>
       @endforeach

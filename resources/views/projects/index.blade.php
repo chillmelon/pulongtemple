@@ -25,26 +25,29 @@
         @foreach($projects as $project)
         <div class="product-box col-12 col-md-6">
           <div class="product custom-bdr" onclick="location.href='projects/{{ $project->id }}';">
-            <div class="product-head">
+            <div class="product-head custom-bdr-bm">
               {{ $project->title }}
             </div>
-            <div class="product-body">
+            <div class="product-body custom-bdr-bm">
               <div class="product-content">
                 {{ $project->content }}
               </div>
               {{-- progress --}}
-              <div class="progress-wrap progress" data-progress-percent="67">
-                <span>67%</span>
-                <div class="progress-bar progress"></div>
+              <div class="product-progress">
+                <div>
+                  <div class="progress-wrap progress" data-progress-percent="67">
+                    <span>67%</span>
+                    <div class="progress-bar progress"></div>
+                  </div>
+                </div>
               </div>
-
-              <div>
-                <div class="product-progress-time">
-                  剩下 2 天
-                </div>
-                <div class="product-progress-nt">
-                  NT$ {{ $project->progress }}
-                </div>
+            </div>
+            <div class="time-nt">
+              <div class="product-progress-time">
+                剩下 2 天
+              </div>
+              <div class="product-progress-nt">
+                NT$ {{ $project->progress }}
               </div>
             </div>
           </div>

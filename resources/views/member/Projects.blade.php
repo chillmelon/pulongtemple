@@ -8,8 +8,8 @@
       <div class="p-card-box">
         <div class="p-card custom-bdr">
           <div class="p-card-head">
-            <div>START {{ $project->created_at }}</div>
-            <div>UNTIL {{ $project->deadline }}</div>
+            <div>START: {{ $project->created_at }}</div>
+            <div>UNTIL: {{ $project->deadline }}</div>
           </div>
           <div class="p-card-body">
             <a class="btn my-project" href="/projects/{{ $project->id }}">{{ $project->title }}</a>
