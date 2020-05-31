@@ -44,8 +44,8 @@
 .green .progress,
 .red .progress,
 .orange .progress {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  /*-webkit-transition: all 1s ease;
+  transition: all 1s ease;*/
 }
 .green .progress .inner,
 .red .progress .inner,
