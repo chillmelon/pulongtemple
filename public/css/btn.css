@@ -34,6 +34,7 @@
 .nav-link {
     font-family: 'Noto Sans TC', serif;
     color: #019858 !important;
+    padding: 4px;
 }
 
 .nav-link:hover {
@@ -50,24 +51,23 @@
 /* donate */
 .donate {
     display: block;
-    margin-top: 12px;
+    margin-top: 8px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.donate .btn {
-    padding: 0;
-}
-
 .donate span {
-    padding: 10px 120px;
+    padding: 4px 120px;
     font-family: Impact, Arial Black, 'Noto Serif TC', serif;
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.5;
 }
 
 /* donate .btn */
 .donate .btn {
+    line-height: 1.5;
+    padding: 0;
     border-radius: 0;
     border: #01814A 2px solid;
     /*box-shadow: 0px 0px 3px 0.2px #01814A;*/
@@ -210,10 +210,14 @@
         transform: none;
         left: auto;
         right: 24px;
+
+        top: 48%;
+        transform: translateY(-50%);
     }
 
     .donate span {
         padding: 10px 52px;
+        line-height: 2;
     }
 }
 
