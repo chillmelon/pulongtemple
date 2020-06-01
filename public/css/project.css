@@ -89,9 +89,12 @@ tr:nth-child(even) {
   border-width: 7px;
   border-color: #01814A;
 }
+.rank-usr {
+    min-width: 150px;
+}
 .usr {
   position: absolute;
-  left: 40%;
+  left: 30%;
   padding: 0;
 }
 .usr-img {

@@ -13,8 +13,8 @@ active
       <div class="rank">
         <table>
           <tr>
-            <th>Rank</th>
-            <th>贊助人</th>
+            <th>排名</th>
+            <th class="rank-usr">贊助人</th>
             <th>金額</th>
           </tr>
           <tr>
