@@ -141,12 +141,6 @@ hr.style-eight {
     z-index: 4999;
 }
 
-.nav-item {
-    padding: 0 4px;
-    min-width: 80px;
-    text-align: center;
-}
-
 /*logo*/
 .logo {
     top: 50%;
@@ -258,10 +252,12 @@ hr.style-eight {
 }
 .product-progress-time {
     float: left;
+    font-size: 14px;
 }
 
 .product-progress-nt {
     float: right;
+    font-size: 14px;
 }
 
 /*project Card*/

@@ -27,17 +27,16 @@
 			  <h4>NT${{ $project->total_amount }}</h4>
 			<p style="font-size: 12px;">目標 NT{{ $project->goal }}</p>
             <hr class="hr-prime">
-			<h3>&emsp;{{ $project->supporters }} <small>人贊助</small></h3>
+			<h4>{{ $project->supporters }}<small> 人贊助</small></h4>
             <hr class="hr-prime">
-			<h3>&emsp;{{ $project->days_left }} <small>天剩餘</small></h3>
-            <!-- <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6> -->
+			<h4>{{ $project->days_left }}<small> 天剩餘</small></h4>
           </div>
           <!-- Progress bar -->
           <div class="col-6 col-sm-4 col-lg-6">
             <div class="circle-pg-box ab-center">
               <div class="circle-pg">
                 <div class="circle-pg-inner">
-					<div class="percent">{{ $project->progress }}%</div>
+					        <div class="percent">{{ $project->progress }}%</div>
                   <div class="water"></div>
                   <div class="glare"></div>
                 </div>

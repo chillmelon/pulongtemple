@@ -44,10 +44,10 @@
             </div>
             <div class="time-nt">
               <div class="product-progress-time">
-				  剩下 {{ $project->days_left }} 天
+				        剩下{{ $project->days_left }}天
               </div>
               <div class="product-progress-nt">
-                NT$ {{ $project->total_amount }}
+                GOAL:NT${{ $project->goal }}
               </div>
             </div>
           </div>

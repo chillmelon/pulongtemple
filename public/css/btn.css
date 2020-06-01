@@ -14,7 +14,7 @@
     width: 100%;
     display: inline-block;
     font-family: 'Share Tech Mono', 'Bungee', monospace,
-        'Noto Sans TC', serif;
+                 'Noto Sans TC', serif;
     line-height: 2;
 }
 
@@ -41,6 +41,13 @@
     color: #02F78E !important;
 }
 
+.nav-item {
+    padding: 0 4px;
+    min-width: 72px;
+    text-align: center;
+}
+
+
 .active {
     color: #02F78E !important;
     border: dashed;
@@ -50,6 +57,7 @@
 
 /* donate */
 .donate {
+    width: 100%;
     display: block;
     margin-top: 8px;
     left: 50%;
@@ -57,26 +65,22 @@
 }
 
 .donate span {
-    padding: 4px 120px;
+    width: 100%;
+    padding: 4px;
     font-family: Impact, Arial Black, 'Noto Serif TC', serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
+    /*color: #01814A;*/
+    text-shadow: 0.5px 0.5px 20px #000000;
 }
 
-/* donate .btn */
 .donate .btn {
     line-height: 1.5;
     padding: 0;
     border-radius: 0;
     border: #01814A 2px solid;
     box-shadow: 0px 0px 3px 0.2px #01814A;
-}
-
-
-.donate .btn span {
-    color: #01814A;
-    text-shadow: 0.5px 0.5px 20px #000000;
 }
 
 .donate .btn:hover {
@@ -244,7 +248,7 @@
     }
 
     .donate span {
-        padding: 10px 52px;
+        padding: 4px 52px;
         line-height: 2;
     }
 }
@@ -256,7 +260,7 @@
     }
 
     .donate span {
-        padding: 10px 120px;
+        padding: 8px 120px;
     }
 }
 
