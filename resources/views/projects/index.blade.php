@@ -35,7 +35,7 @@
               {{-- progress --}}
               <div class="product-progress">
                 <div>
-                  <div class="progress-wrap progress" data-progress-percent="67">
+                  <div class="progress-wrap progress" data-progress-percent="{{ $project->progress }}">
 					  <span>{{ $project->progress }}%</span>
                     <div class="progress-bar progress"></div>
                   </div>
