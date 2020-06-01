@@ -75,7 +75,6 @@ td {
   text-align: center;
   height: 73px;
   padding: 8px;
-
 }
 th {
   height: 56px;
@@ -88,6 +87,7 @@ tr:nth-child(even) {
   border: double;
   border-width: 7px;
   border-color: #01814A;
+  padding: 2px;
 }
 .rank-usr {
     min-width: 150px;

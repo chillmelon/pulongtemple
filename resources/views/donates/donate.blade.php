@@ -1,8 +1,8 @@
 @extends("auth.no-login-button")
 @section("body")
-<div class="container-fluid">
+<div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-9" style="padding: 0;">
+    <div class="col-md-10 col-lg-9">
       @auth
       <br>
       <br>
@@ -20,7 +20,7 @@
               </pre>
             </div>
           </div>
-          <div class="col-lg-6" style="padding: 16px">
+          <div class="col-lg-6">
             <h5>
             <br>
             &emsp;登入會員可以記錄每一筆的贊助，<br>
@@ -39,8 +39,8 @@
       <div class="donate-box custom-bdr">
         <div class="row">
           {{-- Progress bar --}}
-          <div class="progress-box col-lg-4">
-            <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="progress-box">
               <div style="text-align: center;">
                 <h4>{{$project_info['title']}}</h4>
                 {{-- circle --}}
@@ -60,45 +60,45 @@
             </div>
           </div>
           {{-- donate form --}}
-          <div class="c-box col-lg-8 donate-form">
-            <div class="card custom-card">
-              <div class="card-body">
-                <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
-                  @csrf
-                  <h3>&ensp;輸入金額</h3>
-                  <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
-                  @error('amount')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                  @enderror
-                  &ensp;贊助人
-                  <input type="hidden" name="project_id" value = "{{ $project_info['id'] }}">
-                  <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
-                  <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}" >
-                  @error('name')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                  @enderror
-
-                  @auth
-                  @else
-                  &ensp;E-mail(將會收到專案更新資訊)
-                  <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ auth()->user()['email'] }}">
-                  @error('email')
-                  <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                  </span>
-                  @enderror
-                  @endauth
-
-                  &ensp;留言(選填)
-                  <textarea class="form-control comment" type="text" name="comment"></textarea>
-                  <div class="send">
-                    <button class="btn btn-5">確定</button>
-                  </div>
-                </form>
+          <div class="col-lg-8">
+            <div class="c-box donate-form">
+              <div class="card custom-card">
+                <div class="card-body">
+                  <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
+                    @csrf
+                    <h3>&ensp;輸入金額</h3>
+                    <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
+                    @error('amount')
+                    <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                    &ensp;贊助人
+                    <input type="hidden" name="project_id" value = "{{ $project_info['id'] }}">
+                    <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
+                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}" >
+                    @error('name')
+                    <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                    @auth
+                    @else
+                    &ensp;E-mail(將會收到專案更新資訊)
+                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ auth()->user()['email'] }}">
+                    @error('email')
+                    <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                    @endauth
+                    &ensp;留言(選填)
+                    <textarea class="form-control comment" type="text" name="comment"></textarea>
+                    <div class="send">
+                      <button class="btn btn-5">確定</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

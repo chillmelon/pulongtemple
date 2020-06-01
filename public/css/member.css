@@ -34,7 +34,6 @@
 .donate-form {
     width: 100%;
     border-radius: 0;
-    border-left: #01814A 2px solid;
 }
 .donate-form .card {
     border: none;
@@ -72,7 +71,6 @@
     width: 100%;
     padding: 32px 0;
 }
-
 /*verify-page*/
 .verify-email-outer {
     padding: 0 12px;
@@ -163,8 +161,16 @@
 
 /*Media Query*/
 @media (min-width: 992px) {
+    /*padding not collapse*/
+    .donate-box .col-lg-4,
+    .donate-box .col-lg-8 {
+        padding: 0;
+    }
     .donate-form .card-body {
         padding: 32px;
+    }
+    .donate-form {
+        border-left: #01814A 2px solid;
     }
     .donate-form .nt {
         font-size: 48px;
