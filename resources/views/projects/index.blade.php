@@ -36,7 +36,7 @@
               <div class="product-progress">
                 <div>
                   <div class="progress-wrap progress" data-progress-percent="67">
-                    <span>67%</span>
+					  <span>{{ $project->progress }}%</span>
                     <div class="progress-bar progress"></div>
                   </div>
                 </div>
@@ -44,10 +44,10 @@
             </div>
             <div class="time-nt">
               <div class="product-progress-time">
-                剩下 2 天
+				  剩下 {{ $project->days_left }} 天
               </div>
               <div class="product-progress-nt">
-                NT$ {{ $project->progress }}
+                NT$ {{ $project->total_amount }}
               </div>
             </div>
           </div>

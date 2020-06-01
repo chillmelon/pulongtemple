@@ -24,12 +24,12 @@
         <div class="row status">
           <!-- goal -->
           <div class="goal col-6 col-sm-8 col-lg-6">
-            <h4>NT$6,700</h4>
-            <p style="font-size: 12px;">目標 NT$100,00</p>
+			  <h4>NT${{ $project->total_amount }}</h4>
+			<p style="font-size: 12px;">目標 NT{{ $project->goal }}</p>
             <hr class="hr-prime">
-            <h3>&emsp;3 <small>人贊助</small></h3>
+			<h3>&emsp;{{ $project->supporters }} <small>人贊助</small></h3>
             <hr class="hr-prime">
-            <h3>&emsp;2 <small>天剩餘</small></h3>
+			<h3>&emsp;{{ $project->days_left }} <small>天剩餘</small></h3>
             <!-- <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6> -->
           </div>
           <!-- Progress bar -->
@@ -37,7 +37,7 @@
             <div class="circle-pg-box ab-center">
               <div class="circle-pg">
                 <div class="circle-pg-inner">
-                  <div class="percent">67%</div>
+					<div class="percent">{{ $project->progress }}%</div>
                   <div class="water"></div>
                   <div class="glare"></div>
                 </div>

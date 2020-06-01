@@ -23,12 +23,12 @@
       <div class="row status">
         <!-- goal -->
         <div class="goal col-6 col-sm-8 col-lg-6">
-          <h5><b>NT$6,700</b></h5>
-          <small>目標 NT$100,00</small>
+			<h5><b>NT${{ $project->total_amount }}</b></h5>
+			<small>目標 NT${{ $project->goal }}</small>
           <hr class="hr-prime">
-          <h5>3 <small>人贊助</small></h5>
+		  <h5>{{ $project->supporters }} <small>人贊助</small></h5>
           <hr class="hr-prime" class="new" color="#8C8C8C">
-          <h5>2 <small>天剩餘</small></h5>
+		  <h5>{{ $project->days_left }} <small>天剩餘</small></h5>
         </div>
       </div>
     </div>
