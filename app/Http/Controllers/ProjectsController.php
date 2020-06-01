@@ -28,12 +28,12 @@ class ProjectsController
     public function showComments($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.comments',$project);
+        return view('projects.comments',['project'=>$project]);
     }
     public function faq($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.faq',$project);
+        return view('projects.faq',['project'=>$project]);
     }
 	public function create()
 	{
