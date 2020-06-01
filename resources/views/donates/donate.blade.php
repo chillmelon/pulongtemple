@@ -2,7 +2,7 @@
 @section("body")
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-8">
+    <div class="col-md-10 col-lg-9" style="padding: 0;">
       @auth
       <br>
       <br>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="to-login">
-        <a class="btn btn-5" href="{{ route('login') }}"><span>註冊或登入</span></a>
+        <a class="btn" href="{{ route('login') }}"><span>註冊或登入</span></a>
       </div>
       <div style="text-align: center; padding: 16px 0;">
         <h4>太麻煩了，直接贊助 👇</h4>
@@ -41,21 +41,21 @@
           {{-- Progress bar --}}
           <div class="progress-box col-lg-4">
             <div class="row justify-content-center">
-              <div>
+              <div style="text-align: center;">
                 <h4>{{$project_info['title']}}</h4>
                 {{-- circle --}}
-                <div class="progress-circle">
-                  <div class="green">
-                    <div class="progress">
-                      <div class="inner">
-                        <div class="percent"><span>30</span>%</div>
+                <div style="height: 200px">
+                  <div class="circle-pg-box ab-center">
+                    <div class="circle-pg">
+                      <div class="circle-pg-inner">
+                        <div class="percent">67%</div>
                         <div class="water"></div>
                         <div class="glare"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h6>NT${{$project_info['total_amount']}} <small>&ensp;/&ensp;NT${{$project_info['goal']}}</small></h6>
+                <h6>NT${{$project_info['total_amount']}} <small><br>/&ensp;NT${{$project_info['goal']}}</small></h6>
               </div>
             </div>
           </div>

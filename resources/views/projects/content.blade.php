@@ -33,11 +33,11 @@
             <!-- <h6>2020/02/18 12:00<br>– 2020/04/18 02:00</h6> -->
           </div>
           <!-- Progress bar -->
-          <div class="progress-circle col-6 col-sm-4 col-lg-6">
-            <div class="green">
-              <div class="progress">
-                <div class="inner">
-                  <div class="percent"><span>67</span>%</div>
+          <div class="col-6 col-sm-4 col-lg-6">
+            <div class="circle-pg-box ab-center">
+              <div class="circle-pg">
+                <div class="circle-pg-inner">
+                  <div class="percent">67%</div>
                   <div class="water"></div>
                   <div class="glare"></div>
                 </div>

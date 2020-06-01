@@ -13,10 +13,7 @@
             <img class="rounded img-dashboard" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>
-          <div class="progress-fuck">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-          </div>
-          <div class="alert" role="alert"></div>
+          <div class="alert custom-bdr"></div>
           <form action="/dashboard" method="POST">
               @csrf
             <input class="form-control" type="text" name="name" value="{{ $profile->name }}">
@@ -57,8 +54,6 @@
 		var avatar = document.getElementById('avatar');
 		var image = document.getElementById('image');
 		var input = document.getElementById('input');
-		var $progress = $('.progress');
-		var $progressBar = $('.progress-bar');
 		var $alert = $('.alert');
 		var $modal = $('#modal');
 		var cropper;
@@ -108,7 +103,6 @@
 				});
 				initialAvatarURL = avatar.src;
 				avatar.src = canvas.toDataURL();
-				$progress.show();
 				$alert.removeClass('alert-success alert-warning');
 				canvas.toBlob(function (blob) {
 					var formData = new FormData();
@@ -121,28 +115,12 @@
 						headers: {
 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 						},
-						xhr: function () {
-							var xhr = new XMLHttpRequest();
-							xhr.upload.onprogress = function (e) {
-								var percent = '0';
-								var percentage = '0%';
-								if (e.lengthComputable) {
-									percent = Math.round((e.loaded / e.total) * 100);
-									percentage = percent + '%';
-									$progressBar.width(percentage).attr('aria-valuenow', percent).text(percentage);
-								}
-							};
-							return xhr;
-						},
 						success: function () {
-							$alert.show().addClass('alert-success').text('Upload success');
+							$alert.show().text('上傳成功');
 						},
 						error: function () {
 							avatar.src = initialAvatarURL;
-							$alert.show().addClass('alert-warning').text('Upload error');
-						},
-						complete: function () {
-							$progress.hide();
+							$alert.show().text('上傳失敗');
 						},
 					});
 				});

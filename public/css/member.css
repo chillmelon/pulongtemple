@@ -57,24 +57,21 @@
 .send {
     padding: 8px 64px 4px 64px;
 }
-.nt {
+.donate-form .nt {
     text-align: right;
-    font-size: 72px;
     font-family: 'Press Start 2P', 'Share Tech Mono', monospace;
     background-image: url("../image/NT.png");
-    background-size: 40%;
     background-position: 8px 50%;
     background-repeat: no-repeat;
-    padding-left: 120px;
+
+    font-size: 32px;
+    background-size: 100px;
+    padding-left: 110px;
 }
 .progress-box {
     width: 100%;
-    padding: 16px;
+    padding: 32px 0;
 }
-.progress-circle {
-    padding: 32px;
-}
-
 
 /*verify-page*/
 .verify-email-outer {
@@ -168,5 +165,10 @@
 @media (min-width: 992px) {
     .donate-form .card-body {
         padding: 32px;
+    }
+    .donate-form .nt {
+        font-size: 48px;
+        background-size: 120px;
+        padding-left: 120px;
     }
 }
