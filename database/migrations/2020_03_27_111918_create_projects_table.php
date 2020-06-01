@@ -17,6 +17,7 @@ class CreateProjectsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title',30);
             $table->string('content',255);
+            $table->longtext('main_content');
             $table->string('image')->nullable();
             $table->integer('total_amount');
             $table->integer('goal');
