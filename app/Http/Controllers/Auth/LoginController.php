@@ -23,9 +23,10 @@ class LoginController extends Controller
     //
     public function showLoginForm(Request $request)
     {
-		if($request->session()->has('url.intended')){
+		if($request->session()->has('url.intended') && $request->block!=1){
 			return view('auth.login');
 		};
+		session()->forget('url.intended');
         session()->put('url.intended', url()->previous());
         return view('auth.login');
     }
@@ -64,6 +65,5 @@ class LoginController extends Controller
      */
     protected function loggedOut(Request $request)
     {
-        return redirect()->back();
     }
 }
