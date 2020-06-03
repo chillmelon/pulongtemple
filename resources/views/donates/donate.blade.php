@@ -83,9 +83,10 @@
                     </span>
                     @enderror
                     @auth
+                    <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                     @else
                     &ensp;E-mail(將會收到專案更新資訊)
-                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" value="{{ auth()->user()['email'] }}">
+                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email" }}">
                     @error('email')
                     <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
