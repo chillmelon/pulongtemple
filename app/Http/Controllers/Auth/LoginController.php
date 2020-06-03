@@ -20,13 +20,12 @@ class LoginController extends Controller
     |
     */
     use AuthenticatesUsers;
-    // 
+    //
     public function showLoginForm(Request $request)
     {
-        if ($request->blocked==1)
-        {
-            return view('auth.login');
-        }
+		if($request->session()->has('url.intended')){
+			return view('auth.login');
+		};
         session()->put('url.intended', url()->previous());
         return view('auth.login');
     }
@@ -65,6 +64,6 @@ class LoginController extends Controller
      */
     protected function loggedOut(Request $request)
     {
-        return redirect()->back();  
+        return redirect()->back();
     }
 }
