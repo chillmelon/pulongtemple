@@ -4,7 +4,7 @@
 {{-- has login --}}
 @auth
   <li>
-    <a class="btn">{{ auth()->user()->name }} <span>▼</span></a>
+    <a class="btn pd-lr-8">{{ auth()->user()->name }} <span>▼</span></a>
     <ul class="dropdown custom-bdr">
       <li><a class="btn wite-btn" href="{{ url('/dashboard') }}">個人資料</a></li>
       <li><a class="btn wite-btn" href="/member/donations">我的贊助</a></li>

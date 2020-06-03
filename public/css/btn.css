@@ -120,10 +120,10 @@
 
 /*login-btn*/
 .login>li>a {
-    width: 120px;
+    min-width: 120px;
+    max-width: 100%;
     color: #019858;
     font-size: 18px;
-    padding: 0;
 }
 
 /*more-btn*/

@@ -27,6 +27,10 @@ body {
     loading order question color: #ccc !important;
 }
 
+.pd-lr-8 {
+    padding: 0 8px 0 8px;
+}
+
 .mg-bottom-16 {
     margin-bottom: 16px;
 }
@@ -161,6 +165,7 @@ hr.style-eight {
 /*login*/
 .login {
     top: 50%;
+    padding: 0;
     padding-right: 16px;
     transform: translateY(-50%);
     float: right;
@@ -298,5 +303,7 @@ hr.style-eight {
 
 /*media query*/
 @media (min-width: 992px) {
-    /**/
+    ul.login {
+        padding: 0;
+    }
 }

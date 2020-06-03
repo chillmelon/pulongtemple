@@ -1,8 +1,8 @@
 @extends("projects.project")
 
 @section("summary")
-<div class="container-fluid top-content">
-    <div class="row">
+<div class="container-fluid">
+    <div class="row top-content">
       <!-- image_main -->
       <div class="imgbox img-main col-sm-12 col-lg-8">
         <div class="imgbox-inner">
