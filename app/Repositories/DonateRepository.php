@@ -19,6 +19,7 @@ class DonateRepository
 	{
 		$donates = Donates::where('project_id',$project_id)
 			->where('paid',1)
+			->with('user')
 			->get();
 		return $donates;
 	}

@@ -14,7 +14,7 @@ class Donates extends Model
      'comment',
      'uuid',
     ];
-    protected $table = 'Donates'; 
+    protected $table = 'Donates';
     public function format(){
     	return [
     		'id'=>$this->id,
@@ -27,5 +27,8 @@ class Donates extends Model
     }
     public function project(){
         return $this->belongsTo('App\Projects','project_id');
+    }
+    public function user(){
+        return $this->belongsTo('App\User','user_id');
     }
 }

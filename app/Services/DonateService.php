@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 class DonateService
 {
     private $donateRepository;
-    public function __construct(DonateRepository $donateRepository){
+	public function __construct(DonateRepository $donateRepository){
         $this->donateRepository = $donateRepository;
     }
     // everything
@@ -16,7 +16,7 @@ class DonateService
         $donates = $this->donateRepository->all();
         return $donates;
     }
-    // find donations made by a specific user
+	// find donations made by a specific user
     public function userDonates($user_id=null)
     {
         $donates = $this->donateRepository->findByUserId($user_id);
@@ -25,9 +25,51 @@ class DonateService
     // find donations for a specific project
     public function projectDonates($project_id=null)
     {
-        $donates = $this->donateRepository->finByProjectId($project_id);
-        return $donates;
+		$rand = $this->donateRepository->findByProject($project_id)->random(5);
+		$data = [
+			'top' => $top,
+			'rand' => $rand
+		];
+        return $data;
     }
+	// find top 5 donates for a particular project
+	public function topFive($project_id=null){
+		$top = $this->donateRepository->findByProject($project_id)
+								->groupBy('user_id')
+								->map(function ($donation){
+									return [
+										'avatar' => $donation->first()->user->avatar,
+										'name' => $donation->first()->user->name,
+										'amount' => $donation->sum('amount')
+									];
+								})
+								->sortByDesc('amount')
+								->take(5);
+		return $top;
+	}
+	// find random 5 comments for a particular project
+	public function randFive($project_id=null){
+		$rand = $this->donateRepository->findByProject($project_id)
+								 ->random(5)
+							 	 ->map(function ($donation){
+									 return [
+										 'avatar' => $donation->user->avatar,
+										 'name' => $donation->user->name,
+										 'comment' => $donation->comment
+									 ];
+								 });
+		return $rand;
+	}
+	public function gallary($project_id=null){
+		$gallary = $this->donateRepository->findByProject($project_id)
+									->map(function ($donation){
+										return [
+											'avatar' => $donation->user->avatar
+										];
+									});
+		return $gallary;
+	}
+	// create a new donation order
     public function new($donation=null)
     {
         $donation->validate([

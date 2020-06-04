@@ -17,123 +17,31 @@ active
             <th class="rank-usr">贊助人</th>
             <th>金額</th>
           </tr>
+		  @foreach($topFive as $donater)
           <tr>
-            <td>#1</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/pulongTemple.png')}}">Pulong</td>
-            <td>1000</td>
+			  <td>#{{$loop->index+1}}</td>
+			<td class="usr"><img class="usr-img" src="{{asset('storage/'.$donater[ 'avatar' ])}}">{{$donater[ 'name' ]}}</td>
+			<td>{{$donater[ 'amount' ]}}</td>
           </tr>
-          <tr>
-            <td>#2</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/user/nux.jpg')}}">Nux</td>
-            <td>623</td>
-          </tr>
-          <tr>
-            <td>#3</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/user/a.png')}}">Johnson</td>
-            <td>66</td>
-          </tr>
-          <tr>
-            <td>#4</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/user/b.png')}}">Johnson</td>
-            <td>66</td>
-          </tr>
-          <tr>
-            <td>#5</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/user/c.png')}}">Johnson</td>
-            <td>66</td>
-          </tr>
-          <tr>
-            <td>#6</td>
-            <td class="usr"><img class="usr-img" src="{{asset('image/user/d.png')}}">客家人</td>
-            <td>5</td>
-          </tr>
+		  @endforeach
         </table>
       </div>
       <!-- comment -->
       <div class="cmt-all">
+		@foreach($randFive as $comment)
         <div class="cmt">
           <img class="cmt-img" src="{{asset('image/user/d.png')}}">
           <div class="cmt-content">
-            <a class="usr-name">Hater</a><br>爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了
+			  <a class="usr-name">{{ $comment[ 'name' ] }}</a><br>{{ $comment[ 'comment' ] }}
           </div>
         </div>
-        <div class="cmt">
-          <img class="cmt-img" src="{{asset('image/user/d.png')}}">
-          <div class="cmt-content">
-            <a class="usr-name">Hater</a><br>爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了爛透了
-          </div>
-        </div>
-        <div class="cmt">
-          <img class="cmt-img" src="{{asset('image/user/d.png')}}">
-          <div class="cmt-content">
-            <a class="usr-name">Hater</a><br> Strange transport. Listening to ~~~ is somehow like eavesdropping on another person's memories. Favorite track: It's a Rainy Day On The Cosmic Shore.
-          </div>
-        </div>
-        <div class="cmt">
-          <img class="cmt-img" src="{{asset('image/user/d.png')}}">
-          <div class="cmt-content">
-            <a class="usr-name">Hater</a><br>爛透了
-          </div>
-        </div>
+		@endforeach
       </div>
       <!-- user gallery -->
       <div class="gallery">
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
-        <div class="usr-imgbox"><img class="usr-img" src="{{asset('image/user/a.png')}}"></div>
+		  @foreach($gallary as $icon)
+			  <div class="usr-imgbox"><img class="usr-img" src="{{asset('storage/'.$icon[ 'avatar' ])}}"></div>
+		  @endforeach
       </div>
     </div>
   </div>

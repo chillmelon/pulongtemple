@@ -1,13 +1,16 @@
 <?php
 namespace App\Http\Controllers;
 use App\Services\ProjectService;
+use App\Services\DonateService;
 class ProjectsController
 {
     // 首頁畫面
     public function __construct(
-        ProjectService $projectService
+        ProjectService $projectService,
+        DonateService $donateService
     ){
         $this->projectService = $projectService;
+        $this->donateService = $donateService;
     }
     public function index()
     {
@@ -27,8 +30,17 @@ class ProjectsController
     }
     public function showComments($project_id)
     {
-        $project = $this->projectService->detail($project_id);
-        return view('projects.comments',['project'=>$project]);
+		$project = $this->projectService->detail($project_id);
+		$topFive = $this->donateService->topFive($project_id);
+		$randFive = $this->donateService->randFive($project_id);
+		$gallary = $this->donateService->gallary($project_id);
+		$data = [
+			'project' => $project,
+			'topFive' => $topFive,
+			'randFive' => $randFive,
+			'gallary' => $gallary
+		];
+        return view('projects.comments',$data);
     }
     public function faq($project_id)
     {
