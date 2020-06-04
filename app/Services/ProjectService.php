@@ -34,7 +34,7 @@ class ProjectService
     public function format($project=null){
 		$project->progress=round($project->total_amount/$project->goal*100);
 		$project->days_left=date('d',strtotime( $project->deadline ) - time());
-		$project->supporters=$project->donates->unique('user_id')->count('user_id');
+		$project->supporters=$project->donates->where('paid',1)->unique('user_id')->count('user_id');
 		$project->starter=$project->user->name;
 		return $project;
 	}
