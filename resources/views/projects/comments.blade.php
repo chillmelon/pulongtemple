@@ -30,7 +30,7 @@ active
       <div class="cmt-all">
 		@foreach($randFive as $comment)
         <div class="cmt">
-          <img class="cmt-img" src="{{asset('image/user/d.png')}}">
+          <img class="cmt-img" src="{{asset('storage/'.$comment[ 'avatar' ])}}">
           <div class="cmt-content">
 			  <a class="usr-name">{{ $comment[ 'name' ] }}</a><br>{{ $comment[ 'comment' ] }}
           </div>
