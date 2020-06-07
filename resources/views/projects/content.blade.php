@@ -17,7 +17,7 @@
             埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
             <br>
           </h3>
-          <h6>by Pulong Temple</h6>
+          <h6 style="font-size: 12px;">by Pulong Temple</h6>
           <hr class="hr-prime">
         </div>
         <!-- status -->

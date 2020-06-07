@@ -16,7 +16,7 @@
         <h4>
         埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
         </h4>
-        <h6 style="font-size: 14px;"> by Pulong Temple</h6>
+        <h6 style="font-size: 12px;"> by Pulong Temple</h6>
         <hr class="hr-prime">
       </div>
       <!-- status -->
@@ -26,9 +26,9 @@
 			<h5><b>NT${{ $project->total_amount }}</b></h5>
 			<small>目標 NT${{ $project->goal }}</small>
           <hr class="hr-prime">
-		  <h5>{{ $project->supporters }} <small>人贊助</small></h5>
-          <hr class="hr-prime" class="new" color="#8C8C8C">
-		  <h5>{{ $project->days_left }} <small>天剩餘</small></h5>
+		  <h5>{{ $project->supporters }}<small>人贊助</small></h5>
+          <hr class="hr-prime">
+		  <h5>{{ $project->days_left }}<small>天剩餘</small></h5>
         </div>
       </div>
     </div>
