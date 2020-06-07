@@ -50,9 +50,9 @@
 
 .active {
     color: #02F78E !important;
-    border: dashed;
+    /*border: dashed;
     border-width: 2px;
-    border-color: #01814A;
+    border-color: #01814A;*/
 }
 
 /* donate */
