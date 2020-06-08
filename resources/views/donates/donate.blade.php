@@ -101,7 +101,7 @@
 								&ensp;留言(選填)
 								<textarea class="form-control comment" type="text" name="comment"></textarea>
 								<div class="send">
-									<button class="btn btn-5">確定</button>
+									<button class="btn">確定</button>
 								</div>
 										</form>
 									</div>

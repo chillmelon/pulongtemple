@@ -24,7 +24,7 @@
         <!-- goal -->
         <div class="goal col-6 col-sm-8 col-lg-6">
           <h4>NT${{ $project->amount }}</h4>
-          <p style="font-size: 12px;">目標 NT{{ $project->goal }}</p>
+          <p style="font-size: 12px;">目標 NT${{ $project->goal }}</p>
           <hr class="hr-prime">
           <h4>{{ $project->supporters }}<small> 人贊助</small></h4>
           <hr class="hr-prime">
@@ -45,8 +45,8 @@
       </div>
       <!-- description -->
       <div class="description">
-        <p class="lead">
-		{{ $project->summary }}
+        <p>
+		      {{ $project->summary }}
         </p>
       </div>
     </div>
