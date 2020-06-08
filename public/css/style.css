@@ -19,7 +19,11 @@ body {
 }
 
 a {
-    color: #019857;
+    color: #019858;
+}
+
+a:hover {
+    color: #02F78E;
 }
 
 /*hr*/
@@ -42,7 +46,7 @@ hr.hr-prime {
 }
 
 .color-sec {
-    loading order question color: #ccc !important;
+    color: #ccc !important;
 }
 
 .pd-lr-8 {
