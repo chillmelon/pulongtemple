@@ -23,7 +23,7 @@
       <div class="row status">
         <!-- goal -->
         <div class="goal col-6 col-sm-8 col-lg-6">
-          <h4>NT${{ $project->total_amount }}</h4>
+          <h4>NT${{ $project->amount }}</h4>
           <p style="font-size: 12px;">目標 NT{{ $project->goal }}</p>
           <hr class="hr-prime">
           <h4>{{ $project->supporters }}<small> 人贊助</small></h4>
