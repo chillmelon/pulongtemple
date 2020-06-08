@@ -72,6 +72,11 @@ class DonateService
 	// create a new donation order
     public function new($donation=null)
     {
+		if(empty( $donation->input('name') )){
+			$donation->merge([
+				'name'=>'不知名信徒'
+			]);
+		}
         $donation->validate([
             '_token',
             'name' => 'required|string|max:16',
