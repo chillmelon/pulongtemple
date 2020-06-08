@@ -55,7 +55,7 @@
 											</div>
 										</div>
 									</div>
-									<h6>NT${{$project_info['total_amount']}} <small><br>/&ensp;NT${{$project_info['goal']}}</small></h6>
+									<h6>NT${{$project_info->amount}} <small><br>/&ensp;NT${{$project_info->goal}}</small></h6>
 								</div>
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 											</span>
 										@enderror
 										&ensp;贊助人
-										<input type="hidden" name="project_id" value = "{{ $project_info['id'] }}">
+										<input type="hidden" name="project_id" value = "{{ $project_info->id }}">
 										<input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
 										@auth
 											<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
