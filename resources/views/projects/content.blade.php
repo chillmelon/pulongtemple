@@ -45,8 +45,8 @@
       </div>
       <!-- description -->
       <div class="description">
-        <p class="lead">
-		{{ $project->summary }}
+        <p>
+		      {{ $project->summary }}
         </p>
       </div>
     </div>
