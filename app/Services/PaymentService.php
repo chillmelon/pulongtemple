@@ -33,27 +33,27 @@ class PaymentService
             $obj->Send['ChoosePayment'] = 'ALL' ;                              //付款方式:全功能
             //訂單的商品資料
             array_push($obj->Send['Items'], array(
-                'Name' => request('name'), 
-                'Price' => request('amount'), 
-                'Currency' => "元", 
+                'Name' => request('name'),
+                'Price' => request('amount'),
+                'Currency' => "元",
                 'Quantity' => (int) "1"
             ));
             //送訂單給ECPay
             $SDK_Return = $obj->CreateTrade();
-            //拿到返回參數            
+            //拿到返回參數
             return $SDK_Return;
-        } 
+        }
         catch (Exception $e) {
             echo $e->getMessage();
         }
     }
-    public function callback(Request $request)
+    public function callback($request=null)
     {
         $uuid = $request->MerchantTradeNo;
         $rcode = $request->RtnCode;
         $this->saveRequest($request);
         if ($rcode=='1'){
-            $donateRepository->update($uuid,['paid'=>'1']);
+            $this->donateRepository->update($uuid,['paid'=>'1']);
             return "OK 1";
         }
     }
@@ -65,7 +65,7 @@ class PaymentService
         $r->request=json_encode($request->all());
         $r->save();
     }
-    
+
     public function refreshTotalAmount($donation)
     {
         $projectID = $donation->pluck('project_id');
