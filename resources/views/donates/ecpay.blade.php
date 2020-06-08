@@ -1,7 +1,9 @@
-@extends('layout')
-@section('content')
+@extends('auth.login-button')
+@section('body')
+{{-- @extends('layout') --}}
+{{-- @section('content') --}}
 <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
-window.addEventListener('message', function (e) { 
+window.addEventListener('message', function (e) {
 	alert("訂單結果資訊:" + e.data);
 	<?php echo "thank you";?>
 }); </script>
