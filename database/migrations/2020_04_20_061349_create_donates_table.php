@@ -18,7 +18,7 @@ class CreateDonatesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('project_id');
             $table->foreign('project_id')->references('id')->on('Projects');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->nullable();
 			$table->string('name');
 			$table->string('email');
