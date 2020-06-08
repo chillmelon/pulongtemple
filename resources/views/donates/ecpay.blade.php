@@ -2,7 +2,8 @@
 @section('body')
 {{-- @extends('layout') --}}
 {{-- @section('content') --}}
-<div class="row justify-content-center">
+<div class="row justify-content-center" style="padding-top: 32px">
+
     <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
     window.addEventListener('message', function (e) {
         alert("訂單結果資訊:" + e.data);
