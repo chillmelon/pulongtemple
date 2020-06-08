@@ -60,7 +60,8 @@ active
 <div class="container-fluid bottom-content">
   <div class='row'>
     <div class='col-12 col-lg-8'>
-	  {!!$project->content!!}
+      <div class="project-content">
+  	    {!!$project->content!!}
       </div>
     </div>
   </div>
