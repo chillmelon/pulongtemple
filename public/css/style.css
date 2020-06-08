@@ -35,10 +35,6 @@ hr.hr-prime {
     color: #8c8c8c !important;
 }
 
-/*hr.new {
-    margin: 5px 0;
-    color: #8C8C8C;
-}*/
 
 /*Utility*/
 .color-prime {
@@ -55,6 +51,24 @@ hr.hr-prime {
 
 .mg-bottom-16 {
     margin-bottom: 16px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.ab-rb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.max-w-260 {
+    max-width: 260px;
+}
+
+.inline-b {
+    display: inline-block;
 }
 
 .u-cf:after {
