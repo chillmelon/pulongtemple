@@ -233,6 +233,10 @@ tr:nth-child(even) {
         min-width: 100px;
         padding: 0 8px;
     }
+
+    .update-content {
+        max-height: 600px;
+    }
 }
 
 @media (min-width: 1200px) {
