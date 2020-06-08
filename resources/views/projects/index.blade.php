@@ -30,7 +30,7 @@
             </div>
             <div class="product-body custom-bdr-bm">
               <div class="product-content">
-                {{ $project->content }}
+                {{ $project->summary }}
               </div>
               {{-- progress --}}
               <div class="product-progress">
