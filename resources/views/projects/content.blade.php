@@ -13,10 +13,10 @@
       <!-- title -->
       <div class="title">
         <h3>
-        埔隆宮<span style="font-family: serif;"> - </span>炭烤土司大王
+			{{ $project->title }}
         <br>
         </h3>
-        <h6 style="font-size: 12px;"> by Pulong Temple</h6>
+		<h6 style="font-size: 12px;"> by {{ $project->user->name }}</h6>
         <hr class="hr-prime">
       </div>
       <!-- status -->
