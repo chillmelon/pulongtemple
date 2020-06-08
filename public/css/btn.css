@@ -150,6 +150,12 @@
     color: #fff;
 }
 
+/*ec-btn*/
+.ev-btn {
+    width: 250px;
+    margin-bottom: 32px;
+}
+
 /*Wave btn*/
 
 .wave-btn {
