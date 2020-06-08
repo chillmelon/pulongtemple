@@ -1,9 +1,7 @@
 @extends('layouts.outer')
 @section('body')
-{{-- @extends('layout') --}}
-{{-- @section('content') --}}
 <div class="row justify-content-center" style="padding-top: 32px">
-  <a class="btn">
+  {{-- <a class="btn">
     <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
     window.addEventListener('message', function (e) {
     alert("訂單結果資訊:" + e.data);
@@ -31,8 +29,9 @@
   data-PaymentType="CVS"
   data-PaymentName="超商代碼"
   data-CustomerBtn="0" >
-  </script>
-  {{-- <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
+  </script> --}}
+
+  <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
   window.addEventListener('message', function (e) {
   alert("訂單結果資訊:" + e.data);
   <?php echo "thank you";?>
@@ -57,6 +56,6 @@
   data-PaymentType="CVS"
   data-PaymentName="超商代碼"
   data-CustomerBtn="0" >
-  </script> --}}
+  </script>
 </div>
 @endsection
