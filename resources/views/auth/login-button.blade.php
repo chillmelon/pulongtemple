@@ -24,7 +24,7 @@
 {{-- has log out --}}
 @else
   <li class="">
-    <a class="btn" href="{{ route('login') }}">登入</a>
+    <a class="btn pd-lr-8" href="{{ route('login') }}">登入</a>
   </li>
 @endauth
 @endsection
