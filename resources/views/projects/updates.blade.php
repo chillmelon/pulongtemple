@@ -13,7 +13,9 @@ active
 	  <div class="update custom-bdr">
 		  <h4>{{$update->title}}</h4>
 		  <span>{{$update->created_at}}</span>
-		  {!!$update->content!!}
+      <div class="update-content">
+  		  {!!$update->content!!}
+      </div>
 		<div class="more-btn">
 			<a class="btn" href="/updates/{{$update->id}}">更多內容...</a>
 		</div>

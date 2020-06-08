@@ -32,7 +32,7 @@
     padding-top: 15px;
 }
 
-.bottom-content img {
+.project-content img {
     max-width: 100%;
     height: auto;
 }
@@ -63,6 +63,17 @@
     padding: 16px;
     margin-bottom: 24px;
 }
+
+.update img {
+    max-width: 100%;
+    height: auto;
+}
+
+.update-content {
+    max-height: 32px;
+    overflow: hidden;
+}
+
 
 /*faq*/
 .qa {
