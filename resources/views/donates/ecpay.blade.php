@@ -1,6 +1,6 @@
 @extends('layouts.outer')
 @section('body')
-<div class="row justify-content-center" style="padding-top: 32px">
+<div class="row justify-content-center" style="padding-top: 120px">
   <button class="btn ec-btn" onclick="checkOut('CREDIT')">信用卡付款</button>
   <button class="btn ec-btn" onclick="checkOut('ATM')">ATM付款</button>
   <button class="btn ec-btn" onclick="checkOut('CVS')">超商代碼付款</button>
