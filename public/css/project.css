@@ -31,6 +31,10 @@
     padding-top: 15px;
 }
 
+.project-content img {
+    max-width: 100%;
+}
+
 /*min-top*/
 .top-img {
     justify-content: center;
