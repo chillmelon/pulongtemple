@@ -20,10 +20,12 @@ class CreateDonatesTable extends Migration
             $table->foreign('project_id')->references('id')->on('Projects');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->nullable();
+			$table->string('name');
+			$table->string('email');
             $table->integer('amount');
             $table->string('comment')->nullable();
-            $table->string('uuid');
-            $table->boolean('paid');
+            $table->string('uuid')->nullable();
+            $table->boolean('paid')->default(0);
             $table->timestamps();
         });
     }
