@@ -5,7 +5,7 @@
     <!-- image_main -->
     <div class="imgbox img-main col-sm-12 col-lg-8">
       <div class="imgbox-inner">
-        <div class="image" style="background-image: url('{{asset('image/pulongTemple.png')}}');"></div>
+        <div class="image" style="background-image: url('{{asset('/storage/'. $project->image)}}');"></div>
       </div>
     </div>
     <!-- intro -->

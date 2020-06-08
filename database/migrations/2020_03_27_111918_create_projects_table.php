@@ -19,7 +19,7 @@ class CreateProjectsTable extends Migration
             $table->string('summary',255);
             $table->longtext('content');
             $table->string('image')->nullable();
-            $table->integer('total_amount');
+            $table->integer('total_amount')->default(0);
             $table->integer('goal');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
