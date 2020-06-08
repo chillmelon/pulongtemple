@@ -26,8 +26,8 @@
 									&emsp;登入會員可以記錄每一筆的贊助，<br>
 									&emsp;也可以發起屬於自己的募資專案。
 								</h5>
-							</div>
 						</div>
+							</div>
 					</div>
 					<div class="to-login">
 						<a class="btn" href="{{ route('login') }}"><span>註冊或登入</span></a>

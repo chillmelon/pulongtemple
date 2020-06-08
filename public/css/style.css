@@ -18,13 +18,35 @@ body {
     color: #ccc;
 }
 
+a {
+    color: #019858;
+}
+
+a:hover {
+    color: #02F78E;
+}
+
+/*hr*/
+hr.hr-prime {
+    /*height: 5px;*/
+    border-bottom: 1px solid #9D9D9D;
+    padding: 0;
+    margin: 8px 0 16px;
+    color: #8c8c8c !important;
+}
+
+/*hr.new {
+    margin: 5px 0;
+    color: #8C8C8C;
+}*/
+
 /*Utility*/
 .color-prime {
     color: #019857;
 }
 
 .color-sec {
-    loading order question color: #ccc !important;
+    color: #ccc !important;
 }
 
 .pd-lr-8 {
@@ -55,37 +77,6 @@ body {
 }
 
 /*Component*/
-/*hr*/
-hr.hr-prime {
-    /*height: 5px;*/
-    border-bottom: 1px solid #9D9D9D;
-    padding: 0;
-    margin: 8px 0 16px;
-    color: #8c8c8c !important;
-}
-
-hr.new {
-    margin: 5px 0;
-    color: #8C8C8C;
-}
-
-hr.style-one {
-    border: 0;
-    height: 1px;
-    background: #FFFFDE;
-    background-image: linear-gradient(to right, #FFFFDE, #1a1a1a, #FFFFDE);
-}
-
-hr.style-eight {
-    overflow: visible;
-    /* For IE */
-    padding: 0;
-    margin: 5px 0;
-    border: none;
-    border-top: medium double #8C8C8C;
-    color: #8C8C8C;
-    text-align: center;
-}
 
 /*bdr*/
 .custom-bdr {
