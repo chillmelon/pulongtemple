@@ -153,8 +153,8 @@
 /*ec-btn*/
 .ec-btn {
     width: 250px;
+    margin: 0 8px;
     margin-bottom: 32px;
-    margin-right: 16px;
 }
 
 /*Wave btn*/
