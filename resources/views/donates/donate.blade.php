@@ -77,9 +77,9 @@
 										<input type="hidden" name="project_id" value = "{{ $project_info['id'] }}">
 										<input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
 										@auth
-											<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}" >
+											<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
 										@else
-											<input class="form-control @error('name') is-invalid @enderror" type="text" name="name" >
+											<input class="form-control @error('name') is-invalid @enderror" type="text" name="name">
 
 											@error('name')
 											<span class="invalid-feedback" role="alert">
