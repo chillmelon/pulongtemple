@@ -12,6 +12,7 @@ class ProjectRepository
 		$project = Projects::where('id', $project_id)
 			->with('donates')
 			->with('user')
+			->with('updates')
 			->firstOrFail();
 		return $project;
 	}

@@ -14,4 +14,7 @@ class Projects extends Model
 	public function user(){
 		return $this->belongsTo('App\User','user_id');
 	}
+    public function updates(){
+		return $this->hasMany('App\Updates','project_id');
+	}
 }
