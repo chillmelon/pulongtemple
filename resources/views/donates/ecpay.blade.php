@@ -1,4 +1,4 @@
-@extends('auth.login-button')
+@extends('layouts.outer')
 @section('body')
 {{-- @extends('layout') --}}
 {{-- @section('content') --}}
