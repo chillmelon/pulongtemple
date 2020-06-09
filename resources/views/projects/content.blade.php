@@ -13,7 +13,7 @@
       <!-- title -->
       <div class="title">
         <h3>
-			{{ $project->title }}
+			    {{ $project->title }}
         <br>
         </h3>
 		<h6 style="font-size: 12px;"> by {{ $project->user->name }}</h6>
@@ -23,23 +23,23 @@
       <div class="row status">
         <!-- goal -->
         <div class="goal col-6 col-sm-8 col-lg-6">
-          <div class="max-w-260">
+          <div class="max-w-200">
             <h4 class="inline-b">NT$</h4>
             <h4 class="inline-b ab-rb">{{ $project->amount }}</h4>
           </div>
-          <div class="max-w-260">
-            <span class="inline-b fs-12">目標 NT$</span>
+          <div class="max-w-200">
+            <span class="inline-b fs-12">/ NT$</span>
             <span class="inline-b ab-rb fs-12">{{ $project->goal }}</span>
           </div>
 
           <hr class="hr-prime">
 
-          <div class="max-w-260">
+          <div class="max-w-200">
             <h4 class="inlin-b">{{ $project->supporters }}</h4>
             <span class="inlin-b ab-rb">人贊助</span>
           </div>
           {{-- <hr class="hr-prime"> --}}
-          <div class="max-w-260">
+          <div class="max-w-200">
             <h4 class="inlin-b">{{ $project->days_left }}</h4>
             <span class="inlin-b ab-rb">天剩餘</span>
           </div>

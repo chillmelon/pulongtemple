@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     @yield("meta")
     <title>PulongTemple</title>
+    {{-- favicon --}}
+    <link rel=icon href="{{asset('image/logo_48x48.png')}}" sizes="48x48" type="image/png">
     {{-- cropper --}}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
