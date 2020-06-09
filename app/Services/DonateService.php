@@ -22,16 +22,6 @@ class DonateService
         $donates = $this->donateRepository->findByUserId($user_id);
         return $donates;
     }
-    // find donations for a specific project
-    public function projectDonates($project_id=null)
-    {
-		$rand = $this->donateRepository->findByProject($project_id)->random(5);
-		$data = [
-			'top' => $top,
-			'rand' => $rand
-		];
-        return $data;
-    }
 	// find top 5 donates for a particular project
 	public function topFive($project_id=null){
 		$top = $this->donateRepository->findByProject($project_id)
@@ -49,15 +39,16 @@ class DonateService
 	}
 	// find random 5 comments for a particular project
 	public function randFive($project_id=null){
-		$rand = $this->donateRepository->findByProject($project_id)
-								 ->random(5)
-							 	 ->map(function ($donation){
-									 return [
-										 'avatar' => $donation->user->avatar,
-										 'name' => $donation->user->name,
-										 'comment' => $donation->comment
-									 ];
-								 });
+		$donates = $this->donateRepository->findByProject($project_id);
+		$rand = $donates
+			->random(min($donates->count(),5))
+			->map(function ($donation){
+				return [
+					'avatar' => $donation->user->avatar,
+					'name' => $donation->user->name,
+					'comment' => $donation->comment
+				];
+			});
 		return $rand;
 	}
 	public function gallary($project_id=null){
