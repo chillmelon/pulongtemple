@@ -73,7 +73,7 @@ class DonateService
             'name' => 'required|string|max:16',
             'amount' => 'required|integer|max:1000000',
             'email' => 'required|email|max:30',
-            'comment' => 'sometimes|string|max:255'
+			'comment' => 'nullable|string|max:255'
         ]);
         $donation=$this->format($donation);
         $this->donateRepository->create($donation);

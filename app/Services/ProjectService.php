@@ -38,6 +38,13 @@ class ProjectService
 		}
 		return $donated;
 	}
+	public function userProjects($user_id){
+        $projects = $this->projectRepository->findByUser($user_id)
+											->map(function($project){
+												return $this->format($project);
+											});
+		return $projects;
+    }
     //count fundraising progress
     public function format($project=null){
 		$project->days_left=date('d',strtotime( $project->deadline ) - time());
