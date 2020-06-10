@@ -30,12 +30,13 @@ class ProjectService
             ->findById($project_id);
         return $this->format($project);
     }
-	public function donated($project_id=null, $user_id=null){
-		$project = $this->detail($project_id);
-		if ($project->user->where('id', $user_id)->exists()){
-			return 1;
+	public function donated($project=null){
+		$donated = false;
+		if (auth()->user()){
+			$user_id = auth()->user()->id;
+			$donated = $project->user->where('paid',1)->where('id',$user_id)->exists();
 		}
-		return 0;
+		return $donated;
 	}
     //count fundraising progress
     public function format($project=null){
@@ -44,6 +45,7 @@ class ProjectService
 		$project->amount=$project->donates->where('paid',1)->sum('amount');
 		$project->progress=round($project->amount/$project->goal*100);
 		$project->starter=$project->user->name;
+		$project->donated=$this->donated($project);
 		return $project;
 	}
 }

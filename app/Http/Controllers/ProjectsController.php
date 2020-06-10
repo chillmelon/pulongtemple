@@ -21,16 +21,7 @@ class ProjectsController
 	public function show($project_id)
 	{
 		$project = $this->projectService->detail($project_id);
-		$donated = 0;
-		if (auth()->user()){
-			$user_id = auth()->user()->id;
-			$donated = $this->projectService->donated($project_id, $user_id);
-		}
-		$data = [
-			'project'=>$project,
-			'donated'=>$donated
-		];
-		return view('projects.content', $data);
+		return view('projects.content',['project'=>$project]);
 	}
     public function showUpdates($project_id)
     {

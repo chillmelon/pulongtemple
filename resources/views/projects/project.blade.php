@@ -2,7 +2,7 @@
 
 @section( "body")
 	{{--判斷是否捐過範例--}}
-	@if($donated == 1)
+	@if($project->donated)
 		<h1>fuck</h1>
 	@endif
 	{{--done--}}
