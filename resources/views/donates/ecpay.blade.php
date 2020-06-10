@@ -5,11 +5,21 @@
   <button class="btn ec-btn" onclick="checkOut('ATM')">ATM付款</button>
   <button class="btn ec-btn" onclick="checkOut('CVS')">超商代碼付款</button>
   {{-- script --}}
-  <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" > $(function () {
-  window.addEventListener('message', function (e) {
-  alert("訂單結果資訊:" + e.data);
-  <?php echo "thank you";?>
-  });</script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+	  // 監聽API回傳訊息
+	  $(function () {
+		  window.addEventListener('message', function (e) {
+			  console.log('API回傳前端訂單資訊：'+e.data);
+			  var obj = JSON.parse(e.data);
+			  if(obj.RtnCode == '1'){
+				  // redirect to thankyoupage
+				  window.location = "/thankyou";
+			  }
+		  });
+	  });
+  </script>
   <script src="https://payment.ecpay.com.tw/Scripts/SP/ECPayPayment_1.0.0.js"
   data-MerchantID= "<?php echo$MerchantID?>"
   data-SPToken= "<?php echo$SPToken?>"
