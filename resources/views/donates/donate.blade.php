@@ -64,7 +64,7 @@
             <div class="c-box donate-form">
               <div class="card custom-card">
                 <div class="card-body">
-                  <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
+					<form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
                     <h3>&ensp;輸入金額</h3>
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
@@ -98,7 +98,12 @@
                     @enderror
                     @endauth
                     &ensp;留言(選填)
-                    <textarea class="form-control comment" type="text" name="comment"></textarea>
+                    <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
+                    @error('comment')
+                    <span class="invalid-feedback" role="alert">
+                      <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
                     <div class="send">
                       <button class="btn">確定</button>
                     </div>
