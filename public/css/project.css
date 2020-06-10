@@ -208,7 +208,8 @@ tr:nth-child(even) {
     }
 
     .top-content,
-    .bottom-content {
+    .bottom-content,
+    .footer {
         padding: 20px 40px;
     }
 
@@ -246,7 +247,8 @@ tr:nth-child(even) {
     }
 
     .top-content,
-    .bottom-content {
+    .bottom-content,
+    .footer {
         padding: 20px 150px;
     }
 }
