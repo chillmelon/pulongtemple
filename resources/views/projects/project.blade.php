@@ -3,7 +3,9 @@
 @section( "body")
 	{{--判斷是否捐過範例--}}
 	@if($project->donated)
-		<h1>fuck</h1>
+		<div class="donated">
+      <h3>thanks for your donation.</h3>
+    </div>
 	@endif
 	{{--done--}}
 @yield("summary")

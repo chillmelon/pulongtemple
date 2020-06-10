@@ -197,12 +197,18 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 992px) {
-    .nav-top {
+    .nav-top,
+    .nav-mid {
         padding: 12px 40px;
         height: 90px;
     }
 
-    .top-content {
+    .donated {
+        padding: 20px 40px 0;
+    }
+
+    .top-content,
+    .bottom-content {
         padding: 20px 40px;
     }
 
@@ -220,14 +226,6 @@ tr:nth-child(even) {
     .intro {
         padding: 16px;
         border-left: none;
-    }
-
-    .sticky-top {
-        padding: 10px 40px;
-    }
-
-    .bottom-content {
-        padding: 20px 40px;
     }
 
     .nav-item {
