@@ -13,7 +13,7 @@
           </div>
           <div class="p-card-body">
             <a class="btn my-project" href="/projects/{{ $project->id }}">{{ $project->title }}</a>
-            <div class="p-card-nt my-project-nt">NT${{ $project->total_amount }}<br>/{{ $project->goal }}</div>
+            <div class="p-card-nt my-project-nt">NT${{ $project->amount }}<br>/{{ $project->goal }}</div>
           </div>
           {{-- <div class="p-card-footer"></div> --}}
         </div>
