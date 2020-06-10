@@ -42,13 +42,9 @@ class ProjectsController
 		];
         return view('projects.comments',$data);
     }
-    public function faq($project_id)
+    public function showFaqs($project_id)
     {
         $project = $this->projectService->detail($project_id);
-        return view('projects.faq',['project'=>$project]);
+        return view('projects.faqs',['project'=>$project]);
     }
-	public function create()
-	{
-		return view('projects.create');
-	}
 }

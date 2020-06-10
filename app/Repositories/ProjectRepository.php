@@ -13,6 +13,7 @@ class ProjectRepository
 			->with('donates')
 			->with('user')
 			->with('updates')
+			->with('faqs')
 			->firstOrFail();
 		return $project;
 	}

@@ -17,4 +17,7 @@ class Projects extends Model
     public function updates(){
 		return $this->hasMany('App\Updates','project_id');
 	}
+    public function faqs(){
+		return $this->hasMany('App\Faqs','project_id');
+	}
 }

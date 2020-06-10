@@ -24,7 +24,7 @@ Route::get('/', 'ProjectsController@index')->name('projects');
 Route::get('projects/{id}', 'ProjectsController@show');
 Route::get('projects/{id}/updates', 'ProjectsController@showUpdates');
 Route::get('projects/{id}/comments', 'ProjectsController@showComments');
-Route::get('projects/{id}/faq', 'ProjectsController@faq');
+Route::get('projects/{id}/faq', 'ProjectsController@showFaqs');
 
 //Donate and Pay
 Route::get('donate/{id}', 'DonatesController@create');
