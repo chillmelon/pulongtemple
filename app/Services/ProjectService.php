@@ -34,7 +34,7 @@ class ProjectService
 		$donated = false;
 		if (auth()->user()){
 			$user_id = auth()->user()->id;
-			$donated = $project->user->where('paid',1)->where('id',$user_id)->exists();
+			$donated = $project->donates->where('paid',1)->contains('user_id',$user_id);
 		}
 		return $donated;
 	}
