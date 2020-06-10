@@ -24,6 +24,7 @@ a {
 
 a:hover {
     color: #02F78E;
+    text-decoration: none;
 }
 
 /*hr*/
@@ -305,6 +306,20 @@ hr.hr-prime {
     padding: 8px;
     font-size: 12px;
 }
+
+/*footer*/
+.footer {
+    border-top: #01814A 2px solid;
+    margin-top: 56px;
+    padding: 32px;
+}
+
+.footer-content {
+    padding: 16px;
+    /*height: 150px;*/
+}
+
+
 
 /*media query*/
 @media (min-width: 992px) {

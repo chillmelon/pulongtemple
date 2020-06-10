@@ -24,7 +24,8 @@
             <h5>
             <br>
             &emsp;登入會員可以記錄每一筆的贊助，<br>
-            &emsp;也可以發起屬於自己的募資專案。
+            &emsp;也可以發起屬於自己的募資專案，<br>
+            &emsp;還可以加入贊助排行榜的競爭喔
             </h5>
           </div>
         </div>
@@ -66,7 +67,7 @@
                 <div class="card-body">
                   <form method="POST" action="{{ route('donates.new', $project_info['id']) }}" name="donation">
                     @csrf
-                    <h3>&ensp;輸入金額</h3>
+                    <h3>&ensp;*輸入金額</h3>
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                     @error('amount')
                     <span class="invalid-feedback" role="alert">
@@ -89,7 +90,7 @@
                     @auth
                     <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                     @else
-                    &ensp;E-mail(將會收到專案更新資訊)
+                    &ensp;*E-mail(將會收到專案更新資訊)
                     <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
                     @error('email')
                     <span class="invalid-feedback" role="alert">
