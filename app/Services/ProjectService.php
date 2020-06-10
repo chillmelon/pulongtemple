@@ -30,6 +30,13 @@ class ProjectService
             ->findById($project_id);
         return $this->format($project);
     }
+	public function donated($project_id=null, $user_id=null){
+		$project = $this->detail($project_id);
+		if ($project->user->where('id', $user_id)->exists()){
+			return 1;
+		}
+		return 0;
+	}
     //count fundraising progress
     public function format($project=null){
 		$project->days_left=date('d',strtotime( $project->deadline ) - time());

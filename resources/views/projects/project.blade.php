@@ -1,7 +1,13 @@
 @extends("auth.login-button")
 
 @section( "body")
+	{{--判斷是否捐過範例--}}
+	@if($donated == 1)
+		<h1>fuck</h1>
+	@endif
+	{{--done--}}
 @yield("summary")
+
 
 <!-- medium navbar -->
 <nav class="navbar navbar-expand navbar-dark sticky-top nav-mid">
