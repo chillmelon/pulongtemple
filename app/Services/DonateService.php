@@ -39,7 +39,7 @@ class DonateService
 	}
 	// find random 5 comments for a particular project
 	public function randFive($project_id=null){
-		$donates = $this->donateRepository->findByProject($project_id);
+		$donates = $this->donateRepository->findByProject($project_id)->whereNotNull('comment');
 		$rand = $donates
 			->random(min($donates->count(),5))
 			->map(function ($donation){
