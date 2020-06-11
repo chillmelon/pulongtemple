@@ -45,3 +45,8 @@ Route::post('/callback', 'DonatesController@callback');
 Route::get('form', function(){
     return view('auth.form');
 });
+
+//Footer
+Route::view('/terms','footer.terms');
+Route::view('/policy','footer.policy');
+Route::view('/about','footer.about');

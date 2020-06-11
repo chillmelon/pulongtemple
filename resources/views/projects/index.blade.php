@@ -44,9 +44,9 @@
             </div>
             <div class="time-nt">
               <div class="product-progress-time">
-				        剩下{{ $project->days_left }}天
+				        剩下 {{ $project->days_left }} 天
               </div>
-              <div class="product-progress-nt">
+              <div class="product-progress-nt" style="font-family: 'Press Start 2P';">
                 GOAL:NT${{ $project->goal }}
               </div>
             </div>

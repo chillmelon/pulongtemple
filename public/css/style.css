@@ -11,9 +11,7 @@
 html,
 body {
     background-color: #1a1a1a;
-    font-family: 'Press Start 2P', 'Share Tech Mono',
-        'Bungee', monospace,
-        'Noto Sans TC', 'Noto Serif TC', serif;
+    font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
     font-size: 16px;
     color: #ccc;
 }
@@ -36,6 +34,28 @@ hr.hr-prime {
     color: #8c8c8c !important;
 }
 
+/*table*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: center;
+    height: 73px;
+    padding: 8px;
+}
+
+th {
+    height: 56px;
+}
+
+tr:nth-child(even) {
+    background-color: #212121;
+}
+
+
 
 /*Utility*/
 .color-prime {
@@ -46,6 +66,9 @@ hr.hr-prime {
     color: #ccc !important;
 }
 
+.pd-32 {
+    padding: 32px;
+}
 .pd-lr-8 {
     padding: 0 8px;
 }
@@ -56,6 +79,10 @@ hr.hr-prime {
 
 .fs-12 {
     font-size: 12px;
+}
+
+.fs-18 {
+    font-size: 18px;
 }
 
 .ab-rb {
@@ -309,9 +336,9 @@ hr.hr-prime {
 
 /*footer*/
 .footer {
-    border-top: #01814A 2px solid;
-    margin-top: 56px;
-    padding: 32px;
+    border-top: rgb(1, 126, 72, .6) 1px solid;
+    margin-top: 72px;
+    padding: 56px 32px;
 }
 
 .footer-content {
@@ -319,6 +346,23 @@ hr.hr-prime {
     /*height: 150px;*/
 }
 
+/*long-text*/
+.long-text {
+    max-width: 720px;
+    line-height: 30px;
+}
+
+.long-text h3,
+.long-text h4 {
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.long-text li {
+    list-style: circle;
+}
+
+/*.long-text*/
 
 
 /*media query*/

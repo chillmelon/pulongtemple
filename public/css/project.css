@@ -93,27 +93,6 @@
 
 /*comment*/
 
-/*table*/
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th,
-td {
-    text-align: center;
-    height: 73px;
-    padding: 8px;
-}
-
-th {
-    height: 56px;
-}
-
-tr:nth-child(even) {
-    background-color: #212121;
-}
-
 .rank {
     border: double;
     border-width: 7px;
@@ -208,9 +187,12 @@ tr:nth-child(even) {
     }
 
     .top-content,
-    .bottom-content,
-    .footer {
+    .bottom-content {
         padding: 20px 40px;
+    }
+
+    .footer {
+        padding: 56px 40px;
     }
 
     .img-main {
@@ -247,8 +229,11 @@ tr:nth-child(even) {
     }
 
     .top-content,
-    .bottom-content,
-    .footer {
+    .bottom-content {
         padding: 20px 150px;
+    }
+
+    .footer {
+        padding: 56px 150px;
     }
 }

@@ -50,40 +50,39 @@
 </body>
 <footer class="footer">
   <div class="row justify-content-center">
-    <div class="col-md-4">
+    <div class="col-md-4 col-lg-3">
       <div class="footer-content">
         <p>社群</p>
-        <span style="font-family: 'Noto Sans TC';">Facebook</span>
+        <span>Facebook</span>
         <br>
         <a href="https://www.facebook.com/pooliongkiong/?ref=br_rs">埔隆宮</a>
         <br>
         <a href="https://www.facebook.com/%E5%9F%94%E9%9A%86%E5%AE%AE-%E7%82%AD%E7%83%A4%E5%9C%9F%E5%8F%B8%E5%A4%A7%E7%8E%8B-100982504853484/?ref=br_rs">埔隆宮餐飲部門</a>
         <br>
         <br>
-        <span style="font-family: 'Noto Sans TC';">Instagram</span>
+        <span>Instagram</span>
         <br>
         <a href="https://www.instagram.com/pulongtemple/">埔隆宮</a>
         <br>
         <a href="https://www.instagram.com/pulongtemple_toastking/">埔隆宮餐飲部門</a>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-lg-3">
       <div class="footer-content">
         <p>條款</p>
-        <a href="">服務條款</a>
+        <a href="/terms">服務條款</a>
         <br>
-        <a href="">隱私權政策</a>
+        <a href="/policy">隱私權政策</a>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-lg-3">
       <div class="footer-content">
         <p>關於</p>
-        <p style="font-family: 'Noto Sans TC';">Email： pulongtemple@gmail.com</p>
-        <p style="font-family: 'Noto Sans TC';">地址：南投縣埔里鎮大城巷 22-6</p>
-        <a href="">關於我們</a>
+        <p>Email： pulongtemple@gmail.com</p>
+        <p>地址：南投縣埔里鎮大城巷 22-6</p>
+        <a href="/about">關於我們</a>
       </div>
     </div>
-
   </div>
 </footer>
 </html>
