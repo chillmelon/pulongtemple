@@ -55,9 +55,9 @@
         <p>社群</p>
         <span>Facebook</span>
         <br>
-        <a href="https://www.facebook.com/pooliongkiong/?ref=br_rs">埔隆宮</a>
+        <a href="https://www.facebook.com/pooliongkiong/?ref=br_rs" target="_blank">埔隆宮</a>
         <br>
-        <a href="https://www.facebook.com/%E5%9F%94%E9%9A%86%E5%AE%AE-%E7%82%AD%E7%83%A4%E5%9C%9F%E5%8F%B8%E5%A4%A7%E7%8E%8B-100982504853484/?ref=br_rs">埔隆宮餐飲部門</a>
+        <a href="https://www.facebook.com/%E5%9F%94%E9%9A%86%E5%AE%AE-%E7%82%AD%E7%83%A4%E5%9C%9F%E5%8F%B8%E5%A4%A7%E7%8E%8B-100982504853484/?ref=br_rs" target="_blank">埔隆宮餐飲部門</a>
         <br>
         <br>
         <span>Instagram</span>
@@ -78,7 +78,9 @@
     <div class="col-md-4 col-lg-3">
       <div class="footer-content">
         <p>關於</p>
-        <p>Email： pulongtemple@gmail.com</p>
+        <p>Email：
+          <a href="mailto:pulongtemple@gmail.com">pulongtemple@gmail.com</a>
+        </p>
         <p>地址：南投縣埔里鎮大城巷 22-6</p>
         <a href="/about">關於我們</a>
       </div>
