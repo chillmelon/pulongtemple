@@ -28,7 +28,7 @@
             <h4 class="inline-b ab-rb">{{ $project->amount }}</h4>
           </div>
           <div class="max-w-200">
-
+            <span class="inline-b fs-12"></span>
             <span class="inline-b ab-rb fs-12">/{{ $project->goal }}</span>
           </div>
 
