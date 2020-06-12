@@ -151,7 +151,6 @@
     font-size: 18px;
 }
 
-
 /*Media Query*/
 
 @media (min-width: 576px) {
@@ -226,6 +225,10 @@
     .nav-top,
     .nav-mid {
         padding: 12px 150px;
+    }
+
+    .donated {
+        padding: 20px 150px 0;
     }
 
     .top-content,

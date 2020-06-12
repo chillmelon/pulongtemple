@@ -35,7 +35,7 @@
               {{-- progress --}}
               <div class="product-progress">
                 <div>
-                  <div class="progress-wrap progress" data-progress-percent="{{ $project->progress }}">
+                  <div class="progress-wrap progress ff-2P" data-progress-percent="{{ $project->progress }}">
 					        <span>{{ $project->progress }}%</span>
                     <div class="progress-bar progress"></div>
                   </div>
@@ -46,7 +46,7 @@
               <div class="product-progress-time">
 				        剩下 {{ $project->days_left }} 天
               </div>
-              <div class="product-progress-nt" style="font-family: 'Press Start 2P';">
+              <div class="product-progress-nt ff-2P">
                 GOAL:NT${{ $project->goal }}
               </div>
             </div>

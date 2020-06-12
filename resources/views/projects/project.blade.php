@@ -3,8 +3,8 @@
 @section( "body")
 	{{--判斷是否捐過範例--}}
 	@if($project->donated)
-		<div class="donated">
-      <h3>thanks for your donation.</h3>
+		<div class="donated pd-12 ff-2P">
+      <h3>Thanks for your donation.</h3>
     </div>
 	@endif
 	{{--done--}}

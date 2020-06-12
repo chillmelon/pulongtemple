@@ -22,14 +22,14 @@
       <!-- status -->
       <div class="row status">
         <!-- goal -->
-        <div class="goal col-6 col-sm-8 col-lg-6">
+        <div class="goal ff-2P col-6 col-sm-8 col-lg-6">
           <div class="max-w-200">
             <h4 class="inline-b">NT$</h4>
             <h4 class="inline-b ab-rb">{{ $project->amount }}</h4>
           </div>
           <div class="max-w-200">
-            <span class="inline-b fs-12">/ NT$</span>
-            <span class="inline-b ab-rb fs-12">{{ $project->goal }}</span>
+
+            <span class="inline-b ab-rb fs-12">/{{ $project->goal }}</span>
           </div>
 
           <hr class="hr-prime">
