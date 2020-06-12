@@ -11,21 +11,21 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="login-ascii-box">
-              <pre class="login-ascii overf-v ab-center">
-██        ██████    ██████   ██  ███    ██  ██████ 
-██       ██    ██  ██        ██  ████   ██       ██ 
-██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
-██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
-███████   ██████    ██████   ██  ██   ████    ██ 
+                            <pre class="login-ascii overf-v ab-center">
+                ██        ██████    ██████   ██  ███    ██  ██████ 
+                ██       ██    ██  ██        ██  ████   ██       ██ 
+                ██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
+                ██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
+                ███████   ██████    ██████   ██  ██   ████    ██ 
               </pre>
             </div>
           </div>
           <div class="col-12 col-lg-6">
             <h5 style="line-height: 32px; text-align: center;">
-              <br>
-              登入會員可以記錄每一筆的贊助，<br>
-              也可以發起屬於自己的募資專案，<br>
-              還可以加入贊助排行榜的競爭喔！
+            <br>
+            登入會員可以記錄每一筆的贊助，<br>
+            也可以發起屬於自己的募資專案，<br>
+            還可以加入贊助排行榜的競爭喔！
             </h5>
           </div>
         </div>
@@ -65,7 +65,7 @@
             <div class="c-box donate-form">
               <div class="card custom-card">
                 <div class="card-body">
-					<form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
+                  <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
                     <h3>&ensp;*輸入金額</h3>
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
