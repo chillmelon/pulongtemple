@@ -20,12 +20,12 @@
               </pre>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h5>
-            <br>
-            &emsp;登入會員可以記錄每一筆的贊助，<br>
-            &emsp;也可以發起屬於自己的募資專案，<br>
-            &emsp;還可以加入贊助排行榜的競爭喔
+          <div class="col-12 col-lg-6">
+            <h5 style="line-height: 32px; text-align: center;">
+              <br>
+              登入會員可以記錄每一筆的贊助，<br>
+              也可以發起屬於自己的募資專案，<br>
+              還可以加入贊助排行榜的競爭喔！
             </h5>
           </div>
         </div>

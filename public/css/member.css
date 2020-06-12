@@ -6,7 +6,8 @@
 .card-header {
     border-bottom: #01814A 2px solid;
 }
-.custom-card input {
+.custom-card input,
+.custom-card textarea {
     font-size: 20px;
     color: #00290A;
     background-color: #6BB382;
