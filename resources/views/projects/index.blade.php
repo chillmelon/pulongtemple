@@ -30,6 +30,11 @@
             </div>
             <div class="product-body custom-bdr-bm">
               <div class="product-content">
+                <div class="imgbox">
+                  <div class="imgbox-inner">
+                    <div class="image" style="background-image: url('{{asset('/storage/'. $project->image)}}');"></div>
+                  </div>
+                </div>
                 {{ $project->summary }}
               </div>
               {{-- progress --}}

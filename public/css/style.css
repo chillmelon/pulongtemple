@@ -220,7 +220,6 @@ tr:nth-child(even) {
 }
 
 .product {
-    /*height: 288px;*/
     padding: 0;
 }
 
@@ -254,7 +253,7 @@ tr:nth-child(even) {
 }
 
 .product-content {
-    height: 100px;
+    max-height: 360px;
     overflow: hidden;
 }
 
