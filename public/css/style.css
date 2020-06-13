@@ -252,12 +252,12 @@ tr:nth-child(even) {
     padding: 16px;
 }
 
-.product .imgbox {
+.product .imgbox-inner {
     opacity: .3;
     transition: all .5s;
 }
 
-.product .imgbox:hover {
+.product .imgbox-inner:hover {
     opacity: 1;
     margin-top: -4px;
 }
