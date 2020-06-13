@@ -221,17 +221,23 @@ tr:nth-child(even) {
 
 .product {
     padding: 0;
+    top: 0;
+    transition: all .3s;
 }
 
 .product:hover {
     cursor: pointer;
     border: #02C874 2px solid;
+    top: -2px;
 }
-
 
 .product-head {
     font-size: 20px;
     padding: 16px;
+}
+
+.product .custom-bdr-bm {
+    transition: inherit;
 }
 
 .product:hover .custom-bdr-bm {
@@ -254,10 +260,10 @@ tr:nth-child(even) {
 
 .product .image {
     opacity: .3;
-    transition: all .5s;
+    transition: inherit;
 }
 
-.product .image:hover {
+.product:hover .image {
     opacity: 1;
 }
 
