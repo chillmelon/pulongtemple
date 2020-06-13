@@ -253,12 +253,12 @@ tr:nth-child(even) {
 }
 
 .product .image {
-    opacity: 50%;
-    transition: all 0.5s;
+    opacity: .3;
+    transition: .5s;
 }
 
 .product .image:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .product-summary {
