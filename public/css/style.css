@@ -252,8 +252,8 @@ tr:nth-child(even) {
     padding: 16px;
 }
 
-.product-content {
-    max-height: 360px;
+.product-summary {
+    max-height: 120px;
     overflow: hidden;
 }
 
