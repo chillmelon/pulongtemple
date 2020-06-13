@@ -11,7 +11,6 @@
 ██╔═══╝  ██║   ██║ ██║      ██║   ██║ ██║╚██╗██║ ██║   ██║
 ██║      ╚██████╔╝ ███████╗ ╚██████╔╝ ██║ ╚████║ ╚██████╔╝
 ╚═╝       ╚═════╝  ╚══════╝  ╚═════╝  ╚═╝  ╚═══╝  ╚═════╝
-
 ████████╗ ███████╗ ███╗   ███╗ ██████╗  ██╗      ███████╗
 ╚══██╔══╝ ██╔════╝ ████╗ ████║ ██╔══██╗ ██║      ██╔════╝
    ██║    █████╗   ██╔████╔██║ ██████╔╝ ██║      █████╗
@@ -41,7 +40,7 @@
               <div class="product-progress">
                 <div>
                   <div class="progress-wrap progress ff-2P" data-progress-percent="{{ $project->progress }}">
-					        <span>{{ $project->progress }}%</span>
+                    <span>{{ $project->progress }}%</span>
                     <div class="progress-bar progress"></div>
                   </div>
                 </div>
@@ -49,7 +48,7 @@
             </div>
             <div class="time-nt">
               <div class="product-progress-time">
-				        剩下 {{ $project->days_left }} 天
+                剩下 {{ $project->days_left }} 天
               </div>
               <div class="product-progress-nt ff-2P">
                 GOAL:NT${{ $project->goal }}
@@ -64,25 +63,23 @@
 </div>
 <script type="text/javascript">
 // on page load...
-    moveProgressBar();
-    // on browser resize...
-    $(window).resize(function() {
-        moveProgressBar();
-    });
-
-    // SIGNATURE PROGRESS
-    function moveProgressBar() {
-      console.log("moveProgressBar");
-        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-        var getProgressWrapWidth = $('.progress-wrap').width();
-        var progressTotal = getPercent * getProgressWrapWidth;
-        var animationLength = 2500;
-
-        // on page load, animate percentage bar to data percentage length
-        // .stop() used to prevent animation queueing
-        $('.progress-bar').stop().animate({
-            left: progressTotal
-        }, animationLength);
-    }
+moveProgressBar();
+// on browser resize...
+$(window).resize(function() {
+moveProgressBar();
+});
+// SIGNATURE PROGRESS
+function moveProgressBar() {
+console.log("moveProgressBar");
+var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+var getProgressWrapWidth = $('.progress-wrap').width();
+var progressTotal = getPercent * getProgressWrapWidth;
+var animationLength = 2500;
+// on page load, animate percentage bar to data percentage length
+// .stop() used to prevent animation queueing
+$('.progress-bar').stop().animate({
+left: progressTotal
+}, animationLength);
+}
 </script>
 @endsection
