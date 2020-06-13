@@ -254,16 +254,17 @@ tr:nth-child(even) {
 
 .product .image {
     opacity: .3;
-    transition: .5s;
+    transition: all .5s;
 }
 
 .product .image:hover {
     opacity: 1;
+    margin-top: -8px;
 }
 
 .product-summary {
-    padding: 16px 0 0;
-    height: 80px;
+    padding: 8px 0 0;
+    height: 84px;
     overflow: hidden;
 }
 
