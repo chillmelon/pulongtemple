@@ -6,7 +6,7 @@
 @if ($level === 'error')
 # @lang('Whoops!')
 @else
-# @lang('埔隆宮募資平台感謝您的註冊')
+# @lang('埔隆宮募資平台，感謝您的註冊')
 @endif
 @endif
 
