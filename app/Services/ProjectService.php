@@ -47,7 +47,7 @@ class ProjectService
     }
     //count fundraising progress
     public function format($project=null){
-		$project->days_left=date_diff(date_create(),date_create($project->deadline))->format('%R%a');
+		$project->days_left=date_diff(date_create(),date_create($project->deadline))->format('%r%a');
 		$project->supporters=$project->donates->where('paid',1)->unique('user_id')->count('user_id');
 		$project->amount=$project->donates->where('paid',1)->sum('amount');
 		$project->progress=round($project->amount/$project->goal*100);
