@@ -42,6 +42,10 @@
 @endcomponent
 @endisset
 
+{{-- Salutation --}}
+@lang('祝您有美好的一天'),<br>
+@lang('埔隆宮')
+
 {{-- Subcopy --}}
 @slot('subcopy')
 @lang(
