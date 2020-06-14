@@ -1,5 +1,5 @@
-function moveProgressBar(pid) {
-    console.log("moveProgressBar");
+function indexProgressBar(pid) {
+    console.log("indexProgressBar");
     var getPercent = document.getElementById(pid).dataset.percent / 100;
     var getProgressWrapWidth = $('.progress-wrap').width();
     var progressTotal = getPercent * getProgressWrapWidth;

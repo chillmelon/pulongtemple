@@ -58,10 +58,10 @@
         </div>
         <script type="text/javascript">
           // on page load...
-          moveProgressBar({{ $project->id }});
+          indexProgressBar({{ $project->id }});
           // on browser resize...
           $(window).resize(function() {
-            moveProgressBar({{ $project->id }});
+            indexProgressBar({{ $project->id }});
           });
         </script>
         @endforeach
