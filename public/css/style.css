@@ -349,13 +349,8 @@ tr:nth-child(even) {
     transform: translateY(-50%);
 }
 
-.my-project-nt {
-    font-size: 14px;
-}
-
 .p-card-footer {
     padding: 8px;
-    font-size: 12px;
 }
 
 /*footer*/
