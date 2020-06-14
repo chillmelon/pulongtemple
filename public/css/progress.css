@@ -25,18 +25,18 @@
 
 .circle-pg-inner .water {
     position: absolute;
-    top: 33%;
+    top: 110%;
     z-index: 1;
     width: 200%;
     height: 200%;
     left: -50%;
-    border-radius: 40%;
+    border-radius: 43%;
 
     background: rgba(0, 138, 108, 0.5);
     box-shadow: 0 0 20px #009474;
 
     -webkit-animation: spin 10s infinite linear;
-    animation: spin 10s infinite linear;
+    animation: spin 7s infinite linear;
 }
 
 .circle-pg-inner .glare {
