@@ -41,13 +41,13 @@
             <span class="inlin-b ab-rb">天剩餘</span>
           </div>
         </div>
-        <!-- Progress bar -->
+        <!-- Progress Circle -->
         <div class="col-6 col-sm-4 col-lg-6">
           <div class="circle-pg-box ab-center">
             <div class="circle-pg">
               <div class="circle-pg-inner">
                 <div class="percent">{{ $project->progress }}%</div>
-                <div class="water"></div>
+                <div class="water" data-percent="{{ $project->progress }}"></div>
                 <div class="glare"></div>
               </div>
             </div>
@@ -63,6 +63,14 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+// on page load...
+porgressCircle();
+// on browser resize...
+$(window).resize(function() {
+  porgressCircle();
+});
+</script>
 @endsection
 @section("content-active")
 active

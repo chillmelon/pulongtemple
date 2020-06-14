@@ -35,4 +35,5 @@
 </nav>
 
 @yield("sub-content")
+
 @endsection
