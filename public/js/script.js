@@ -12,7 +12,7 @@ function indexProgressBar(pid) {
 function porgressCircle() {
     console.log("progressCircle");
     var percent = $(".water").data("percent");
-    var topDistant = 110 - percent + "%";
+    var topDistant = 105 - percent + "%";
     console.log(topDistant);
     $(".water").css("top", topDistant);
 }
