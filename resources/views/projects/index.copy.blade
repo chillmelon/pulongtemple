@@ -39,7 +39,7 @@
               {{-- progress --}}
               <div class="product-progress">
                 <div>
-                  <div id="{{ $project->id }}" class="progress-wrap progress ff-2P" data-percent="{{ $project->progress }}">
+                  <div class="progress-wrap progress ff-2P" data-progress-percent="{{ $project->progress }}">
                     <span>{{ $project->progress }}%</span>
                     <div class="progress-bar progress"></div>
                   </div>
@@ -56,36 +56,28 @@
             </div>
           </div>
         </div>
-        <script type="text/javascript">
-          // on page load...
-          moveProgressBar({{ $project->id }});
-          // on browser resize...
-          $(window).resize(function() {
-            moveProgressBar({{ $project->id }});
-          });
-        </script>
         @endforeach
       </div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
-// // on page load...
-// moveProgressBar();
-// // on browser resize...
-// $(window).resize(function() {
-//   moveProgressBar();
-// });
+// on page load...
+moveProgressBar();
+// on browser resize...
+$(window).resize(function() {
+  moveProgressBar();
+});
 // SIGNATURE PROGRESS
-// function moveProgressBar() {
-//   console.log("moveProgressBar");
-//   var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
-//   var getProgressWrapWidth = $('.progress-wrap').width();
-//   var progressTotal = getPercent * getProgressWrapWidth;
-//   var animationLength = 2500;
-//   // on page load, animate percentage bar to data percentage length
-//   // .stop() used to prevent animation queueing
-//   $('.progress-bar').stop().animate({left: progressTotal}, animationLength);
-// }
+function moveProgressBar() {
+  console.log("moveProgressBar");
+  var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+  var getProgressWrapWidth = $('.progress-wrap').width();
+  var progressTotal = getPercent * getProgressWrapWidth;
+  var animationLength = 2500;
+  // on page load, animate percentage bar to data percentage length
+  // .stop() used to prevent animation queueing
+  $('.progress-bar').stop().animate({left: progressTotal}, animationLength);
+}
 </script>
 @endsection
