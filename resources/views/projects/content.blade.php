@@ -37,8 +37,13 @@
             <span class="inlin-b ab-rb">人贊助</span>
           </div>
           <div class="max-w-200">
+            @if ($project->days_left < 0)
+            <h4 class="inlin-b">&nbsp;</h4>
+            <span class="inlin-b ab-rb">專案結束</span>
+            @else
             <h4 class="inlin-b">{{ $project->days_left }}</h4>
             <span class="inlin-b ab-rb">天剩餘</span>
+            @endif
           </div>
         </div>
         <!-- Progress Circle -->
