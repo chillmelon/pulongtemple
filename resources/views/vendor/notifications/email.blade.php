@@ -6,12 +6,12 @@
 @if ($level === 'error')
 # @lang('Whoops!')
 @else
-# @lang('感謝註冊埔隆宮募資平台')
+# @lang('埔隆宮募資平台感謝您的註冊')
 @endif
 @endif
 
 {{-- Intro Lines --}}
-<h4>埔里鎮的每個人給我10塊錢，我就有80萬了。</h4>
+<h2>埔里鎮的每個人給我10塊錢，我就有80萬了。</h2>
 <p>
   對，做事情要花錢。公共性的事情不是政府做就是政府發錢給民間做，所以還是政府在做。政府做事就是慢，程序很多。所以我們募資，直接把錢給要做事的人。
 </p>
@@ -24,10 +24,6 @@
 <p>
   為埔里好的事我們都要支持！
 </p>
-{{-- @foreach ($introLines as $line)
-{{ $line }}
-
-@endforeach --}}
 
 {{-- Action Button --}}
 @isset($actionText)
@@ -42,30 +38,14 @@
     }
 ?>
 @component('mail::button', ['url' => $actionUrl, 'color' => $color])
-認證您的信箱
+驗證您的信箱
 @endcomponent
 @endisset
 
-{{-- Outro Lines --}}
-{{-- @foreach ($outroLines as $line)
-{{ $line }}
-
-@endforeach --}}
-
-{{-- Salutation --}}
-@if (! empty($salutation))
-{{ $salutation }}
-@else
-@lang('Regards'),<br>
-{{ config('app.name') }}
-@endif
-
 {{-- Subcopy --}}
-@isset($actionText)
 @slot('subcopy')
 @lang(
     "或在瀏覽器貼上連結:"
 ) <span class="break-all">[{{ $displayableActionUrl }}]({{ $actionUrl }})</span>
 @endslot
-@endisset
 @endcomponent
