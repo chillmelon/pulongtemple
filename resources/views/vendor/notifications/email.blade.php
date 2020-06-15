@@ -6,7 +6,7 @@
 @if ($level === 'error')
 # @lang('Whoops!')
 @else
-# @lang('埔隆宮募資平台，感謝您的註冊!')<br><br>
+# @lang('埔隆宮募資平台，歡迎您!')<br><br>
 @endif
 @endif
 
@@ -22,6 +22,7 @@
 <p>
   政府做事就是慢，程序很多。所以我們募資，直接把錢給要做事的人。
 </p>
+<br>
 <p>
   有人在燒草很臭？大家募資買個樹枝粉碎機。
 </p>
@@ -45,7 +46,7 @@
     }
 ?>
 @component('mail::button', ['url' => $actionUrl, 'color' => $color])
-驗證您的信箱
+驗證信箱
 @endcomponent
 @endisset
 
