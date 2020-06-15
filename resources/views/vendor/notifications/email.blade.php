@@ -57,7 +57,7 @@
 {{-- Subcopy --}}
 @slot('subcopy')
 @lang(
-    "如認證遇到困難，請在瀏覽器貼上以下連結:"
+    "如認證遇到困難，請前往以下連結:"
 ) <span class="break-all">[{{ $displayableActionUrl }}]({{ $actionUrl }})</span>
 @endslot
 @endcomponent
