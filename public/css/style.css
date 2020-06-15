@@ -222,7 +222,7 @@ tr:nth-child(even) {
 .product {
     padding: 0;
     top: 0;
-    transition: all .2s linear;
+    transition: all .3s ease;
 }
 
 .product:hover {
@@ -330,7 +330,6 @@ tr:nth-child(even) {
 .p-card-head {
     padding: 8px;
     border-bottom: #01814A 2px solid;
-    ;
 }
 
 .p-card-body {
@@ -380,9 +379,6 @@ tr:nth-child(even) {
 .long-text li {
     list-style: circle;
 }
-
-/*.long-text*/
-
 
 /*media query*/
 @media (min-width: 992px) {
