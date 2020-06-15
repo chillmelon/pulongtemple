@@ -1,9 +1,9 @@
 .logo a .swap-on-hover__front-image {
     z-index: 9999;
-    transition: opacity;
+    transition: opacity .3s ease;
 }
 
-.logo:hover a .swap-on-hover__front-image {
+.nav-top:hover a .swap-on-hover__front-image {
     opacity: 0;
 }
 
