@@ -16,7 +16,7 @@
         {{ $project->title }}
         <br>
         </h3>
-        <h6 style="font-size: 12px;"> by {{ $project->user->name }}</h6>
+        <h6> by {{ $project->user->name }}</h6>
         <hr class="hr-prime">
       </div>
       <!-- status -->
