@@ -23,6 +23,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Override the email notification for verifying email
+        // VerifyEmail::toMailUsing(function ($notifiable){
+        //     $verifyUrl = URL::temporarySignedRoute(
+        //         'verification.verify',
+        //         Carbon::now()->addMinutes(Config::get('auth.verification.expire', 60)),
+        //         ['id' => $notifiable->getKey()]
+        //     );
+        //     return new EmailVerification($verifyUrl, $notifiable);
+        // });
     }
 }

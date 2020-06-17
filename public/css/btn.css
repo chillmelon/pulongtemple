@@ -1,9 +1,9 @@
 .logo a .swap-on-hover__front-image {
     z-index: 9999;
-    transition: opacity;
+    transition: opacity .3s ease;
 }
 
-.logo:hover a .swap-on-hover__front-image {
+.nav-top:hover a .swap-on-hover__front-image {
     opacity: 0;
 }
 
@@ -204,7 +204,7 @@
     box-shadow: 0px 0px 4px 2px #1a1a1a;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.2s;
+    transition: all 0.5s ease;
 }
 
 .login span {

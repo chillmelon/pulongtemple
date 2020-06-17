@@ -47,9 +47,16 @@
               </div>
             </div>
             <div class="time-nt">
+              @if ($project->days_left < 0)
+              <div class="product-progress-time">
+                專案結束
+              </div>
+              @else
               <div class="product-progress-time">
                 剩下 {{ $project->days_left }} 天
               </div>
+              @endif
+
               <div class="product-progress-nt ff-2P">
                 GOAL:NT${{ $project->goal }}
               </div>

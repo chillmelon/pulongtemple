@@ -1,7 +1,7 @@
 @extends("auth.login-button")
 
 @section( "body")
-	{{--判斷是否捐過範例--}}
+	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
 		<div class="donated pd-12 ff-2P">
       <h3>Thanks for your donation.</h3>
@@ -29,10 +29,18 @@
       </li>
     </ul>
   </div>
+  {{-- donate button --}}
+  @if ($project->days_left < 0)
+  <div class="donate">
+    <a class="btn" href="#"><span>專案結束</span></a>
+  </div>
+  @else
   <div class="donate">
 	  <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>贊 助 $</span></a>
   </div>
+  @endif
 </nav>
 
 @yield("sub-content")
+
 @endsection

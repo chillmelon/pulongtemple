@@ -8,3 +8,11 @@ function indexProgressBar(pid) {
     // .stop() used to prevent animation queueing
     $('#'+pid+' .progress-bar').stop().animate({left: progressTotal}, animationLength);
 }
+
+function porgressCircle() {
+    console.log("progressCircle");
+    var percent = $(".water").data("percent");
+    var topDistant = 105 - percent + "%";
+    console.log(topDistant);
+    $(".water").css("top", topDistant);
+}

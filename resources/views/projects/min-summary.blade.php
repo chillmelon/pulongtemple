@@ -13,10 +13,10 @@
     <div class="intro col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
       <!-- title -->
       <div class="title">
-        <h4>
-        埔隆宮-炭烤土司大王
-        </h4>
-        <h6 style="font-size: 12px;"> by Pulong Temple</h6>
+        <h3>
+        {{ $project->title }}
+        </h3>
+        <h6> by {{ $project->user->name }}</h6>
         <hr class="hr-prime">
       </div>
       <!-- status -->
@@ -36,10 +36,14 @@
             <h4 class="inlin-b">{{ $project->supporters }}</h4>
             <span class="inlin-b ab-rb">人贊助</span>
           </div>
-          {{-- <hr class="hr-prime"> --}}
           <div class="max-w-200">
+            @if ($project->days_left < 0)
+            <h4 class="inlin-b">&nbsp;</h4>
+            <span class="inlin-b ab-rb">專案結束</span>
+            @else
             <h4 class="inlin-b">{{ $project->days_left }}</h4>
             <span class="inlin-b ab-rb">天剩餘</span>
+            @endif
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@
         {{ $project->title }}
         <br>
         </h3>
-        <h6 style="font-size: 12px;"> by {{ $project->user->name }}</h6>
+        <h6> by {{ $project->user->name }}</h6>
         <hr class="hr-prime">
       </div>
       <!-- status -->
@@ -37,17 +37,22 @@
             <span class="inlin-b ab-rb">人贊助</span>
           </div>
           <div class="max-w-200">
+            @if ($project->days_left < 0)
+            <h4 class="inlin-b">&nbsp;</h4>
+            <span class="inlin-b ab-rb">專案結束</span>
+            @else
             <h4 class="inlin-b">{{ $project->days_left }}</h4>
             <span class="inlin-b ab-rb">天剩餘</span>
+            @endif
           </div>
         </div>
-        <!-- Progress bar -->
+        <!-- Progress Circle -->
         <div class="col-6 col-sm-4 col-lg-6">
           <div class="circle-pg-box ab-center">
             <div class="circle-pg">
               <div class="circle-pg-inner">
                 <div class="percent">{{ $project->progress }}%</div>
-                <div class="water"></div>
+                <div class="water" data-percent="{{ $project->progress }}"></div>
                 <div class="glare"></div>
               </div>
             </div>
@@ -63,6 +68,14 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+// on page load...
+porgressCircle();
+// on browser resize...
+$(window).resize(function() {
+  porgressCircle();
+});
+</script>
 @endsection
 @section("content-active")
 active

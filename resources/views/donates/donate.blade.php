@@ -11,12 +11,12 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="login-ascii-box">
-                            <pre class="login-ascii overf-v ab-center">
-                ██        ██████    ██████   ██  ███    ██  ██████ 
-                ██       ██    ██  ██        ██  ████   ██       ██ 
-                ██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
-                ██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
-                ███████   ██████    ██████   ██  ██   ████    ██ 
+              <pre class="login-ascii overf-v ab-center">
+██        ██████    ██████   ██  ███    ██  ██████ 
+██       ██    ██  ██        ██  ████   ██       ██ 
+██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
+██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
+███████   ██████    ██████   ██  ██   ████    ██ 
               </pre>
             </div>
           </div>
@@ -50,13 +50,15 @@
                     <div class="circle-pg">
                       <div class="circle-pg-inner">
                         <div class="percent">{{$project_info->progress}}%</div>
-                        <div class="water"></div>
+                        <div class="water" data-percent="{{$project_info->progress}}"></div>
                         <div class="glare"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h6>NT${{$project_info->amount}} <small><br>/&ensp;NT${{$project_info->goal}}</small></h6>
+                <div class="ff-2P">
+                  <h6>NT$ {{$project_info->amount}} <small><br>/&ensp;{{$project_info->goal}}</small></h5>
+                </div>
               </div>
             </div>
           </div>
@@ -118,4 +120,12 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+// on page load...
+porgressCircle();
+// on browser resize...
+$(window).resize(function() {
+  porgressCircle();
+});
+</script>
 @endsection
