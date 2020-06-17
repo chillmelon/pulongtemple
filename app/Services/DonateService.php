@@ -25,6 +25,7 @@ class DonateService
 	// find top 5 donates for a particular project
 	public function topFive($project_id=null){
 		$top = $this->donateRepository->findByProject($project_id)
+								->whereNotNull('user_id')
 								->groupBy('user_id')
 								->map(function ($donation){
 									return [
@@ -43,11 +44,19 @@ class DonateService
 		$rand = $donates
 			->random(min($donates->count(),5))
 			->map(function ($donation){
+				if($donation->user){
 				return [
 					'avatar' => $donation->user->avatar,
 					'name' => $donation->user->name,
 					'comment' => $donation->comment
+				];}
+				else{
+				return [
+					'avatar' => 'users/default.png',
+					'name' => $donation->user->name,
+					'comment' => $donation->comment
 				];
+				}
 			});
 		return $rand;
 	}
