@@ -3,7 +3,18 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-12 col-lg-11 col-xl-9">
-      <div class="pltp-box">
+      <div class="pltp-box-neon">
+        <div class="neon">
+          PULONG<br>
+          TEMPLE
+        </div>
+        <div class="arrow-box">
+          <span class="arrow">︾</span><br>
+          <span class="arrow">︾</span><br>
+          <span class="arrow">︾</span>
+        </div>
+      </div>
+{{--       <div class="pltp-box">
         <pre class="pltp overf-v ab-center">
 ██████╗  ██╗   ██╗ ██╗       ██████╗  ███╗   ██╗  ██████╗
 ██╔══██╗ ██║   ██║ ██║      ██╔═══██╗ ████╗  ██║ ██╔════╝
@@ -18,7 +29,7 @@
    ██║    ███████╗ ██║ ╚═╝ ██║ ██║      ███████╗ ███████╗
    ╚═╝    ╚══════╝ ╚═╝     ╚═╝ ╚═╝      ╚══════╝ ╚══════╝
         </pre>
-      </div>
+      </div> --}}
       {{-- product --}}
       <div class="row justify-content-center">
         @foreach($projects as $project)
