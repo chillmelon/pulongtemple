@@ -65,13 +65,13 @@
 }
 
 .donate span {
+    color: #01814A;
     width: 100%;
     padding: 4px;
     font-family: Impact, Arial Black, 'Noto Serif TC', serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
-    /*color: #01814A;*/
     text-shadow: 0.5px 0.5px 20px #000000;
 }
 
@@ -86,6 +86,7 @@
 .donate .btn:hover {
     border: #01B468 2px solid;
     box-shadow: 0px 0px 5px 0.5px #08af7e;
+    color: #01B468;
 }
 
 .donate .btn:hover span {

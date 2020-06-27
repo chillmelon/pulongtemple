@@ -32,7 +32,7 @@
   {{-- donate button --}}
   @if ($project->days_left < 0)
   <div class="donate">
-    <a class="btn" href="#"><span>專案結束</span></a>
+    <a class="btn"><span>專案結束</span></a>
   </div>
   @else
   <div class="donate">
