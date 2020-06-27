@@ -18,7 +18,8 @@
 
 .description {
     font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
-    padding: 10px;
+    padding: 24px 16px;
+    font-size: 20px;
     line-height: 30px;
 }
 
