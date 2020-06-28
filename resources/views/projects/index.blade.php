@@ -4,9 +4,22 @@
   <div class="row justify-content-center">
     <div class="col-12 col-lg-11 col-xl-9">
       <div class="pltp-box-neon">
-        <div class="neon">
-          PULONG<br>
-          TEMPLE
+        <div>
+          <span class="neon">P</span>
+          <span class="neon">U</span>
+          <span class="neon">L</span>
+          <span class="neon">O</span>
+          <span class="neon">N</span>
+          <span class="neon">G</span>
+          <br>
+          <span class="neon">T</span>
+          <span class="neon">E</span>
+          <span class="neon">M</span>
+          <span class="neon">P</span>
+          <span class="neon">L</span>
+          <span class="neon">E</span>
+          {{-- PULONG<br>
+          TEMPLE --}}
         </div>
         <div class="arrow-box">
           <span class="arrow">︾</span><br>

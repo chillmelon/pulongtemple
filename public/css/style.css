@@ -140,9 +140,8 @@ tr:nth-child(even) {
     font-weight: 500;
     font-size: 15vw;
     line-height: 18vw;
-    letter-spacing: 3vw;
+    letter-spacing: 2vw;
     color: #fff;
-    width: 100%;
 
     opacity: 0;
     text-shadow:
@@ -154,11 +153,29 @@ tr:nth-child(even) {
         /*0 0 60px rgba(1, 178, 104, 1),*/
         0 0 70px rgba(1, 178, 104, .6);
     animation:
-        /*shine-a .1s ease .9s,*/
-        shine-b .3s ease .7s,
+        easelight 5s cubic-bezier(.4,0,.3,0) both;
+        /*shine-b .3s ease .7s,
         shine-c 1s cubic-bezier(.9,0,.75,1) 2s,
-        shine-d 1s linear 3s forwards;
+        shine-d 1s linear 3s forwards;*/
 }
+
+.neon:nth-of-type(1) {
+    animation:
+        easelight 5s cubic-bezier(.4,0,.3,0) both,
+        shine-a .2s linear 8s;
+}
+
+.neon:nth-of-type(11) {
+    animation:
+        easelight 5s cubic-bezier(.4,0,.3,0) both,
+        shine-b .3s linear 10s;
+}
+
+@keyframes easelight {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
 @keyframes shine-a {
     0% {opacity: 0}
     70% {opacity: 1}
