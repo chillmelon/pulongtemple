@@ -336,6 +336,7 @@ tr:nth-child(even) {
 
 .product-box {
     padding: 16px;
+    animation: easelight 5s cubic-bezier(.4,0,.3,0) both;
 }
 
 .product {
