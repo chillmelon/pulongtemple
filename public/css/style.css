@@ -225,23 +225,24 @@ tr:nth-child(even) {
     display: none;
     color: rgb(28, 253, 155, .3);
     font-size: 3vw;
-    line-height: 1vw;
+    line-height: .6vw;
     opacity: 0;
 }
 
 .arrow:nth-of-type(1) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 11s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 11s infinite;
 }
 .arrow:nth-of-type(2) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 12s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 12.5s infinite;
 }
 .arrow:nth-of-type(3) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 13s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 14s infinite;
 }
 
 @keyframes shine {
     0% {opacity: 0}
-    25% {opacity: 1}
+    24.9% {opacity: 1}
+    25% {opacity: 0}
 }
 
 /*bdr*/

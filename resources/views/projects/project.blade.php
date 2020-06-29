@@ -1,9 +1,5 @@
 @extends("auth.login-button")
 
-@section("meta")
-
-@endsection
-
 @section("body")
 	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
