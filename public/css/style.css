@@ -154,21 +154,23 @@ tr:nth-child(even) {
         0 0 70px rgba(1, 178, 104, .6);
     animation:
         easelight 5s cubic-bezier(.4,0,.3,0) both;
-        /*shine-b .3s ease .7s,
-        shine-c 1s cubic-bezier(.9,0,.75,1) 2s,
-        shine-d 1s linear 3s forwards;*/
 }
 
 .neon:nth-of-type(1) {
     animation:
         easelight 5s cubic-bezier(.4,0,.3,0) both,
-        shine-a .2s linear 8s;
+        shine-a 10s linear 15s infinite;
+}
+
+.neon:nth-of-type(9) {
+    animation:
+        easelight-x 10s cubic-bezier(.4,0,.3,0) both;
 }
 
 .neon:nth-of-type(11) {
     animation:
         easelight 5s cubic-bezier(.4,0,.3,0) both,
-        shine-b .3s linear 10s;
+        shine-b 10s linear 18s infinite;
 }
 
 @keyframes easelight {
@@ -176,17 +178,41 @@ tr:nth-child(even) {
     100% {opacity: 1}
 }
 
+@keyframes easelight-x {
+    0% {opacity: 0}
+    50% {opacity: .5}
+    60% {opacity: .5}
+    62% {opacity: 0}
+    64% {opacity: .5}
+    70% {opacity: .5}
+    70.1% {opacity: 0}
+    79% {opacity: 0}
+    80% {opacity: .5}
+    81% {opacity: 0}
+    82% {opacity: .5}
+    83% {opacity: 0}
+    84% {opacity: .5}
+    85% {opacity: 0}
+    99.9% {opacity: 0}
+    100% {opacity: 1}
+}
+
 @keyframes shine-a {
     0% {opacity: 0}
-    70% {opacity: 1}
-    100% {opacity: 0}
+    4% {opacity: 0}
+    5% {opacity: 1}
+    6% {opacity: 0}
+    7% {opacity: 1}
+    100% {opacity: 1}
 }
 @keyframes shine-b {
     0% {opacity: 0}
-    25% {opacity: 1}
-    50% {opacity: 0}
-    75% {opacity: 1}
-    100% {opacity: 0}
+    1% {opacity: 1}
+    2% {opacity: 0}
+    3% {opacity: 1}
+    4% {opacity: 0}
+    5% {opacity: 1}
+    100% {opacity: 1}
 }
 @keyframes shine-c {
     0% {opacity: 0}
@@ -213,10 +239,6 @@ tr:nth-child(even) {
     98% {opacity: 1}
     100% {opacity: 0}
 }
-@keyframes shine-d {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
 
 .arrow-box {
     display: none;
@@ -229,17 +251,16 @@ tr:nth-child(even) {
     font-size: 3vw;
     line-height: 1vw;
     opacity: 0;
-    /*animation: down 3s ease backwards infinite;*/
 }
 
 .arrow:nth-of-type(1) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 5s infinite;
+    animation: shine 4s cubic-bezier(.5,0,0,.6) 11s infinite;
 }
 .arrow:nth-of-type(2) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 6s infinite;
+    animation: shine 4s cubic-bezier(.5,0,0,.6) 12s infinite;
 }
 .arrow:nth-of-type(3) {
-    animation: shine 4s cubic-bezier(.5,0,0,.6) 7s infinite;
+    animation: shine 4s cubic-bezier(.5,0,0,.6) 13s infinite;
 }
 
 @keyframes shine {
