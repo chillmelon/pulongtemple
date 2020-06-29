@@ -2,7 +2,7 @@
 
 @section("meta")
 <meta itemprop="name" content="{{ $project->title }}">
-<meta itemprop="image" content="url('{{asset('/storage/'. $project->image)}}')">
+<meta itemprop="image" content="{{asset('/storage/'. $project->image)}}">
 <meta itemprop="description" content="{{ $project->summary }}">
 {{-- facebook --}}
 <meta property="og:title" content="{{ $project->title }}" >

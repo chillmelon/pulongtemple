@@ -1,4 +1,16 @@
 @extends("projects.project")
+
+@section("meta")
+<meta itemprop="name" content="{{ $project->title }}">
+<meta itemprop="image" content="{{asset('/storage/'. $project->image)}}">
+<meta itemprop="description" content="{{ $project->summary }}">
+{{-- facebook --}}
+<meta property="og:title" content="{{ $project->title }}" >
+{{-- <meta property="og:url" content="https://pulongtemple.wtf/projects/5"> --}}
+<meta property="og:image" content="url('{{asset('/storage/'. $project->image)}}')">
+<meta property="og:description" content="{{ $project->summary }}" >
+@endsection
+
 @section("summary")
 {{-- min-summary --}}
 <div class="container-fluid top-content">
