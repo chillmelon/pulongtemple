@@ -1,3 +1,10 @@
+@section("meta")
+<meta property="og:title" content="埔隆宮募資平台" >
+<meta property="og:url" content="https://pulongtemple.com/">
+<meta property="og:image" content="https://photos.google.com/u/6/photo/AF1QipMnD_QEJNypNR7oQ9Da-qBXH1yyc-K18a87szIL">
+<meta property="og:description" content="埔隆宮募資平台" >
+@endsection
+
 @extends('auth.login-button')
 @section('body')
 <div class="container-fluid">
