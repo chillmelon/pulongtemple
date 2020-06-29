@@ -2,7 +2,7 @@
 
 @section("meta")
 <meta itemprop="name" content="埔隆宮募資平台">
-<meta itemprop="image" content="https://ppt.cc/fwLIxx">
+<meta itemprop="image" content="https://lh3.googleusercontent.com/pw/ACtC-3fT2meUcwsNfc5bvm94ZBn4yGToTG6XI9JcBmJF-XKG_sO5Tc4tpJirIINgEcLI8pk3Lo9tFexXvxL_Hwd0FWdUrfg5EofwMIvKeMcq_9s6aSCpwKp9eLN9n7p37JmfZDsH-VWbghx-87iNGwiB1LI=s949-no?authuser=6">
 <meta itemprop="description" content="埔里鎮的每個人給我10塊錢，我就有80萬了。
 對，做事情要花錢。公共性的事情不是政府做就是政府發錢給民間做，所以還是政府在做。政府做事就是慢，程序很多。所以我們募資，直接把錢給要做事的人。
 
@@ -14,7 +14,7 @@
 {{-- facebook --}}
 <meta property="og:title" content="埔隆宮募資平台" >
 <meta property="og:url" content="https://pulongtemple.com/">
-<meta property="og:image" content="https://ppt.cc/fwLIxx">
+<meta property="og:image" content="https://lh3.googleusercontent.com/pw/ACtC-3fT2meUcwsNfc5bvm94ZBn4yGToTG6XI9JcBmJF-XKG_sO5Tc4tpJirIINgEcLI8pk3Lo9tFexXvxL_Hwd0FWdUrfg5EofwMIvKeMcq_9s6aSCpwKp9eLN9n7p37JmfZDsH-VWbghx-87iNGwiB1LI=s949-no?authuser=6">
 <meta property="og:description" content="埔里鎮的每個人給我10塊錢，我就有80萬了。
 對，做事情要花錢。公共性的事情不是政府做就是政府發錢給民間做，所以還是政府在做。政府做事就是慢，程序很多。所以我們募資，直接把錢給要做事的人。
 
