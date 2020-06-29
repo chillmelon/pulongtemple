@@ -34,15 +34,15 @@
     </ul>
   </div>
   {{-- donate button --}}
+  <div class="donate">
   @if ($project->days_left < 0)
-  <div class="donate">
     <a class="btn"><span>專案結束</span></a>
-  </div>
+  @elseif($project->donated)
+    <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>再次贊助 $</span></a>
   @else
-  <div class="donate">
-	  <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>贊 助 $</span></a>
-  </div>
+	 <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>贊 助 $</span></a>
   @endif
+  </div>
 </nav>
 
 @yield("sub-content")
