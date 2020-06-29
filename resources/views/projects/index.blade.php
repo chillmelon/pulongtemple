@@ -1,4 +1,8 @@
 @section("meta")
+<meta itemprop="name" content="埔隆宮募資平台">
+<meta itemprop="image" content="https://photos.google.com/u/6/photo/AF1QipMnD_QEJNypNR7oQ9Da-qBXH1yyc-K18a87szIL">
+<meta itemprop="description" content="埔隆宮募資平台">
+{{-- facebook --}}
 <meta property="og:title" content="埔隆宮募資平台" >
 <meta property="og:url" content="https://pulongtemple.com/">
 <meta property="og:image" content="https://photos.google.com/u/6/photo/AF1QipMnD_QEJNypNR7oQ9Da-qBXH1yyc-K18a87szIL">
