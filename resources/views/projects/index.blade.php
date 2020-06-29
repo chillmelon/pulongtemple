@@ -1,3 +1,5 @@
+@extends('auth.login-button')
+
 @section("meta")
 <meta itemprop="name" content="埔隆宮募資平台">
 <meta itemprop="image" content="https://lh3.googleusercontent.com/pw/ACtC-3cMImHYZqnVJbP3GFWKriM1b4p997cX-nHvuBNIcxeUFn5PRHDXhOB_kePcQktI2pZ6vzxw9e_Fvcs37OqtkhRI4pinQ1gP0YEbo413ZvSqnfNvpEOVw5ChP6JNh5JZndfNYiFJfjYrOGQzEErIAJE=w1250-h774-no?authuser=6">
@@ -23,7 +25,6 @@
 為埔里好的事我們都要支持！" >
 @endsection
 
-@extends('auth.login-button')
 @section('body')
 <div class="container-fluid">
   <div class="row justify-content-center">
