@@ -16,6 +16,7 @@
     padding: 0;
 }
 
+
 .description {
     font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
     padding: 24px 16px;
@@ -153,6 +154,7 @@
 }
 
 .donated {
+    font-family: Impact, Arial Black, 'Noto Serif TC', serif;
     text-align: center;
     letter-spacing: 4px;
     color: white;

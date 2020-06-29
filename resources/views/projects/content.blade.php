@@ -36,8 +36,8 @@
         <!-- goal -->
         <div class="goal ff-2P col-6 col-sm-8 col-lg-6">
           <div class="max-w-200">
-            <h4 class="inline-b">NT$</h4>
-            <h4 class="inline-b ab-rb">{{ $project->amount }}</h4>
+            <sapn class="fs-18 inline-b">NT$</sapn>
+            <sapn class="fs-18 inline-b ab-rb">{{ $project->amount }}</sapn>
           </div>
           <div class="max-w-200">
             <span class="inline-b fs-12"></span>
