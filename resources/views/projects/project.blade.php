@@ -1,6 +1,10 @@
 @extends("auth.login-button")
 
-@section( "body")
+@section("meta")
+
+@endsection
+
+@section("body")
 	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
 		<div class="donated pd-12 ff-2P">
