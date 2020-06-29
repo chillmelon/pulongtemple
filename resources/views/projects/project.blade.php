@@ -7,8 +7,8 @@
 @section("body")
 	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
-		<div class="donated pd-12 ff-2P">
-      <h3>Thanks for your donation.</h3>
+		<div class="donated pd-12">
+      <span>感謝您的贊助</span>
     </div>
 	@endif
 	{{--done--}}
