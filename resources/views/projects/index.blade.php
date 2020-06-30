@@ -58,7 +58,7 @@
         @foreach($projects as $project)
         <div class="product-box col-12 col-md-6">
           <div class="product custom-bdr" onclick="location.href='projects/{{ $project->id }}';">
-            <div class="product-head custom-bdr-bm">
+            <div class="product-head custom-bdr-bm serif-tc">
               {{ $project->title }}
             </div>
             <div class="product-body custom-bdr-bm">

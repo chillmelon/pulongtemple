@@ -25,7 +25,7 @@
     <div class="intro col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
       <!-- title -->
       <div class="title">
-        <h3>
+        <h3 class="serif-tc">
         {{ $project->title }}
         </h3>
         <h6> by {{ $project->user->name }}</h6>
