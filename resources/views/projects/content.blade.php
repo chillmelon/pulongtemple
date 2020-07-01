@@ -24,7 +24,7 @@
     <div class="intro col-sm-12 col-lg-4">
       <!-- title -->
       <div class="title">
-        <h3>
+        <h3 class="serif-tc">
         {{ $project->title }}
         <br>
         </h3>

@@ -126,6 +126,10 @@ tr:nth-child(even) {
     font-family: "Press Start 2P";
 }
 
+.serif-tc {
+    font-family: 'Noto Serif TC', serif;
+}
+
 /*Component*/
 
 /*neon*/
@@ -140,7 +144,7 @@ tr:nth-child(even) {
     font-weight: 500;
     font-size: 15vw;
     line-height: 18vw;
-    letter-spacing: 2vw;
+    letter-spacing: 1.5vw;
     color: #fff;
 
     opacity: 0;

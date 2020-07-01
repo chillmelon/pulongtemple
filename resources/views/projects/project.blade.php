@@ -4,7 +4,7 @@
 	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
 		<div class="donated pd-12">
-      <span>感謝您的贊助</span>
+      <span>您是這個專案的贊助者，感謝您！</span>
     </div>
 	@endif
 	{{--done--}}
