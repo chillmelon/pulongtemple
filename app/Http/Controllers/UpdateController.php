@@ -13,23 +13,13 @@ class UpdateController extends Controller
         $this->projectService = $projectService;
         $this->updateService = $updateService;
     }
-    public function browse($project_id)
-    {
-    	$projects = $this->projectService->detail($project_id);
-    	return view('updates.view', $projects);
-    }
 	public function show($id){
 		$update = $this->updateService->show($id);
-		$project = $update->project;
+		$project = $this->projectService->format($update->project);
 		$data=[
 			'update' => $update,
 			'project' => $project
 		];
 		return view('updates.view', $data);
-	}
-	public function create($project_id)
-	{
-    	$projects = $this->projectService->detail($project_id);
-		return view('updates.create', ['project' => $project]);
 	}
 }
