@@ -168,6 +168,16 @@
     100% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
 }
 
+/*Meal*/
+
+.project-meal {
+
+}
+
+.project-meal img {
+    width: 100%;
+}
+
 /*Media Query*/
 
 @media (min-width: 576px) {

@@ -77,8 +77,16 @@ tr:nth-child(even) {
     padding: 0 8px;
 }
 
+.pt8 {
+    padding-top: 8px;
+}
+
 .mg-bottom-16 {
     margin-bottom: 16px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
 }
 
 .fs-12 {
