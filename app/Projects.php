@@ -20,4 +20,7 @@ class Projects extends Model
     public function faqs(){
 		return $this->hasMany('App\Faqs','project_id');
 	}
+    public function options(){
+		return $this->hasMany('App\Options','project_id');
+	}
 }
