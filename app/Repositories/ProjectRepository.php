@@ -14,6 +14,7 @@ class ProjectRepository
 			->with('user')
 			->with('updates')
 			->with('faqs')
+			->with('options')
 			->firstOrFail();
 		return $project;
 	}

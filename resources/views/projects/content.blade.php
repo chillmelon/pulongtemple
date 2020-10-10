@@ -101,81 +101,34 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
+			@foreach($project->options as $option)
       <div class="project-meal custom-bdr pd-12 mb24">
         <img src="/image/meal.jpg" alt="">
         <div class="ff-2P pt8">
-          NT$ 666
+          NT$ {{$option->price}}
         </div>
         <div class="pt8">
           已被贊助 6 次
         </div>
         <div>
-          【北風北 最後優惠】<br>
-          ∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>
+					{{$option->features}}
+          {{--【北風北 最後優惠】<br>--}}
+          {{--∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>--}}
 
-          馬丘麻將精裝組 MACHILL PREMIUM x1<br>
-          ｜每組內含：<br>
-          ・馬丘麻將 x1<br>
-          ・方向環 x1<br>
-          ・5mm牌尺 x4<br>
-          ・骰子x6<br>
-          --------------<br>
-          重要提醒：<br>
-          ＊台灣本島免運，外島與海外運費請參閱問答<br>
-          ＊共有三種配色，請於回饋調查選擇<br>
-          ＊如需開立統編，請填寫統一編號與抬頭於備註欄
+          {{--馬丘麻將精裝組 MACHILL PREMIUM x1<br>--}}
+          {{--｜每組內含：<br>--}}
+          {{--・馬丘麻將 x1<br>--}}
+          {{--・方向環 x1<br>--}}
+          {{--・5mm牌尺 x4<br>--}}
+          {{--・骰子x6<br>--}}
+          {{----------------<br>--}}
+          {{--重要提醒：<br>--}}
+          {{--＊台灣本島免運，外島與海外運費請參閱問答<br>--}}
+          {{--＊共有三種配色，請於回饋調查選擇<br>--}}
+          {{--＊如需開立統編，請填寫統一編號與抬頭於備註欄--}}
         </div>
       </div>
-      <div class="project-meal custom-bdr pd-12 mb24">
-        <img src="/image/meal.jpg" alt="">
-        <div class="ff-2P pt8">
-          NT$ 666
-        </div>
-        <div class="pt8">
-          已被贊助 6 次
-        </div>
-        <div>
-          【北風北 最後優惠】<br>
-          ∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>
-
-          馬丘麻將精裝組 MACHILL PREMIUM x1<br>
-          ｜每組內含：<br>
-          ・馬丘麻將 x1<br>
-          ・方向環 x1<br>
-          ・5mm牌尺 x4<br>
-          ・骰子x6<br>
-          --------------<br>
-          重要提醒：<br>
-          ＊台灣本島免運，外島與海外運費請參閱問答<br>
-          ＊共有三種配色，請於回饋調查選擇<br>
-          ＊如需開立統編，請填寫統一編號與抬頭於備註欄
-        </div>
-      </div>
-      <div class="project-meal custom-bdr pd-12 mb24">
-        <img src="/image/meal.jpg" alt="">
-        <div class="ff-2P pt8">
-          NT$ 666
-        </div>
-        <div class="pt8">
-          已被贊助 6 次
-        </div>
-        <div>
-          【北風北 最後優惠】<br>
-          ∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>
-
-          馬丘麻將精裝組 MACHILL PREMIUM x1<br>
-          ｜每組內含：<br>
-          ・馬丘麻將 x1<br>
-          ・方向環 x1<br>
-          ・5mm牌尺 x4<br>
-          ・骰子x6<br>
-          --------------<br>
-          重要提醒：<br>
-          ＊台灣本島免運，外島與海外運費請參閱問答<br>
-          ＊共有三種配色，請於回饋調查選擇<br>
-          ＊如需開立統編，請填寫統一編號與抬頭於備註欄
-        </div>
-      </div>
+			@endforeach
     </div>
   </div>
 </div>
