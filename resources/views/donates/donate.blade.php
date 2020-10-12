@@ -52,7 +52,7 @@
                       <div class="select">
                         <input class="form-control text-select" type="text" id="numberB" value="0" width="5"/>
                         <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▲"/>
-                        <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▼"/>
+                        <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
                       </div>
                     </div>
 
@@ -157,7 +157,9 @@ function incrementValueA() {
 function decrementValueA() {
     var value = parseInt(document.getElementById('numberA').value, 10);
     value = isNaN(value) ? 0 : value;
-    value--;
+    if (value > 0) {
+      value--;
+    }
     document.getElementById('numberA').value = value;
 }
 
@@ -173,7 +175,9 @@ function incrementValueB() {
 function decrementValueB() {
     var value = parseInt(document.getElementById('numberB').value, 10);
     value = isNaN(value) ? 0 : value;
-    value--;
+    if (value > 0) {
+      value--;
+    }
     document.getElementById('numberB').value = value;
 }
 </script>
