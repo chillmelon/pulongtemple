@@ -38,14 +38,32 @@
                 <div class="card-body">
                   <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
-                    <h3>&ensp;*輸入金額</h3>
+                    {{-- select area --}}
+                    <div style="display: inline-block">
+                      衣服(件)
+                      <div class="select">
+                        <input class="form-control text-select" type="text" id="numberA" value="0" width="5"/>
+                        <input class="btn btn-select" type="button" onclick="incrementValueA()" value="▲"/>
+                        <input class="btn btn-select" type="button" onclick="decrementValueA()" value="▼"/>
+                      </div>
+                    </div>
+                    <div style="display: inline-block">
+                      票(張)
+                      <div class="select">
+                        <input class="form-control text-select" type="text" id="numberB" value="0" width="5"/>
+                        <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▲"/>
+                        <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▼"/>
+                      </div>
+                    </div>
+
+                    <br>贊助金額
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                     @error('amount')
                     <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>
                     </span>
                     @enderror
-                    &ensp;贊助人
+                    贊助人
                     <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
                     <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
                     @auth
@@ -61,7 +79,7 @@
                     @auth
                     <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                     @else
-                    &ensp;*E-mail(將會收到專案更新資訊)
+                    *E-mail(將會收到專案更新資訊)
                     <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
                     @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -69,7 +87,7 @@
                     </span>
                     @enderror
                     @endauth
-                    &ensp;留言(選填)
+                    留言(選填)
                     <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
                     @error('comment')
                     <span class="invalid-feedback" role="alert">
@@ -125,5 +143,38 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
+
+
+// A
+// increment
+function incrementValueA() {
+    var value = parseInt(document.getElementById('numberA').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('numberA').value = value;
+}
+// decrement
+function decrementValueA() {
+    var value = parseInt(document.getElementById('numberA').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('numberA').value = value;
+}
+
+// B
+// increment
+function incrementValueB() {
+    var value = parseInt(document.getElementById('numberB').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('numberB').value = value;
+}
+// decrement
+function decrementValueB() {
+    var value = parseInt(document.getElementById('numberB').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    document.getElementById('numberB').value = value;
+}
 </script>
 @endsection

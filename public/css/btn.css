@@ -245,6 +245,45 @@
     /*background-color: #ff5e41;*/
 }
 
+/* donate form select area */
+.select {
+    background-color: #6BB382;
+    width: 120px;
+
+    margin: 0 16px 16px 0;
+}
+
+.custom-card .text-select {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 48px;
+    text-align: right;
+    /* padding: 0; */
+    margin: 0;
+}
+
+.custom-card .select .text-select:focus {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.custom-card .btn-select {
+    background-color: transparent;
+    width: auto;
+    border: none;
+    padding: 0 4px 8px;
+    margin: 0;
+
+    color: #019858;
+    font-size: 16px;
+}
+
+.btn-select:hover {
+    border: none;
+}
+
 
 
 /*Media Query*/
