@@ -34,6 +34,7 @@
           {{-- plan --}}
           <div class="col-lg-8">
             <div class="row">
+						@foreach($proj)
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>票*1</b></h4>
@@ -42,6 +43,7 @@
                   <div></div>
                 </div>
               </div>
+
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>票*2</b></h4>

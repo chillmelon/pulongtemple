@@ -2,11 +2,11 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-9">
+    <div class="col-md-10 col-lg-12">
       @auth
       <br>
       <br>
-      <div class="donate-box custom-bdr">
+      <div class="donate-box">
         <div class="row">
           {{-- Progress bar --}}
           <div class="col-lg-4">
@@ -31,75 +31,26 @@
               </div>
             </div>
           </div>
-          {{-- donate form --}}
+          {{-- plan --}}
           <div class="col-lg-8">
-            <div class="c-box donate-form">
-              <div class="card custom-card">
-                <div class="card-body">
-                  <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
-                    @csrf
-                    {{-- select area --}}
-                    <div style="display: inline-block">
-                      衣服(件)
-                      <div class="select">
-                        <input class="form-control text-select" type="text" id="numberA" value="0" width="5"/>
-                        <input class="btn btn-select" type="button" onclick="incrementValueA()" value="▲"/>
-                        <input class="btn btn-select" type="button" onclick="decrementValueA()" value="▼"/>
-                      </div>
-                    </div>
-                    <div style="display: inline-block">
-                      票(張)
-                      <div class="select">
-                        <input class="form-control text-select" type="text" id="numberB" value="0" width="5"/>
-                        <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▲"/>
-                        <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
-                      </div>
-                    </div>
-
-                    <br>贊助金額
-                    <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
-                    @error('amount')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    贊助人
-                    <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
-                    <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
-                    @auth
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
-                    @else
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name">
-                    @error('name')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    @endauth
-                    @auth
-                    <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
-                    @else
-                    *E-mail(將會收到專案更新資訊)
-                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
-                    @error('email')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    @endauth
-                    留言(選填)
-                    <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
-                    @error('comment')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    <div class="send">
-                      <button class="btn">確定</button>
-                    </div>
-                  </form>
+            <div class="row">
+							<div class="col-lg-6">
+								<div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/{{$project_info->id}}'">
+									<h4><b>純贊助</b></h4>
+									<div class="pt8">已被贊助 {{$project_info->supporters}}次</div>
+									<div></div>
+								</div>
+							</div>
+							@foreach($project_info->options as  $option)
+              <div class="col-lg-6">
+								<div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/{{$option->id}}'">
+									<h4><b>{{ $option->features }}</b></h4>
+									<div class="ff-2P pt8">NT$ {{$option->price}} </div>
+									<div class="pt8">已被贊助{{$option->sold}} 次</div>
+                  <div></div>
                 </div>
               </div>
+							@endforeach
             </div>
           </div>
         </div>
@@ -143,6 +94,5 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
-
 </script>
 @endsection

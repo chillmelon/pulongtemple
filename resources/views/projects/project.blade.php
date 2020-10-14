@@ -34,9 +34,9 @@
   @if ($project->days_left < 0)
     <a class="btn"><span>專案結束</span></a>
   @elseif($project->donated)
-    <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>再次贊助 $</span></a>
+    <a class="btn wave-btn" href="/donate/select/{{ $project->id }}"><span>再次贊助 $</span></a>
   @else
-	 <a class="btn wave-btn" href="/donate/{{ $project->id }}"><span>贊 助 $</span></a>
+	 <a class="btn wave-btn" href="/donate/select/{{ $project->id }}"><span>贊 助 $</span></a>
   @endif
   </div>
 </nav>

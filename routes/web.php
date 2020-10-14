@@ -27,6 +27,7 @@ Route::get('projects/{id}/comments', 'ProjectsController@showComments');
 Route::get('projects/{id}/faq', 'ProjectsController@showFaqs');
 
 //Donate and Pay
+Route::get('donate/select/{id}', 'DonatesController@select')->name('select');
 Route::get('donate/option/{id}', 'DonatesController@order')->name('newOrder');
 Route::get('donate/{id}', 'DonatesController@create');
 Route::post('donate/{id}', 'DonatesController@new')->name('donates.new');
