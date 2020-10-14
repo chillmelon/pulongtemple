@@ -108,10 +108,12 @@ active
           NT$ {{$option->price}}
         </div>
         <div class="pt8">
-          已被贊助 6 次
+					已被贊助 {{$option->sold}} 次
         </div>
         <div>
 					{{$option->features}}
+
+					<a class="btn wave-btn" href="/donate/option/{{ $option->id }}"><span>贊 助 $</span></a>
           {{--【北風北 最後優惠】<br>--}}
           {{--∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>--}}
 

@@ -30,6 +30,14 @@ class ProjectService
                     ->findById($project_id);
     return $this->format($project);
   }
+	// get 方案 info
+	public function optionInfo($option_id=null)
+	{
+	 $option = $this->projectRepository
+		 							->getOptionById($option_id);
+	 return $option;
+	}
+
   public function donated($project=null){
     $donated = false;
     if (auth()->user()){

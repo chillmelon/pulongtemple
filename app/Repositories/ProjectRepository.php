@@ -1,6 +1,9 @@
 <?php
 namespace App\Repositories;
+
 use App\Projects;
+use App\Options;
+
 class ProjectRepository
 {
 	public function all()
@@ -27,5 +30,12 @@ class ProjectRepository
 	{
 		$project = Projects::where('id', $project_id);
 		$project->update($update);
+	}
+	public function getOptionById($option_id)
+	{
+		$option = Options::where('id', $option_id)
+			->with('project')
+			->firstOrFail();
+		return $option;
 	}
 }
