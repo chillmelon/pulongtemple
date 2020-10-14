@@ -103,7 +103,6 @@ active
     <div class="col-12 col-lg-4">
 			@foreach($project->options as $option)
       <div class="project-meal custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <img src="/image/meal.jpg" alt="">
         <div class="ff-2P pt8">
           NT$ {{$option->price}}
         </div>
