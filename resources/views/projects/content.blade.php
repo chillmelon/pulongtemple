@@ -101,17 +101,16 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
+      <div class="plan custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/{{ $project->id }}'">
+        <h4 class="color-prime"><b><I>純贊助，別無所求。</I></b></h4>
+        <div class="ff-2P pt8">NT$ ???</div>
+        <div class="pt8">已被贊助 {{$project->supporters}} 次</div>
+      </div>
 			@foreach($project->options as $option)
-      <div class="project-meal custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <div class="ff-2P pt8">
-          NT$ {{$option->price}}
-        </div>
-        <div class="pt8">
-					已被贊助 {{$option->sold}} 次
-        </div>
-        <div>
-					{{$option->features}}
-        </div>
+      <div class="plan custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
+        <h4 class="color-prime"><b><I>{{ $option->features }}</I></b></h4>
+        <div class="ff-2P pt8">NT$ {{$option->price}}</div>
+        <div class="pt8">已被贊助 {{$option->sold}} 次</div>
       </div>
 			@endforeach
     </div>
