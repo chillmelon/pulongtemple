@@ -20,9 +20,12 @@ class PaymentService
             $obj = new \ECPay_AllInOne();
             //服務參數
             $obj->ServiceURL  = "https://payment.ecpay.com.tw/SP/CreateTrade"; //服務位置
-            $obj->HashKey     = 'HfgvsvxBsMq87mRU' ;                           //測試用Hashkey，請自行帶入ECPay提供的HashKey
-            $obj->HashIV      = 'iu3Vtxa1T9ADwNGl' ;                           //測試用HashIV，請自行帶入ECPay提供的HashIV
-            $obj->MerchantID  = '3157248';                                     //測試用MerchantID，請自行帶入ECPay提供的MerchantID
+						$obj->HashKey     = 'HfgvsvxBsMq87mRU' ;                           //正式資料
+						$obj->HashIV      = 'iu3Vtxa1T9ADwNGl' ;                           //正式資料
+						$obj->MerchantID  = '3157248';                                     //正式資料
+						//$obj->HashKey     = '5294y06JbISpM5x9' ;                                    //測試用Hashkey，請自行帶入ECPay提供的HashKey
+						//$obj->HashIV      = 'v77hoKGq4kWxNNIS' ;                                    //測試用HashIV，請自行帶入ECPay提供的HashIV
+						//$obj->MerchantID  = '2000132';                                              //測試用MerchantID，請自行帶入ECPay提供的MerchantID
             $obj->EncryptType = '1';                                           //CheckMacValue加密類型，請固定填入1，使用SHA256加密
             //基本參數(請依系統規劃自行調整)
             $obj->Send['ReturnURL']= "https://www.pulongtemple.wtf/callback" ; //付款完成通知回傳的網址

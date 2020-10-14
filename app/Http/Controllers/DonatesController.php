@@ -39,7 +39,6 @@ class DonatesController extends Controller
     public function new(Request $request)
     {
         $donation=$this->donateService->new($request);
-        dd($request);
         $ECPay=$this->paymentService->ECPay($donation);
         $orderInfo['SPToken'] = $ECPay['SPToken'];
         $orderInfo['MerchantID'] = $ECPay['MerchantID'];
