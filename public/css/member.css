@@ -75,6 +75,8 @@
 .plan {
     margin: 15px 0;
     padding: 24px;
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
 }
 
 /*verify-page*/
