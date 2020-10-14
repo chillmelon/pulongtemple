@@ -24,7 +24,14 @@ class DonatesController extends Controller
     {
         $data['project_info'] = $this->projectService->detail($project_id);
         $data['user_info'] = auth()->user();
-        return view('donates.donate', $data);
+        return view('donates.checkout', $data);
+    }
+
+    public function select($project_id=null)
+    {
+        $data['project_info'] = $this->projectService->detail($project_id);
+        $data['user_info'] = auth()->user();
+        return view('donates.select', $data);
     }
 
     public function order($option_id=null)
