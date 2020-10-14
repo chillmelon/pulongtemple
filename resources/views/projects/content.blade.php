@@ -102,7 +102,7 @@ active
     </div>
     <div class="col-12 col-lg-4">
 			@foreach($project->options as $option)
-      <div class="project-meal custom-bdr hover-bdr pd-12 mb24">
+      <div class="project-meal custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
         <img src="/image/meal.jpg" alt="">
         <div class="ff-2P pt8">
           NT$ {{$option->price}}
@@ -113,7 +113,7 @@ active
         <div>
 					{{$option->features}}
 
-					<a class="btn wave-btn" href="/donate/option/{{ $option->id }}"><span>贊 助 $</span></a>
+					{{-- <a class="btn wave-btn" href=""><span>贊 助 $</span></a> --}}
           {{--【北風北 最後優惠】<br>--}}
           {{--∎ 未來市價 $3088，現省 $589 /晚鳥 81 折優惠<br>--}}
 
