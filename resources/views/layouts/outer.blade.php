@@ -26,6 +26,7 @@
     <link href="{{asset('css/member.css')}}" rel="stylesheet">
     <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
     <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
+    {{-- <link href="{{asset('css/ultimate.css')}}" rel="stylesheet"> --}}
     {{-- font-family --}}
     <!-- cht -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
