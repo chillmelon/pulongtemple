@@ -24,7 +24,7 @@
     <div class="intro col-sm-12 col-lg-4">
       <!-- title -->
       <div class="title">
-        <h3 class="serif-tc">
+        <h3 class="serif-tc f-title">
         {{ $project->title }}
         <br>
         </h3>
@@ -101,14 +101,14 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
-      <div class="plan custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/{{ $project->id }}'">
-        <h4 class="color-prime"><b><I>純贊助，別無所求。</I></b></h4>
+      <div class="serif-tc custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/{{ $project->id }}'">
+        <h3 class="f-title"><I>純贊助，別無所求。</I></h3>
         <div class="ff-2P pt8">NT$ ???</div>
         <div class="pt8">已被贊助 {{$project->supporters}} 次</div>
       </div>
 			@foreach($project->options as $option)
-      <div class="plan custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <h4 class="color-prime"><b><I>{{ $option->features }}</I></b></h4>
+      <div class="serif-tc custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
+        <h3 class="f-title"><I>{{ $option->features }}</I></h3>
         <div class="ff-2P pt8">NT$ {{$option->price}}</div>
         <div class="pt8">已被贊助 {{$option->sold}} 次</div>
       </div>

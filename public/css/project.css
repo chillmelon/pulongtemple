@@ -19,7 +19,7 @@
 
 .description {
     font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
-    padding: 24px 16px;
+    padding: 24px 0;
     font-size: 20px;
     line-height: 30px;
 }
@@ -154,7 +154,8 @@
 }
 
 .donated {
-    font-family: Impact, Arial Black, 'Noto Serif TC', serif;
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
     text-align: center;
     letter-spacing: 4px;
     color: white;
@@ -170,7 +171,7 @@
 
 /* Plan */
 .plan {
-    font-family: 'Noto Serif TC', serif;
+    /* font-family: 'Noto Serif TC', serif; */
 }
 
 /*Media Query*/
@@ -217,12 +218,12 @@
         padding: 15px;
     }
 
-    .img-main,
+    /* .img-main,
     .intro {
         border: solid;
         border-width: 2px;
         border-color: rgb(1, 126, 72);
-    }
+    } */
 
     .intro {
         padding: 16px;

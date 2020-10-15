@@ -35,8 +35,8 @@
           <div class="col-lg-8">
             <div class="row">
 							<div class="col-lg-6">
-								<div class="plan custom-bdr hover-bdr p24 my15" onclick="location.href='/donate/{{$project_info->id}}'">
-                  <h4 class="color-prime"><b><I>純贊助，別無所求。</I></b></h4>
+								<div class="serif-tc custom-bdr hover-bdr p24 my15" onclick="location.href='/donate/{{$project_info->id}}'">
+                  <h3 class="f-title"><I>純贊助，別無所求。</I></h3>
                   <div class="ff-2P pt8">NT$ ???</div>
 									<div class="pt8">已被贊助 {{$project_info->supporters}} 次</div>
 									<div></div>
@@ -44,8 +44,8 @@
 							</div>
 							@foreach($project_info->options as  $option)
               <div class="col-lg-6">
-								<div class="plan custom-bdr hover-bdr p24 my15" onclick="location.href='/donate/option/{{$option->id}}'">
-									<h4 class="color-prime"><b><I> {{ $option->features }} </I></b></h4>
+								<div class="serif-tc custom-bdr hover-bdr p24 my15" onclick="location.href='/donate/option/{{$option->id}}'">
+									<h3 class="f-title"><I> {{ $option->features }} </I></h3>
 									<div class="ff-2P pt8">NT$ {{$option->price}}</div>
 									<div class="pt8">已被贊助{{$option->sold}} 次</div>
                   <div></div>

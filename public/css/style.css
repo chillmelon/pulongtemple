@@ -146,6 +146,14 @@ tr:nth-child(even) {
     font-family: 'Noto Serif TC', serif;
 }
 
+/* Font */
+
+.f-title {
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke: 0.04rem #019857;
+}
+
 /*Component*/
 
 /*neon*/
