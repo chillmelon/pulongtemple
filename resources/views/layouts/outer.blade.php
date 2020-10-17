@@ -14,8 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="{{ asset('/js/cropper.js') }}"></script>
     <!-- bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="{{asset('css/bootstrap-grid.css')}}" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     {{-- js --}}
     <script src="{{ asset('/js/script.js') }}"></script>
     <!-- custom -->
@@ -26,7 +26,7 @@
     <link href="{{asset('css/member.css')}}" rel="stylesheet">
     <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
     <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
-    {{-- <link href="{{asset('css/ultimate.css')}}" rel="stylesheet"> --}}
+    <link href="{{asset('css/ultimate.css')}}" rel="stylesheet">
     {{-- font-family --}}
     <!-- cht -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
