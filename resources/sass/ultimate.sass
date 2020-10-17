@@ -1,6 +1,7 @@
 // Variable
 $main-color: #019858
 $hover-color: #02F78E
+$border-color: #01814A
 $bg-color: black
 
 // Initial
@@ -33,7 +34,7 @@ hr
     border-top: solid
     border-bottom: solid
     border-width: 2px
-    border-color: $main-color
+    border-color: $border-color
     box-shadow: 0 2px 0 1px $bg-color
     z-index: 4999
 
@@ -60,4 +61,28 @@ hr
     .nav-top, .nav-mid
         padding: 12px 150px
 
+
+
+
 @import community
+
+
+// Expand Project Content
+
+.expand-project
+    padding: 2rem 1rem
+    visibility: hidden
+    height: 0
+    & .btn
+        white-space: pre
+        border-color: $main-color
+        border-width: 2px
+
+@media (max-width: 576px)
+    .expand-project
+        visibility: visible
+        height: auto
+    
+    .project-content
+        max-height: 200px
+        overflow: hidden

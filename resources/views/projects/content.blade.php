@@ -80,14 +80,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-// on page load...
-porgressCircle();
-// on browser resize...
-$(window).resize(function() {
-  porgressCircle();
-});
-</script>
 @endsection
 @section("content-active")
 active
@@ -98,6 +90,9 @@ active
     <div class='col-12 col-lg-8'>
       <div class="project-content">
         {!!$project->content!!}
+      </div>
+      <div class="expand-project">
+        <div class="btn">▼        展開內容        ▼</div>
       </div>
     </div>
     <div class="col-12 col-lg-4">
@@ -116,4 +111,17 @@ active
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  // on page load...
+  porgressCircle();
+  // on browser resize...
+  $(window).resize(function () {
+    porgressCircle();
+  });
+  // // Expand project content
+  $(".expand-project").click(function () {
+    $(".project-content").css("max-height", "none");
+    $(".expand-project").hide();
+  });
+</script>
 @endsection

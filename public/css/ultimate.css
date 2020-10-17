@@ -37,7 +37,7 @@ hr {
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
-  border-color: #019858;
+  border-color: #01814A;
   -webkit-box-shadow: 0 2px 0 1px black;
           box-shadow: 0 2px 0 1px black;
   z-index: 4999;
@@ -86,5 +86,28 @@ hr {
   -webkit-text-emphasis: center;
           text-emphasis: center;
   height: 73px;
+}
+
+.expand-project {
+  padding: 2rem 1rem;
+  visibility: hidden;
+  height: 0;
+}
+
+.expand-project .btn {
+  white-space: pre;
+  border-color: #019858;
+  border-width: 2px;
+}
+
+@media (max-width: 576px) {
+  .expand-project {
+    visibility: visible;
+    height: auto;
+  }
+  .project-content {
+    max-height: 200px;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=ultimate.css.map */

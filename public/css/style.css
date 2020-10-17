@@ -177,7 +177,7 @@ tr:nth-child(even) {
         0 0 20px rgba(1, 178, 104, 1),
         0 0 40px rgba(1, 178, 104, 1),
         0 0 50px rgba(1, 178, 104, .8),
-        /*0 0 60px rgba(1, 178, 104, 1),*/
+        0 0 60px rgba(1, 178, 104, 1),
         0 0 70px rgba(1, 178, 104, .6);
     animation:
         easelight 5s cubic-bezier(.4,0,.3,0) both;
@@ -201,12 +201,12 @@ tr:nth-child(even) {
 }
 
 @keyframes easelight {
-    0% {opacity: 0}
+    0% {opacity: .05}
     100% {opacity: 1}
 }
 
 @keyframes easelight-x {
-    0% {opacity: 0}
+    0% {opacity: .05}
     50% {opacity: .5}
     60% {opacity: .5}
     62% {opacity: 0}
