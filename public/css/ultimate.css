@@ -96,6 +96,7 @@ hr {
 
 .expand-project .btn {
   white-space: pre;
+  border-style: dashed;
   border-color: #019858;
   border-width: 2px;
 }
