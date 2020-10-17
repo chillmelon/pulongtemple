@@ -24,8 +24,8 @@
     <div class="intro col-sm-12 col-lg-4">
       <!-- title -->
       <div class="title">
-        <h3 class="serif-tc f-title">
-        {{ $project->title }}
+        <h3 class="serif-tc">
+          <b>{{ $project->title }}</b>
         <br>
         </h3>
         <h6> by {{ $project->user->name }}</h6>
