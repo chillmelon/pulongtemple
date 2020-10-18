@@ -104,7 +104,7 @@
                   </div>
                 </div>
                 <div class="form-group row mb-0 btn-box">
-                  <div class="col-md-6 offset-md-4 mg-bottom-16">
+                  <div class="col-md-6 offset-md-4 mb-3">
                     <button type="submit" class="btn">
                     登入
                     </button>

@@ -2,7 +2,7 @@
 @section('body')
 <div class="container-fluid bottom-content">
   <div class="row justify-content-center">
-    <div class="pd-32 fs-18 long-text">
+    <div class="p-4 fs-18 long-text">
       <h3>服務條款</h3>
       <br>
       <p>歡迎您來到

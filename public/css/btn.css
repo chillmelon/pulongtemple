@@ -195,95 +195,6 @@
     }
 }
 
-/*dropdown*/
-.login .dropdown {
-    display: block;
-    padding: 8px 0;
-    position: absolute;
-    right: 0;
-    top: 120%;
-    background-color: #1a1a1a;
-    box-shadow: 0px 0px 4px 2px #1a1a1a;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease;
-}
-
-.login span {
-    color: #019858;
-    text-shadow: 2px 2px #0D0D0D;
-}
-
-.login .dropdown li {
-    display: block;
-    width: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.login>li:hover>a {
-    color: #02F78E;
-}
-
-.login>li:hover span {
-    color: #02F78E;
-}
-
-.login>li:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    top: 110%;
-}
-
-.login .dropdown>li>a {
-    display: block;
-    border: none;
-    transition: all 0.2s;
-}
-
-.login .dropdown>li>a:hover {
-    /*background-color: #ff5e41;*/
-}
-
-/* donate form select area */
-.select {
-    background-color: #6BB382;
-    width: 120px;
-
-    margin: 0 16px 16px 0;
-}
-
-.custom-card .text-select {
-    background-color: transparent;
-    border: none;
-    display: inline-block;
-    width: 48px;
-    text-align: right;
-    /* padding: 0; */
-    margin: 0;
-}
-
-.custom-card .select .text-select:focus {
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: none;
-}
-
-.custom-card .btn-select {
-    background-color: transparent;
-    width: auto;
-    border: none;
-    padding: 0 4px 8px;
-    margin: 0;
-
-    color: #019858;
-    font-size: 16px;
-}
-
-.btn-select:hover {
-    border: none;
-}
-
 
 
 /*Media Query*/
@@ -331,6 +242,6 @@
 
 @media (min-width: 1200px) {
     .donate {
-        right: 160px;
+        right: 150px;
     }
 }

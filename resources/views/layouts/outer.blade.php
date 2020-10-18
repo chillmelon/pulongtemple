@@ -14,8 +14,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="{{ asset('/js/cropper.js') }}"></script>
     <!-- bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- jquery.easing.1.3.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     {{-- js --}}
     <script src="{{ asset('/js/script.js') }}"></script>
     <!-- custom -->
@@ -26,7 +28,10 @@
     <link href="{{asset('css/member.css')}}" rel="stylesheet">
     <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
     <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
+    <link href="{{asset('css/ultimate.css')}}" rel="stylesheet">
     {{-- font-family --}}
+    <!-- japanese -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
     <!-- cht -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
@@ -39,10 +44,11 @@
   <body>
     <!--top navbar -->
     <nav class="nav-top u-cf">
-      <div class="logo">
-        <a href="/">
-          <img class="swap-on-hover__front-image" src="{{asset('image/logo_final.png')}}">
-          <img class="swap-on-hover__back-image" src="{{asset('image/logo_final.gif')}}">
+      <div class="logo pl-3">
+        <a class="btn" href="/">
+          <span>埔</span>
+          {{-- <img class="swap-on-hover__front-image" src="{{asset('image/logo_final.png')}}"> --}}
+          {{-- <img class="swap-on-hover__back-image" src="{{asset('image/logo_final.gif')}}"> --}}
         </a>
       </div>
       <ul class="login">

@@ -38,8 +38,8 @@
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>票*1</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
@@ -47,56 +47,56 @@
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>票*2</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>票*4</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>衣*1</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>衣*2</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>衣*4</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>純贊助</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
                   <h4><b>衣服+贊助</b></h4>
-                  <div class="ff-2P pt8">NT$ </div>
-                  <div class="pt8">已被贊助 次</div>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
                   <div></div>
                 </div>
               </div>

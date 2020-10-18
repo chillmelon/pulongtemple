@@ -2,11 +2,11 @@
 @section("body")
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-10 col-lg-9">
+    <div class="col-md-10 col-lg-12">
       @auth
       <br>
       <br>
-      <div class="donate-box custom-bdr">
+      <div class="donate-box">
         <div class="row">
           {{-- Progress bar --}}
           <div class="col-lg-4">
@@ -31,55 +31,71 @@
               </div>
             </div>
           </div>
-          {{-- donate form --}}
+          {{-- plan --}}
           <div class="col-lg-8">
-            <div class="c-box donate-form">
-              <div class="card custom-card">
-                <div class="card-body">
-                  <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
-                    @csrf
-                    <h3>&ensp;*輸入金額</h3>
-                    <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
-                    @error('amount')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    &ensp;贊助人
-                    <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
-                    <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
-                    @auth
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
-                    @else
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name">
-                    @error('name')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    @endauth
-                    @auth
-                    <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
-                    @else
-                    &ensp;*E-mail(將會收到專案更新資訊)
-                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
-                    @error('email')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    @endauth
-                    &ensp;留言(選填)
-                    <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
-                    @error('comment')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    <div class="send">
-                      <button class="btn">確定</button>
-                    </div>
-                  </form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>票*1</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>票*2</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>票*4</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>衣*1</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>衣*2</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>衣*4</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>純贊助</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="plan custom-bdr hover-bdr" onclick="location.href='/donate/option/'">
+                  <h4><b>衣服+贊助</b></h4>
+                  <div class="ff-2P pt-2">NT$ </div>
+                  <div class="pt-2">已被贊助 次</div>
+                  <div></div>
                 </div>
               </div>
             </div>
@@ -125,5 +141,42 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
+
+
+// A
+// increment
+function incrementValueA() {
+    var value = parseInt(document.getElementById('numberA').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('numberA').value = value;
+}
+// decrement
+function decrementValueA() {
+    var value = parseInt(document.getElementById('numberA').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if (value > 0) {
+      value--;
+    }
+    document.getElementById('numberA').value = value;
+}
+
+// B
+// increment
+function incrementValueB() {
+    var value = parseInt(document.getElementById('numberB').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('numberB').value = value;
+}
+// decrement
+function decrementValueB() {
+    var value = parseInt(document.getElementById('numberB').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if (value > 0) {
+      value--;
+    }
+    document.getElementById('numberB').value = value;
+}
 </script>
 @endsection

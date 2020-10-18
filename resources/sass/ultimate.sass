@@ -1,0 +1,208 @@
+// Variable
+$main-color: #019858
+$hover-color: #02F78E
+$border-color: #01814A
+$bg-color: black
+
+// Initial
+*
+    box-sizing: border-box
+    position: relative
+    list-style-type: none
+    text-decoration: none
+
+html, body
+    background-color: $bg-color
+    font-family: 'Noto Sans TC', 'Noto Serif TC', serif
+    font-size: 16px
+    color: #ccc
+
+a
+    color: $main-color
+    &:hover
+        color: $hover-color
+
+hr
+    border-top: 1px solid #9D9D9D
+
+
+@import utility
+
+
+/*logo*/
+$size: 28px
+.logo
+    top: 50%
+    transform: translateY(-50%)
+    display: inline-block
+
+    & a
+        // padding: 8px 16px
+        border: 2px solid #ddd
+        border-radius: 50%
+        color: #ddd
+        transition: all .2s
+        box-shadow: 0 0 2px rgba(1, 178, 104, 1), 0 0 4px rgba(1, 178, 104, .8), 0 0 6px rgba(1, 178, 104, .6), 0 0 8px rgba(1, 178, 104, .6), 0 0 10px rgba(1, 178, 104, .4)
+        & span
+            font-family: 'M PLUS 1p', sans-serif
+            font-size: $size
+            line-height: $size
+            transform: translate(-1.5px, -4px) perspective(.5rem) rotateX(15deg)
+            text-shadow: 0 0 1px rgba(1, 178, 104, 1), 0 0 2px rgba(1, 178, 104, 1), 0 0 3px rgba(1, 178, 104, .8)
+        &:hover
+            color: white
+            border: 2px solid white
+            transform: scale(1.1)
+
+.logo img
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    overflow: hidden
+    width: 60px
+    height: 60px
+
+
+/*Navbar*/
+%nav
+    background-color: $bg-color
+    border-top: solid
+    border-bottom: solid
+    border-width: 2px
+    border-color: $border-color
+    box-shadow: 0 2px 0 1px $bg-color
+    z-index: 4999
+
+.nav-top
+    @extend %nav
+    height: 70px
+
+.nav-mid
+    @extend %nav
+    flex-wrap: wrap
+    padding-top: 8px
+    padding-bottom: 6px
+
+@media (min-width: 576px)
+    .nav-mid
+        height: 85px
+
+@media (min-width: 992px)
+    .nav-top, .nav-mid
+        padding: 12px 72px
+        height: 90px
+    .nav-item
+        min-width: 100px
+        padding: 0 8px
+
+@media (min-width: 1200px)
+    .nav-top, .nav-mid
+        padding: 12px 200px
+
+/*dropdown*/
+.login .dropdown 
+    display: block
+    padding: 8px 0
+    position: absolute
+    right: 0
+    top: 120%
+    background-color: $bg-color
+    box-shadow: 0px 0px 4px 2px $bg-color
+    opacity: 0
+    visibility: hidden
+    transition: all 0.5s ease
+
+.login span 
+    color: $main-color
+    text-shadow: 2px 2px #0D0D0D
+
+
+.login .dropdown li 
+    display: block
+    width: 120px
+    left: 50%
+    transform: translateX(-50%)
+
+.login>li:hover>a 
+    color: $hover-color
+
+.login>li:hover span 
+    color: $hover-color
+
+.login>li:hover .dropdown 
+    opacity: 1
+    visibility: visible
+    top: 110%
+
+.login .dropdown>li>a 
+    display: block
+    border: none
+    transition: all 0.2s
+
+
+/* donate form select area */
+.select 
+    background-color: #6BB382
+    width: 120px
+    margin: 0 16px 16px 0
+
+.custom-card .text-select 
+    background-color: transparent
+    border: none
+    display: inline-block
+    width: 48px
+    text-align: right
+    margin: 0
+
+.custom-card .select .text-select:focus 
+    background-color: transparent
+    border-color: transparent
+    box-shadow: none
+
+.custom-card .btn-select 
+    background-color: transparent
+    width: auto
+    border: none
+    padding: 0 4px 8px
+    margin: 0
+
+    color: $main-color
+    font-size: 16px
+
+.btn-select:hover 
+    border: none
+
+
+
+
+// Select Plan
+.select-title 
+    font-weight: bold
+    color: #fff
+    -webkit-text-stroke: 0.04rem $main-color
+
+
+
+@import community
+
+
+// Expand Project Content
+.expand-project
+    padding: 2rem 1rem
+    visibility: hidden
+    height: 0
+    & .btn
+        white-space: pre
+        border-style: dashed
+        border-color: $main-color
+        border-width: 2px
+
+@media (max-width: 576px)
+    .expand-project
+        visibility: visible
+        height: auto
+    
+    .project-content
+        max-height: 200px
+        overflow: hidden

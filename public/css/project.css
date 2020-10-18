@@ -19,15 +19,9 @@
 
 .description {
     font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
-    padding: 24px 16px;
+    padding: 24px 0;
     font-size: 20px;
     line-height: 30px;
-}
-
-.nav-mid {
-    flex-wrap: wrap;
-    padding-top: 8px;
-    padding-bottom: 6px;
 }
 
 .bottom-content {
@@ -154,7 +148,8 @@
 }
 
 .donated {
-    font-family: Impact, Arial Black, 'Noto Serif TC', serif;
+    font-family: 'Noto Serif TC', serif;
+    font-style: italic;
     text-align: center;
     letter-spacing: 4px;
     color: white;
@@ -168,14 +163,9 @@
     100% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
 }
 
-/*Meal*/
-
-.project-meal {
-
-}
-
-.project-meal img {
-    width: 100%;
+/* Plan */
+.plan {
+    /* font-family: 'Noto Serif TC', serif; */
 }
 
 /*Media Query*/
@@ -186,10 +176,6 @@
         height: auto;
     }
 
-    .nav-mid {
-        height: 85px;
-    }
-
     .update {
         padding: 24px;
         margin-bottom: 36px;
@@ -198,14 +184,8 @@
 }
 
 @media (min-width: 992px) {
-    .nav-top,
-    .nav-mid {
-        padding: 12px 40px;
-        height: 90px;
-    }
-
     .donated {
-        padding: 20px 40px 0;
+        padding: 20px 40px 0 !important;
         font-size: 24px;
     }
 
@@ -222,21 +202,16 @@
         padding: 15px;
     }
 
-    .img-main,
+    /* .img-main,
     .intro {
         border: solid;
         border-width: 2px;
         border-color: rgb(1, 126, 72);
-    }
+    } */
 
     .intro {
         padding: 16px;
         border-left: none;
-    }
-
-    .nav-item {
-        min-width: 100px;
-        padding: 0 8px;
     }
 
     .update-content {
@@ -245,12 +220,6 @@
 }
 
 @media (min-width: 1200px) {
-
-    .nav-top,
-    .nav-mid {
-        padding: 12px 150px;
-    }
-
     .donated {
         padding: 20px 150px 0;
     }

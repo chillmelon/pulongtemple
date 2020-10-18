@@ -25,7 +25,7 @@
       <!-- title -->
       <div class="title">
         <h3 class="serif-tc">
-        {{ $project->title }}
+          <b>{{ $project->title }}</b>
         <br>
         </h3>
         <h6> by {{ $project->user->name }}</h6>
@@ -36,8 +36,8 @@
         <!-- goal -->
         <div class="goal ff-2P col-6 col-sm-8 col-lg-6">
           <div class="max-w-200">
-            <sapn class="fs-18 inline-b">NT$</sapn>
-            <sapn class="fs-18 inline-b ab-rb">{{ $project->amount }}</sapn>
+            <span class="fs-18 inline-b">NT$</span>
+            <span class="fs-18 inline-b ab-rb">{{ $project->amount }}</span>
           </div>
           <div class="max-w-200">
             <span class="inline-b fs-12"></span>
@@ -80,14 +80,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-// on page load...
-porgressCircle();
-// on browser resize...
-$(window).resize(function() {
-  porgressCircle();
-});
-</script>
 @endsection
 @section("content-active")
 active
@@ -99,23 +91,37 @@ active
       <div class="project-content">
         {!!$project->content!!}
       </div>
+      <div class="expand-project">
+        <div class="btn">▼        展開內容        ▼</div>
+      </div>
     </div>
     <div class="col-12 col-lg-4">
+      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/{{ $project->id }}'">
+        <h4 class="select-title"><I>純贊助，別無所求。</I></h4>
+        <div class="ff-2P pt-2">NT$ ???</div>
+        <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
+      </div>
 			@foreach($project->options as $option)
-      <div class="project-meal custom-bdr hover-bdr pd-12 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <img src="/image/meal.jpg" alt="">
-        <div class="ff-2P pt8">
-          NT$ {{$option->price}}
-        </div>
-        <div class="pt8">
-					已被贊助 {{$option->sold}} 次
-        </div>
-        <div>
-					{{$option->features}}
-        </div>
+      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/option/{{ $option->id }}'">
+        <h4 class="select-title"><I>{{ $option->features }}</I></h4>
+        <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
+        <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
       </div>
 			@endforeach
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  // on page load...
+  porgressCircle();
+  // on browser resize...
+  $(window).resize(function () {
+    porgressCircle();
+  });
+  // // Expand project content
+  $(".expand-project").click(function () {
+    $(".project-content").css("max-height", "none");
+    $(".expand-project").hide();
+  });
+</script>
 @endsection

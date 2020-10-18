@@ -36,7 +36,7 @@
           如果沒收到的話 👇
           <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
             @csrf
-            <button type="submit" class="btn mg-bottom-16">要求新的一封認證信</button>
+            <button type="submit" class="btn mb-3">要求新的一封認證信</button>
           </form>
         </div>
       </div>

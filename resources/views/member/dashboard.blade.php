@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="">
-            <a class="btn mg-bottom-16" href="/member/donations">我的贊助</a>
+            <a class="btn mb-3" href="/member/donations">我的贊助</a>
             <a class="btn" href="/member/projects">我的專案</a>
           </div>
         </div>

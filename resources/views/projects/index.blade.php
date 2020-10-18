@@ -31,6 +31,7 @@
     <div class="col-12 col-lg-11 col-xl-9">
       <div class="pltp-box-neon">
         <div>
+          {{-- PULONG TEMPLE --}}
           <span class="neon">P</span>
           <span class="neon">U</span>
           <span class="neon">L</span>
@@ -44,8 +45,6 @@
           <span class="neon">P</span>
           <span class="neon">L</span>
           <span class="neon">E</span>
-          {{-- PULONG<br>
-          TEMPLE --}}
         </div>
         <div class="arrow-box">
           <span class="arrow">︾</span><br>
