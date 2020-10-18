@@ -37,8 +37,6 @@ hr {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: inline-block;
-  -webkit-perspective: .5rem;
-          perspective: .5rem;
 }
 
 .logo a {
@@ -47,6 +45,8 @@ hr {
   color: #ddd;
   -webkit-transition: all .2s;
   transition: all .2s;
+  -webkit-perspective: 8px;
+          perspective: 8px;
   -webkit-box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
           box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
 }
