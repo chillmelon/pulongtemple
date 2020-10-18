@@ -96,16 +96,16 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
-      <div class="serif-tc custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/{{ $project->id }}'">
-        <h4 class="f-title"><I>純贊助，別無所求。</I></h4>
-        <div class="ff-2P pt8">NT$ ???</div>
-        <div class="pt8">已被贊助 {{$project->supporters}} 次</div>
+      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/{{ $project->id }}'">
+        <h4 class="select-title"><I>純贊助，別無所求。</I></h4>
+        <div class="ff-2P pt-2">NT$ ???</div>
+        <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
       </div>
 			@foreach($project->options as $option)
-      <div class="serif-tc custom-bdr hover-bdr p24 mb24" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <h4 class="f-title"><I>{{ $option->features }}</I></h4>
-        <div class="ff-2P pt8">NT$ {{$option->price}}</div>
-        <div class="pt8">已被贊助 {{$option->sold}} 次</div>
+      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/option/{{ $option->id }}'">
+        <h4 class="select-title"><I>{{ $option->features }}</I></h4>
+        <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
+        <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
       </div>
 			@endforeach
     </div>

@@ -1,9 +1,8 @@
 {
     "version": 3,
-    "mappings": "AACA,OAAO,CAAC,qDAAI",
+    "mappings": "",
     "sources": [
-        "../../resources/sass/app.scss",
-        "../../resources/sass/_variables.scss"
+        "../../vendor/tcg/voyager/resources/assets/sass/app.scss"
     ],
     "names": [],
     "file": "app.css"

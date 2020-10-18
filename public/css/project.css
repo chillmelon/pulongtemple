@@ -24,12 +24,6 @@
     line-height: 30px;
 }
 
-.nav-mid {
-    flex-wrap: wrap;
-    padding-top: 8px;
-    padding-bottom: 6px;
-}
-
 .bottom-content {
     padding-top: 15px;
 }
@@ -182,10 +176,6 @@
         height: auto;
     }
 
-    .nav-mid {
-        height: 85px;
-    }
-
     .update {
         padding: 24px;
         margin-bottom: 36px;
@@ -194,14 +184,8 @@
 }
 
 @media (min-width: 992px) {
-    .nav-top,
-    .nav-mid {
-        padding: 12px 40px;
-        height: 90px;
-    }
-
     .donated {
-        padding: 20px 40px 0;
+        padding: 20px 40px 0 !important;
         font-size: 24px;
     }
 
@@ -230,23 +214,12 @@
         border-left: none;
     }
 
-    .nav-item {
-        min-width: 100px;
-        padding: 0 8px;
-    }
-
     .update-content {
         max-height: 600px;
     }
 }
 
 @media (min-width: 1200px) {
-
-    .nav-top,
-    .nav-mid {
-        padding: 12px 150px;
-    }
-
     .donated {
         padding: 20px 150px 0;
     }
