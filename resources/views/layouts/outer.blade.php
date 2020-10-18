@@ -44,7 +44,7 @@
   <body>
     <!--top navbar -->
     <nav class="nav-top">
-      <div class="logo pl-3">
+      <div class="logo">
         <a class="btn" href="/">
           <span>埔</span>
           {{-- <img class="swap-on-hover__front-image" src="{{asset('image/logo_final.png')}}"> --}}

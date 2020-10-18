@@ -120,14 +120,6 @@
   box-shadow: 0px 0px 10px 3px #EE583A;
 }
 
-/*login-btn*/
-.login>li>a {
-    min-width: 100px;
-    max-width: 100%;
-    color: #019858;
-    font-size: 18px;
-}
-
 /*more-btn*/
 .more-btn {
     display: block;
