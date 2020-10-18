@@ -35,20 +35,19 @@ $size: 28px
     top: 50%
     transform: translateY(-50%)
     display: inline-block
-    // just for ios (it could have been used in transform of child element.)
+
     & a
         // padding: 8px 16px
         border: 2px solid #ddd
         border-radius: 50%
         color: #ddd
         transition: all .2s
-        perspective: 8px
         box-shadow: 0 0 2px rgba(1, 178, 104, 1), 0 0 4px rgba(1, 178, 104, .8), 0 0 6px rgba(1, 178, 104, .6), 0 0 8px rgba(1, 178, 104, .6), 0 0 10px rgba(1, 178, 104, .4)
         & span
             font-family: 'M PLUS 1p', sans-serif
             font-size: $size
             line-height: $size
-            transform: translate(-1.5px, -4px) rotateX(15deg)
+            // transform: translate(-1.5px, -4px) rotateX(15deg) perspective(.5rem)
             text-shadow: 0 0 1px rgba(1, 178, 104, 1), 0 0 2px rgba(1, 178, 104, 1), 0 0 3px rgba(1, 178, 104, .8)
         &:hover
             color: white
