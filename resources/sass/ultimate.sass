@@ -35,7 +35,8 @@ $size: 28px
     top: 50%
     transform: translateY(-50%)
     display: inline-block
-
+    // just for ios (it could have been used in transform of child element.)
+    perspective: .5rem
     & a
         // padding: 8px 16px
         border: 2px solid #ddd
@@ -47,7 +48,7 @@ $size: 28px
             font-family: 'M PLUS 1p', sans-serif
             font-size: $size
             line-height: $size
-            transform: translate(-1.5px, -4px) perspective(.5rem) rotateX(15deg)
+            transform: translate(-1.5px, -4px) rotateX(15deg)
             text-shadow: 0 0 1px rgba(1, 178, 104, 1), 0 0 2px rgba(1, 178, 104, 1), 0 0 3px rgba(1, 178, 104, .8)
         &:hover
             color: white

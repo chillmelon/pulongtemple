@@ -37,6 +37,8 @@ hr {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: inline-block;
+  -webkit-perspective: .5rem;
+          perspective: .5rem;
 }
 
 .logo a {
@@ -53,8 +55,8 @@ hr {
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 28px;
   line-height: 28px;
-  -webkit-transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
-          transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
+  -webkit-transform: translate(-1.5px, -4px) rotateX(15deg);
+          transform: translate(-1.5px, -4px) rotateX(15deg);
   text-shadow: 0 0 1px #01b268, 0 0 2px #01b268, 0 0 3px rgba(1, 178, 104, 0.8);
 }
 
