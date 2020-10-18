@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AACA,OAAO,CAAC,qDAAI",
     "sources": [
-        "../../vendor/tcg/voyager/resources/assets/sass/app.scss"
+        "../../vendor/laravel/ui/src/Presets/bootstrap-stubs/app.scss",
+        "../../vendor/laravel/ui/src/Presets/bootstrap-stubs/_variables.scss"
     ],
     "names": [],
     "file": "app.css"

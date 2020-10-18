@@ -227,23 +227,6 @@
 }
 
 
-/*logo*/
-.logo {
-    top: 50%;
-    padding-left: 16px;
-    transform: translateY(-30px);
-}
-
-.logo img {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 60px;
-    height: 60px;
-}
-
 /*login*/
 .login {
     top: 50%;
