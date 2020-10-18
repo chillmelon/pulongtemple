@@ -15,11 +15,13 @@ class CreateOptionsTable extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
             $table->unsignedBigInteger('project_id');
-            $table->foreign('project_id')->references('id')->on('Projects');
-						$table->string('features');
+						$table->string('title');
             $table->integer('price');
+						$table->string('content');
+						$table->integer('sold')->default(0);
+            $table->timestamps();
+            $table->foreign('project_id')->references('id')->on('Projects');
         });
     }
 
