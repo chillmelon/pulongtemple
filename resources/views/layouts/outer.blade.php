@@ -43,7 +43,7 @@
   </head>
   <body>
     <!--top navbar -->
-    <nav class="nav-top u-cf">
+    <nav class="nav-top">
       <div class="logo pl-3">
         <a class="btn" href="/">
           <span>埔</span>
