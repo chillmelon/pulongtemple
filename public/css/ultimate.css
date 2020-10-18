@@ -28,7 +28,25 @@ hr {
 .f-titile {
   font-weight: bold;
   color: #fff;
-  -webkit-text-stroke: 0.04rem #019857;
+  -webkit-text-stroke: 0.04rem #019858;
+}
+
+.custom-bdr {
+  border: solid;
+  border-width: 2px;
+  border-color: #01814A;
+  border-radius: 0;
+}
+
+.custom-bdr-bm {
+  border-bottom: #01814A 2px solid;
+}
+
+.hover-bdr:hover {
+  cursor: pointer;
+  border: solid;
+  border-width: 2px;
+  border-color: #02C874;
 }
 
 /*Navbar*/
@@ -37,7 +55,7 @@ hr {
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
-  border-color: #01814A;
+  border-color: rgba(1, 126, 72, 0.6);
   -webkit-box-shadow: 0 2px 0 1px black;
           box-shadow: 0 2px 0 1px black;
   z-index: 4999;
@@ -45,6 +63,7 @@ hr {
 
 .nav-top {
   height: 70px;
+  margin-top: 3px;
 }
 
 .nav-mid {

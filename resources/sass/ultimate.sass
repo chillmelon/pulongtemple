@@ -1,8 +1,10 @@
 // Variable
+$bg-color: black
 $main-color: #019858
 $hover-color: #02F78E
 $border-color: #01814A
-$bg-color: black
+$border-hover-color: #02C874
+$dark-border-color: rgba(1, 126, 72, .6)
 
 // Initial
 *
@@ -34,13 +36,14 @@ hr
     border-top: solid
     border-bottom: solid
     border-width: 2px
-    border-color: $border-color
+    border-color: $dark-border-color
     box-shadow: 0 2px 0 1px $bg-color
     z-index: 4999
 
 .nav-top
     @extend %nav
     height: 70px
+    margin-top: 3px
 
 .nav-mid
     @extend %nav

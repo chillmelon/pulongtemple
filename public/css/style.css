@@ -177,24 +177,7 @@
     25% {opacity: 0}
 }
 
-/*bdr*/
-.custom-bdr {
-    border: solid;
-    border-width: 2px;
-    border-color: #01814A;
-    border-radius: 0;
-}
 
-.custom-bdr-bm {
-    border-bottom: #01814A 2px solid;
-}
-
-.hover-bdr:hover {
-    cursor: pointer;
-    border: solid;
-    border-width: 2px;
-    border-color: #02C874;
-}
 
 /*image*/
 .imgbox {
