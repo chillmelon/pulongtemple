@@ -62,7 +62,7 @@ hr {
 
 .nav-top {
   height: 70px;
-  margin-top: 3px;
+  border-top: none;
 }
 
 .nav-mid {
