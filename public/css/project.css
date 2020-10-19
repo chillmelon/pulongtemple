@@ -1,37 +1,6 @@
 /*Layout*/
 
-.intro {
-    padding: 24px;
-}
 
-.title {
-    /*padding: 0;*/
-}
-
-.status {
-    padding: 0 15px;
-}
-
-.goal {
-    padding: 0;
-}
-
-
-.description {
-    font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
-    padding: 24px 0;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.bottom-content {
-    padding-top: 15px;
-}
-
-.project-content img {
-    max-width: 100%;
-    height: auto;
-}
 
 /*min-top*/
 .top-img {
@@ -199,7 +168,7 @@
     }
 
     .img-main {
-        padding: 15px;
+        padding: 1rem;
     }
 
     /* .img-main,
@@ -221,12 +190,12 @@
 
 @media (min-width: 1200px) {
     .donated {
-        padding: 20px 150px 0;
+        padding: 1rem 150px 0;
     }
 
     .top-content,
     .bottom-content {
-        padding: 20px 150px;
+        padding: 1rem 150px;
     }
 
     .footer {

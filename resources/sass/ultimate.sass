@@ -30,7 +30,7 @@ hr
 
 @import utility
 
-/*Navbar*/
+// Navbar
 %nav
     background-color: $bg-color
     border-top: solid
@@ -67,7 +67,7 @@ hr
     .nav-top, .nav-mid
         padding: 12px 200px
 
-/*logo*/
+// logo
 $size: 28px
 .logo
     padding-left: 1rem
@@ -75,13 +75,13 @@ $size: 28px
     transform: translateY(-50%)
     display: inline-block
 
-    & a
+    a
         border: 2px solid #ddd
         border-radius: 50%
         color: #ddd
         transition: all .2s
         box-shadow: 0 0 2px rgba(1, 178, 104, 1), 0 0 4px rgba(1, 178, 104, .8), 0 0 6px rgba(1, 178, 104, .6), 0 0 8px rgba(1, 178, 104, .6), 0 0 10px rgba(1, 178, 104, .4)
-        & span
+        span
             font-family: 'M PLUS 1p', sans-serif
             font-size: $size
             line-height: $size
@@ -101,63 +101,60 @@ $size: 28px
 //     width: 60px
 //     height: 60px
 
-/*login*/
+
+// login
 .login
     top: 50%
-    padding: 0
-    padding-right: 16px
+    padding-right: 1rem
     transform: translateY(-50%)
     float: right
-    margin: 0
+    // login-btn
+    & > li > a
+        font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
+        min-width: 80px
+        max-width: 100%
+        color: #019858
+    span 
+        color: $main-color
+    // dropdown
+    .dropdown 
+        border-color: $border-hover-color
+        display: block
+        position: absolute
+        right: 0
+        top: 120%
+        background-color: $bg-color
+        border-width: 1px
+        box-shadow: 0px 0px 2px 2px $bg-color
+        opacity: 0
+        visibility: hidden
+        transition: all 0.5s ease
+        li 
+            display: block
+            width: 100px
+            left: 50%
+            transform: translateX(-50%)
+        & > li > a 
+            font-family: 'Noto Serif TC', serif
+            display: block
+            border: none
+            transition: all 0.2s
+    // hover & expand
+    & > li:hover > a
+        color: $hover-color
+    & > li:hover span 
+        color: $hover-color
+    & > li:hover .dropdown 
+        opacity: 1
+        visibility: visible
+        top: 110%
 
+// white-btn of dropdown menu
+.white-btn
+    color: #ccc
+    &:hover
+        color: #fff
 
-/*login-btn*/
-.login>li>a
-    min-width: 100px
-    max-width: 100%
-    color: #019858
-    font-size: 18px
-
-
-/*dropdown*/
-.login .dropdown 
-    display: block
-    padding: 8px 0
-    position: absolute
-    right: 0
-    top: 120%
-    background-color: $bg-color
-    box-shadow: 0px 0px 4px 2px $bg-color
-    opacity: 0
-    visibility: hidden
-    transition: all 0.5s ease
-
-.login span 
-    color: $main-color
-    text-shadow: 2px 2px #0D0D0D
-
-
-.login .dropdown li 
-    display: block
-    width: 120px
-    left: 50%
-    transform: translateX(-50%)
-
-.login>li:hover>a 
-    color: $hover-color
-
-.login>li:hover span 
-    color: $hover-color
-
-.login>li:hover .dropdown 
-    opacity: 1
-    visibility: visible
-    top: 110%
-
-.login .dropdown>li>a 
-    display: block
-    border: none
-    transition: all 0.2s
 
 @media (min-width: 992px)
     .logo
@@ -165,8 +162,40 @@ $size: 28px
     .login
         padding: 0
 
+// Project
+.intro
+    padding: 1rem
 
-/* donate form select area */
+.title
+    // padding: 0*
+
+.status
+    padding: 0 15px
+
+.goal
+    padding: 0
+
+.description
+    font-family: 'Noto Sans TC', 'Noto Serif TC', serif
+    font-size: 20px
+    line-height: 30px
+
+.bottom-content
+    padding-top: 15px
+
+.project-content img
+    max-width: 100%
+    height: auto
+
+
+
+// Select Plan
+.select-title 
+    font-weight: bold
+    color: #fff
+    -webkit-text-stroke: 0.04rem $main-color
+
+//  donate form select area 
 .select 
     background-color: #6BB382
     width: 120px
@@ -201,13 +230,6 @@ $size: 28px
 
 
 
-// Select Plan
-.select-title 
-    font-weight: bold
-    color: #fff
-    -webkit-text-stroke: 0.04rem $main-color
-
-
 
 @import community
 
@@ -217,7 +239,7 @@ $size: 28px
     padding: 2rem 1rem
     visibility: hidden
     height: 0
-    & .btn
+    .btn
         white-space: pre
         border-style: dashed
         border-color: $main-color

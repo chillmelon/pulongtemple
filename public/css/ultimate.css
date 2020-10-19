@@ -49,7 +49,6 @@ hr {
   border-color: #02C874;
 }
 
-/*Navbar*/
 .nav-top, .nav-mid {
   background-color: black;
   border-top: solid;
@@ -96,7 +95,6 @@ hr {
   }
 }
 
-/*logo*/
 .logo {
   padding-left: 1rem;
   top: 50%;
@@ -131,52 +129,55 @@ hr {
           transform: scale(1.1);
 }
 
-/*login*/
 .login {
   top: 50%;
-  padding: 0;
-  padding-right: 16px;
+  padding-right: 1rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   float: right;
-  margin: 0;
 }
 
-/*login-btn*/
 .login > li > a {
-  min-width: 100px;
+  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  min-width: 80px;
   max-width: 100%;
   color: #019858;
-  font-size: 18px;
 }
 
-/*dropdown*/
+.login span {
+  color: #019858;
+}
+
 .login .dropdown {
+  border-color: #02C874;
   display: block;
-  padding: 8px 0;
   position: absolute;
   right: 0;
   top: 120%;
   background-color: black;
-  -webkit-box-shadow: 0px 0px 4px 2px black;
-          box-shadow: 0px 0px 4px 2px black;
+  border-width: 1px;
+  -webkit-box-shadow: 0px 0px 2px 2px black;
+          box-shadow: 0px 0px 2px 2px black;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
-.login span {
-  color: #019858;
-  text-shadow: 2px 2px #0D0D0D;
-}
-
 .login .dropdown li {
   display: block;
-  width: 120px;
+  width: 100px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.login .dropdown > li > a {
+  font-family: 'Noto Serif TC', serif;
+  display: block;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .login > li:hover > a {
@@ -193,11 +194,12 @@ hr {
   top: 110%;
 }
 
-.login .dropdown > li > a {
-  display: block;
-  border: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.white-btn {
+  color: #ccc;
+}
+
+.white-btn:hover {
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -209,7 +211,39 @@ hr {
   }
 }
 
-/* donate form select area */
+.intro {
+  padding: 1rem;
+}
+
+.status {
+  padding: 0 15px;
+}
+
+.goal {
+  padding: 0;
+}
+
+.description {
+  font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.bottom-content {
+  padding-top: 15px;
+}
+
+.project-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.select-title {
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 0.04rem #019858;
+}
+
 .select {
   background-color: #6BB382;
   width: 120px;
@@ -244,12 +278,6 @@ hr {
 
 .btn-select:hover {
   border: none;
-}
-
-.select-title {
-  font-weight: bold;
-  color: #fff;
-  -webkit-text-stroke: 0.04rem #019858;
 }
 
 .rank table {

@@ -38,7 +38,7 @@
     <!-- eng -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> --}}
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -47,8 +47,6 @@
       <div class="logo">
         <a class="btn" href="/">
           <span>埔</span>
-          {{-- <img class="swap-on-hover__front-image" src="{{asset('image/logo_final.png')}}"> --}}
-          {{-- <img class="swap-on-hover__back-image" src="{{asset('image/logo_final.gif')}}"> --}}
         </a>
       </div>
       <ul class="login">
