@@ -7,7 +7,7 @@
 }
 
 html, body {
-  background-color: black;
+  background-color: #000;
   font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
   font-size: 16px;
   color: #ccc;
@@ -50,13 +50,13 @@ hr {
 }
 
 .nav-top, .nav-mid {
-  background-color: black;
+  background-color: #000;
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
   border-color: rgba(1, 126, 72, 0.4);
-  -webkit-box-shadow: 0 2px 0 1px black;
-          box-shadow: 0 2px 0 1px black;
+  -webkit-box-shadow: 0 2px 0 1px #000;
+          box-shadow: 0 2px 0 1px #000;
   z-index: 4999;
 }
 
@@ -95,6 +95,15 @@ hr {
   }
 }
 
+.logo a, .logo a:hover, .logo a:focus {
+  -webkit-box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
+          box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
+}
+
+.logo a span {
+  text-shadow: 0 0 1px #01b268, 0 0 2px #01b268, 0 0 3px rgba(1, 178, 104, 0.8);
+}
+
 .logo {
   padding-left: 1rem;
   top: 50%;
@@ -104,13 +113,11 @@ hr {
 }
 
 .logo a {
-  border: 2px solid #ddd;
+  border: 2px solid #ccc;
   border-radius: 50%;
-  color: #ddd;
+  color: #ccc;
   -webkit-transition: all .2s;
   transition: all .2s;
-  -webkit-box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
-          box-shadow: 0 0 2px #01b268, 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4);
 }
 
 .logo a span {
@@ -119,12 +126,11 @@ hr {
   line-height: 28px;
   -webkit-transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
           transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
-  text-shadow: 0 0 1px #01b268, 0 0 2px #01b268, 0 0 3px rgba(1, 178, 104, 0.8);
 }
 
-.logo a:hover {
-  color: white;
-  border: 2px solid white;
+.logo a:hover, .logo a:focus {
+  color: #fff;
+  border: 2px solid #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -138,10 +144,15 @@ hr {
 }
 
 .login > li > a {
-  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
   min-width: 80px;
   max-width: 100%;
+  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  font-weight: 600;
   color: #019858;
+  border-color: #019858;
+  border-width: 2px;
+  -webkit-box-shadow: 0 0 8px 2px #019858;
+          box-shadow: 0 0 8px 2px #019858;
 }
 
 .login span {
@@ -154,10 +165,10 @@ hr {
   position: absolute;
   right: 0;
   top: 120%;
-  background-color: black;
+  background-color: #000;
   border-width: 1px;
-  -webkit-box-shadow: 0px 0px 2px 2px black;
-          box-shadow: 0px 0px 2px 2px black;
+  -webkit-box-shadow: 0px 0px 2px 2px #000;
+          box-shadow: 0px 0px 2px 2px #000;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
@@ -182,6 +193,10 @@ hr {
 
 .login > li:hover > a {
   color: #02F78E;
+  border-color: #02F78E;
+  border-width: 2px;
+  -webkit-box-shadow: 0 0 8px 1px #02F78E;
+          box-shadow: 0 0 8px 1px #02F78E;
 }
 
 .login > li:hover span {

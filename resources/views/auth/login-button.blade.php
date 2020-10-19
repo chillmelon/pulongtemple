@@ -5,6 +5,7 @@
 @auth
   <li>
     <a class="btn px-2 py-0">{{ auth()->user()->name }} <span>▼</span></a>
+    {{-- dropdown menu --}}
     <ul class="dropdown custom-bdr p-2">
       <li><a class="btn white-btn p-1" href="{{ url('/dashboard') }}">個人資料</a></li>
       <li><a class="btn white-btn p-1" href="/member/donations">我的贊助</a></li>
@@ -24,7 +25,7 @@
 {{-- has log out --}}
 @else
   <li class="">
-    <a class="btn px-2 py-0" style="font-family: 'Noto Serif TC', serif;" href="{{ route('login') }}">
+    <a class="btn px-2 py-0" href="{{ route('login') }}">
       登入
     </a>
   </li>
