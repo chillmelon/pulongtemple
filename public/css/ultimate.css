@@ -54,7 +54,7 @@ hr {
   border-top: solid;
   border-bottom: solid;
   border-width: 2px;
-  border-color: rgba(1, 126, 72, 0.6);
+  border-color: rgba(1, 126, 72, 0.4);
   -webkit-box-shadow: 0 2px 0 1px black;
           box-shadow: 0 2px 0 1px black;
   z-index: 4999;
