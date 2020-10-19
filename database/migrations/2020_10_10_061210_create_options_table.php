@@ -19,7 +19,9 @@ class CreateOptionsTable extends Migration
 						$table->string('title');
             $table->integer('price');
 						$table->string('content');
+						$table->string('survey')->nullable();
 						$table->integer('sold')->default(0);
+						$table->boolean('shipping')->default(0);
             $table->timestamps();
             $table->foreign('project_id')->references('id')->on('Projects');
         });
