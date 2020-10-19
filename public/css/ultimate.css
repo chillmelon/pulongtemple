@@ -144,15 +144,14 @@ hr {
 }
 
 .login > li > a {
-  min-width: 80px;
+  min-width: 100px;
   max-width: 100%;
   font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
   font-weight: 600;
+  font-size: 18px;
   color: #019858;
-  border-color: #019858;
+  border-color: rgba(1, 126, 72, 0.4);
   border-width: 2px;
-  -webkit-box-shadow: 0 0 8px 2px #019858;
-          box-shadow: 0 0 8px 2px #019858;
 }
 
 .login span {
@@ -184,7 +183,7 @@ hr {
 }
 
 .login .dropdown > li > a {
-  font-family: 'Noto Serif TC', serif;
+  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
   display: block;
   border: none;
   -webkit-transition: all 0.2s;
@@ -195,8 +194,6 @@ hr {
   color: #02F78E;
   border-color: #02F78E;
   border-width: 2px;
-  -webkit-box-shadow: 0 0 8px 1px #02F78E;
-          box-shadow: 0 0 8px 1px #02F78E;
 }
 
 .login > li:hover span {

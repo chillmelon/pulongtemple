@@ -14,7 +14,7 @@
         <a class="btn p-1" href="{{ route('logout') }}"
           onclick="event.preventDefault();
           document.getElementById('logout-form').submit();">
-          登出
+          LOG OUT
         </a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
@@ -26,7 +26,7 @@
 @else
   <li class="">
     <a class="btn px-2 py-0" href="{{ route('login') }}">
-      登入
+      SIGN IN
     </a>
   </li>
 @endauth

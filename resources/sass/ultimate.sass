@@ -118,18 +118,19 @@ $size: 28px
     float: right
     // login-btn
     & > li > a
-        min-width: 80px
+        min-width: 100px
         max-width: 100%
         font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
         font-weight: 600
+        font-size: 18px
         color: $main-color
-        border-color: $main-color
+        border-color: $dark-border-color
         border-width: 2px
-        box-shadow: 0 0 8px 2px $main-color
+        // box-shadow: 0 0 8px 2px $main-color
     span 
         color: $main-color
     // dropdown
-    .dropdown 
+    .dropdown
         border-color: $border-hover-color
         display: block
         position: absolute
@@ -147,7 +148,7 @@ $size: 28px
             left: 50%
             transform: translateX(-50%)
         & > li > a 
-            font-family: 'Noto Serif TC', serif
+            font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
             display: block
             border: none
             transition: all 0.2s
@@ -156,7 +157,7 @@ $size: 28px
         color: $main-hover-color
         border-color: $main-hover-color
         border-width: 2px
-        box-shadow: 0 0 8px 1px $main-hover-color
+        // box-shadow: 0 0 8px 1px $main-hover-color
     & > li:hover span 
         color: $main-hover-color
     & > li:hover .dropdown 
