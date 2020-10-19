@@ -9,11 +9,14 @@ class Donates extends Model
     protected $fillable = [
      'id',
      'project_id',
+		 'option_id',
      'user_id',
-	 'name',
-	 'email',
+		 'name',
+		 'email',
      'amount',
      'comment',
+		 'answer',
+		 'address',
      'uuid',
     ];
     protected $table = 'Donates';
