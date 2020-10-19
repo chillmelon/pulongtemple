@@ -106,7 +106,7 @@
 }
 
 @keyframes easelight {
-    0% {opacity: .05}
+    0% {opacity: .1}
     100% {opacity: 1}
 }
 
@@ -177,24 +177,7 @@
     25% {opacity: 0}
 }
 
-/*bdr*/
-.custom-bdr {
-    border: solid;
-    border-width: 2px;
-    border-color: #01814A;
-    border-radius: 0;
-}
 
-.custom-bdr-bm {
-    border-bottom: #01814A 2px solid;
-}
-
-.hover-bdr:hover {
-    cursor: pointer;
-    border: solid;
-    border-width: 2px;
-    border-color: #02C874;
-}
 
 /*image*/
 .imgbox {
@@ -224,17 +207,6 @@
 .width-img {
     width: 100%;
     padding: 24px 0;
-}
-
-
-/*login*/
-.login {
-    top: 50%;
-    padding: 0;
-    padding-right: 16px;
-    transform: translateY(-50%);
-    float: right;
-    margin: 0;
 }
 
 /*product*/
@@ -407,10 +379,6 @@
 
 /*media query*/
 @media (min-width: 992px) {
-    ul.login {
-        padding: 0;
-    }
-
     .pltp-box-neon {
         padding: 96px 0;
     }
