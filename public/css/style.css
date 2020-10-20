@@ -204,9 +204,9 @@
 }
 
 .product:hover {
-    cursor: pointer;
-    border: #02C874 2px solid;
-    top: -2px;
+    /* cursor: pointer;
+    border: #02C874 2px solid; */
+    /* top: -2px; */
 }
 
 .product-head {
@@ -214,11 +214,11 @@
     padding: 16px;
 }
 
-.product .custom-bdr-bm {
+.product .custom-bdr-dark-bm {
     transition: inherit;
 }
 
-.product:hover .custom-bdr-bm {
+.product:hover .custom-bdr-dark-bm {
     cursor: pointer;
     border-bottom: #02C874 2px solid;
     color: #02C874;
