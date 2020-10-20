@@ -88,7 +88,7 @@
                         {{$project_info->topic}}
                         <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
                         @if($option_info->shipping == 1)
-                          地址
+                          寄送地址
                           <textarea class="form-control @error('address') is-invalid @enderror" type="text" name="address"></textarea>
                         @endif
                         @error('address')
