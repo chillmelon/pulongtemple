@@ -56,7 +56,7 @@
   </nav>
   @yield("body")
 </body>
-<footer class="footer">
+<footer class="footer p-5">
   <div class="row justify-content-center">
     <div class="col-md-4 col-lg-3">
       <div class="footer-content">

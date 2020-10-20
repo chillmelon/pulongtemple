@@ -4,7 +4,7 @@
 {{-- has log in --}}
 @auth
   <li>
-    <a class="btn px-2 py-0">{{ auth()->user()->name }} <span>▼</span></a>
+    <a class="btn px-3 py-0">{{ auth()->user()->name }} <span>▼</span></a>
     {{-- dropdown menu --}}
     <ul class="dropdown custom-bdr p-2">
       <li><a class="btn white-btn p-1" href="{{ url('/dashboard') }}">個人資料</a></li>
@@ -25,8 +25,8 @@
 {{-- has log out --}}
 @else
   <li class="">
-    <a class="btn px-2 py-0" href="{{ route('login') }}">
-      SIGN IN
+    <a class="btn px-3 py-0" href="{{ route('login') }}">
+      SIGN IN ➤
     </a>
   </li>
 @endauth

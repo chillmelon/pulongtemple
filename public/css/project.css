@@ -20,7 +20,8 @@
 
 .bottom-content {
     color: #BEBEBE;
-    font-family: Courier New, 微軟正黑體, Arial Black;
+    padding-top: 1rem;
+    /* font-family: Courier New, 微軟正黑體, Arial Black; */
 }
 
 /*update*/
@@ -160,7 +161,7 @@
 
     .top-content,
     .bottom-content {
-        padding: 20px 40px;
+        padding: 2rem 40px;
     }
 
     .footer {
@@ -195,7 +196,7 @@
 
     .top-content,
     .bottom-content {
-        padding: 1rem 150px;
+        padding: 2rem 150px;
     }
 
     .footer {
