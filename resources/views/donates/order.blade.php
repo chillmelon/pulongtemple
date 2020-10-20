@@ -35,7 +35,7 @@
 									<h3 class="select-title"><I> {{$option_info->title}} </I></h3>
 									<div class="ff-2P pt-2">NT$ {{$option_info->price}}</div>
 									<div class="pt-2">已被贊助 {{$option_info->sold}} 次</div>
-                  <div class="pt-3">content</div>
+                  <div class="pt-3">{{$option_info->content}}</div>
                 </div>
               </div>
               {{-- donate form --}}
