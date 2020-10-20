@@ -50,8 +50,8 @@
                       衣服(件)
                       <div class="select">
                         <input class="form-control text-select" type="text" id="numberA" value="0" width="5"/>
-                        <input class="btn btn-select" type="button" onclick="incrementValueA()" value="▲"/>
-                        <input class="btn btn-select" type="button" onclick="decrementValueA()" value="▼"/>
+                        <input class="btn btn-nohover" type="button" onclick="incrementValueA()" value="▲"/>
+                        <input class="btn btn-nohover" type="button" onclick="decrementValueA()" value="▼"/>
                       </div>
                     </div>
                     <div style="display: inline-block">

@@ -202,14 +202,18 @@ $size: 28px
     max-width: 100%
     height: auto
 
-
+@media (min-width: 576px)
+    
+    .intro,
+    .project-content 
+        padding-left: 2rem
+        padding-right: 2rem
 
 // Select Plan
 .select-title 
-    font-weight: bold
     color: #fff
+    text-shadow: 2px 1px $main-color
     // -webkit-text-stroke: 0.04rem $main-color
-    text-shadow: 1px 1px 0.2rem
 
 //  donate form select area 
 .select 
@@ -240,10 +244,8 @@ $size: 28px
     color: $main-color
     font-size: 16px
 
-.btn-select:hover 
+.btn-nohover:hover
     border: none
-
-
 
 
 
@@ -252,14 +254,13 @@ $size: 28px
 
 // Expand Project Content
 .expand-project
-    padding: 2rem 1rem
+    padding: 1rem 1rem 2rem
     visibility: hidden
     height: 0
+    box-shadow: 0 -2rem 3rem $bg-color
     .btn
         white-space: pre
-        border-style: dashed
-        border-color: $main-color
-        border-width: 2px
+        border: $main-color 2px dashed
 
 @media (max-width: 576px)
     .expand-project

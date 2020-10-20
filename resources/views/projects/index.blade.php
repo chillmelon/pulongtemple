@@ -56,7 +56,7 @@
       <div class="row justify-content-center">
         @foreach($projects as $project)
         <div class="product-box col-12 col-md-6 p-4">
-          <div class="product custom-bdr-dark" onclick="location.href='projects/{{ $project->id }}';">
+          <div class="product custom-bdr-dark hover-bdr" onclick="location.href='projects/{{ $project->id }}';">
             <div class="product-head custom-bdr-dark-bm serif-tc">
               {{ $project->title }}
             </div>
