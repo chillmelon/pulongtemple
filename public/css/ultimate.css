@@ -22,7 +22,7 @@ a:hover {
 }
 
 hr {
-  border-top: 1px solid #9D9D9D;
+  border-top: 1px solid #333;
 }
 
 .f-titile {
@@ -32,20 +32,40 @@ hr {
 }
 
 .custom-bdr {
-  border: solid;
-  border-width: 2px;
-  border-color: #01814A;
+  border: #01814A 2px solid;
   border-radius: 0;
+}
+
+.custom-bdr:hover {
+  cursor: pointer;
+  border-color: #02C874;
 }
 
 .custom-bdr-bm {
   border-bottom: #01814A 2px solid;
 }
 
-.hover-bdr:hover {
+.custom-bdr-bm:hover {
   cursor: pointer;
-  border: solid;
-  border-width: 2px;
+  border-color: #02C874;
+}
+
+.custom-bdr-dark {
+  border: rgba(1, 126, 72, 0.4) 2px solid;
+  border-radius: 0;
+}
+
+.custom-bdr-dark:hover {
+  cursor: pointer;
+  border-color: #02C874;
+}
+
+.custom-bdr-dark-bm {
+  border-bottom: rgba(1, 126, 72, 0.4) 2px solid;
+}
+
+.custom-bdr-dark-bm:hover {
+  cursor: pointer;
   border-color: #02C874;
 }
 
@@ -182,8 +202,9 @@ hr {
           transform: translateX(-50%);
 }
 
-.login .dropdown > li > a {
+.login .dropdown a {
   font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  font-weight: 600;
   display: block;
   border: none;
   -webkit-transition: all 0.2s;
@@ -227,22 +248,25 @@ hr {
   padding: 1rem;
 }
 
-.status {
-  padding: 0 15px;
+.title {
+  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
 }
 
-.goal {
-  padding: 0;
+.project-status {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Press Start 2P', 'Noto Serif TC', serif;
+}
+
+.project-status span {
+  font-family: 'Noto Serif TC', serif;
 }
 
 .description {
   font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
   font-size: 20px;
   line-height: 30px;
-}
-
-.bottom-content {
-  padding-top: 15px;
 }
 
 .project-content img {

@@ -6,14 +6,14 @@
       @auth
       <br>
       <br>
-      <div class="donate-box custom-bdr">
+      <div class="donate-box">
         <div class="row">
-          {{-- Progress bar --}}
           <div class="col-lg-4">
+            {{-- Project status --}}
             <div class="progress-box">
               <div style="text-align: center;">
                 <h4>{{$project_info->title}}</h4>
-                {{-- circle --}}
+                {{--Progress circle --}}
                 <div style="height: 200px">
                   <div class="circle-pg-box ab-center">
                     <div class="circle-pg">
@@ -29,6 +29,13 @@
                   <h6>NT$ {{$project_info->amount}} <small><br>/&ensp;{{$project_info->goal}}</small></h5>
                 </div>
               </div>
+            </div>
+            {{-- selected plan --}}
+            <div class="serif-tc custom-bdr hover-bdr p-4 my-3">
+              <h3 class="select-title"><I> title </I></h3>
+              <div class="ff-2P pt-2">NT$ price</div>
+              <div class="pt-2">已被贊助 sold 次</div>
+              <div class="pt-3">content</div>
             </div>
           </div>
           {{-- donate form --}}
@@ -55,7 +62,6 @@
                         <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
                       </div>
                     </div>
-
                     <br>贊助金額
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                     @error('amount')

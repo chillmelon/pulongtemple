@@ -24,42 +24,42 @@
     <div class="intro col-sm-12 col-lg-4">
       <!-- title -->
       <div class="title">
-        <h3 class="serif-tc">
+        <h3>
           <b>{{ $project->title }}</b>
-        <br>
         </h3>
-        <h6> by {{ $project->user->name }}</h6>
+        <h6>提案人：{{ $project->user->name }}</h6>
         <hr class="hr-prime">
       </div>
-      <!-- status -->
-      <div class="row status">
-        <!-- goal -->
-        <div class="goal ff-2P col-6 col-sm-8 col-lg-6">
-          <div class="max-w-200">
-            <span class="fs-18 inline-b">NT$</span>
-            <span class="fs-18 inline-b ab-rb">{{ $project->amount }}</span>
+      <!-- project-status -->
+      <div class="row py-3">
+        <div class="col-6">
+          <div class="project-status d-flex">
+            <h5>NT$</h5>
+            <h5>{{ $project->amount }}</h5>
           </div>
-          <div class="max-w-200">
-            <span class="inline-b fs-12"></span>
-            <span class="inline-b ab-rb fs-12">/{{ $project->goal }}</span>
+          <div class="project-status d-flex">
+            <small>目標</small>
+            <small>{{ $project->goal }}</small>
           </div>
           <hr class="hr-prime">
-          <div class="max-w-200">
-            <h4 class="inlin-b">{{ $project->supporters }}</h4>
-            <span class="inlin-b ab-rb">人贊助</span>
+          <div class="project-status d-flex">
+            <span>贊助人數</span>
+            <span>{{ $project->supporters }} 人</span>
           </div>
-          <div class="max-w-200">
+          <div class="project-status d-flex">
+            {{-- project completed --}}
             @if ($project->days_left < 0)
-            <h4 class="inlin-b">&nbsp;</h4>
-            <span class="inlin-b ab-rb">專案結束</span>
+            <span>&nbsp;</span>
+            <span>專案結束</span>
             @else
-            <h4 class="inlin-b">{{ $project->days_left }}</h4>
-            <span class="inlin-b ab-rb">天剩餘</span>
+            {{-- project in progress --}}
+            <span>剩餘天數</span>
+            <span>{{ $project->days_left }} 天</span>
             @endif
           </div>
         </div>
         <!-- Progress Circle -->
-        <div class="col-6 col-sm-4 col-lg-6">
+        <div class="col-6">
           <div class="circle-pg-box ab-center">
             <div class="circle-pg">
               <div class="circle-pg-inner">
@@ -71,8 +71,9 @@
           </div>
         </div>
       </div>
+      <hr class="hr-prime">
       <!-- description -->
-      <div class="description py-3">
+      <div class="description pt-2 pb-3">
         <p class="m-0">
           {{ $project->summary }}
         </p>
@@ -81,9 +82,11 @@
   </div>
 </div>
 @endsection
+{{-- nav-mid --}}
 @section("content-active")
 active
 @endsection
+{{-- bottom-content --}}
 @section("sub-content")
 <div class="container-fluid bottom-content">
   <div class='row'>

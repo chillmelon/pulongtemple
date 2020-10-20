@@ -19,16 +19,29 @@
 
 // Border
 .custom-bdr
-    border: solid
-    border-width: 2px
-    border-color: $border-color
+    border: $border-color 2px solid
     border-radius: 0
+    &:hover
+        cursor: pointer
+        border-color: $border-hover-color
 
 .custom-bdr-bm
     border-bottom: $border-color 2px solid
+    &:hover
+        cursor: pointer
+        border-color: $border-hover-color
 
-.hover-bdr:hover
-    cursor: pointer
-    border: solid
-    border-width: 2px
-    border-color: $border-hover-color
+
+.custom-bdr-dark
+    border: $dark-border-color 2px solid
+    border-radius: 0
+    &:hover
+        cursor: pointer
+        border-color: $border-hover-color
+
+
+.custom-bdr-dark-bm
+    border-bottom: $dark-border-color 2px solid
+    &:hover
+        cursor: pointer
+        border-color: $border-hover-color
