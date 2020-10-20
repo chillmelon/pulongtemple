@@ -173,7 +173,7 @@
         padding: 32px;
     }
     .donate-form {
-        border-left: #01814A 2px solid;
+        /* border-left: #01814A 2px solid; */
     }
     .donate-form .nt {
         font-size: 48px;
