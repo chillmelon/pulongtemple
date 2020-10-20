@@ -57,7 +57,9 @@ class PaymentService
         $this->saveRequest($request);
         if ($rcode=='1'){
             $this->donateRepository->update($uuid,['paid'=>'1']);
-            return "OK 1";
+						$donation = $this->donateRepository
+															->findByUuid($uuid);
+						var_dump($this->refreshTotalAmount($donation));
         }
     }
     public function saveRequest($request=null)
@@ -71,11 +73,18 @@ class PaymentService
 
     public function refreshTotalAmount($donation)
     {
-        $projectID = $donation->pluck('project_id');
-        $total_amount = $donateRepository
+        $project_id = $donation->project_id;
+        $option_id = $donation->option_id;
+        $total_amount = $this->donateRepository
                             ->findByProject($project_id)
                             ->where('paid',1)
                             ->sum('amount');
-        $projectRepository->update($project_id,['total_amount'=>$total_amount]);
+				$option_sold = $this->donateRepository
+														->findByOption($option_id)
+                            ->where('paid',1)
+														->count();
+        $this->projectRepository->update($project_id,['total_amount'=>$total_amount]);
+        $this->projectRepository->updateOption($option_id,['sold'=>$option_sold]);
+				return "ok";
     }
 }

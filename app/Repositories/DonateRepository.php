@@ -23,6 +23,20 @@ class DonateRepository
 			->get();
 		return $donates;
 	}
+	public function findByOption($option_id)
+	{
+		$donates = Donates::where('option_id',$option_id)
+			->where('paid',1)
+			->get();
+		return $donates;
+	}
+	public function findByUuid($uuid)
+	{
+		$donation = Donates::where('uuid', $uuid)
+								->where('uuid',$uuid)
+								->firstOrFail();
+		return $donation;
+	}
 	public function create($donation)
 	{
 		Donates::create($donation);

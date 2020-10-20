@@ -31,6 +31,11 @@ class ProjectRepository
 		$project = Projects::where('id', $project_id);
 		$project->update($update);
 	}
+	public function updateOption($option_id, $update)
+	{
+		$option = Options::where('id', $option_id);
+		$option->update($update);
+	}
 	public function getOptionById($option_id)
 	{
 		$option = Options::where('id', $option_id)
