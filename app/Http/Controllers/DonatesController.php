@@ -38,7 +38,7 @@ class DonatesController extends Controller
     {
 				$option = $this->projectService->optionInfo($option_id);
 				$data['option_info'] = $option;
-				$data['project_info'] = $option->project;
+				$data['project_info'] = $this->projectService->detail($option->project_id);
         $data['user_info'] = auth()->user();
         return view('donates.order', $data);
     }
