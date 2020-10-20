@@ -104,7 +104,7 @@ active
         <div class="ff-2P pt-2">NT$ ???</div>
         <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
       </div>
-			@foreach($project->options as $option)
+			@foreach($project->options->sortByDesc('order') as $option)
       <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/option/{{ $option->id }}'">
         <h4 class="select-title"><I>{{ $option->title }}</I></h4>
         <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
