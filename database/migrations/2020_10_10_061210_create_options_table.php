@@ -23,6 +23,7 @@ class CreateOptionsTable extends Migration
 						$table->integer('sold')->default(0);
 						$table->boolean('shipping')->default(0);
             $table->timestamps();
+						$table->integer('order')->default(0);
             $table->foreign('project_id')->references('id')->on('Projects');
         });
     }

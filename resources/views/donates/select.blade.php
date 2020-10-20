@@ -42,7 +42,7 @@
 									<div></div>
 								</div>
 							</div>
-							@foreach($project_info->options as  $option)
+							@foreach($project_info->options->sortByDesc('order') as  $option)
               <div class="col-lg-6">
 								<div class="serif-tc custom-bdr hover-bdr p-4 my-3" onclick="location.href='/donate/option/{{$option->id}}'">
 									<h3 class="select-title"><I> {{ $option->title }} </I></h3>
