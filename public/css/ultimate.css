@@ -494,6 +494,11 @@ hr {
   outline: none;
 }
 
+.donate-form input:-internal-autofill-selected {
+  background-color: #000 !important;
+  color: #019858 !important;
+}
+
 .donate-form textarea {
   height: auto;
 }

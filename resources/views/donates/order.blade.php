@@ -57,13 +57,13 @@
                     {{--  --}}
                     <label for="d-name" class="custom-bdr-dark-3d">
                       <div class="form-title">贊助人</div>
-                      <input id="d-name" type="hidden" name="project_id" value = "{{ $project_info->id }}">
-                      <input id="d-name" type="hidden" name="option_id" value = "{{ $option_info->id }}">
-                      <input id="d-name" type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
+                      <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
+                      <input type="hidden" name="option_id" value = "{{ $option_info->id }}">
+                      <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
                       @auth
-                        <input class="@error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
+                        <input id="d-name" class="@error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
                       @else
-                        <input class="@error('name') is-invalid @enderror" type="text" name="name">
+                        <input id="d-name" class="@error('name') is-invalid @enderror" type="text" name="name">
                         @error('name')
                           <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -72,46 +72,41 @@
                       @endauth
                     </label>
                     {{--  --}}
+                    @if($option_info->survey)
                     <label for="survey" class="custom-bdr-dark-3d">
-                      @if($option_info->survey)
                       <div class="form-title">{{$option_info->survey}}</div>
                       <textarea id="survey" class="@error('answer') is-invalid @enderror" type="text" name="answer"></textarea>
-                      @endif
                     </label>
+                    @endif
                     {{--  --}}
                     <label for="topic" class="custom-bdr-dark-3d">
                       <div class="form-title">{{$project_info->topic}}</div>
                       <textarea id="topic" class="@error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
+                      @error('comment')
+                      <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
+                      @enderror
                     </label>
                     {{--  --}}
+                    @if($option_info->shipping == 1)
                     <label for="shipping" class="custom-bdr-dark-3d">
-                      @if($option_info->shipping == 1)
                       <div class="form-title">寄送地址</div>
                       <textarea id="shipping" class="@error('address') is-invalid @enderror" type="text" name="address"></textarea>
-                      @endif
                       @error('address')
-                        <span class="invalid-feedback" role="alert">
-                          <strong>{{ $message }}</strong>
-                        </span>
+                      <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
                       @enderror
                     </label>
-
-
-                    {{--remove this auth, error message can't display.--}}
+                    @endif
+                    {{-- e-mail --}}
                     @auth
                       <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
-                    @else
-                      *E-mail(將會收到專案更新資訊)
-                      <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
-                      @error('email')
-                        <span class="invalid-feedback" role="alert">
-                          <strong>{{ $message }}</strong>
-                        </span>
-                      @enderror
                     @endauth
                     {{-- btn --}}
                     <div class="custom-bdr-3d custom-bdr-3d-hover">
-                      <button class="btn">確定</button>
+                      <button class="btn">去付款</button>
                     </div>
                   </form>
                 </div>
