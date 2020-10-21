@@ -99,18 +99,22 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
-      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/{{ $project->id }}'">
-        <h4 class="select-title"><I>純贊助。</I></h4>
-        <div class="ff-2P pt-2">NT$ ???</div>
-        <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
-        <div class="select-content"><span>自由樂捐。</span></div>
+      <div class="custom-bdr-3d">
+        <div class="serif-tc p-4">
+          <h3 class="select-title"><I> 純贊助 </I></h3>
+          <div class="ff-2P pt-2">NT$ ???</div>
+          <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
+          <div class="select-content"><span>隨喜樂捐，不求回報。</span></div>
+        </div>
       </div>
 			@foreach($project->options->sortByDesc('order') as $option)
-      <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/option/{{ $option->id }}'">
-        <h4 class="select-title"><I>{{ $option->title }}</I></h4>
-        <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
-        <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
-        <div class="select-content"><span>{{$option->content}}</span></div>
+      <div class="custom-bdr-3d">
+        <div class="serif-tc p-4">
+          <h3 class="select-title"><I> {{$option->title}} </I></h3>
+          <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
+          <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
+          <div class="select-content"><span>{{$option->content}}</span></div>
+        </div>
       </div>
 			@endforeach
     </div>

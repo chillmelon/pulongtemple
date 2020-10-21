@@ -40,7 +40,7 @@
 .custom-bdr-3d
     @extend .custom-bdr
     margin-top: 3rem
-    margin-right: 3rem
+    margin-right: 1.5rem
     box-sizing: content-box
     &::before,
     &::after
@@ -50,19 +50,21 @@
         @extend .custom-bdr
     &::before
         border-bottom: none
-        border-right: none
+        // border-right: none
         border-left-width: 3px
+        border-right-width: 3px
         width: 100%
         transform: translateY(-100%) skew(-45deg) 
         height: 17px
-        left: 8px
-        top: -3.5px
+        left: 7px
+        top: -2px
     &::after
+        border-top: none
         border-left: none
         border-top-width: 3px
         border-bottom-width: 3px
         height: 100%
-        width: 16.5px
+        width: 17.5px
         transform: translateX(100%) skewY(-45deg)
-        top: -13px
-        right: -3px
+        top: -10px
+        right: -2px
