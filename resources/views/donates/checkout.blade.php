@@ -48,7 +48,7 @@
                   <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
                     {{-- select area --}}
-                    <div style="display: inline-block">
+                    {{-- <div style="display: inline-block">
                       衣服(件)
                       <div class="select">
                         <input class="form-control text-select" type="text" id="numberA" value="0" width="5"/>
@@ -63,7 +63,7 @@
                         <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▲"/>
                         <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
                       </div>
-                    </div>
+                    </div> --}}
                     <br>贊助金額
                     <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
                     @error('amount')

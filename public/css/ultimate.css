@@ -453,5 +453,60 @@ hr {
   }
 }
 
+.donate-form label {
+  display: block;
+}
+
+.donate-form label:focus-within {
+  border-color: #02C874;
+}
+
+.donate-form label:focus-within .form-title {
+  color: #02F78E;
+}
+
+.donate-form label:focus-within::before {
+  border-color: #02C874;
+}
+
+.donate-form label:focus-within::after {
+  border-color: #02C874;
+}
+
+.donate-form .form-title {
+  padding: 0.5rem;
+  color: #019858;
+}
+
+.donate-form input, .donate-form textarea {
+  display: block;
+  width: 90%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.75rem;
+  background-color: #000;
+  color: #ccc;
+  border: rgba(1, 126, 72, 0.4) 1px solid;
+}
+
+.donate-form input:focus, .donate-form textarea:focus {
+  border-color: #02C874;
+  outline: none;
+}
+
+.donate-form textarea {
+  height: auto;
+}
+
+.donate-form .btn {
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.donate-form .btn:hover {
+  border: none;
+}
+
 /*Donate-page*/
 /*# sourceMappingURL=ultimate.css.map */

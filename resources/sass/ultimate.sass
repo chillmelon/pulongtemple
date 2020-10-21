@@ -291,7 +291,44 @@ $size: 28px
         overflow: hidden
 
 
+.donate-form
+    label
+        display: block
+        &:focus-within
+            border-color: $border-hover-color
+            .form-title
+                color: $main-hover-color
+            &::before
+                border-color: $border-hover-color
+            &::after
+                border-color: $border-hover-color
+    .form-title
+        padding: 0.5rem
+        color: $main-color
+    %input-reset
+        display: block
+        width: 90%
+        margin-top: 0.5rem
+        margin-bottom: 1rem
+        margin-left: 0.75rem
+        background-color: $main-bg-color
+        color: $sec-color
+        border: $dark-border-color 1px solid
+        &:focus
+            border-color: $border-hover-color
+            outline: none
 
+    input
+       @extend %input-reset
+    textarea
+       @extend %input-reset
+       height: auto
+    .btn
+        border: none
+        font-size: 18px
+        font-weight: bold
+        &:hover
+            border: none
 
 
 // .custom-card
