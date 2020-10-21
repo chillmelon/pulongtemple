@@ -31,11 +31,13 @@
               </div>
             </div>
             {{-- selected plan --}}
-            <div class="serif-tc custom-bdr hover-bdr p-4 my-3">
-              <h3 class="select-title"><I> title </I></h3>
-              <div class="ff-2P pt-2">NT$ price</div>
-              <div class="pt-2">已被贊助 sold 次</div>
-              <div class="pt-3">content</div>
+            <div class="custom-bdr-3d" onclick="location.href='/donate/{{$project_info->id}}'">
+              <div class="serif-tc p-4">
+                <h3 class="select-title"><I> 純贊助 </I></h3>
+                <div class="ff-2P pt-2">NT$ ???</div>
+                <div class="pt-2">已被贊助 {{$project_info->supporters}} 次</div>
+                <div class="select-content"><span>隨喜樂捐，不求回報。</span></div>
+              </div>
             </div>
           </div>
           {{-- donate form --}}

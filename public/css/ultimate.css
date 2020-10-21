@@ -93,6 +93,18 @@ hr {
   right: -2px;
 }
 
+.custom-bdr-3d-hover:hover {
+  border-color: #02C874;
+}
+
+.custom-bdr-3d-hover:hover::before {
+  border-color: #02C874;
+}
+
+.custom-bdr-3d-hover:hover::after {
+  border-color: #02C874;
+}
+
 .nav-top, .nav-mid {
   background-color: #000;
   border-top: solid;
