@@ -200,7 +200,7 @@
 .product {
     padding: 0;
     top: 0;
-    transition: all .3s ease;
+    /* transition: all .3s ease; */
 }
 
 .product:hover {
@@ -246,8 +246,7 @@
 }
 
 .product-summary {
-    padding: 8px 0 0;
-    height: 84px;
+    height: 4rem;
     overflow: hidden;
 }
 

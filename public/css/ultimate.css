@@ -40,7 +40,7 @@ hr {
   border-bottom: #01814A 2px solid;
 }
 
-.custom-bdr-dark {
+.custom-bdr-dark, .custom-bdr-dark-3d, .custom-bdr-dark-3d::before, .custom-bdr-dark-3d::after {
   border: rgba(1, 126, 72, 0.4) 2px solid;
   border-radius: 0;
 }
@@ -104,6 +104,45 @@ hr {
 
 .custom-bdr-3d-hover:hover::after {
   border-color: #02C874;
+}
+
+.custom-bdr-dark-3d {
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.custom-bdr-dark-3d::before, .custom-bdr-dark-3d::after {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  content: "";
+}
+
+.custom-bdr-dark-3d::before {
+  border-bottom: none;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  width: 100%;
+  -webkit-transform: translateY(-100%) skew(-45deg);
+          transform: translateY(-100%) skew(-45deg);
+  height: 17px;
+  left: 7px;
+  top: -2px;
+}
+
+.custom-bdr-dark-3d::after {
+  border-top: none;
+  border-left: none;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  height: 100%;
+  width: 17.5px;
+  -webkit-transform: translateX(100%) skewY(-45deg);
+          transform: translateX(100%) skewY(-45deg);
+  top: -10px;
+  right: -2px;
 }
 
 .nav-top, .nav-mid {

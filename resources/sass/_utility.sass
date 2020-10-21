@@ -36,7 +36,7 @@
         cursor: pointer
         border-color: $border-hover-color
 
-// 3D Border
+// 3D Box
 .custom-bdr-3d
     @extend .custom-bdr
     margin-top: 3rem
@@ -77,3 +77,37 @@
             border-color: $border-hover-color
         &::after
             border-color: $border-hover-color
+
+// Dark 3D Box
+
+.custom-bdr-dark-3d
+    @extend .custom-bdr-dark
+    margin-top: 3rem
+    margin-right: 1.5rem
+    box-sizing: content-box
+    &::before,
+    &::after
+        box-sizing: content-box
+        position: absolute 
+        content: ""
+        @extend .custom-bdr-dark
+    &::before
+        border-bottom: none
+        // border-right: none
+        border-left-width: 3px
+        border-right-width: 3px
+        width: 100%
+        transform: translateY(-100%) skew(-45deg) 
+        height: 17px
+        left: 7px
+        top: -2px
+    &::after
+        border-top: none
+        border-left: none
+        border-top-width: 3px
+        border-bottom-width: 3px
+        height: 100%
+        width: 17.5px
+        transform: translateX(100%) skewY(-45deg)
+        top: -10px
+        right: -2px
