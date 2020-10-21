@@ -8,7 +8,7 @@
       <br>
       <div class="donate-box">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             {{-- Project status --}}
             <div class="progress-box">
               <div style="text-align: center;">

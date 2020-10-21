@@ -93,6 +93,10 @@ hr {
   right: -2px;
 }
 
+.custom-bdr-3d .btn {
+  border: none;
+}
+
 .custom-bdr-3d-hover:hover {
   cursor: pointer;
   border-color: #02C874;
@@ -143,6 +147,10 @@ hr {
           transform: translateX(100%) skewY(-45deg);
   top: -10px;
   right: -2px;
+}
+
+.custom-bdr-dark-3d .btn {
+  border: none;
 }
 
 .nav-top, .nav-mid {
@@ -533,7 +541,6 @@ hr {
 }
 
 .donate-form .btn {
-  border: none;
   font-size: 18px;
   font-weight: bold;
 }
