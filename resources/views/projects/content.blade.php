@@ -43,18 +43,18 @@
           </div>
           <hr class="hr-prime">
           <div class="project-status d-flex">
-            <span>贊助人數</span>
-            <span>{{ $project->supporters }} 人</span>
+            <h6>贊助者</h6>
+            <h5>{{ $project->supporters }}<span> </span>人</h5>
           </div>
           <div class="project-status d-flex">
             {{-- project completed --}}
             @if ($project->days_left < 0)
-            <span>&nbsp;</span>
-            <span>專案結束</span>
+            <h6>&nbsp;</h6>
+            <h6>專案結束</h6>
             @else
             {{-- project in progress --}}
-            <span>剩餘天數</span>
-            <span>{{ $project->days_left }} 天</span>
+            <h6>募資倒數</h6>
+            <h5>{{ $project->days_left }}<span> </span>天</h5>
             @endif
           </div>
         </div>
@@ -100,16 +100,17 @@ active
     </div>
     <div class="col-12 col-lg-4">
       <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/{{ $project->id }}'">
-        <h4 class="select-title"><I>純贊助，別無所求。</I></h4>
+        <h4 class="select-title"><I>純贊助。</I></h4>
         <div class="ff-2P pt-2">NT$ ???</div>
         <div class="pt-2">已被贊助 {{$project->supporters}} 次</div>
+        <div class="select-content"><span>自由樂捐。</span></div>
       </div>
 			@foreach($project->options->sortByDesc('order') as $option)
       <div class="serif-tc custom-bdr hover-bdr p-4 mb-4" onclick="location.href='/donate/option/{{ $option->id }}'">
         <h4 class="select-title"><I>{{ $option->title }}</I></h4>
         <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
         <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
-        <div class="pt-3">{{$option->content}}</div>
+        <div class="select-content"><span>{{$option->content}}</span></div>
       </div>
 			@endforeach
     </div>

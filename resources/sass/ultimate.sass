@@ -1,5 +1,6 @@
 // Variable
-$bg-color: #000
+$main-bg-color: #000
+$sec-bg-color: rgba(66, 66, 66, .2)
 $main-color: #019858
 $main-hover-color: #02F78E
 $sec-color: #ccc
@@ -7,6 +8,14 @@ $sec-hover-color: #fff
 $border-color: #01814A
 $border-hover-color: #02C874
 $dark-border-color: rgba(1, 126, 72, .4)
+
+// Shadow
+@mixin text-longShadow($lenght: 10,$rgb: $main-color)
+    $all: ()
+    @for $i from 1 through $lenght
+        // $value: $i + 0.1
+        $all: append($all, append(#{$i}px #{$i}px 0 ,rgba($rgb,0.9/$i + 0.05)),comma)
+    text-shadow: $all
 
 // Initial
 *
@@ -16,7 +25,7 @@ $dark-border-color: rgba(1, 126, 72, .4)
     text-decoration: none
 
 html, body
-    background-color: $bg-color
+    background-color: $main-bg-color
     font-family: 'Noto Sans TC', 'Noto Serif TC', serif
     font-size: 16px
     color: #ccc
@@ -34,12 +43,12 @@ hr
 
 // Navbar
 %nav
-    background-color: $bg-color
+    background-color: $main-bg-color
     border-top: solid
     border-bottom: solid
     border-width: 2px
     border-color: $dark-border-color
-    box-shadow: 0 2px 0 1px $bg-color
+    box-shadow: 0 2px 0 1px $main-bg-color
     z-index: 4999
 
 .nav-top
@@ -136,9 +145,9 @@ $size: 28px
         position: absolute
         right: 0
         top: 120%
-        background-color: $bg-color
+        background-color: $main-bg-color
         border-width: 1px
-        box-shadow: 0px 0px 2px 2px $bg-color
+        box-shadow: 0px 0px 2px 2px $main-bg-color
         opacity: 0
         visibility: hidden
         transition: all 0.5s ease
@@ -168,9 +177,9 @@ $size: 28px
 
 // white-btn of dropdown menu
 .white-btn
-    color: #ccc
+    color: $sec-color
     &:hover
-        color: #fff
+        color: $sec-hover-color
 
 
 @media (min-width: 992px)
@@ -210,18 +219,28 @@ $size: 28px
         padding-right: 2rem
 
 // Select Plan
-.select-title 
-    color: #fff
-    text-shadow: 2px 1px $main-color
-    // -webkit-text-stroke: 0.04rem $main-color
+.select-title
+    color: $sec-color
+    text-shadow: .2px .2px $main-color, .4px .4px $main-color, .6px .6px $main-color, .8px .8px $main-color, 1px 1px $main-color
+
+.select-content
+    background-color: $sec-bg-color
+    height: 4rem
+    overflow: hidden
+    margin-top: 1rem
+    padding: 1rem
+    span
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
 
 //  donate form select area 
-.select 
+.select
     background-color: #6BB382
     width: 120px
     margin: 0 16px 16px 0
 
-.custom-card .text-select 
+.custom-card .text-select
     background-color: transparent
     border: none
     display: inline-block
@@ -229,12 +248,12 @@ $size: 28px
     text-align: right
     margin: 0
 
-.custom-card .select .text-select:focus 
+.custom-card .select .text-select:focus
     background-color: transparent
     border-color: transparent
     box-shadow: none
 
-.custom-card .btn-select 
+.custom-card .btn-select
     background-color: transparent
     width: auto
     border: none
@@ -257,7 +276,7 @@ $size: 28px
     padding: 1rem 1rem 2rem
     visibility: hidden
     height: 0
-    box-shadow: 0 -2rem 3rem $bg-color
+    box-shadow: 0 -2rem 3rem $main-bg-color
     .btn
         white-space: pre
         border: $main-color 2px dashed
@@ -270,3 +289,122 @@ $size: 28px
     .project-content
         max-height: 200px
         overflow: hidden
+
+
+
+
+
+// .custom-card
+//     background-color: rgb(0, 0, 0, 0)
+//     font-size: 20px
+//     font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', serif
+
+// .card-header
+//     border-bottom: #01814A 2px solid
+
+// .custom-card input,
+// .custom-card textarea
+//     font-size: 20px
+//     color: #00290A
+//     background-color: #6BB382
+
+// .custom-card .form-control:focus
+//     color: #00290A
+//     background-color: #C1FFE4
+//     border-color: #7AFEC6
+//     box-shadow: 0 0 0 1px #7AFEC6
+
+
+
+// /*verify-page*/
+// .verify-email-outer
+//     padding: 0 12px
+
+// .verify-email
+//     padding: 0
+//     margin-top: 24px
+
+// .verify-email .card-body
+//     padding: 24px
+
+// .verify-email .card-body
+//     padding: 16px
+
+// .new-email
+//   display: inline-block
+//   margin-bottom: 16px
+//   padding: 8px
+//   background-color: #3C3C3C
+//   border-radius: 4px
+//   font-size: 24px
+
+
+
+/*Donate-page*/
+// .donate-box
+//     margin-bottom: 32px
+//     width: 100%
+
+// .inform
+//     padding: 16px 0
+
+// .to-login
+//     padding: 16px
+
+// .donate-form
+//     width: 100%
+//     border-radius: 0
+
+// .donate-form .card
+//     border: none
+
+// .donate-form .card-body
+//     padding: 16px
+
+// .donate-form input,
+// .donate-form textarea
+//     margin-bottom: 16px
+//     border-radius: 0
+
+// .donate-form textarea
+//     height: 96px
+//     resize: none
+
+// .comment
+//     background-color: #6BB382
+
+// .send
+//     padding: 8px 64px 4px 64px
+
+// .donate-form .nt
+//     text-align: right
+//     font-family: 'Press Start 2P', 'Share Tech Mono', monospace
+//     background-image: url("../image/NT.png")
+//     background-position: 8px 50%
+//     background-repeat: no-repeat
+
+//     font-size: 32px
+//     background-size: 100px
+//     padding-left: 110px
+
+// .progress-box
+//     width: 100%
+//     padding: 32px 0
+
+
+// @media (min-width: 992px) 
+//     /*padding not collapse*/
+//     .donate-box .col-lg-4,
+//     .donate-box .col-lg-8 
+//         padding: 0
+
+//     .donate-form .card-body 
+//         padding: 32px
+
+//     .donate-form 
+//         /* border-left: #01814A 2px solid */
+
+//     .donate-form .nt 
+//         font-size: 48px
+//         background-size: 120px
+//         padding-left: 120px

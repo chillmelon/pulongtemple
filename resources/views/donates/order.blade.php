@@ -2,13 +2,10 @@
 @section("body")
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-9">
-        @auth
-          <br>
-          <br>
-          <div class="donate-box">
-            <div class="row">
-              <div class="col-lg-4">
+      <div class="col-md-10 pt-5">
+      @auth
+        <div class="row">
+              <div class="col-lg-6">
                 {{-- Project status --}}
                 <div class="progress-box">
                   <div style="text-align: center;">
@@ -31,18 +28,20 @@
                   </div>
                 </div>
                 {{-- selected plan --}}
-                <div class="serif-tc custom-bdr hover-bdr p-4 my-3">
-									<h3 class="select-title"><I> {{$option_info->title}} </I></h3>
-									<div class="ff-2P pt-2">NT$ {{$option_info->price}}</div>
-									<div class="pt-2">已被贊助 {{$option_info->sold}} 次</div>
-                  <div class="pt-3">{{$option_info->content}}</div>
+                <div class="custom-bdr-3d">
+                  <div class="serif-tc p-4">
+                    <h3 class="select-title"><I> {{$option_info->title}} </I></h3>
+                    <div class="ff-2P pt-2">NT$ {{$option_info->price}}</div>
+                    <div class="pt-2">已被贊助 {{$option_info->sold}} 次</div>
+                    <div class="select-content"><span>{{$option_info->content}}</span></div>
+                  </div>
                 </div>
               </div>
               {{-- donate form --}}
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <div class="c-box donate-form">
-                  <div class="card custom-card">
-                    <div class="card-body">
+                  <div class="">
+                    <div class="">
                       <form method="POST" action="{{ route('donates.new', $option_info->id) }}" name="order">
                         @csrf
                         {{-- select area --}}
@@ -70,7 +69,7 @@
                             </span>
                           @enderror
                         @endauth
-                        @auth
+                        {{-- @auth
                           <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                         @else
                           *E-mail(將會收到專案更新資訊)
@@ -80,12 +79,12 @@
                               <strong>{{ $message }}</strong>
                             </span>
                           @enderror
-                        @endauth
+                        @endauth --}}
                         @if($option_info->survey)
                           {{$option_info->survey}}
                           <textarea class="form-control @error('answer') is-invalid @enderror" type="text" name="answer"></textarea>
                         @endif
-                        {{$project_info->topic}}
+                        {{$project_info->topic}}仗義每多屠狗輩，負心多是讀書人。
                         <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
                         @if($option_info->shipping == 1)
                           寄送地址
@@ -104,37 +103,36 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        @else
-          <div class="inform">
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="login-ascii-box">
-                  <pre class="login-ascii overf-v ab-center">
+        </div>
+      @else
+        <div class="inform">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="login-ascii-box">
+                <pre class="login-ascii overf-v ab-center">
 ██        ██████    ██████   ██  ███    ██  ██████ 
 ██       ██    ██  ██        ██  ████   ██       ██ 
 ██       ██    ██  ██   ███  ██  ██ ██  ██    ▄███  
 ██       ██    ██  ██    ██  ██  ██  ██ ██    ▀▀   
 ███████   ██████    ██████   ██  ██   ████    ██ 
-                  </pre>
-                </div>
-              </div>
-              <div class="col-12">
-                <h5 style="line-height: 32px; text-align: center;">
-                  <br>
-                  加入會員可以記錄每一筆的贊助，<br>
-                  也可以發起屬於自己的募資專案，<br>
-                  還可以加入贊助排行榜的競爭！
-                </h5>
-                <br>
-              </div>
-              <div class="to-login col-10 col-lg-6">
-                <a class="btn" href="{{ route('login') }}"><span>註冊或登入</span></a>
+                </pre>
               </div>
             </div>
+            <div class="col-12">
+              <h5 style="line-height: 32px; text-align: center;">
+                <br>
+                加入會員可以記錄每一筆的贊助，<br>
+                也可以發起屬於自己的募資專案，<br>
+                還可以加入贊助排行榜的競爭！
+              </h5>
+              <br>
+            </div>
+            <div class="to-login col-10 col-lg-6">
+              <a class="btn" href="{{ route('login') }}"><span>註冊或登入</span></a>
+            </div>
           </div>
-        @endauth
+        </div>
+      @endauth
       </div>
     </div>
   </div>

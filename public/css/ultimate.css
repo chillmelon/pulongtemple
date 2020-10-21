@@ -31,7 +31,7 @@ hr {
   -webkit-text-stroke: 0.04rem #019858;
 }
 
-.custom-bdr {
+.custom-bdr, .custom-bdr-3d, .custom-bdr-3d::before, .custom-bdr-3d::after {
   border: #01814A 2px solid;
   border-radius: 0;
 }
@@ -52,6 +52,44 @@ hr {
 .hover-bdr:hover {
   cursor: pointer;
   border-color: #02C874;
+}
+
+.custom-bdr-3d {
+  margin-top: 3rem;
+  margin-right: 3rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.custom-bdr-3d::before, .custom-bdr-3d::after {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  content: "";
+}
+
+.custom-bdr-3d::before {
+  border-bottom: none;
+  border-right: none;
+  border-left-width: 3px;
+  width: 100%;
+  -webkit-transform: translateY(-100%) skew(-45deg);
+          transform: translateY(-100%) skew(-45deg);
+  height: 17px;
+  left: 8px;
+  top: -3.5px;
+}
+
+.custom-bdr-3d::after {
+  border-left: none;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  height: 100%;
+  width: 16.5px;
+  -webkit-transform: translateX(100%) skewY(-45deg);
+          transform: translateX(100%) skewY(-45deg);
+  top: -13px;
+  right: -3px;
 }
 
 .nav-top, .nav-mid {
@@ -268,8 +306,23 @@ hr {
 }
 
 .select-title {
-  color: #fff;
-  text-shadow: 2px 1px #019858;
+  color: #ccc;
+  text-shadow: 0.2px 0.2px #019858, 0.4px 0.4px #019858, 0.6px 0.6px #019858, 0.8px 0.8px #019858, 1px 1px #019858;
+}
+
+.select-content {
+  background-color: rgba(66, 66, 66, 0.2);
+  height: 4rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.select-content span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .select {
@@ -346,4 +399,6 @@ hr {
     overflow: hidden;
   }
 }
+
+/*Donate-page*/
 /*# sourceMappingURL=ultimate.css.map */
