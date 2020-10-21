@@ -305,6 +305,7 @@ $size: 28px
     .form-title
         padding: 0.5rem
         color: $main-color
+
     %input-reset
         display: block
         width: 90%
@@ -320,6 +321,10 @@ $size: 28px
 
     input
        @extend %input-reset
+       &:-internal-autofill-selected
+           background-color: $main-bg-color !important
+           color: $main-color !important
+
     textarea
        @extend %input-reset
        height: auto

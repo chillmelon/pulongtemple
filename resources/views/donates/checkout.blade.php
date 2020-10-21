@@ -41,10 +41,10 @@
             </div>
           </div>
           {{-- donate form --}}
-          <div class="col-lg-8">
-            <div class="c-box donate-form">
-              <div class="card custom-card">
-                <div class="card-body">
+          <div class="col-lg-6">
+            <div class="donate-form">
+              <div class="">
+                <div class="">
                   <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
                     {{-- select area --}}
@@ -64,46 +64,51 @@
                         <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
                       </div>
                     </div> --}}
-                    <br>贊助金額
-                    <input class="form-control nt @error('amount') is-invalid @enderror" type="integer" name="amount">
-                    @error('amount')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    贊助人
-                    <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
-                    <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
+
+
+                    {{--  --}}
+                    <label for="amount" class="custom-bdr-dark-3d">
+                      <div class="form-title">贊助金額</div>
+                      <input id="amount" class="@error('amount') is-invalid @enderror" type="integer" name="amount">
+                      @error('amount')
+                        <span class="invalid-feedback" role="alert">
+                          <strong>{{ $message }}</strong>
+                        </span>
+                      @enderror
+                    </label>
+                    {{--  --}}
+                    <label for="d-name" class="custom-bdr-dark-3d">
+                      <div class="form-title">贊助人</div>
+                      <input type="hidden" name="project_id" value = "{{ $project_info->id }}">
+                      <input type="hidden" name="user_id" value = "{{ auth()->user()['id'] }}">
+                      @auth
+                        <input id="d-name" class="@error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
+                      @else
+                        <input id="d-name" class="@error('name') is-invalid @enderror" type="text" name="name">
+                        @error('name')
+                          <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                          </span>
+                        @enderror
+                      @endauth
+                    </label>
+                    {{--  --}}
+                    <label for="topic" class="custom-bdr-dark-3d">
+                      <div class="form-title">留言(選填)</div>
+                      <textarea id="topic" class="@error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
+                      @error('comment')
+                      <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
+                      @enderror
+                    </label>
+                    {{-- e-mail --}}
                     @auth
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name" value = "{{ auth()->user()['name'] }}">
-                    @else
-                    <input class="form-control @error('name') is-invalid @enderror" type="text" name="name">
-                    @error('name')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
+                      <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                     @endauth
-                    @auth
-                    <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
-                    @else
-                    *E-mail(將會收到專案更新資訊)
-                    <input class="form-control @error('email') is-invalid @enderror" type="text" name="email">
-                    @error('email')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    @endauth
-                    留言(選填)
-                    <textarea class="form-control @error('comment') is-invalid @enderror" type="text" name="comment"></textarea>
-                    @error('comment')
-                    <span class="invalid-feedback" role="alert">
-                      <strong>{{ $message }}</strong>
-                    </span>
-                    @enderror
-                    <div class="send">
-                      <button class="btn">確定</button>
+                    {{-- btn --}}
+                    <div class="custom-bdr-3d custom-bdr-3d-hover">
+                      <button class="btn">去付款</button>
                     </div>
                   </form>
                 </div>
