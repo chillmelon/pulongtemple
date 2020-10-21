@@ -57,10 +57,10 @@
         @foreach($projects as $project)
         <div class="product-box col-12 col-md-6 p-4">
           <div class="product custom-bdr-dark-3d custom-bdr-3d-hover" onclick="location.href='projects/{{ $project->id }}';">
-            <div class="product-head custom-bdr-dark-bm serif-tc">
+            <div class="product-head custom-bdr-dark-bm serif-tc p-3">
               {{ $project->title }}
             </div>
-            <div class="product-body custom-bdr-dark-bm">
+            <div class="product-body custom-bdr-dark-bm p-3">
               <div class="imgbox">
                 <div class="imgbox-inner">
                   <div class="image" style="background-image: url('{{asset('/storage/'. $project->image)}}');"></div>

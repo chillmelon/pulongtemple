@@ -8,7 +8,7 @@
 
 html, body {
   background-color: #000;
-  font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
+  font-family: "Noto Sans TC", "Noto Serif TC", serif;
   font-size: 16px;
   color: #ccc;
 }
@@ -212,12 +212,12 @@ hr {
   border: 2px solid #ccc;
   border-radius: 50%;
   color: #ccc;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .logo a span {
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   font-size: 28px;
   line-height: 28px;
   -webkit-transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
@@ -242,7 +242,7 @@ hr {
 .login > li > a {
   min-width: 100px;
   max-width: 100%;
-  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif;
   font-weight: 600;
   font-size: 18px;
   color: #019858;
@@ -279,7 +279,7 @@ hr {
 }
 
 .login .dropdown a {
-  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif;
   font-weight: 600;
   display: block;
   border: none;
@@ -320,27 +320,56 @@ hr {
   }
 }
 
+.product-box {
+  -webkit-animation: easelight 2s cubic-bezier(0.4, 0, 0.3, 0) both;
+          animation: easelight 2s cubic-bezier(0.4, 0, 0.3, 0) both;
+}
+
+.product-head {
+  font-size: 1.25rem;
+}
+
+.product:hover .custom-bdr-dark-bm {
+  border-bottom: #02C874 2px solid;
+  color: #fff;
+}
+
+.product .imgbox {
+  opacity: 0.7;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.product:hover .imgbox {
+  opacity: 1;
+}
+
+.product-summary {
+  height: 4rem;
+  overflow: hidden;
+}
+
 .intro {
   padding: 1rem;
 }
 
 .title {
-  font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif;
+  font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif;
 }
 
 .project-status {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Press Start 2P', 'Noto Serif TC', serif;
+  font-family: "Press Start 2P", "Noto Serif TC", serif;
 }
 
 .project-status span {
-  font-family: 'Noto Serif TC', serif;
+  font-family: "Noto Serif TC", serif;
 }
 
 .description {
-  font-family: 'Noto Sans TC', 'Noto Serif TC', serif;
+  font-family: "Noto Sans TC", "Noto Serif TC", serif;
   font-size: 20px;
   line-height: 30px;
 }
@@ -513,5 +542,5 @@ hr {
   border: none;
 }
 
-/*Donate-page*/
+/*Donate-page */
 /*# sourceMappingURL=ultimate.css.map */

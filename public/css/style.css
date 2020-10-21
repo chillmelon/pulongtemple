@@ -67,23 +67,23 @@
         0 0 60px rgba(1, 178, 104, 1),
         0 0 70px rgba(1, 178, 104, .6);
     animation:
-        easelight 5s cubic-bezier(.4,0,.3,0) both;
+        easelight 2s cubic-bezier(.4,0,.3,0) both;
 }
 
 .neon:nth-of-type(1) {
     animation:
-        easelight 5s cubic-bezier(.4,0,.3,0) both,
+        easelight 2s cubic-bezier(.4,0,.3,0) both,
         shine-a 10s linear 15s infinite;
 }
 
 .neon:nth-of-type(9) {
     animation:
-        easelight-x 10s cubic-bezier(.4,0,.3,0) both;
+        easelight-x 5s cubic-bezier(.4,0,.3,0) both;
 }
 
 .neon:nth-of-type(11) {
     animation:
-        easelight 5s cubic-bezier(.4,0,.3,0) both,
+        easelight 2s cubic-bezier(.4,0,.3,0) both,
         shine-b 10s linear 18s infinite;
 }
 
@@ -93,20 +93,19 @@
 }
 
 @keyframes easelight-x {
-    0% {opacity: .05}
-    50% {opacity: .5}
+    0% {opacity: .1}
+    40% {opacity: .5}
     60% {opacity: .5}
     62% {opacity: 0}
     64% {opacity: .5}
-    70% {opacity: .5}
-    70.1% {opacity: 0}
-    79% {opacity: 0}
-    80% {opacity: .5}
-    81% {opacity: 0}
+    74% {opacity: .5}
+    76% {opacity: 0}
+    78% {opacity: .5}
     82% {opacity: .5}
     83% {opacity: 0}
     84% {opacity: .5}
     85% {opacity: 0}
+    90% {opacity: 0}
     99.9% {opacity: 0}
     100% {opacity: 1}
 }
@@ -144,21 +143,20 @@
 }
 
 .arrow:nth-of-type(1) {
-    animation: shine 6s cubic-bezier(.5,0,0,.6) 11s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 6s infinite;
 }
 .arrow:nth-of-type(2) {
-    animation: shine 6s cubic-bezier(.5,0,0,.6) 12.5s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 7.5s infinite;
 }
 .arrow:nth-of-type(3) {
-    animation: shine 6s cubic-bezier(.5,0,0,.6) 14s infinite;
+    animation: shine 6s cubic-bezier(.5,0,0,.6) 9s infinite;
 }
 
 @keyframes shine {
     0% {opacity: 0}
-    24.9% {opacity: 1}
+    20% {opacity: 1}
     25% {opacity: 0}
 }
-
 
 
 /*image*/
@@ -189,65 +187,6 @@
 .width-img {
     width: 100%;
     padding: 24px 0;
-}
-
-/*product*/
-
-.product-box {
-    animation: easelight 5s cubic-bezier(.4,0,.3,0) both;
-}
-
-.product {
-    padding: 0;
-    top: 0;
-    /* transition: all .3s ease; */
-}
-
-.product:hover {
-    /* cursor: pointer;
-    border: #02C874 2px solid; */
-    /* top: -2px; */
-}
-
-.product-head {
-    font-size: 20px;
-    padding: 16px;
-}
-
-.product .custom-bdr-dark-bm {
-    transition: inherit;
-}
-
-.product:hover .custom-bdr-dark-bm {
-    cursor: pointer;
-    border-bottom: #02C874 2px solid;
-    color: #02C874;
-}
-
-.product-head .btn {
-    border: none;
-}
-
-.product-head .btn:hover {
-    border: none;
-}
-
-.product-body {
-    padding: 16px;
-}
-
-.product .imgbox {
-    opacity: .5;
-    transition: inherit;
-}
-
-.product:hover .imgbox {
-    opacity: 1;
-}
-
-.product-summary {
-    height: 4rem;
-    overflow: hidden;
 }
 
 

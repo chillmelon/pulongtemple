@@ -1,21 +1,13 @@
 // Variable
 $main-bg-color: #000
-$sec-bg-color: rgba(66, 66, 66, .2)
+$sec-bg-color: rgba(66, 66, 66, 0.2)
 $main-color: #019858
 $main-hover-color: #02F78E
 $sec-color: #ccc
 $sec-hover-color: #fff
 $border-color: #01814A
 $border-hover-color: #02C874
-$dark-border-color: rgba(1, 126, 72, .4)
-
-// Shadow
-@mixin text-longShadow($lenght: 10,$rgb: $main-color)
-    $all: ()
-    @for $i from 1 through $lenght
-        // $value: $i + 0.1
-        $all: append($all, append(#{$i}px #{$i}px 0 ,rgba($rgb,0.9/$i + 0.05)),comma)
-    text-shadow: $all
+$dark-border-color: rgba(1, 126, 72, 0.4)
 
 // Initial
 *
@@ -26,18 +18,18 @@ $dark-border-color: rgba(1, 126, 72, .4)
 
 html, body
     background-color: $main-bg-color
-    font-family: 'Noto Sans TC', 'Noto Serif TC', serif
+    font-family: "Noto Sans TC", "Noto Serif TC", serif
     font-size: 16px
     color: #ccc
 
 a
     color: $main-color
+
     &:hover
         color: $main-hover-color
 
 hr
     border-top: 1px solid #333
-
 
 @import utility
 
@@ -53,12 +45,13 @@ hr
 
 .nav-top
     @extend %nav
+
     height: 70px
     border-top: none
-    // margin-top: 3px
 
 .nav-mid
     @extend %nav
+
     flex-wrap: wrap
     padding-top: 8px
     padding-bottom: 6px
@@ -71,6 +64,7 @@ hr
     .nav-top, .nav-mid
         padding: 12px 72px
         height: 90px
+
     .nav-item
         min-width: 100px
         padding: 0 8px
@@ -81,43 +75,43 @@ hr
 
 // logo
 $size: 28px
+
 %logo-box-shadow
-    box-shadow: 0 0 2px rgba(1, 178, 104, 1), 0 0 4px rgba(1, 178, 104, .8), 0 0 6px rgba(1, 178, 104, .6), 0 0 8px rgba(1, 178, 104, .6), 0 0 10px rgba(1, 178, 104, .4)
+    box-shadow: 0 0 2px rgba(1, 178, 104, 1), 0 0 4px rgba(1, 178, 104, 0.8), 0 0 6px rgba(1, 178, 104, 0.6), 0 0 8px rgba(1, 178, 104, 0.6), 0 0 10px rgba(1, 178, 104, 0.4)
+
 %logo-text-shadow
-    text-shadow: 0 0 1px rgba(1, 178, 104, 1), 0 0 2px rgba(1, 178, 104, 1), 0 0 3px rgba(1, 178, 104, .8)
+    text-shadow: 0 0 1px rgba(1, 178, 104, 1), 0 0 2px rgba(1, 178, 104, 1), 0 0 3px rgba(1, 178, 104, 0.8)
+
 .logo
     padding-left: 1rem
     top: 50%
     transform: translateY(-50%)
     display: inline-block
+
     a
         border: 2px solid $sec-color
         border-radius: 50%
         color: $sec-color
-        transition: all .2s
+        transition: all 0.2s
+
         @extend %logo-box-shadow
+
         span
-            font-family: 'M PLUS 1p', sans-serif
+            font-family: "M PLUS 1p", sans-serif
             font-size: $size
             line-height: $size
-            transform: translate(-1.5px, -4px) perspective(.5rem) rotateX(15deg)
+            transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg)
+
             @extend %logo-text-shadow
+
         &:hover, &:focus
             color: $sec-hover-color
             border: 2px solid $sec-hover-color
+
             // avoid box-shadow of bootstrap btn focus
             @extend %logo-box-shadow
+
             transform: scale(1.1)
-
-// .logo img
-//     height: 100%
-//     position: absolute
-//     top: 0
-//     left: 0
-//     overflow: hidden
-//     width: 60px
-//     height: 60px
-
 
 // login
 .login
@@ -125,19 +119,23 @@ $size: 28px
     padding-right: 1rem
     transform: translateY(-50%)
     float: right
+
     // login-btn
     & > li > a
         min-width: 100px
         max-width: 100%
-        font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
+        font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif
         font-weight: 600
         font-size: 18px
         color: $main-color
         border-color: $dark-border-color
         border-width: 2px
+
         // box-shadow: 0 0 8px 2px $main-color
-    span 
+
+    span
         color: $main-color
+
     // dropdown
     .dropdown
         border-color: $border-hover-color
@@ -151,26 +149,32 @@ $size: 28px
         opacity: 0
         visibility: hidden
         transition: all 0.5s ease
-        li 
+
+        li
             display: block
             width: 100px
             left: 50%
             transform: translateX(-50%)
+
         a
-            font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
+            font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif
             font-weight: 600
             display: block
             border: none
             transition: all 0.2s
+
     // hover & expand
     & > li:hover > a
         color: $main-hover-color
         border-color: $main-hover-color
         border-width: 2px
+
         // box-shadow: 0 0 8px 1px $main-hover-color
-    & > li:hover span 
+
+    & > li:hover span
         color: $main-hover-color
-    & > li:hover .dropdown 
+
+    & > li:hover .dropdown
         opacity: 1
         visibility: visible
         top: 110%
@@ -178,32 +182,55 @@ $size: 28px
 // white-btn of dropdown menu
 .white-btn
     color: $sec-color
+
     &:hover
         color: $sec-hover-color
-
 
 @media (min-width: 992px)
     .logo
         padding: 0
+
     .login
         padding: 0
+
+// Index Product
+.product-box
+    animation: easelight 2s cubic-bezier(0.4, 0, 0.3, 0) both
+
+.product-head
+    font-size: 1.25rem
+
+.product:hover .custom-bdr-dark-bm
+    border-bottom: $border-hover-color 2px solid
+    color: $sec-hover-color
+
+.product .imgbox
+    opacity: 0.7
+    transition: inherit
+
+.product:hover .imgbox
+    opacity: 1
+
+.product-summary
+    height: 4rem
+    overflow: hidden
 
 // Project
 .intro
     padding: 1rem
 
 .title
-    font-family: 'Share Tech Mono', monospace, 'Noto Serif TC', serif
-
+    font-family: "Share Tech Mono", monospace, "Noto Serif TC", serif
 
 .project-status
     justify-content: space-between
-    font-family: 'Press Start 2P', 'Noto Serif TC', serif
+    font-family: "Press Start 2P", "Noto Serif TC", serif
+
     span
-        font-family: 'Noto Serif TC', serif
+        font-family: "Noto Serif TC", serif
 
 .description
-    font-family: 'Noto Sans TC', 'Noto Serif TC', serif
+    font-family: "Noto Sans TC", "Noto Serif TC", serif
     font-size: 20px
     line-height: 30px
 
@@ -212,16 +239,15 @@ $size: 28px
     height: auto
 
 @media (min-width: 576px)
-    
     .intro,
-    .project-content 
+    .project-content
         padding-left: 2rem
         padding-right: 2rem
 
 // Select Plan
 .select-title
     color: $sec-color
-    text-shadow: .2px .2px $main-color, .4px .4px $main-color, .6px .6px $main-color, .8px .8px $main-color, 1px 1px $main-color
+    text-shadow: 0.2px 0.2px $main-color, 0.4px 0.4px $main-color, 0.6px 0.6px $main-color, 0.8px 0.8px $main-color, 1px 1px $main-color
 
 .select-content
     background-color: $sec-bg-color
@@ -229,12 +255,13 @@ $size: 28px
     overflow: hidden
     margin-top: 1rem
     padding: 1rem
+
     span
         position: absolute
         top: 50%
         transform: translateY(-50%)
 
-//  donate form select area 
+//  donate form select area
 .select
     background-color: #6BB382
     width: 120px
@@ -259,17 +286,13 @@ $size: 28px
     border: none
     padding: 0 4px 8px
     margin: 0
-
     color: $main-color
     font-size: 16px
 
 .btn-nohover:hover
     border: none
 
-
-
 @import community
-
 
 // Expand Project Content
 .expand-project
@@ -277,6 +300,7 @@ $size: 28px
     visibility: hidden
     height: 0
     box-shadow: 0 -2rem 3rem $main-bg-color
+
     .btn
         white-space: pre
         border: $main-color 2px dashed
@@ -285,23 +309,27 @@ $size: 28px
     .expand-project
         visibility: visible
         height: auto
-    
+
     .project-content
         max-height: 200px
         overflow: hidden
 
-
 .donate-form
     label
         display: block
+
         &:focus-within
             border-color: $border-hover-color
+
             .form-title
                 color: $main-hover-color
+
             &::before
                 border-color: $border-hover-color
+
             &::after
                 border-color: $border-hover-color
+
     .form-title
         padding: 0.5rem
         color: $main-color
@@ -315,26 +343,30 @@ $size: 28px
         background-color: $main-bg-color
         color: $sec-color
         border: $dark-border-color 1px solid
+
         &:focus
             border-color: $border-hover-color
             outline: none
 
     input
-       @extend %input-reset
-       &:-internal-autofill-selected
-           background-color: $main-bg-color !important
-           color: $main-color !important
+        @extend %input-reset
+
+        &:-internal-autofill-selected
+            background-color: $main-bg-color !important
+            color: $main-color !important
 
     textarea
-       @extend %input-reset
-       height: auto
+        @extend %input-reset
+
+        height: auto
+
     .btn
         border: none
         font-size: 18px
         font-weight: bold
+
         &:hover
             border: none
-
 
 // .custom-card
 //     background-color: rgb(0, 0, 0, 0)
@@ -356,9 +388,7 @@ $size: 28px
 //     border-color: #7AFEC6
 //     box-shadow: 0 0 0 1px #7AFEC6
 
-
-
-// /*verify-page*/
+// /*verify-page
 // .verify-email-outer
 //     padding: 0 12px
 
@@ -380,9 +410,7 @@ $size: 28px
 //   border-radius: 4px
 //   font-size: 24px
 
-
-
-/*Donate-page*/
+/*Donate-page
 // .donate-box
 //     margin-bottom: 32px
 //     width: 100%
@@ -433,20 +461,19 @@ $size: 28px
 //     width: 100%
 //     padding: 32px 0
 
-
-// @media (min-width: 992px) 
-//     /*padding not collapse*/
+// @media (min-width: 992px)
+//     /*padding not collapse
 //     .donate-box .col-lg-4,
-//     .donate-box .col-lg-8 
+//     .donate-box .col-lg-8
 //         padding: 0
 
-//     .donate-form .card-body 
+//     .donate-form .card-body
 //         padding: 32px
 
-//     .donate-form 
-//         /* border-left: #01814A 2px solid */
+//     .donate-form
+//         /* border-left: #01814A 2px solid
 
-//     .donate-form .nt 
+//     .donate-form .nt
 //         font-size: 48px
 //         background-size: 120px
 //         padding-left: 120px
