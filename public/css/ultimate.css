@@ -94,6 +94,7 @@ hr {
 }
 
 .custom-bdr-3d-hover:hover {
+  cursor: pointer;
   border-color: #02C874;
 }
 

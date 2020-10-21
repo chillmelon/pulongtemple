@@ -99,7 +99,7 @@ active
       </div>
     </div>
     <div class="col-12 col-lg-4">
-      <div class="custom-bdr-3d">
+      <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/{{$project->id}}'">
         <div class="serif-tc p-4">
           <h3 class="select-title"><I> 純贊助 </I></h3>
           <div class="ff-2P pt-2">NT$ ???</div>
@@ -108,7 +108,7 @@ active
         </div>
       </div>
 			@foreach($project->options->sortByDesc('order') as $option)
-      <div class="custom-bdr-3d">
+      <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/option/{{$option->id}}'">
         <div class="serif-tc p-4">
           <h3 class="select-title"><I> {{$option->title}} </I></h3>
           <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
