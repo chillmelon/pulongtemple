@@ -76,6 +76,11 @@
                     <label for="survey" class="custom-bdr-dark-3d">
                       <div class="form-title">{{$option_info->survey}}</div>
                       <textarea id="survey" class="@error('answer') is-invalid @enderror" type="text" name="answer"></textarea>
+                      @error('answer')
+                      <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                      </span>
+                      @enderror
                     </label>
                     @endif
                     {{--  --}}

@@ -98,8 +98,14 @@ class DonateService
 			$option = $this->projectRepository
 										->getOptionById($donation->option_id);
 			$donation->validate([
-				'amount' => 'required|gte:'. $option->price
+				'amount' => 'required|gte:'. $option->price ,
 			]);
+			if($option->shipping == 1){
+				$donation->validate([ 'address' => 'required|string|max:255' ]);
+			}
+			if($option->survey){
+				$donation->validate([ 'answer' => 'required|string|max:255' ]);
+			}
 		}
 		$donation=$this->format($donation);
 		$this->donateRepository->create($donation);
