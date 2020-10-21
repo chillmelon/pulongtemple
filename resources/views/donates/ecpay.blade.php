@@ -3,13 +3,13 @@
 <div class="contrainer" style="overflow-x: hidden;">
   <div class="row justify-content-center" style="padding: 8rem 0">
     <div style="max-width: 500px;">
-      <div class="custom-bdr-3d">
+      <div class="custom-bdr-3d custom-bdr-3d-hover">
         <button class="btn ec-btn m-0" onclick="checkOut('CREDIT')">信用卡付款</button>
       </div>
-      <div class="custom-bdr-3d">
+      <div class="custom-bdr-3d custom-bdr-3d-hover">
         <button class="btn ec-btn m-0" onclick="checkOut('ATM')">ATM付款</button>
       </div>
-      <div class="custom-bdr-3d">
+      <div class="custom-bdr-3d custom-bdr-3d-hover">
         <button class="btn ec-btn m-0" onclick="checkOut('CVS')">超商代碼付款</button>
       </div>
     </div>
