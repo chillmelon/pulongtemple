@@ -6,19 +6,19 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6">
-      <div class="card custom-card custom-bdr dashboard">
-        <div class="card-header"><h2>{{ auth()->user()['name'] }}</h2></div>
-        <div class="card-body">
+      <div class="custom-bdr-3d dashboard p-4">
+        <h2>{{ auth()->user()['name'] }}</h2>
+        <div class="">
           <h6 style="color: gray">點擊照片更換大頭貼</h6>
           <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
             <img class="rounded img-dashboard" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>
           <div class="alert custom-bdr"></div>
-          <form action="/dashboard" method="POST">
+          <form class="pb-4" action="/dashboard" method="POST">
               @csrf
             <input class="form-control" type="text" name="name" value="{{ $profile->name }}">
-            <button class="btn update-name">更新暱稱</button>
+            <button class="btn update-name mx-3">更新暱稱</button>
           </form>
           <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -41,10 +41,8 @@
               </div>
             </div>
           </div>
-          <div class="">
-            <a class="btn mb-3" href="/member/donations">我的贊助</a>
-            <a class="btn" href="/member/projects">我的專案</a>
-          </div>
+          <a class="btn mb-3" href="/member/donations">我的贊助</a>
+          <a class="btn" href="/member/projects">我的專案</a>
         </div>
       </div>
     </div>

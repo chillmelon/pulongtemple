@@ -1,19 +1,19 @@
 /*Dashboard*/
 .dashboard {
-    margin-top: 24px;
+    /* margin-top: 24px; */
+    text-align: center;
 }
 .dashboard .card-header {
     border: none;
 }
 .dashboard .card-body {
-    text-align: center;
     padding-top: 0;
 }
 .img-dashboard {
     margin-bottom: 16px;
 }
 .dashboard form {
-    padding-bottom: 24px;
+    /* padding-bottom: 24px; */
 }
 .dashboard .form-control {
     display: inline-block;
@@ -22,8 +22,8 @@
 }
 .update-name {
     display: inline-block;
-    width: 103px;
-    height: 60px;
+    width: 100px;
+    /* height: 60px; */
 }
 
 
