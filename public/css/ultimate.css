@@ -609,14 +609,20 @@ input[type="number"] {
           justify-content: space-between;
 }
 
-.rank h4, .rank h6, .rank span {
-  line-height: 60px;
+.rank h5, .rank h6, .rank span {
+  line-height: 48px;
+}
+
+.rank img {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
 }
 
 .usr-img {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .amount-btn {

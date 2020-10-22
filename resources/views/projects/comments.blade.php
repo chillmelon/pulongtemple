@@ -29,8 +29,8 @@ active
     <div class="col-12 col-lg-4">
       @foreach($topFive as $donater)
       <div class="rank custom-bdr-3d p-3 mt-2">
-        <h4 class="select-title pl-2"><I>{{$loop->index+1}}</I></h4>
-        <div><img class="usr-img" src="{{asset('storage/'.$donater[ 'avatar' ])}}"><span class="p-2">{{$donater[ 'name' ]}}</span class="p-2"></div>
+        <h5 class="select-title pl-2"><I>{{$loop->index+1}}.</I></h5>
+        <div><img src="{{asset('storage/'.$donater[ 'avatar' ])}}"><span class="p-2">{{$donater[ 'name' ]}}</span class="p-2"></div>
         <h6 class="pr-3">NT$ {{$donater[ 'amount' ]}}</h6>
       </div>
       @endforeach
