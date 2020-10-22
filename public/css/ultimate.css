@@ -608,7 +608,7 @@ select:-webkit-autofill:focus {
 
 .amount-btn {
   display: inline-block;
-  width: auto;
+  width: 88px;
 }
 
 /*Donate-page */

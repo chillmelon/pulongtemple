@@ -47,11 +47,17 @@
 											{{--  --}}
 											<label for="amount" class="custom-bdr-dark-3d">
 												<div class="form-title">贊助金額</div>
-                        <input id="amount" class="@error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
-                        <div id="increase" class="btn amount-btn">increase</div>
-                        <div id="decrease" class="btn amount-btn">decrease</div>
-                        <div id="lowest" class="btn amount-btn">lowest</div>
-                        <div id="happy" class="btn amount-btn">湊整數</div>
+                        <input id="amount" class="mb-0 @error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
+                        <div style="text-align: right" class="pr-4">
+                          <div style="display: inline-block" class="">
+                            <div id="increase" class="btn amount-btn">加100</div>
+                            <div id="decrease" class="btn amount-btn">減100</div>
+                          </div>
+                          <div style="display: inline-block">
+                            <div id="lowest" class="btn amount-btn">最低金額</div>
+                            <div id="happy" class="btn amount-btn">湊整數</div>
+                          </div>
+                        </div>
 												@error('amount')
 												<span class="invalid-feedback" role="alert">
 													<strong>{{ $message }}</strong>
