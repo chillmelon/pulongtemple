@@ -47,7 +47,11 @@
 											{{--  --}}
 											<label for="amount" class="custom-bdr-dark-3d">
 												<div class="form-title">贊助金額</div>
-												<input id="amount" class="@error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
+                        <input id="amount" class="@error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
+                        {{-- <button id="increase" class="btn amount-btn">increase</button>
+                        <button id="decrease" class="btn amount-btn">decrease</button>
+                        <button id="lowest" class="btn amount-btn">lowest</button>
+                        <button id="happy" class="btn amount-btn">湊整數</button> --}}
 												@error('amount')
 												<span class="invalid-feedback" role="alert">
 													<strong>{{ $message }}</strong>
@@ -152,25 +156,14 @@
 		</div>
 	</div>
 
-	<div id="increase" class="button">
-		increase
-	</div>
-	<div id="decrease" class="button">
-		decrease
-	</div>
-	<div id="lowest" class="button">
-		lowest
-	</div>
-	<div id="happy" class="button">
-		湊整數
-	</div>
+
 	<script type="text/javascript">
 		// on page load...
 		porgressCircle();
 		// on browser resize...
 		$(window).resize(function() {
 					porgressCircle();
-				});
+		});
 		//選取按鈕
 		let base = {{$option_info->price}};
 		let increase = document.querySelector('#increase');
