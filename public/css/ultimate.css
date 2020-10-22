@@ -561,5 +561,28 @@ select:-webkit-autofill:focus {
   margin: 0;
 }
 
+/*verify-page */
+.verify-email {
+  padding: 0;
+  margin-top: 24px;
+}
+
+.verify-email .card-body {
+  padding: 24px;
+}
+
+.verify-email .card-body {
+  padding: 16px;
+}
+
+.new-email {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px;
+  background-color: #3C3C3C;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
 /*Donate-page */
 /*# sourceMappingURL=ultimate.css.map */

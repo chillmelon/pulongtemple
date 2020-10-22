@@ -14,7 +14,7 @@
                 <form method="POST" action="{{ route('register') }}">
                   @csrf
                   <div class="row m-2">
-                    <label for="name" class="col-md-4 text-md-right">姓名</label>
+                    <label for="name" class="col-md-4 text-md-right">使用者</label>
                     <div class="col-md-6">
                       <input id="name" type="text"
                         class="custom-bdr @error('name') is-invalid @enderror" name="name"
@@ -106,6 +106,7 @@
                   </div>
                   <div class="row m-2 from-group">
                     <div class="col-md-6 offset-md-4">
+                      {{-- remember --}}
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember"
                           id="remember" {{ old('remember') ? 'checked' : '' }}>
