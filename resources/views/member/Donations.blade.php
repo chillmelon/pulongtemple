@@ -1,13 +1,13 @@
 @extends("auth.login-button")
 @section("body")
 <div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="donation col-md-6 col-xl-4">
+  <div class="row justify-content-center pt-5">
+    <div class="col-md-6 col-xl-4">
       <h3 class="ff-2P text-center">My Donation</h3>
       @foreach($donates as $donation)
-      <div class="my-donate custom-bdr-3d">
+      <div class="history custom-bdr-3d">
         <div class="d-flex pt-3 pr-3">
-          <a class="my-donate-title btn pl-3" href="/projects/{{ $donation->project->id }}">
+          <a class="no-bdr btn pl-3" href="/projects/{{ $donation->project->id }}">
             <h5>{{ $donation->project->title }}</h5>
           </a>
           <div style=""><small>{{ $donation->created_at }}</small></div>

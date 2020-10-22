@@ -644,22 +644,22 @@ input[type="number"] {
   height: 100%;
 }
 
-.my-donate .d-flex {
+.history .d-flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.my-donate .my-donate-title {
+.history .no-bdr {
   width: auto;
   border: none;
 }
 
-.my-donate h5 {
+.history h5 {
   font-weight: bold;
 }
 
-.my-donate .plan {
+.history .plan {
   width: 60%;
 }
 
