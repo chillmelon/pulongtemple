@@ -8,9 +8,9 @@
     <div class="col-lg-6">
       <div class="custom-bdr-3d dashboard p-4">
         <h2>{{ auth()->user()['name'] }}</h2>
-        <div class="">
+        <div class="pt-4">
           <h6 style="color: gray">點擊照片更換大頭貼</h6>
-          <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
+          <label class="label" data-toggle="tooltip" title="" data-original-title="">
             <img class="rounded mb-3" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>

@@ -7,7 +7,7 @@
         <div class="row">
           {{-- register --}}
           <div class="col-lg-6">
-            <h6 class="pl-4 mt-5">現在加入</h6>
+            <h6 class="pl-3 mt-5">現在加入 ▾</h6>
             <div class="custom-form custom-bdr-3d">
               <h4 class="form-title select-title p-3">註冊</h4>
               <div class="">
@@ -72,7 +72,7 @@
           </div>
           {{-- login --}}
           <div class="col-lg-6">
-            <h6 class="pl-4 mt-5">已經是會員</h6>
+            <h6 class="pl-3 mt-5">已經是會員 ▾</h6>
             <div class="custom-form custom-bdr-3d">
               <h4 class="form-title select-title p-3">登入</h4>
               <div class="">
