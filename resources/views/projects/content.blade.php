@@ -7,7 +7,7 @@
 {{-- facebook --}}
 <meta property="og:title" content="{{ $project->title }}" >
 {{-- <meta property="og:url" content="https://pulongtemple.wtf/projects/5"> --}}
-<meta property="og:image" content="{{asset('/storage/'. $project->image)}}">
+{{-- <meta property="og:image" content="{{asset('/storage/'. $project->image)}}"> --}}
 <meta property="og:image" content="https://pulongtemple.wtf/storage/projects/October2020/real.png">
 <meta property="og:description" content="{{ $project->summary }}" >
 @endsection
