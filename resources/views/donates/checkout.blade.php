@@ -69,7 +69,7 @@
                     {{--  --}}
                     <label for="amount" class="custom-bdr-dark-3d">
                       <div class="form-title">贊助金額</div>
-                      <input id="amount" class="@error('amount') is-invalid @enderror" type="integer" name="amount">
+                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="number" name="amount">
                       @error('amount')
                         <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
@@ -149,6 +149,16 @@
     </div>
   </div>
 </div>
+
+<div id="increase" class="button">
+	increase
+</div>
+<div id="decrease" class="button">
+	decrease
+</div>
+<div id="lowest" class="button">
+	lowest
+</div>
 <script type="text/javascript">
 // on page load...
 porgressCircle();
@@ -156,6 +166,47 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
+		let base = 100;
+	//選取按鈕
+		let increase = document.querySelector('#increase');
+		increase.addEventListener('click', () =>{
+					increaseAmount();
+				});
+		let decrease = document.querySelector('#decrease');
+		decrease.addEventListener('click', () =>{
+					decreaseAmount();
+				});
+		let lowest = document.querySelector('#lowest');
+		lowest.addEventListener('click', () =>{
+					lowestAmount();
+				});
+		//變更金額功能
+		function increaseAmount() {
+					console.log(1);
+					let amount = document.querySelector('#amount');
+					let value = parseInt(amount.value);
+					if(value >= base) {
+								amount.value = value + 100;
+							} else {
+										amount.value = base;
+									}
+				}
+		function decreaseAmount() {
+					let amount = document.querySelector('#amount');
+					let value = parseInt(amount.value)
+					if((value - 100) <= base) {
+								amount = base;
+							} else {
+										amount.value = value - 100;
+									}
+				}
 
+		function lowestAmount() {
+					let amount = document.querySelector('#amount').value;
+					amount.value = base;
+				}
+		function up() {
+
+				}
 </script>
 @endsection
