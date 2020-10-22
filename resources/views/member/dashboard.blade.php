@@ -11,13 +11,13 @@
         <div class="">
           <h6 style="color: gray">點擊照片更換大頭貼</h6>
           <label class="label" data-toggle="tooltip" title="" data-original-title="Change your avatar">
-            <img class="rounded img-dashboard" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
+            <img class="rounded mb-3" id="avatar" src="/storage/{{ $profile->avatar }}" alt="avatar">
             <input type="file" class="sr-only" id="input" name="image" accept="image/*">
           </label>
           <div class="alert custom-bdr"></div>
           <form class="pb-4" action="/dashboard" method="POST">
               @csrf
-            <input class="form-control" type="text" name="name" value="{{ $profile->name }}">
+            <input type="text" name="name" value="{{ $profile->name }}">
             <button class="btn update-name mx-3">更新暱稱</button>
           </form>
           <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">

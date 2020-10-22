@@ -25,7 +25,20 @@ hr {
   border-top: 1px solid #333;
 }
 
-/* Change Autocomplete styles in Chrome*/
+.custom-form input, .custom-form textarea, .dashboard input {
+  display: block;
+  width: 90%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.75rem;
+  padding-left: 0.5rem;
+  line-height: 2rem;
+  background-color: #000;
+  color: #ccc;
+  border: rgba(1, 126, 72, 0.4) 1px solid;
+}
+
+/* Change Autocomplete styles in Chrome */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -536,18 +549,7 @@ select:-webkit-autofill:focus {
   color: #ccc;
 }
 
-.custom-form input, .custom-form textarea {
-  display: block;
-  width: 90%;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  margin-left: 0.75rem;
-  background-color: #000;
-  color: #ccc;
-  border: rgba(1, 126, 72, 0.4) 1px solid;
-}
-
-.custom-form input:focus, .custom-form textarea:focus {
+.custom-form .form-title:focus {
   border-color: #02C874;
   outline: none;
 }
@@ -561,20 +563,6 @@ select:-webkit-autofill:focus {
   margin: 0;
 }
 
-/*verify-page */
-.verify-email {
-  padding: 0;
-  margin-top: 24px;
-}
-
-.verify-email .card-body {
-  padding: 24px;
-}
-
-.verify-email .card-body {
-  padding: 16px;
-}
-
 .new-email {
   display: inline-block;
   margin-bottom: 16px;
@@ -582,6 +570,20 @@ select:-webkit-autofill:focus {
   background-color: #3C3C3C;
   border-radius: 4px;
   font-size: 24px;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.dashboard input {
+  display: inline-block;
+  width: 10rem;
+}
+
+.dashboard .update-name {
+  display: inline-block;
+  width: 100px;
 }
 
 /*Donate-page */
