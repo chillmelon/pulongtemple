@@ -48,10 +48,10 @@
 											<label for="amount" class="custom-bdr-dark-3d">
 												<div class="form-title">贊助金額</div>
                         <input id="amount" class="@error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
-                        {{-- <button id="increase" class="btn amount-btn">increase</button>
-                        <button id="decrease" class="btn amount-btn">decrease</button>
-                        <button id="lowest" class="btn amount-btn">lowest</button>
-                        <button id="happy" class="btn amount-btn">湊整數</button> --}}
+                        <div id="increase" class="btn amount-btn">increase</div>
+                        <div id="decrease" class="btn amount-btn">decrease</div>
+                        <div id="lowest" class="btn amount-btn">lowest</div>
+                        <div id="happy" class="btn amount-btn">湊整數</div>
 												@error('amount')
 												<span class="invalid-feedback" role="alert">
 													<strong>{{ $message }}</strong>
