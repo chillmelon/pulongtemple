@@ -47,31 +47,12 @@
                 <div class="">
                   <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
                     @csrf
-                    {{-- select area --}}
-                    {{-- <div style="display: inline-block">
-                      衣服(件)
-                      <div class="select">
-                        <input class="form-control text-select" type="text" id="numberA" value="0" width="5"/>
-                        <input class="btn btn-nohover" type="button" onclick="incrementValueA()" value="▲"/>
-                        <input class="btn btn-nohover" type="button" onclick="decrementValueA()" value="▼"/>
-                      </div>
-                    </div>
-                    <div style="display: inline-block">
-                      票(張)
-                      <div class="select">
-                        <input class="form-control text-select" type="text" id="numberB" value="0" width="5"/>
-                        <input class="btn btn-select" type="button" onclick="incrementValueB()" value="▲"/>
-                        <input class="btn btn-select" type="button" onclick="decrementValueB()" value="▼"/>
-                      </div>
-                    </div> --}}
-
-
                     {{--  --}}
                     <label for="amount" class="custom-bdr-dark-3d">
                       <div class="form-title">贊助金額</div>
-                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="integer" name="amount">
+                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="number" name="amount">
                       <div style="text-align: right" class="pr-4">
-                        <div style="display: inline-block" class="">
+                        <div style="display: inline-block">
                           <div id="increase" class="btn amount-btn">加100</div>
                           <div id="decrease" class="btn amount-btn">減100</div>
                         </div>

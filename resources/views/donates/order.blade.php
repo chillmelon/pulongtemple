@@ -47,7 +47,7 @@
 											{{--  --}}
 											<label for="amount" class="custom-bdr-dark-3d">
 												<div class="form-title">贊助金額</div>
-												<input id="amount" class="mb-0 @error('amount') is-invalid @enderror" value={{ $option_info->price }} type="integer" name="amount">
+												<input id="amount" class="mb-0 @error('amount') is-invalid @enderror" value={{ $option_info->price }} type="number" name="amount">
 												<div style="text-align: right" class="pr-4">
 													<div style="display: inline-block" class="">
 														<div id="increase" class="btn amount-btn">加100</div>
