@@ -159,6 +159,9 @@
 <div id="lowest" class="button">
 	lowest
 </div>
+<div id="happy" class="button">
+	湊整數
+</div>
 <script type="text/javascript">
 // on page load...
 porgressCircle();
@@ -179,6 +182,10 @@ $(window).resize(function() {
 		let lowest = document.querySelector('#lowest');
 		lowest.addEventListener('click', () =>{
 					lowestAmount();
+				});
+		let happyButton = document.querySelector('#happy');
+		happyButton.addEventListener('click', () =>{
+					happy();
 				});
 		//變更金額功能
 		function increaseAmount() {
@@ -202,11 +209,30 @@ $(window).resize(function() {
 				}
 
 		function lowestAmount() {
-					let amount = document.querySelector('#amount').value;
+					let amount = document.querySelector('#amount');
 					amount.value = base;
 				}
-		function up() {
+		function happy() {
+					let amount = document.querySelector('#amount');
+					let value = parseInt(amount.value);
+					if(value >= base) {
+								amount.value = happyMoney(value);
+							} else {
+										amount.value = base;
+									}
+				}
 
+		function happyMoney(num) {
+					// 如果已經進位到百位整數
+					if(Math.floor(num / 100) == num/100) {
+								// 從右邊算第一位非零數的位置
+								var posi = /[1-9][0]*$/.exec(Number(num).toString())[0].length - 1;
+								return num + Math.pow(10,posi);
+							} else {
+										// 123 -> 200
+										// 123001 -> 123100
+										return Math.ceil(num / 100) * 100;
+									}
 				}
 </script>
 @endsection
