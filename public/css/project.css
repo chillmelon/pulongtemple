@@ -20,7 +20,7 @@
 
 .bottom-content {
     color: #BEBEBE;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 
@@ -188,9 +188,12 @@
         padding: 1rem 150px 0;
     }
 
-    .top-content,
-    .bottom-content {
+    .top-content {
         padding: 2rem 150px;
+    }
+    
+    .bottom-content {
+        padding: 3rem 150px;
     }
 
     .footer {

@@ -13,7 +13,7 @@
               <div class="">
                 <form method="POST" action="{{ route('register') }}">
                   @csrf
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="name" class="col-md-4 text-md-right mt-2">尊姓大名</label>
                     <div class="col-md-6">
                       <input id="name" type="text"
@@ -26,7 +26,7 @@
                       @enderror
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="email" class="col-md-4 text-md-right mt-2">E-Mail</label>
                     <div class="col-md-6">
                       <input id="email" type="email"
@@ -39,7 +39,7 @@
                       @enderror
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="password" class="col-md-4 text-md-right mt-2">密碼</label>
                     <div class="col-md-6">
                       <input id="password" type="password"
@@ -52,14 +52,14 @@
                       @enderror
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="password-confirm" class="col-md-4 text-md-right mt-2">確認密碼</label>
                     <div class="col-md-6">
                       <input id="password-confirm" type="password" class="custom-bdr"
                         name="password_confirmation" required autocomplete="new-password">
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <div class="col-md-6 offset-md-4 ">
                       <button type="submit" class="btn my-3">
                         註冊
@@ -78,7 +78,7 @@
               <div class="">
                 <form method="POST" action="{{ route('login') }}">
                   @csrf
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="email" class="col-md-4 text-md-right mt-2">E-Mail</label>
                     <div class="col-md-6">
                       <input id="email" type="email"
@@ -91,7 +91,7 @@
                       @enderror
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <label for="password" class="col-md-4 text-md-right mt-2">密碼</label>
                     <div class="col-md-6">
                       <input id="password" type="password"
@@ -104,7 +104,7 @@
                       @enderror
                     </div>
                   </div>
-                  <div class="row m-2 from-group">
+                  <div class="row m-0 from-group">
                     <div class="col-md-6 offset-md-4">
                       {{-- remember --}}
                       {{-- <div class="form-check">
@@ -116,7 +116,7 @@
                       </div> --}}
                     </div>
                   </div>
-                  <div class="row m-2">
+                  <div class="row m-0">
                     <div class="col-md-6 offset-md-4 mb-3">
                       <button type="submit" class="btn mt-3">
                         登入

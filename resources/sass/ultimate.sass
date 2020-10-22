@@ -43,6 +43,7 @@ hr
     color: $sec-color
     border: $dark-border-color 1px solid
 
+
 /* Change Autocomplete styles in Chrome
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -56,8 +57,16 @@ select:-webkit-autofill:focus
     border: $border-hover-color 1px solid
     -webkit-text-fill-color: $border-hover-color
     -webkit-box-shadow: 0 0 0px 1000px $main-bg-color inset
-
     // transition: background-color 5000s ease-in-out 0s
+
+// type:number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+
+input[type="number"]
+    -moz-appearance: textfield
+
 
 @import utility
 
@@ -410,6 +419,9 @@ $size: 28px
     .update-name
         display: inline-block
         width: 100px
+    
+    img
+        width: 100%
 
 // Rank
 .rank

@@ -40,15 +40,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     {{-- <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> --}}
     <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
-		<style>
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-    }
-    input[type="number"]{
-        -moz-appearance: textfield;
-    }
-		</style>
   </head>
   <body>
     <!--top navbar -->
