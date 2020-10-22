@@ -239,35 +239,7 @@
     font-size: 14px;
 }
 
-/*project Card*/
-.p-card-box {
-    padding: 16px 0;
-}
 
-.p-card-head {
-    padding: 8px;
-    border-bottom: #01814A 2px solid;
-}
-
-.p-card-body {
-    padding: 8px;
-}
-
-.p-card-body .btn {
-    width: 60%;
-    font-size: 18px;
-}
-
-.p-card-nt {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.p-card-footer {
-    padding: 8px;
-}
 
 /*footer*/
 .footer {

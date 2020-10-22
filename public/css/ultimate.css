@@ -644,5 +644,24 @@ input[type="number"] {
   height: 100%;
 }
 
+.my-donate .d-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.my-donate .my-donate-title {
+  width: auto;
+  border: none;
+}
+
+.my-donate h5 {
+  font-weight: bold;
+}
+
+.my-donate .plan {
+  width: 60%;
+}
+
 /*Donate-page */
 /*# sourceMappingURL=ultimate.css.map */
