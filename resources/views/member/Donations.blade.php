@@ -12,6 +12,9 @@
       		</div>
       		<div class="p-card-body custom-bdr-bm">
       			<a class="btn my-donate" href="/projects/{{ $donation->project->id }}">{{ $donation->project->title }}</a>
+						@if($donation->option)
+							{{$donation->option->title}}
+						@endif
       			<div class="p-card-nt ff-2P fs-12">NT$ {{ $donation->amount }}</div>
       		</div>
       		<div class="p-card-footer"><span>交易單號：{{ $donation->uuid }}</span></div>

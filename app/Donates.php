@@ -23,6 +23,9 @@ class Donates extends Model
     public function project(){
         return $this->belongsTo('App\Projects','project_id');
     }
+    public function option(){
+        return $this->belongsTo('App\Options','option_id');
+    }
     public function user(){
         return $this->belongsTo('App\User','user_id');
     }
