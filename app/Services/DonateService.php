@@ -40,7 +40,7 @@ class DonateService
 																	];
 																})
 																->sortByDesc('amount')
-																->take(5);
+																->take(15);
 		return $top;
 	}
 	// find random 5 comments for a particular project

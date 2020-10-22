@@ -61,6 +61,7 @@ class ProjectService
       $project->days_left = $interval->d;
     }
     $project->supporters=$project->donates->where('paid',1)->unique('user_id')->count('user_id');
+    $project->donors=$project->donates->where('paid',1)->where('option_id',NULL)->unique('user_id')->count('user_id');
     $project->amount=$project->total_amount;
     $project->progress=round($project->amount/$project->goal*100);
     $project->starter=$project->user->name;
