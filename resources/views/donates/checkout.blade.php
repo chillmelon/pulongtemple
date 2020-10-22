@@ -76,8 +76,8 @@
                           <div id="decrease" class="btn amount-btn">減100</div>
                         </div>
                         <div style="display: inline-block">
-                          <div id="lowest" class="btn amount-btn">最低金額</div>
                           <div id="happy" class="btn amount-btn">湊整數</div>
+                          <div id="lowest" class="btn amount-btn">最低金額</div>
                         </div>
                       </div>
                       @error('amount')
