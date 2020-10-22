@@ -88,12 +88,13 @@
 }
 
 @keyframes easelight {
-    0% {opacity: .1}
+    0% {opacity: 0}
     100% {opacity: 1}
 }
 
+/* M */
 @keyframes easelight-x {
-    0% {opacity: .1}
+    0% {opacity: 0}
     40% {opacity: .5}
     60% {opacity: .5}
     62% {opacity: 0}

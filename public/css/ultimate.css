@@ -526,6 +526,7 @@ select:-webkit-autofill:focus {
 
 .custom-form label {
   display: block;
+  line-height: 2rem;
 }
 
 .custom-form label:focus-within {
@@ -584,6 +585,24 @@ select:-webkit-autofill:focus {
 .dashboard .update-name {
   display: inline-block;
   width: 100px;
+}
+
+.rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rank h4, .rank h6, .rank span {
+  line-height: 60px;
+}
+
+.rank img {
+  width: 60px;
+  height: 60px;
 }
 
 /*Donate-page */
