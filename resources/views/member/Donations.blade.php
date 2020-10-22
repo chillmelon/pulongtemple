@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row justify-content-center pt-5">
     <div class="col-md-6 col-xl-4">
-      <h3 class="ff-2P text-center">My Donation</h3>
+      <h3 class="ff-2P text-center">My Donations</h3>
       @foreach($donates as $donation)
       <div class="history custom-bdr-3d">
         <div class="d-flex pt-3 pr-3">

@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row justify-content-center pt-5">
     <div class="col-md-6 col-xl-4">
-      <h3 class="ff-2P text-center">My Project</h3>
+      <h3 class="ff-2P text-center">My Projects</h3>
       @foreach($projects as $project)
       <div class="history custom-bdr-3d">
         <div class="d-flex pt-3 pr-3">
