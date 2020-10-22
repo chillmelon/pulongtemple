@@ -53,6 +53,15 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .f-titile {
   font-weight: bold;
   color: #fff;
@@ -585,6 +594,10 @@ select:-webkit-autofill:focus {
 .dashboard .update-name {
   display: inline-block;
   width: 100px;
+}
+
+.dashboard img {
+  width: 100%;
 }
 
 .rank {
