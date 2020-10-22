@@ -31,6 +31,22 @@ a
 hr
     border-top: 1px solid #333
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus
+    border: $border-hover-color 1px solid
+    -webkit-text-fill-color: $border-hover-color
+    -webkit-box-shadow: 0 0 0px 1000px $main-bg-color inset
+    // transition: background-color 5000s ease-in-out 0s
+
+
 @import utility
 
 // Navbar
@@ -248,6 +264,7 @@ $size: 28px
 .select-title
     color: $sec-color
     text-shadow: 0.2px 0.2px $main-color, 0.4px 0.4px $main-color, 0.6px 0.6px $main-color, 0.8px 0.8px $main-color, 1px 1px $main-color
+    font-family: "Noto Serif TC", serif
 
 .select-content
     background-color: $sec-bg-color
@@ -314,7 +331,9 @@ $size: 28px
         max-height: 200px
         overflow: hidden
 
-.donate-form
+
+// Form
+.custom-form
     label
         display: block
 
@@ -322,7 +341,7 @@ $size: 28px
             border-color: $border-hover-color
 
             .form-title
-                color: $main-hover-color
+                color: $sec-hover-color
 
             &::before
                 border-color: $border-hover-color
@@ -332,7 +351,7 @@ $size: 28px
 
     .form-title
         padding: 0.5rem
-        color: $main-color
+        color: $sec-color
 
     %input-reset
         display: block
@@ -351,22 +370,18 @@ $size: 28px
     input
         @extend %input-reset
 
-        &:-internal-autofill-selected
-            background-color: $main-bg-color !important
-            color: $main-color !important
+        // &:-internal-autofill-selected
+        //     background-color: $main-bg-color !important
+        //     color: $main-color !important
 
     textarea
         @extend %input-reset
 
         height: auto
 
-    .btn
-        // border: none
-        font-size: 18px
-        font-weight: bold
-
-        &:hover
-            border: none
+    span
+        padding: 0 0.75rem 0.5rem
+        margin: 0
 
 // .custom-card
 //     background-color: rgb(0, 0, 0, 0)

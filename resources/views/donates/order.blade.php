@@ -28,7 +28,7 @@
               </div>
             </div>
             {{-- selected plan --}}
-            <div class="custom-bdr-3d">
+            <div class="custom-bdr-dark-3d">
               <div class="serif-tc p-4">
                 <h3 class="select-title"><I> {{$option_info->title}} </I></h3>
                 <div class="ff-2P pt-2">NT$ {{$option_info->price}}</div>
@@ -39,7 +39,7 @@
           </div>
           {{-- donate form --}}
           <div class="col-lg-6">
-            <div class="donate-form">
+            <div class="custom-form">
               <div class="">
                 <div class="">
                   <form method="POST" action="{{ route('donates.new', $option_info->id) }}" name="order">
@@ -107,7 +107,7 @@
                     @endif
                     {{-- e-mail --}}
                     @auth
-                      <input class="form-control @error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
+                      <input class="@error('email') is-invalid @enderror" type="hidden" name="email" value="{{ auth()->user()['email'] }}">
                     @endauth
                     {{-- btn --}}
                     <div class="custom-bdr-3d custom-bdr-3d-hover">

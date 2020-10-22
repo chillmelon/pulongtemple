@@ -25,6 +25,21 @@ hr {
   border-top: 1px solid #333;
 }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: #02C874 1px solid;
+  -webkit-text-fill-color: #02C874;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+}
+
 .f-titile {
   font-weight: bold;
   color: #fff;
@@ -93,7 +108,12 @@ hr {
   right: -2px;
 }
 
-.custom-bdr-3d .btn {
+.custom-bdr-3d > .btn {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.custom-bdr-3d > .btn:hover {
   border: none;
 }
 
@@ -398,6 +418,7 @@ hr {
 .select-title {
   color: #ccc;
   text-shadow: 0.2px 0.2px #019858, 0.4px 0.4px #019858, 0.6px 0.6px #019858, 0.8px 0.8px #019858, 1px 1px #019858;
+  font-family: "Noto Serif TC", serif;
 }
 
 .select-content {
@@ -490,32 +511,32 @@ hr {
   }
 }
 
-.donate-form label {
+.custom-form label {
   display: block;
 }
 
-.donate-form label:focus-within {
+.custom-form label:focus-within {
   border-color: #02C874;
 }
 
-.donate-form label:focus-within .form-title {
-  color: #02F78E;
+.custom-form label:focus-within .form-title {
+  color: #fff;
 }
 
-.donate-form label:focus-within::before {
+.custom-form label:focus-within::before {
   border-color: #02C874;
 }
 
-.donate-form label:focus-within::after {
+.custom-form label:focus-within::after {
   border-color: #02C874;
 }
 
-.donate-form .form-title {
+.custom-form .form-title {
   padding: 0.5rem;
-  color: #019858;
+  color: #ccc;
 }
 
-.donate-form input, .donate-form textarea {
+.custom-form input, .custom-form textarea {
   display: block;
   width: 90%;
   margin-top: 0.5rem;
@@ -526,27 +547,18 @@ hr {
   border: rgba(1, 126, 72, 0.4) 1px solid;
 }
 
-.donate-form input:focus, .donate-form textarea:focus {
+.custom-form input:focus, .custom-form textarea:focus {
   border-color: #02C874;
   outline: none;
 }
 
-.donate-form input:-internal-autofill-selected {
-  background-color: #000 !important;
-  color: #019858 !important;
-}
-
-.donate-form textarea {
+.custom-form textarea {
   height: auto;
 }
 
-.donate-form .btn {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.donate-form .btn:hover {
-  border: none;
+.custom-form span {
+  padding: 0 0.75rem 0.5rem;
+  margin: 0;
 }
 
 /*Donate-page */

@@ -31,7 +31,7 @@
               </div>
             </div>
             {{-- selected plan --}}
-            <div class="custom-bdr-3d" onclick="location.href='/donate/{{$project_info->id}}'">
+            <div class="custom-bdr-dark-3d">
               <div class="serif-tc p-4">
                 <h3 class="select-title"><I> 純贊助 </I></h3>
                 <div class="ff-2P pt-2">NT$ ???</div>
@@ -42,7 +42,7 @@
           </div>
           {{-- donate form --}}
           <div class="col-lg-6">
-            <div class="donate-form">
+            <div class="custom-form">
               <div class="">
                 <div class="">
                   <form method="POST" action="{{ route('donates.new', $project_info->id) }}" name="donation">
