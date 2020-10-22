@@ -107,13 +107,13 @@
                   <div class="row m-2 from-group">
                     <div class="col-md-6 offset-md-4">
                       {{-- remember --}}
-                      <div class="form-check">
+                      {{-- <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember"
                           id="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label class="form-check-label" for="remember">
                           記住我
                         </label>
-                      </div>
+                      </div> --}}
                     </div>
                   </div>
                   <div class="row m-2">

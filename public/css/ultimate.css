@@ -606,5 +606,10 @@ select:-webkit-autofill:focus {
   height: 60px;
 }
 
+.amount-btn {
+  display: inline-block;
+  width: auto;
+}
+
 /*Donate-page */
 /*# sourceMappingURL=ultimate.css.map */
