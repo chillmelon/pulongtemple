@@ -44,17 +44,19 @@
             <span class="inline-b ab-rb fs-12">/{{ $project->goal }}</span>
           </div>
           <hr class="hr-prime">
-          <div class="max-w-200">
-            <h4 class="inlin-b">{{ $project->supporters }}</h4>
-            <span class="inlin-b ab-rb">人贊助</span>
+          <div class="project-status d-flex">
+            <h6>贊助者</h6>
+            <h5>{{ $project->supporters }}<span> </span>人</h5>
           </div>
-          <div class="max-w-200">
+          <div class="project-status d-flex">
+            {{-- project completed --}}
             @if ($project->days_left < 0)
-            <h4 class="inlin-b">&nbsp;</h4>
-            <span class="inlin-b ab-rb">專案結束</span>
+            <h6>&nbsp;</h6>
+            <h6>專案結束</h6>
             @else
-            <h4 class="inlin-b">{{ $project->days_left }}</h4>
-            <span class="inlin-b ab-rb">天剩餘</span>
+            {{-- project in progress --}}
+            <h6>募資倒數</h6>
+            <h5>{{ $project->days_left }}<span> </span>天</h5>
             @endif
           </div>
         </div>

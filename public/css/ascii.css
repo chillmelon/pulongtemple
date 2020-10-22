@@ -12,12 +12,12 @@
 
 /*Verify*/
 .verify-box {
-    height: 360px;
+    height: 300px;
 }
 .verify {
     color: #01B468;
     font-weight: 800;
-    font-size: 8px;
+    font-size: 14px;
     font-family: monospace;
     padding: 4px;
 }
@@ -89,7 +89,7 @@
         height: 400px;
     }
     .verify {
-        font-size: 16px;
+        font-size: 20px;
     }
     /*thankYou*/
     .thx-box {
