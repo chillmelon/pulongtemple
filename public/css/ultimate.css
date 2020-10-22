@@ -611,13 +611,13 @@ select:-webkit-autofill:focus {
   width: 88px;
 }
 
-.vedio-wrapper {
+.video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
 }
 
-.vedio-wrapper iframe {
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
