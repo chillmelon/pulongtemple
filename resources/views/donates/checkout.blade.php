@@ -69,8 +69,8 @@
                     {{--  --}}
                     <label for="amount" class="custom-bdr-dark-3d">
                       <div class="form-title">贊助金額</div>
-                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="number" name="amount">
-                      {{-- <div style="text-align: right" class="pr-4">
+                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="integer" name="amount">
+                      <div style="text-align: right" class="pr-4">
                         <div style="display: inline-block" class="">
                           <div id="increase" class="btn amount-btn">加100</div>
                           <div id="decrease" class="btn amount-btn">減100</div>
@@ -79,7 +79,7 @@
                           <div id="lowest" class="btn amount-btn">最低金額</div>
                           <div id="happy" class="btn amount-btn">湊整數</div>
                         </div>
-                      </div> --}}
+                      </div>
                       @error('amount')
                         <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
