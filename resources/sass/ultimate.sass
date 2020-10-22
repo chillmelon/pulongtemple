@@ -31,7 +31,19 @@ a
 hr
     border-top: 1px solid #333
 
-/* Change Autocomplete styles in Chrome*/
+%input-reset
+    display: block
+    width: 90%
+    margin-top: 0.5rem
+    margin-bottom: 1rem
+    margin-left: 0.75rem
+    padding-left: 0.5rem
+    line-height: 2rem
+    background-color: $main-bg-color
+    color: $sec-color
+    border: $dark-border-color 1px solid
+
+/* Change Autocomplete styles in Chrome
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -44,8 +56,8 @@ select:-webkit-autofill:focus
     border: $border-hover-color 1px solid
     -webkit-text-fill-color: $border-hover-color
     -webkit-box-shadow: 0 0 0px 1000px $main-bg-color inset
-    // transition: background-color 5000s ease-in-out 0s
 
+    // transition: background-color 5000s ease-in-out 0s
 
 @import utility
 
@@ -331,7 +343,6 @@ $size: 28px
         max-height: 200px
         overflow: hidden
 
-
 // Form
 .custom-form
     label
@@ -352,16 +363,6 @@ $size: 28px
     .form-title
         padding: 0.5rem
         color: $sec-color
-
-    %input-reset
-        display: block
-        width: 90%
-        margin-top: 0.5rem
-        margin-bottom: 1rem
-        margin-left: 0.75rem
-        background-color: $main-bg-color
-        color: $sec-color
-        border: $dark-border-color 1px solid
 
         &:focus
             border-color: $border-hover-color
@@ -387,36 +388,26 @@ $size: 28px
 
 // verify-page
 .new-email
-  display: inline-block
-  margin-bottom: 16px
-  padding: 8px
-  background-color: #3C3C3C
-  border-radius: 4px
-  font-size: 24px
+    display: inline-block
+    margin-bottom: 16px
+    padding: 8px
+    background-color: #3C3C3C
+    border-radius: 4px
+    font-size: 24px
 
+// dashboard
+.dashboard
+    text-align: center
 
+    input
+        @extend %input-reset
 
+        display: inline-block
+        width: 10rem
 
-// .custom-card
-//     background-color: rgb(0, 0, 0, 0)
-//     font-size: 20px
-//     font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', serif
-
-// .card-header
-//     border-bottom: #01814A 2px solid
-
-// .custom-card input,
-// .custom-card textarea
-//     font-size: 20px
-//     color: #00290A
-//     background-color: #6BB382
-
-// .custom-card .form-control:focus
-//     color: #00290A
-//     background-color: #C1FFE4
-//     border-color: #7AFEC6
-//     box-shadow: 0 0 0 1px #7AFEC6
-
+    .update-name
+        display: inline-block
+        width: 100px
 
 /*Donate-page
 // .donate-box
