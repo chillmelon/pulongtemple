@@ -38,7 +38,7 @@ active
       <!-- user gallery -->
       <div class="gallery">
         @foreach($gallary as $icon)
-        <div class="p-2"><img class="usr-img" src="{{asset('storage/'.$icon[ 'avatar' ])}}"></div>
+        <div class="p-1" style="display: inline-block"><img class="usr-img" src="{{asset('storage/'.$icon[ 'avatar' ])}}"></div>
         @endforeach
       </div>
     </div>
