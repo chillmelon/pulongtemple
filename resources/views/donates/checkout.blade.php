@@ -35,7 +35,7 @@
               <div class="serif-tc p-4">
                 <h3 class="select-title"><I> 純贊助 </I></h3>
                 <div class="ff-2P pt-2">NT$ ???</div>
-                <div class="pt-2">已被贊助 {{$project_info->supporters}} 次</div>
+                <div class="pt-2">已被贊助 {{$project_info->donors}} 次</div>
                 <div class="select-content"><span>隨喜樂捐，不求回報。</span></div>
               </div>
             </div>
@@ -180,7 +180,7 @@ $(window).resize(function() {
 		function decreaseAmount() {
 					let amount = document.querySelector('#amount');
 					let value = parseInt(amount.value)
-					if((value - 100) <= base) {
+					if((value - 100) < base) {
 								amount = base;
 							} else {
 										amount.value = value - 100;
