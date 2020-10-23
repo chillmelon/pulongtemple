@@ -494,21 +494,6 @@ input[type="number"] {
   border: none;
 }
 
-.rank table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.rank table th {
-  height: 56px;
-}
-
-.rank table th, .rank table td {
-  -webkit-text-emphasis: center;
-          text-emphasis: center;
-  height: 73px;
-}
-
 .expand-project {
   padding: 1rem 1rem 2rem;
   visibility: hidden;
@@ -600,23 +585,10 @@ input[type="number"] {
   width: 100%;
 }
 
-.rank {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.rank h5, .rank h6, .rank span {
-  line-height: 48px;
-}
-
 .rank img {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 }
 
 .usr-img {

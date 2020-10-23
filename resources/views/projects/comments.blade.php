@@ -28,10 +28,13 @@ active
     {{-- rank --}}
     <div class="col-12 col-lg-4">
       @foreach($topFive as $donater)
-      <div class="rank custom-bdr-3d p-3 mt-2">
-        <h5 class="select-title pl-2"><I>{{$loop->index+1}}.</I></h5>
-        <div><img src="{{asset('storage/'.$donater[ 'avatar' ])}}"><span class="p-2">{{$donater[ 'name' ]}}</span class="p-2"></div>
-        <h6 class="pr-3">NT$ {{$donater[ 'amount' ]}}</h6>
+      <div class="rank d-flex justify-content-around custom-bdr-3d p-3 mt-2">
+        <h5 class="select-title pr-2 my-auto"><I>{{$loop->index+1}}.</I></h5>
+        <div class="d-flex">
+          <img class="my-auto" src="{{asset('storage/'.$donater[ 'avatar' ])}}">
+          <div class="p-2 my-auto">{{$donater[ 'name' ]}}</div>
+        </div>
+        <div class="text-nowrap my-auto"><b>NT$ {{$donater[ 'amount' ]}}</b></div>
       </div>
       @endforeach
     </div>

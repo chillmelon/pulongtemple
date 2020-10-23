@@ -77,7 +77,7 @@
       </div>
       <hr class="hr-prime">
       <!-- description -->
-      <div class="description pt-2 pb-3">
+      <div class="description pt-2 pb-3 my-auto">
         <p class="m-0">
           {{ $project->summary }}
         </p>
