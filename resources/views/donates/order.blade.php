@@ -214,7 +214,7 @@
     function decreaseAmount() {
       let amount = document.querySelector('#amount');
       let value = parseInt(amount.value)
-      if ((value - 100) <= base) {
+      if ((value - 100) < base) {
         amount.value = base;
       } else {
         amount.value = value - 100;
