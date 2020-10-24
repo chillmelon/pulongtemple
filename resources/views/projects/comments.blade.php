@@ -31,7 +31,7 @@ active
       <div class="rank d-flex custom-bdr-3d p-3 mt-2">
         <h5 class="select-title pr-2 my-auto"><I>{{$loop->index+1}}.</I></h5>
         <div class="d-flex">
-          <img class="pl-2 my-auto" src="{{asset('storage/'.$donater[ 'avatar' ])}}">
+          <img class="ml-2 my-auto" src="{{asset('storage/'.$donater[ 'avatar' ])}}">
           <div class="ml-3 my-auto">{{$donater[ 'name' ]}}</div>
         </div>
         <div class="text-nowrap my-auto ml-auto"><b>NT$ {{$donater[ 'amount' ]}}</b></div>
