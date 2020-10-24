@@ -444,7 +444,7 @@ input[type="number"] {
 }
 
 .select-content {
-  background-color: rgba(44, 44, 44, 0.4);
+  background-color: rgba(55, 55, 55, 0.5);
   height: 4rem;
   overflow: hidden;
   margin-top: 1rem;
