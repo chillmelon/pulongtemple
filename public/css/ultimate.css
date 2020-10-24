@@ -38,6 +38,11 @@ hr {
   border: rgba(1, 126, 72, 0.4) 1px solid;
 }
 
+.custom-form input:focus, .custom-form textarea:focus, .dashboard input:focus {
+  border: #02C874 1px solid;
+  outline: none;
+}
+
 /* Change Autocomplete styles in Chrome */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -252,10 +257,6 @@ input[type="number"] {
 
 .logo {
   padding-left: 1rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: inline-block;
 }
 
 .logo a {
@@ -279,14 +280,6 @@ input[type="number"] {
   border: 2px solid #fff;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.login {
-  top: 50%;
-  padding-right: 1rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  float: right;
 }
 
 .login > li > a {

@@ -15,7 +15,7 @@
     display: inline-block;
     font-family: 'Share Tech Mono', monospace,
                  'Noto Sans TC', serif;
-    line-height: 2;
+    padding: 0.5rem 1rem
 }
 
 .btn span {

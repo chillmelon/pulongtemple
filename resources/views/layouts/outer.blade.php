@@ -43,13 +43,13 @@
   </head>
   <body>
     <!--top navbar -->
-    <nav class="nav-top">
-      <div class="logo">
+    <nav class="nav-top d-flex justify-content-between">
+      <div class="logo my-auto">
         <a class="btn" href="/">
           <span>埔</span>
         </a>
       </div>
-      <ul class="login">
+      <ul class="login my-auto px-3">
         @yield("login-button")
       </ul>
     </div>
