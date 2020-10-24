@@ -56,7 +56,8 @@ select:-webkit-autofill:focus {
   border: #02C874 1px solid;
   -webkit-text-fill-color: #02F78E;
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-  background-color: #000 !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 input::-webkit-outer-spin-button,
