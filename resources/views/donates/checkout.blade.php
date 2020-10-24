@@ -148,7 +148,7 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
-		let base = 100;
+		let base = 10;
 	//選取按鈕
 		let increase = document.querySelector('#increase');
 		increase.addEventListener('click', () =>{

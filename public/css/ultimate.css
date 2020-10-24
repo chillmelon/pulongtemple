@@ -594,7 +594,8 @@ input[type="number"] {
 
 .amount-btn {
   display: inline-block;
-  width: 88px;
+  width: 6rem;
+  padding: .5rem;
 }
 
 .video-wrapper {
