@@ -55,7 +55,7 @@
       {{-- product --}}
       <div class="row justify-content-center">
 				@foreach($projects->sortByDesc('updated_at') as $project)
-        <div class="product-box col-12 col-md-6 p-4">
+        <div class="product-box col-12 col-md-6 p-lg-4">
           <div class="product custom-bdr-dark-3d custom-bdr-3d-hover" onclick="location.href='projects/{{ $project->id }}';">
             <div class="product-head custom-bdr-dark-bm serif-tc p-3">
               {{ $project->title }}

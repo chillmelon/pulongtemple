@@ -271,7 +271,7 @@
 /*media query*/
 @media (min-width: 992px) {
     .pltp-box-neon {
-        padding: 96px 0;
+        padding: 6rem 0;
     }
 
     .neon {
