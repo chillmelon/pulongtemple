@@ -444,11 +444,12 @@ input[type="number"] {
 }
 
 .select-content {
-  background-color: rgba(66, 66, 66, 0.2);
+  background-color: rgba(44, 44, 44, 0.4);
   height: 4rem;
   overflow: hidden;
   margin-top: 1rem;
   padding: 1rem;
+  border-radius: 4px;
 }
 
 .select-content span {
