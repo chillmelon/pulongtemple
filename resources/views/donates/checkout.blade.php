@@ -50,15 +50,17 @@
                     {{--  --}}
                     <label for="amount" class="custom-bdr-dark-3d">
                       <div class="form-title">贊助金額</div>
-                      <input id="amount" class="@error('amount') is-invalid @enderror" value="100" type="number" name="amount">
-                      <div style="text-align: right" class="pr-4">
-                        <div style="display: inline-block">
-                          <div id="increase" class="btn amount-btn">加100</div>
-                          <div id="decrease" class="btn amount-btn">減100</div>
+                      <input id="amount" class="mb-2 @error('amount') is-invalid @enderror" value="100" type="number" name="amount">
+                      <div class="amount-area ml-2 pb-2 d-flex justify-content-end flex-wrap">
+                        {{-- <div id="increase" class="btn">▴加100</div> --}}
+                        {{-- <div id="decrease" class="btn">▾ 減100</div> --}}
+                        <div>
+                          <div id="marlboro" class="btn">▴加一包菸</div>
+                          <div id="cabbage" class="btn">▴加顆白菜</div>
                         </div>
-                        <div style="display: inline-block">
-                          <div id="happy" class="btn amount-btn">湊整數</div>
-                          <div id="lowest" class="btn amount-btn">最低金額</div>
+                        <div>
+                          <div id="happy" class="btn">▴不用找了</div>
+                          <div id="lowest" class="btn">▾最低金額</div>
                         </div>
                       </div>
                       @error('amount')
@@ -148,70 +150,107 @@ porgressCircle();
 $(window).resize(function() {
   porgressCircle();
 });
-		let base = 10;
-	//選取按鈕
-		let increase = document.querySelector('#increase');
-		increase.addEventListener('click', () =>{
-					increaseAmount();
-				});
-		let decrease = document.querySelector('#decrease');
-		decrease.addEventListener('click', () =>{
-					decreaseAmount();
-				});
-		let lowest = document.querySelector('#lowest');
-		lowest.addEventListener('click', () =>{
-					lowestAmount();
-				});
-		let happyButton = document.querySelector('#happy');
-		happyButton.addEventListener('click', () =>{
-					happy();
-				});
-		//變更金額功能
-		function increaseAmount() {
-					console.log(1);
-					let amount = document.querySelector('#amount');
-					let value = parseInt(amount.value);
-					if(value >= base) {
-								amount.value = value + 100;
-							} else {
-										amount.value = base;
-									}
-				}
-		function decreaseAmount() {
-					let amount = document.querySelector('#amount');
-					let value = parseInt(amount.value)
-					if((value - 100) < base) {
-								amount = base;
-							} else {
-										amount.value = value - 100;
-									}
-				}
 
-		function lowestAmount() {
-					let amount = document.querySelector('#amount');
-					amount.value = base;
-				}
-		function happy() {
-					let amount = document.querySelector('#amount');
-					let value = parseInt(amount.value);
-					if(value >= base) {
-								amount.value = happyMoney(value);
-							} else {
-										amount.value = base;
-									}
-				}
+//選取按鈕
+let base = 10;
 
-		function happyMoney(num) {
-					// 如果已經進位到百位整數
-					if(Math.floor(num / 100) == num/100) {
-								// 從右邊算第一位非零數的位置
-								var posi = /[1-9][0]*$/.exec(Number(num).toString())[0].length - 1;
-								return num + Math.pow(10,posi);
-							} else {
-										// 123 -> 200
-										// 123001 -> 123100
-										return Math.ceil(num / 100) * 100;
-									}
-				}
+//變更金額功能
+
+// function increaseAmount() {
+//   let amount = document.querySelector('#amount');
+//   let value = parseInt(amount.value);
+//   if(value >= base) {
+//     amount.value = value + 100;
+//   } else {
+//     amount.value = base;
+//   }
+// }
+// function decreaseAmount() {
+//   let amount = document.querySelector('#amount');
+//   let value = parseInt(amount.value)
+//   if((value - 100) < base) {
+//     amount = base;
+//   } else {
+//     amount.value = value - 100;
+//   }
+// }
+
+function addMarlboro() {
+  let amount = document.querySelector('#amount');
+  let value = parseInt(amount.value);
+  if(value >= base) {
+    amount.value = value + 110;
+  } else {
+    amount.value = base;
+  }
+}
+
+function addCabbage() {
+  let amount = document.querySelector('#amount');
+  let value = parseInt(amount.value);
+  if(value >= base) {
+    amount.value = value + 1300;
+  } else {
+    amount.value = base;
+  }
+}
+
+function lowestAmount() {
+  let amount = document.querySelector('#amount');
+  amount.value = base;
+}
+
+function happy() {
+  let amount = document.querySelector('#amount');
+  let value = parseInt(amount.value);
+  if(value >= base) {
+    amount.value = happyMoney(value);
+  } else {
+    amount.value = base;
+  }
+}
+
+function happyMoney(num) {
+  // 如果已經進位到百位整數
+  if(Math.floor(num / 100) == num/100) {
+    // 從右邊算第一位非零數的位置
+    var posi = /[1-9][0]*$/.exec(Number(num).toString())[0].length - 1;
+    return num + Math.pow(10,posi);
+  } else {
+    // 123 -> 200
+    // 123001 -> 123100
+    return Math.ceil(num / 100) * 100;
+  }
+}
+
+// let increase = document.querySelector('#increase');
+// increase.addEventListener('click', () =>{
+//   increaseAmount();
+// });
+// let decrease = document.querySelector('#decrease');
+// decrease.addEventListener('click', () =>{
+//   decreaseAmount();
+// });
+
+let marlboro = document.querySelector('#marlboro');
+marlboro.addEventListener('click', () =>{
+  addMarlboro();
+});
+
+let cabbage = document.querySelector('#cabbage');
+cabbage.addEventListener('click', () =>{
+  addCabbage();
+});
+
+let lowest = document.querySelector('#lowest');
+lowest.addEventListener('click', () =>{
+  lowestAmount();
+});
+
+let happyButton = document.querySelector('#happy');
+happyButton.addEventListener('click', () =>{
+  happy();
+});
+
 </script>
 @endsection
