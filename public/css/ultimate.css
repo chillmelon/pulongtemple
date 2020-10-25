@@ -4,6 +4,7 @@
   position: relative;
   list-style-type: none;
   text-decoration: none;
+  -webkit-text-size-adjust: none !important;
 }
 
 html, body {
@@ -27,7 +28,6 @@ hr {
 
 .custom-form input, .custom-form textarea, .dashboard input {
   display: block;
-  width: 90%;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   margin-left: 0.75rem;
@@ -73,6 +73,30 @@ input[type="number"] {
   font-weight: bold;
   color: #fff;
   -webkit-text-stroke: 0.04rem #019858;
+}
+
+.btn {
+  color: #019858;
+  border: #019858 1.5px solid;
+  border-radius: 0;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', serif;
+  padding: 0.5rem 1rem;
+}
+
+.btn span {
+  display: inline-block;
+}
+
+.btn:hover {
+  color: #02F78E;
+  border: #02F78E 1.5px solid;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .custom-bdr, .custom-bdr-3d, .custom-bdr-3d::before, .custom-bdr-3d::after {
@@ -138,12 +162,17 @@ input[type="number"] {
 }
 
 .custom-bdr-3d > .btn {
+  border: none;
   font-size: 18px;
   font-weight: bold;
 }
 
 .custom-bdr-3d > .btn:hover {
   border: none;
+}
+
+.custom-bdr-3d input, .custom-bdr-3d textarea {
+  width: 90%;
 }
 
 .custom-bdr-3d-hover:hover {
@@ -200,6 +229,16 @@ input[type="number"] {
 
 .custom-bdr-dark-3d .btn {
   border: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.custom-bdr-dark-3d .btn:hover {
+  border: none;
+}
+
+.custom-bdr-dark-3d input, .custom-bdr-dark-3d textarea {
+  width: 90%;
 }
 
 .nav-top, .nav-mid {
@@ -279,7 +318,7 @@ input[type="number"] {
 
 .logo a:hover, .logo a:focus {
   color: #fff;
-  border: 2px solid #fff;
+  border: #fff 2px solid;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -438,7 +477,7 @@ input[type="number"] {
   }
 }
 
-.select-title {
+.shadow-title {
   color: #ccc;
   text-shadow: 0.2px 0.2px #019858, 0.4px 0.4px #019858, 0.6px 0.6px #019858, 0.8px 0.8px #019858, 1px 1px #019858;
   font-family: "Noto Serif TC", serif;
@@ -544,11 +583,6 @@ input[type="number"] {
 .custom-form .form-title {
   padding: 0.5rem;
   color: #ccc;
-}
-
-.custom-form .form-title:focus {
-  border-color: #02C874;
-  outline: none;
 }
 
 .custom-form textarea {

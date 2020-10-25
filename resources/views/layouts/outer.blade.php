@@ -25,7 +25,6 @@
     <link href="{{asset('css/project.css')}}" rel="stylesheet">
     <link href="{{asset('css/btn.css')}}" rel="stylesheet">
     <link href="{{asset('css/progress.css')}}" rel="stylesheet">
-    <link href="{{asset('css/member.css')}}" rel="stylesheet">
     <link href="{{asset('/css/cropper.css') }}" rel="stylesheet">
     <link href="{{asset('css/ascii.css')}}" rel="stylesheet">
     <link href="{{asset('css/ultimate.css')}}" rel="stylesheet">

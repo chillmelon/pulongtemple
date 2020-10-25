@@ -17,6 +17,27 @@
     color: #fff
     -webkit-text-stroke: 0.04rem $main-color
 
+// Button
+.btn
+    color: $main-color
+    border: $main-color 1.5px solid
+    border-radius: 0
+    width: 100%
+    display: inline-block
+    font-family: 'Share Tech Mono', monospace, 'Noto Sans TC', serif
+    padding: 0.5rem 1rem
+
+.btn span
+    display: inline-block
+
+.btn:hover
+    color: $main-hover-color
+    border: $main-hover-color 1.5px solid
+
+.btn:focus
+    box-shadow: none
+
+
 // Border
 .custom-bdr
     border: $border-color 2px solid
@@ -70,11 +91,15 @@
         right: -2px
     // btn
     & > .btn
+        border: none
         font-size: 18px
         font-weight: bold
 
         &:hover
             border: none
+    // input
+    input, textarea
+        width: 90%
 
 .custom-bdr-3d-hover
     &:hover
@@ -121,3 +146,11 @@
     // btn
     .btn
         border: none
+        font-size: 18px
+        font-weight: bold
+
+        &:hover
+            border: none
+    // input
+    input, textarea
+        width: 90%

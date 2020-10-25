@@ -21,8 +21,8 @@
                |___/        \"_____/    (__________)
       </pre>
     </div>
-    <div class="col-8 col-md-6 col-xl-4">
-      <a class="btn" href="/">看看其他專案</a>
+    <div class="col-6 custom-bdr-3d custom-bdr-3d-hover">
+      <a class="btn" href="/">看看其他專案 ➤</a>
     </div>
   </div>
 </div>

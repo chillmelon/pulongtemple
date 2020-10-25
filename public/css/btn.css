@@ -1,35 +1,3 @@
-.logo a .swap-on-hover__front-image {
-    z-index: 9999;
-    transition: opacity .3s ease;
-}
-
-.nav-top:hover a .swap-on-hover__front-image {
-    opacity: 0;
-}
-
-.btn {
-    color: #019858;
-    border: #019858 1.5px solid;
-    border-radius: 0;
-    width: 100%;
-    display: inline-block;
-    font-family: 'Share Tech Mono', monospace,
-                 'Noto Sans TC', serif;
-    padding: 0.5rem 1rem
-}
-
-.btn span {
-    display: inline-block;
-}
-
-.btn:hover {
-    color: #02F78E;
-    border: #02F78E 1.5px solid;
-}
-
-.btn:focus {
-    box-shadow: none;
-}
 
 .nav-link {
     color: #019858 !important;
