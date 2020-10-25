@@ -301,6 +301,7 @@ input[type="number"] {
 }
 
 .logo a {
+  padding: 10px;
   border: 2px solid #ccc;
   border-radius: 50%;
   color: #ccc;
@@ -309,11 +310,12 @@ input[type="number"] {
 }
 
 .logo a span {
+  width: 31px;
   font-family: "M PLUS 1p", sans-serif;
   font-size: 28px;
   line-height: 28px;
-  -webkit-transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
-          transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg);
+  -webkit-transform: translate(-1.5px, -6px) perspective(0.5rem) rotateX(15deg);
+          transform: translate(-1.5px, -6px) perspective(0.5rem) rotateX(15deg);
 }
 
 .logo a:hover, .logo a:focus {

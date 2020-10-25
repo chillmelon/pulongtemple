@@ -129,11 +129,9 @@ $size: 28px
 
 .logo
     padding-left: 1rem
-    // top: 50%
-    // transform: translateY(-50%)
-    // display: inline-block
 
     a
+        padding: 10px
         border: 2px solid $sec-color
         border-radius: 50%
         color: $sec-color
@@ -142,10 +140,11 @@ $size: 28px
         @extend %logo-box-shadow
 
         span
+            width: $size + 3px
             font-family: "M PLUS 1p", sans-serif
             font-size: $size
             line-height: $size
-            transform: translate(-1.5px, -4px) perspective(0.5rem) rotateX(15deg)
+            transform: translate(-1.5px, -6px) perspective(0.5rem) rotateX(15deg)
 
             @extend %logo-text-shadow
 
