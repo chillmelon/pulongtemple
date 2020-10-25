@@ -422,6 +422,12 @@ input[type="number"] {
 .project-content img {
   max-width: 100%;
   height: auto;
+  border-radius: 4px;
+  margin: 1rem 0;
+  max-height: 400px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 @media (min-width: 576px) {
