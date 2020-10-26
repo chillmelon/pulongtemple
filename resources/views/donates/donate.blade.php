@@ -78,7 +78,11 @@
   });
 
   //選取按鈕
-  let base = 50;
+  @if($option_info)
+    let base = {{ $option_info -> price }}
+  @else
+    let base = 50;
+  @endif
 
   //變更金額功能
 
