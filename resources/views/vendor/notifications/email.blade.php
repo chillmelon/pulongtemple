@@ -36,6 +36,7 @@
 <br>
 <br>
 <p>
+  -----------------------------------------------------
   （原本是這樣打算的啦...但都要收了...whatever...
 </p>
 
@@ -52,7 +53,7 @@
     }
 ?>
 @component('mail::button', ['url' => $actionUrl, 'color' => $color])
-驗證信箱
+驗證信箱 / 或重設密碼
 @endcomponent
 @endisset
 
