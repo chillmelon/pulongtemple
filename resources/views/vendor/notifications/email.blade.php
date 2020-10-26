@@ -33,6 +33,11 @@
   為埔里好的事我們都要支持！
 </p>
 
+
+<p>
+  （原本是這樣打算的啦...但都要收了...whatever...
+</p>
+
 {{-- Action Button --}}
 @isset($actionText)
 <?php
