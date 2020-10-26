@@ -121,18 +121,7 @@
   });
 
   //變更金額功能
-  @if ($option_info)
-    let base = {{@$option_info->price}};
-  @else
-    let base = 50;
-  @endif
-
-  // if (isNaN($option_info)) {
-  //   let base = 50;
-  // } else {
-  //   let base = {{ $option_info->price }};
-  // }
-
+  let base = {{$option_info -> price}};
 
   function happy() {
     let amount = document.querySelector('#amount');
@@ -155,7 +144,6 @@
       return Math.ceil(num / 100) * 100;
     }
   }
-
   function increase(amount, increaseAmount) {
     let value = parseInt(amount.value);
     if (value >= base) {
@@ -164,7 +152,6 @@
       amount.value = base;
     }
   }
-  
   function modifyAmount(btnID) {
     let amount = document.querySelector('#amount');
     if (btnID == '#lowest') {
@@ -179,8 +166,6 @@
       }
     }
   }
-
-
   function btnClick(btnID) {
     let btn = document.querySelector(btnID);
     btn.addEventListener('click', () => {
@@ -192,63 +177,5 @@
   btnClick('#cabbage');
   btnClick('#lowest');
   btnClick('#happy');
-
-
-  // function addMarlboro() {
-  //   let amount = document.querySelector('#amount');
-  //   let value = parseInt(amount.value);
-  //   if (value >= base) {
-  //     amount.value = value + 110;
-  //   } else {
-  //     amount.value = base;
-  //   }
-  // }
-
-  // function addCabbage() {
-  //   let amount = document.querySelector('#amount');
-  //   let value = parseInt(amount.value);
-  //   if (value >= base) {
-  //     amount.value = value + 1300;
-  //   } else {
-  //     amount.value = base;
-  //   }
-  // }
-
-  // function lowestAmount() {
-  //   let amount = document.querySelector('#amount');
-  //   amount.value = base;
-  // }
-
-
-
-  // let increase = document.querySelector('#increase');
-  // increase.addEventListener('click', () =>{
-  //   increaseAmount();
-  // });
-  // let decrease = document.querySelector('#decrease');
-  // decrease.addEventListener('click', () =>{
-  //   decreaseAmount();
-  // });
-
-  //選取按鈕
-  // let marlboro = document.querySelector('#marlboro');
-  // marlboro.addEventListener('click', () =>{
-  //   addMarlboro();
-  // });
-
-  // let cabbage = document.querySelector('#cabbage');
-  // cabbage.addEventListener('click', () =>{
-  //   addCabbage();
-  // });
-
-  // let lowest = document.querySelector('#lowest');
-  // lowest.addEventListener('click', () =>{
-  //   lowestAmount();
-  // });
-
-  // let happyButton = document.querySelector('#happy');
-  // happyButton.addEventListener('click', () =>{
-  //   happy();
-  // });
 </script>
 @endsection
