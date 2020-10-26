@@ -31,11 +31,8 @@
               <button type="submit" class="btn">
                 寄出密碼重設信
               </button>
-              @if (session('resent'))
-                <div class="new-email">
-                  認證信已寄出。
-                </div>
-              @endif
+              {{-- need to fix displaying message--}}
+              
             </div>
           </form>
         </div>
