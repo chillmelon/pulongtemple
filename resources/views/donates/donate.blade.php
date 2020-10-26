@@ -77,58 +77,14 @@
   porgressCircle();
   });
 
-  //選取按鈕
-  @if($option_info)
-    let base = {{ $option_info -> price }}
+  //變更金額功能
+  @if($option)
+    let base = {{ $option -> price}};
+  @elseif($option_info)
+    let base = {{ $option_info -> price }};
   @else
     let base = 50;
   @endif
-
-  //變更金額功能
-
-  // function increaseAmount() {
-  //   let amount = document.querySelector('#amount');
-  //   let value = parseInt(amount.value);
-  //   if(value >= base) {
-  //     amount.value = value + 100;
-  //   } else {
-  //     amount.value = base;
-  //   }
-  // }
-  // function decreaseAmount() {
-  //   let amount = document.querySelector('#amount');
-  //   let value = parseInt(amount.value)
-  //   if((value - 100) < base) {
-  //     amount = base;
-  //   } else {
-  //     amount.value = value - 100;
-  //   }
-  // }
-
-  function addMarlboro() {
-    let amount = document.querySelector('#amount');
-    let value = parseInt(amount.value);
-    if(value >= base) {
-      amount.value = value + 110;
-    } else {
-      amount.value = base;
-    }
-  }
-
-  function addCabbage() {
-    let amount = document.querySelector('#amount');
-    let value = parseInt(amount.value);
-    if(value >= base) {
-      amount.value = value + 1300;
-    } else {
-      amount.value = base;
-    }
-  }
-
-  function lowestAmount() {
-    let amount = document.querySelector('#amount');
-    amount.value = base;
-  }
 
   function happy() {
     let amount = document.querySelector('#amount');
@@ -139,7 +95,6 @@
       amount.value = base;
     }
   }
-
   function happyMoney(num) {
     // 如果已經進位到百位整數
     if(Math.floor(num / 100) == num/100) {
@@ -153,6 +108,71 @@
     }
   }
 
+  function increase(amount, increaseAmount) {
+    let value = parseInt(amount.value);
+    if(value >= base) {
+      amount.value = value + increaseAmount;
+    } else {
+      amount.value = base;
+    }
+  }
+  
+  function modifyAmount(btnID) {
+    let amount = document.querySelector('#amount');
+    if(btnID == '#lowest') {
+      amount.value = base;
+    } else if(btnID == '#happy') {
+      happy();
+    } else {
+      if(btnID == '#marlboro') {
+        increase(amount, 110);
+      } else if(btnID == '#cabbage') {
+        increase(amount, 1300);
+      }
+    }
+  }
+
+
+  function btnClick(btnID) {
+    let btn = document.querySelector(btnID);
+    btn.addEventListener('click', () => {
+      modifyAmount(btnID);
+    });
+  }
+
+  btnClick('#marlboro');
+  btnClick('#cabbage');
+  btnClick('#lowest');
+  btnClick('#happy');
+
+
+  // function addMarlboro() {
+  //   let amount = document.querySelector('#amount');
+  //   let value = parseInt(amount.value);
+  //   if(value >= base) {
+  //     amount.value = value + 110;
+  //   } else {
+  //     amount.value = base;
+  //   }
+  // }
+
+  // function addCabbage() {
+  //   let amount = document.querySelector('#amount');
+  //   let value = parseInt(amount.value);
+  //   if(value >= base) {
+  //     amount.value = value + 1300;
+  //   } else {
+  //     amount.value = base;
+  //   }
+  // }
+
+  // function lowestAmount() {
+  //   let amount = document.querySelector('#amount');
+  //   amount.value = base;
+  // }
+
+
+
   // let increase = document.querySelector('#increase');
   // increase.addEventListener('click', () =>{
   //   increaseAmount();
@@ -162,25 +182,26 @@
   //   decreaseAmount();
   // });
 
-  let marlboro = document.querySelector('#marlboro');
-  marlboro.addEventListener('click', () =>{
-    addMarlboro();
-  });
+  //選取按鈕
+  // let marlboro = document.querySelector('#marlboro');
+  // marlboro.addEventListener('click', () =>{
+  //   addMarlboro();
+  // });
 
-  let cabbage = document.querySelector('#cabbage');
-  cabbage.addEventListener('click', () =>{
-    addCabbage();
-  });
+  // let cabbage = document.querySelector('#cabbage');
+  // cabbage.addEventListener('click', () =>{
+  //   addCabbage();
+  // });
 
-  let lowest = document.querySelector('#lowest');
-  lowest.addEventListener('click', () =>{
-    lowestAmount();
-  });
+  // let lowest = document.querySelector('#lowest');
+  // lowest.addEventListener('click', () =>{
+  //   lowestAmount();
+  // });
 
-  let happyButton = document.querySelector('#happy');
-  happyButton.addEventListener('click', () =>{
-    happy();
-  });
-
+  // let happyButton = document.querySelector('#happy');
+  // happyButton.addEventListener('click', () =>{
+  //   happy();
+  // });
 </script>
 @endsection
+
