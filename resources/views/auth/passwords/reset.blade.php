@@ -1,4 +1,4 @@
-@extends('auth.login-button')
+@extends('auth.no-login-button')
 
 @section('body')
 <div class="container">
