@@ -111,7 +111,7 @@
     font-size: 18px;
 }
 
-.donated {
+/* .donated {
     font-family: 'Noto Serif TC', serif;
     font-style: italic;
     text-align: center;
@@ -125,7 +125,7 @@
     0% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
     50% {text-shadow: 0 0 1px #00FFFF, 0 0 5px #00FFFF;}
     100% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
-}
+} */
 
 /* Plan */
 .plan {
@@ -173,10 +173,10 @@
         border-color: rgb(1, 126, 72);
     } */
 
-    .intro {
+    /* .intro {
         padding: 16px;
         border-left: none;
-    }
+    } */
 
     .update-content {
         max-height: 600px;

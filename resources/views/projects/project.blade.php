@@ -3,8 +3,8 @@
 @section("body")
 	{{--判斷是否曾贊助過--}}
 	@if($project->donated)
-		<div class="donated p-2">
-      <span>您是這個專案的贊助者，感謝您！</span>
+		<div class="shadow-title text-center pt-5">
+      <h4><I>您是這個專案的贊助者，感謝您！</I></h4>
     </div>
 	@endif
 	{{--done--}}
@@ -19,10 +19,10 @@
 		  <a class="nav-link @yield('content-active')" href="/projects/{{ $project->id }}">專案內容</a>
       </li>
       <li class="nav-item">
-		  <a class="nav-link @yield('updates-active')" href="/projects/{{ $project->id }}/updates">更新</a>
+        <a class="nav-link @yield('comments-active')" href="/projects/{{ $project->id }}/comments">留言</a>
       </li>
       <li class="nav-item">
-		  <a class="nav-link @yield('comments-active')" href="/projects/{{ $project->id }}/comments">留言</a>
+      <a class="nav-link @yield('updates-active')" href="/projects/{{ $project->id }}/updates">更新</a>
       </li>
       <li class="nav-item">
 		  <a class="nav-link @yield('faq-active')" href="/projects/{{ $project->id }}/faq">常見問答</a>

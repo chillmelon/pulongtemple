@@ -8,15 +8,21 @@ active
     <div class='col-12 col-lg-8 order-1 order-lg-0'>
       <!-- comment -->
       <div class="cmt-all">
-        @foreach($randFive as $comment)
-        <div class="cmt pb-4">
-          <img class="cmt-img" src="{{asset('storage/'.$comment[ 'avatar' ])}}">
-          <div class="cmt-content">
-            <a class="usr-name">{{ $comment[ 'name' ] }}</a><br>{{ $comment[ 'comment' ] }}
+        @if ($randFive->count()==0)
+          <div class="pt-5 text-center thd-color">
+            <h5>尚無留言，等候您的垂青。</h5>
           </div>
-        </div>
-        <hr class="hr-prime">
-        @endforeach
+        @else
+          @foreach($randFive as $comment)
+            <div class="cmt pb-4">
+              <img class="cmt-img" src="{{asset('storage/'.$comment[ 'avatar' ])}}">
+              <div class="cmt-content">
+                <a class="usr-name">{{ $comment[ 'name' ] }}</a><br>{{ $comment[ 'comment' ] }}
+              </div>
+            </div>
+            <hr class="hr-prime">
+          @endforeach
+        @endif
       </div>
       <!-- user gallery -->
       <div class="gallery pb-4">

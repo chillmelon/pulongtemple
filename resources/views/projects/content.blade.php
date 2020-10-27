@@ -25,7 +25,7 @@
       </div>
     </div>
     <!-- intro -->
-    <div class="intro col-sm-12 col-lg-4">
+    <div class="col-sm-12 col-lg-4 p-3">
       <!-- title -->
       <div class="title">
         <h3>
@@ -77,9 +77,9 @@
       </div>
       <hr class="hr-prime">
       <!-- description -->
-      <div class="description pt-2 pb-3 my-auto">
+      <div class="description pt-2 pb-3">
         <p class="m-0">
-          {{ $project->summary }}
+          <b>{{ $project->summary }}</b>
         </p>
       </div>
     </div>
