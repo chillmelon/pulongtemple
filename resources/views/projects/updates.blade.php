@@ -14,10 +14,10 @@ active
         </div>
       @else
         @foreach($project->updates as $update)
-          <div class="update custom-bdr">
+          <div class="custom-bdr p-3 mb-4">
             <h4>{{$update->title}}</h4>
             <span>{{$update->created_at}}</span>
-            <div class="update-content">
+            <div class="update-content py-4">
               {!!$update->content!!}
             </div>
             <div class="more-btn ml-auto">

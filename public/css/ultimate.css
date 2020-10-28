@@ -483,6 +483,18 @@ input[type="number"] {
   }
 }
 
+/*update*/
+.update-content {
+  max-width: 100%;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.update-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .shadow-title {
   color: #ccc;
   text-shadow: 0.2px 0.2px #019858, 0.4px 0.4px #019858, 0.6px 0.6px #019858, 0.8px 0.8px #019858, 1px 1px #019858;

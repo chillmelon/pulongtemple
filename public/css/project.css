@@ -24,23 +24,6 @@
 }
 
 
-/*update*/
-.update {
-    padding: 16px;
-    margin-bottom: 24px;
-}
-
-.update img {
-    max-width: 100%;
-    height: auto;
-}
-
-.update-content {
-    max-width: 100%;
-    max-height: 450px;
-    overflow: hidden;
-}
-
 
 /*faq*/
 .qa {

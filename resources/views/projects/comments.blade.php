@@ -10,7 +10,7 @@ active
       <div class="cmt-all">
         @if ($randFive->count()==0)
           <div class="pt-5 text-center thd-color">
-            <h5>尚無留言，等候您的垂青。</h5>
+            <h5>尚無留言，等候您的垂青。  </h5>
           </div>
         @else
           @foreach($randFive as $comment)
