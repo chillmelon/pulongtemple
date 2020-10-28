@@ -501,6 +501,10 @@ input[type="number"] {
   height: auto;
 }
 
+.update-content a, .update-content-sm a {
+  overflow-wrap: break-word;
+}
+
 .update-content-sm {
   max-height: 400px;
   overflow: hidden;
