@@ -20,9 +20,9 @@ active
             <div class="update-content py-3">
               {!!$update->content!!}
             </div>
-            <div class="more-btn d-flex mt-3">
+            {{-- <div class="more-btn d-flex mt-3">
               <a class="btn ml-auto" href="/updates/{{$update->id}}">更多內容 ➤</a>
-            </div>
+            </div> --}}
           </div>
         @endforeach
       @endif
