@@ -11,7 +11,7 @@ html, body {
   background-color: #000;
   font-family: "Noto Sans TC", "Noto Serif TC", serif;
   font-size: 16px;
-  color: #ccc;
+  color: #bebebe;
 }
 
 a {
@@ -34,7 +34,7 @@ hr {
   padding-left: 0.5rem;
   line-height: 2rem;
   background-color: #000;
-  color: #ccc;
+  color: #bebebe;
   border: rgba(1, 126, 72, 0.4) 1px solid;
 }
 
@@ -315,9 +315,9 @@ input[type="number"] {
 
 .logo a {
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #bebebe;
   border-radius: 50%;
-  color: #ccc;
+  color: #bebebe;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -403,7 +403,7 @@ input[type="number"] {
 }
 
 .white-btn {
-  color: #ccc;
+  color: #bebebe;
 }
 
 .white-btn:hover {
@@ -511,7 +511,7 @@ input[type="number"] {
 }
 
 .shadow-title {
-  color: #ccc;
+  color: #bebebe;
   text-shadow: 0.2px 0.2px #019858, 0.4px 0.4px #019858, 0.6px 0.6px #019858, 0.8px 0.8px #019858, 1px 1px #019858;
   font-family: "Noto Serif TC", serif;
 }
@@ -615,7 +615,7 @@ input[type="number"] {
 
 .custom-form .form-title {
   padding: .5rem .75rem;
-  color: #ccc;
+  color: #bebebe;
 }
 
 .custom-form textarea {
@@ -709,5 +709,10 @@ input[type="number"] {
 
 .history .plan {
   width: 60%;
+}
+
+.announce {
+  background-color: rgba(55, 55, 55, 0.5);
+  border-radius: 4px;
 }
 /*# sourceMappingURL=ultimate.css.map */
