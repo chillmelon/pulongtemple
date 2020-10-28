@@ -15,7 +15,7 @@ active
         </div>
       @else
         @foreach($project->faqs as $faq)
-          <div class="custom-bdr qa">
+          <div class="custom-bdr-3d">
           <h4>Q{{$loop->index + 1}}. {{$faq->question}}</h4>
           <h6>更新於 {{$faq->updated_at}}</h6>
           <span class="answer">{{$faq->answer}}</span>
