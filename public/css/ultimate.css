@@ -103,6 +103,15 @@ input[type="number"] {
           box-shadow: none;
 }
 
+.more-btn {
+  -webkit-box-shadow: 0 -2rem 3rem #000;
+          box-shadow: 0 -2rem 3rem #000;
+}
+
+.more-btn .btn {
+  max-width: 8rem;
+}
+
 .custom-bdr, .custom-bdr-3d, .custom-bdr-3d::before, .custom-bdr-3d::after {
   border: #01814A 2px solid;
   border-radius: 0;
@@ -483,16 +492,18 @@ input[type="number"] {
   }
 }
 
-/*update*/
-.update-content {
+.update-content img, .update-content-sm img {
+  margin: 1rem 0;
+  border-radius: 4px;
   max-width: 100%;
-  max-height: 450px;
-  overflow: hidden;
+  max-height: 400px;
+  width: auto;
+  height: auto;
 }
 
-.update-content img {
-  max-width: 100%;
-  height: auto;
+.update-content-sm {
+  max-height: 200px;
+  overflow: hidden;
 }
 
 .shadow-title {

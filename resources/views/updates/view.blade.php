@@ -8,7 +8,7 @@
       <div>
         <span>{{$update->created_at}}</span>
       </div>
-      <div class="update-content py-4">
+      <div class="update-content py-3">
 		  {!!$update->content!!}
       </div>
     </div>
