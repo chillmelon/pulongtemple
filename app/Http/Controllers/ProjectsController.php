@@ -20,8 +20,19 @@ class ProjectsController
     // 專案頁面
 	public function show($project_id)
 	{
-		$project = $this->projectService->detail($project_id);
-		return view('projects.content',['project'=>$project]);
+        $project = $this->projectService->detail($project_id);
+        $project = $this->projectService->detail($project_id);
+		$topFive = $this->donateService->topFive($project_id);
+		$randFive = $this->donateService->randFive($project_id);
+		$gallary = $this->donateService->gallary($project_id);
+		$data = [
+			'project' => $project,
+			'topFive' => $topFive,
+			'randFive' => $randFive,
+			'gallary' => $gallary
+		];
+        return view('projects.content',$data);
+		// return view('projects.content',['project'=>$project]);
 	}
     public function showUpdates($project_id)
     {
