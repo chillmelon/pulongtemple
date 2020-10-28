@@ -17,7 +17,7 @@ active
           <div class="custom-bdr-3d p-3 mb-4 p-lg-4">
             <h4>{{$update->title}}</h4>
             <span>{{$update->created_at}}</span>
-            <div class="update-content-sm py-3">
+            <div class="update-content py-3">
               {!!$update->content!!}
             </div>
             <div class="more-btn d-flex mt-3">
