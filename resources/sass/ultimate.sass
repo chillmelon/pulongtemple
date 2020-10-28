@@ -498,3 +498,13 @@ $size: 28px
 .announce
     background-color: $sec-bg-color
     border-radius: 4px
+
+    height: 0
+    visibility: hidden
+
+@media ( min-width: 576px )
+    .announce
+        height: auto
+        visibility: visible
+        padding: 1rem
+        margin-bottom: 3rem

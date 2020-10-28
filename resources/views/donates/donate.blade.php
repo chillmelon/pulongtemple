@@ -7,7 +7,7 @@
       @auth
         <div class="row justify-content-center">
           {{-- Temporary Announce --}}
-          <div class="announce col-12 p-3 mb-5">
+          <div class="announce col-12">
             <h4><b>臨時公告：非手機版網頁信用卡付款失敗</b></h4>
             <p>目前因收款商（綠界金流 ECPay）政策調整因素，導致非手機版網頁出現信用卡付款無法使用的問題。</p>
             <a href="https://www.ecpay.com.tw/Announcement/DetailAnnouncement?nID=3925&fbclid=IwAR0DppNzDvskmfVHqkKRnB9tY3hBv8a4EOr3Vfb-d0yvsABzQ7Fg0OMfV1c">綠界站內付調整服務公告</a>
@@ -16,7 +16,7 @@
               <li>1. 使用手機板網頁。</li>
               <li>2. 使用 超商 或 ATM 付款。</li>
             </ul>
-            <p>非常抱歉造成各位使用者的困擾，埔隆宮祝您順心！</p>
+            <p><I>非常抱歉造成各位使用者的困擾，埔隆宮祝您順心！</I></p>
           </div>
           <div class="col-lg-4 mt-lg-4">
             {{-- Project status --}}
