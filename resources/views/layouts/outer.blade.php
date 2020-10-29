@@ -20,6 +20,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     {{-- js --}}
     <script src="{{ asset('/js/script.js') }}"></script>
+    @yield('script')
     <!-- custom -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/project.css')}}" rel="stylesheet">
