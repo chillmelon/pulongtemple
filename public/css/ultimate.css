@@ -558,6 +558,7 @@ input[type="number"] {
 .rank img {
   width: 48px;
   height: 48px;
+  border-radius: 4px;
 }
 
 @media (max-width: 410px) {
@@ -581,6 +582,7 @@ input[type="number"] {
 .gallery img {
   width: 60px;
   height: 60px;
+  border-radius: 4px;
 }
 
 .amount-area {

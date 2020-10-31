@@ -9,7 +9,7 @@ class Projects extends Model
      'content',
     ];
     public function donates(){
-		return $this->hasMany('App\Donates','project_id');
+		return $this->hasMany('App\Donates','project_id')->where('paid', 1)->with('user');
 	}
 	public function user(){
 		return $this->belongsTo('App\User','user_id');

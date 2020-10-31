@@ -38,6 +38,7 @@ class ProjectService
 	 return $option;
 	}
 
+	// 判斷已登入使用者是否贊助過專案
   public function donated($project=null){
     $donated = false;
     if (auth()->user()){
@@ -46,6 +47,7 @@ class ProjectService
     }
     return $donated;
   }
+
   public function userProjects($user_id){
     $projects = $this->projectRepository->findByUser($user_id)
                                         ->map(function($project){
