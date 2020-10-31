@@ -3,8 +3,8 @@
 @section("body")
   {{--判斷是否曾贊助過--}}
   @if($project->donated)
-    <div class="shadow-title text-center pt-5">
-      <h4><I>您是這個專案的贊助者，感謝您！</I></h4>
+    <div class="shadow-title text-center pt-4">
+      <h5><I>您是這個專案的贊助者，感謝您！</I></h5>
     </div>
   @endif
   {{--done--}}
