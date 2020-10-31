@@ -4,58 +4,30 @@ use App\Services\ProjectService;
 use App\Services\DonateService;
 class ProjectsController
 {
-    // 首頁畫面
-    public function __construct(
-        ProjectService $projectService,
-        DonateService $donateService
-    ){
-        $this->projectService = $projectService;
-        $this->donateService = $donateService;
-    }
-    public function index()
-    {
-        $projects = $this->projectService->simple();
-        return view('projects.index', ['projects'=>$projects]);
-    }
-    // 專案頁面
+	// 首頁畫面
+	public function __construct(
+		ProjectService $projectService,
+		DonateService $donateService
+	){
+		$this->projectService = $projectService;
+		$this->donateService = $donateService;
+	}
+	public function index()
+	{
+		$projects = $this->projectService->simple();
+		return view('projects.index', ['projects'=>$projects]);
+	}
+	// 專案頁面
 	public function show($project_id)
 	{
-        $project = $this->projectService->detail($project_id);
-        $project = $this->projectService->detail($project_id);
-		$topFive = $this->donateService->topFive($project_id);
-		$randFive = $this->donateService->randFive($project_id);
-		$gallary = $this->donateService->gallary($project_id);
-		$data = [
-			'project' => $project,
-			'topFive' => $topFive,
-			'randFive' => $randFive,
-			'gallary' => $gallary
-		];
-        return view('projects.content',$data);
-		// return view('projects.content',['project'=>$project]);
-	}
-    public function showUpdates($project_id)
-    {
-        $project = $this->projectService->detail($project_id);
-        return view('projects.updates',['project'=>$project]);
-    }
-    public function showComments($project_id)
-    {
 		$project = $this->projectService->detail($project_id);
+		$comments = $project->donates->whereNotNull('comment')->sortByDesc('created_at');
 		$topFive = $this->donateService->topFive($project_id);
-		$randFive = $this->donateService->randFive($project_id);
-		$gallary = $this->donateService->gallary($project_id);
 		$data = [
 			'project' => $project,
+			'comments' => $comments,
 			'topFive' => $topFive,
-			'randFive' => $randFive,
-			'gallary' => $gallary
 		];
-        return view('projects.comments',$data);
-    }
-    public function showFaqs($project_id)
-    {
-        $project = $this->projectService->detail($project_id);
-        return view('projects.faqs',['project'=>$project]);
-    }
+		return view('projects.content',$data);
+	}
 }

@@ -43,6 +43,7 @@ class DonateService
 																->take(15);
 		return $top;
 	}
+	// this randFive function is no longer used
 	// find random 5 comments for a particular project
 	public function randFive($project_id=null){
 		$donates = $this->donateRepository->findByProject($project_id)->whereNotNull('comment');
