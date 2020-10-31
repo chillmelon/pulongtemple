@@ -10,18 +10,19 @@
     <title>PulongTemple</title>
     {{-- favicon --}}
     <link rel=icon href="{{asset('image/logo_48x48.png')}}" sizes="48x48" type="image/png">
+    {{-- jQuery --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
     {{-- cropper --}}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="{{ asset('/js/cropper.js') }}"></script>
-    <!-- bootstrap -->
+    {{-- jquery.easing.1.3.js --}}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    {{-- bootstrap --}}
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <!-- jquery.easing.1.3.js -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     {{-- js --}}
     <script src="{{ asset('/js/script.js') }}"></script>
     @yield('script')
-    <!-- custom -->
+    {{-- custom --}}
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/project.css')}}" rel="stylesheet">
     <link href="{{asset('css/btn.css')}}" rel="stylesheet">
