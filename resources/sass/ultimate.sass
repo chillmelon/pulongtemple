@@ -3,7 +3,7 @@ $main-bg-color: #000
 $sec-bg-color: rgba(55, 55, 55, 0.5)
 $main-color: #019858
 $main-hover-color: #02F78E
-$sec-color: #ccc
+$sec-color: #bebebe
 $sec-hover-color: #fff
 $thd-color: #888
 $border-color: #01814A
@@ -24,7 +24,7 @@ html, body
     background-color: $main-bg-color
     font-family: "Noto Sans TC", "Noto Serif TC", serif
     font-size: 16px
-    color: #ccc
+    color: $sec-color
 
 a
     color: $main-color
@@ -551,3 +551,18 @@ $size: 28px
         font-weight: bold
     .plan
         width: 60%
+
+// announcement
+.announce
+    background-color: $sec-bg-color
+    border-radius: 4px
+
+    height: 0
+    visibility: hidden
+
+@media ( min-width: 576px )
+    .announce
+        height: auto
+        visibility: visible
+        padding: 1rem
+        margin-bottom: 3rem
