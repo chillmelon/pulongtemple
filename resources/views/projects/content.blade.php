@@ -130,134 +130,142 @@
 
     {{-- Project Content Page --}}
     <div class="container-fluid">
-      <div id="a" class='current row bottom-content'>
-        <div class='col-12 col-lg-8'>
-          <div class="project-content">
-            {!!$project->content!!}
-          </div>
-          <div class="expand-project">
-            <div class="btn">▼        展開內容        ▼</div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-4">
-          <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/{{$project->id}}'">
-            <div class="serif-tc p-4">
-              <h3 class="shadow-title"><I> 純贊助 </I></h3>
-              <div class="ff-2P pt-2">NT$ ???</div>
-              <div class="pt-2">已被贊助 {{$project->donors}} 次</div>
-              <div class="select-content"><span>隨喜樂捐，不求回報。</span></div>
+      <div class="current bottom-content">
+        <div class='row'>
+          <div class='col-12 col-lg-8'>
+            <div class="project-content">
+              {!!$project->content!!}
+            </div>
+            <div class="expand-project">
+              <div class="btn">▼        展開內容        ▼</div>
             </div>
           </div>
-          @foreach($project->options->sortByDesc('order') as $option)
-          <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/option/{{$option->id}}'">
-            <div class="serif-tc p-4">
-              <h3 class="shadow-title"><I> {{$option->title}} </I></h3>
-              <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
-              <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
-              <div class="select-content"><span>{{$option->content}}</span></div>
+          <div class="col-12 col-lg-4">
+            <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/{{$project->id}}'">
+              <div class="serif-tc p-4">
+                <h3 class="shadow-title"><I> 純贊助 </I></h3>
+                <div class="ff-2P pt-2">NT$ ???</div>
+                <div class="pt-2">已被贊助 {{$project->donors}} 次</div>
+                <div class="select-content"><span>隨喜樂捐，不求回報。</span></div>
+              </div>
             </div>
+            @foreach($project->options->sortByDesc('order') as $option)
+            <div class="custom-bdr-3d custom-bdr-3d-hover" onclick="location.href='/donate/option/{{$option->id}}'">
+              <div class="serif-tc p-4">
+                <h3 class="shadow-title"><I> {{$option->title}} </I></h3>
+                <div class="ff-2P pt-2">NT$ {{$option->price}}</div>
+                <div class="pt-2">已被贊助 {{$option->sold}} 次</div>
+                <div class="select-content"><span>{{$option->content}}</span></div>
+              </div>
+            </div>
+            @endforeach
           </div>
-          @endforeach
         </div>
       </div>
     </div>
 
     {{-- Comment Page --}}
     <div class="container-fluid">
-      <div class='row bottom-content'>
-        <div class='col-12 col-lg-8 order-1 order-lg-0 mt-lg-5'>
-          @if ($randFive->count()==0)
-            <div class="pt-5 text-center thd-color">
-              <h5>尚無留言，等候您的垂青。  </h5>
-            </div>
-          @else
-            @foreach($randFive as $comment)
-              <div class="comment pb-3">
-                <div class="usr-img-box d-inline-block">
-                  {{-- img --}}
-                  <img src="{{asset('storage/'.$comment[ 'avatar' ])}}">
-                </div>
-                <div class= "comment-in d-inline-block pl-3 pt-1">
-                  {{-- name --}}
-                  <h6 class=""><b>{{ $comment[ 'name' ] }}</b></h5>
-                  {{-- content --}}
-                  <p class="pt-1">{{ $comment[ 'comment' ] }}</p>
-                </div>
-                <div>
-                  <hr class="hr-prime">
-                </div>
+      <div class="bottom-content">
+        <div class='row'>
+          <div class='col-12 col-lg-8 order-1 order-lg-0 mt-lg-5'>
+            @if ($randFive->count()==0)
+              <div class="pt-5 text-center thd-color">
+                <h5>尚無留言，等候您的垂青。  </h5>
               </div>
-            @endforeach
-          @endif
-          {{-- user gallery --}}
-          <div class="gallery py-4">
-            @foreach($gallary as $icon)
-            <div class="p-2" style="display: inline-block"><img src="{{asset('storage/'.$icon[ 'avatar' ])}}"></div>
-            @endforeach
-          </div>
-        </div>
-        {{-- rank --}}
-        <div class="col-12 col-lg-4 order-0 order-lg-1 pb-5 mt-5">
-          @foreach($topFive as $donater)
-          <div class="rank d-flex custom-bdr-3d p-3 mt-2">
-            <h5 class="shadow-title pr-2 my-auto"><I>{{$loop->index+1}}.</I></h5>
-            <div class="d-flex">
-              {{-- img --}}
-              <img class="ml-2 my-auto" src="{{asset('storage/'.$donater[ 'avatar' ])}}">
-              {{-- name --}}
-              <div class="usr-name ml-3 my-auto">{{$donater[ 'name' ]}}</div>
+            @else
+              @foreach($randFive as $comment)
+                <div class="comment pb-3">
+                  <div class="usr-img-box d-inline-block">
+                    {{-- img --}}
+                    <img src="{{asset('storage/'.$comment[ 'avatar' ])}}">
+                  </div>
+                  <div class= "comment-in d-inline-block pl-3 pt-1">
+                    {{-- name --}}
+                    <h6 class=""><b>{{ $comment[ 'name' ] }}</b></h5>
+                    {{-- content --}}
+                    <p class="pt-1">{{ $comment[ 'comment' ] }}</p>
+                  </div>
+                  <div>
+                    <hr class="hr-prime">
+                  </div>
+                </div>
+              @endforeach
+            @endif
+            {{-- user gallery --}}
+            <div class="gallery py-4">
+              @foreach($gallary as $icon)
+              <div class="p-2" style="display: inline-block"><img src="{{asset('storage/'.$icon[ 'avatar' ])}}"></div>
+              @endforeach
             </div>
-            {{-- amount --}}
-            <div class="text-nowrap my-auto ml-auto"><b>NT$ {{$donater[ 'amount' ]}}</b></div>
           </div>
-          @endforeach
+          {{-- rank --}}
+          <div class="col-12 col-lg-4 order-0 order-lg-1 pb-5 mt-5">
+            @foreach($topFive as $donater)
+            <div class="rank d-flex custom-bdr-3d p-3 mt-2">
+              <h5 class="shadow-title pr-2 my-auto"><I>{{$loop->index+1}}.</I></h5>
+              <div class="d-flex">
+                {{-- img --}}
+                <img class="ml-2 my-auto" src="{{asset('storage/'.$donater[ 'avatar' ])}}">
+                {{-- name --}}
+                <div class="usr-name ml-3 my-auto">{{$donater[ 'name' ]}}</div>
+              </div>
+              {{-- amount --}}
+              <div class="text-nowrap my-auto ml-auto"><b>NT$ {{$donater[ 'amount' ]}}</b></div>
+            </div>
+            @endforeach
+          </div>
         </div>
       </div>
     </div>
 
     {{-- Update Page --}}
     <div class="container-fluid">
-      <div class='row bottom-content'>
-        <div class='col-12 col-lg-8'>
-          @if($project->updates->count()==0)
-            <div class="pt-5 text-center thd-color">
-              <h5>本專案尚無更新，請靜候佳音。</h5>
-            </div>
-          @else
-            @foreach($project->updates as $update)
-              <div class="custom-bdr-3d p-3 mb-4 p-lg-4">
-                <h4>{{$update->title}}</h4>
-                <span>{{$update->created_at}}</span>
-                <div class="update-content py-3">
-                  {!!$update->content!!}
-                </div>
-                {{-- <div class="more-btn d-flex mt-3">
-                  <a class="btn ml-auto" href="/updates/{{$update->id}}">更多內容 ➤</a>
-                </div> --}}
+      <div class="bottom-content">
+        <div class='row'>
+          <div class='col-12 col-lg-8'>
+            @if($project->updates->count()==0)
+              <div class="pt-5 text-center thd-color">
+                <h5>本專案尚無更新，請靜候佳音。</h5>
               </div>
-            @endforeach
-          @endif
+            @else
+              @foreach($project->updates as $update)
+                <div class="custom-bdr-3d p-3 mb-4 p-lg-4">
+                  <h4>{{$update->title}}</h4>
+                  <span>{{$update->created_at}}</span>
+                  <div class="update-content py-3">
+                    {!!$update->content!!}
+                  </div>
+                  {{-- <div class="more-btn d-flex mt-3">
+                    <a class="btn ml-auto" href="/updates/{{$update->id}}">更多內容 ➤</a>
+                  </div> --}}
+                </div>
+              @endforeach
+            @endif
+          </div>
         </div>
       </div>
     </div>
     
     {{-- FAQ page --}}
     <div class="container-fluid">
-      <div class='row bottom-content'>
-        <div class='col-12 col-lg-8'>
-          @if ($project->faqs->count()==0)
-            <div class="pt-5 text-center thd-color">
-              <h5>本專案尚無問答，有任何疑惑請聯絡提案人！</h5>
-            </div>
-          @else
-            @foreach($project->faqs as $faq)
-              <div class="custom-bdr-3d p-3">
-              <h4>Q{{$loop->index + 1}}. {{$faq->question}}</h4>
-              <h6>更新於 {{$faq->updated_at}}</h6>
-              <span class="answer">{{$faq->answer}}</span>
+      <div class="bottom-content">
+        <div class='row'>
+          <div class='col-12 col-lg-8'>
+            @if ($project->faqs->count()==0)
+              <div class="pt-5 text-center thd-color">
+                <h5>本專案尚無問答，有任何疑惑請聯絡提案人！</h5>
               </div>
-            @endforeach
-          @endif
+            @else
+              @foreach($project->faqs as $faq)
+                <div class="custom-bdr-3d p-3">
+                <h4>Q{{$loop->index + 1}}. {{$faq->question}}</h4>
+                <h6>更新於 {{$faq->updated_at}}</h6>
+                <span class="answer">{{$faq->answer}}</span>
+                </div>
+              @endforeach
+            @endif
+          </div>
         </div>
       </div>
     </div>
@@ -365,8 +373,8 @@
     pages = document.getElementById('subPage').getElementsByClassName('bottom-content');
 
     pw.on('before', function (m, n) {
-      pages[m].className = 'row bottom-content';
-      pages[n].className = 'current row bottom-content';
+      pages[m].className = 'bottom-content';
+      pages[n].className = 'current bottom-content';
     });
 
     // pw.on('after', function () {
@@ -381,9 +389,9 @@
       pages[m].animate({
         opacity: 0
       }, 600);
-      pages[n].animate({
-        opacity: 1
-      }, 600);
+      // pages[n].animate({
+      //   opacity: 1
+      // }, 600);
     });
 
   </script>

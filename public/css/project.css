@@ -46,21 +46,6 @@
     padding: 8px 4px;
 }
 
-/* .donated {
-    font-family: 'Noto Serif TC', serif;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 4px;
-    color: white;
-    text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;
-    animation: neon-shine 5s infinite;
-}
-
-@keyframes neon-shine {
-    0% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
-    50% {text-shadow: 0 0 1px #00FFFF, 0 0 5px #00FFFF;}
-    100% {text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF;}
-} */
 
 /* Plan */
 .plan {
