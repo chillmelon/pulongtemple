@@ -366,11 +366,11 @@
 
     // on page load
     $(function() {
-      resetHeight();
-      // resetMT();
+      // resetHeight();
+      resetMT();
       
       // Remove footer in outer.blade
-      $('footer').remove();
+      // $('footer').remove();
     });
 
     pages = document.getElementById('subPage').getElementsByClassName('bottom-content');
@@ -385,8 +385,8 @@
     // });
 
     pw.on('before', function () {
-      // resetMT(1);
-      resetHeight();
+      resetMT(1);
+      // resetHeight();
     });
 
 
@@ -400,15 +400,15 @@
     // on browser resize...
     $(window).resize(function () {
       porgressCircle();
-      resetHeight();
-      // resetMT();
+      // resetHeight();
+      resetMT();
     });
 
     // Expand project content
     $(".expand-project").click(function () {
       $(".project-content").css("height", "auto");
-      resetHeight();
-      // resetMT();
+      // resetHeight();
+      resetMT();
       $(".expand-project").hide();
     });
   </script>
