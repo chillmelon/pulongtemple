@@ -6,7 +6,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6">
-      <div class="custom-bdr-3d dashboard p-4">
+      <div class="custom-bdr-3d dashboard p-4" style="margin-top: 5rem">
         <h2>{{ auth()->user()['name'] }}</h2>
         <div class="pt-4">
           <h6 style="color: gray">點擊照片更換大頭貼</h6>

@@ -366,23 +366,27 @@
 
     // on page load
     $(function() {
-      // resetHeight();
-      resetMT();
+      resetHeight();
+      // resetMT();
+      
+      // Remove footer in outer.blade
+      $('footer').remove();
     });
 
     pages = document.getElementById('subPage').getElementsByClassName('bottom-content');
-
+    // Current Class
     pw.on('before', function (m, n) {
       pages[m].className = 'bottom-content';
       pages[n].className = 'current bottom-content';
     });
 
     // pw.on('after', function () {
-    //   resetHeight();
+      // resetHeight();
     // });
 
     pw.on('before', function () {
-      resetMT(1);
+      // resetMT(1);
+      resetHeight();
     });
 
 
@@ -396,15 +400,15 @@
     // on browser resize...
     $(window).resize(function () {
       porgressCircle();
-      // resetHeight();
-      resetMT();
+      resetHeight();
+      // resetMT();
     });
 
     // Expand project content
     $(".expand-project").click(function () {
       $(".project-content").css("height", "auto");
-      // resetHeight();
-      resetMT();
+      resetHeight();
+      // resetMT();
       $(".expand-project").hide();
     });
   </script>

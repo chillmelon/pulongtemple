@@ -1,8 +1,8 @@
 @extends('auth.no-login-button')
 @section('body')
-<div class="container-fluid bottom-content">
+<div class="container">
   <div class="row justify-content-center">
-    <div class="p-4 fs-18 long-text">
+    <div class="p-4 fs-18 long-text mt-5">
       <h3>隱私權政策</h3>
       <p>
         <a href="http://pulongtemple.com/">pulongtemple.com</a> 為埔隆宮( 以下簡稱『埔隆宮募資平台』) 所經營管理之網路平台（以下稱「本網站」），我們對於每位使用者的隱私權相當重視，將依本政策及個人資料保護法規定，蒐集、利用、處理與保護您的個人資料，也希望您在使用本平台之服務前，能夠詳細閱讀下列說明，並確實遵守，謝謝。

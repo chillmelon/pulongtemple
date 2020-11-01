@@ -9,19 +9,14 @@
     margin: 0;
 }
 
-.img-min {
-    padding: 16px;
-    width: 240px;
-    height: 160px;
-}
 
 
-/*Min-top Component*/
+
 
 .bottom-content {
     color: #BEBEBE;
-    /* padding-top: 2rem; */
-    margin: 1rem 0 6rem;
+    margin: 1rem 0 0;
+    padding-bottom: 6rem;
 }
 
 
@@ -46,11 +41,6 @@
     padding: 8px 4px;
 }
 
-
-/* Plan */
-.plan {
-    /* font-family: 'Noto Serif TC', serif; */
-}
 
 /*Media Query*/
 
@@ -79,7 +69,8 @@
     }
 
     .bottom-content {
-      margin: 3rem 40px 6rem;
+      margin: 3rem 40px 0;
+      padding-bottom: 6rem;
     }
 
     .img-main {
@@ -102,10 +93,7 @@
     }
 
     .bottom-content {
-        margin: 3rem 150px 6rem;
-    }
-
-    .footer {
-        padding: 56px 150px;
+        margin: 3rem 150px 0;
+        padding-bottom: 6rem;
     }
 }

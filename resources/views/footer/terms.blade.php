@@ -1,8 +1,8 @@
 @extends('auth.no-login-button')
 @section('body')
-<div class="container-fluid bottom-content">
+<div class="container">
   <div class="row justify-content-center">
-    <div class="p-4 fs-18 long-text">
+    <div class="p-4 fs-18 long-text mt-5">
       <h3>服務條款</h3>
       <br>
       <p>歡迎您來到

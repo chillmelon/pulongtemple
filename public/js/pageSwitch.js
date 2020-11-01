@@ -267,8 +267,8 @@
                     cpage.style.opacity = 1 - Math.abs(cp);
                     if(tpage){
                         tpage.style[transform]='rotate'+prop+'('+(fix*90)+'deg) translateZ('+zh+'px)';
-                        // opacity (-0.0001 to check stacking)
-                        tpage.style.opacity = Math.abs(cp) - 0.0001;
+                        // opacity
+                        tpage.style.opacity = Math.abs(cp);
                     }
                 }else TRANSITION['scroll'+name].apply(this,arguments);
             }

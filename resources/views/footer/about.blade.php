@@ -1,8 +1,8 @@
 @extends('auth.no-login-button')
 @section('body')
-<div class="container-fluid bottom-content">
+<div class="container">
   <div class="row justify-content-center">
-    <div class="pltp-box">
+    <div class="pltp-box mt-5">
       <pre class="pltp overf-v">
 ██████╗  ██╗   ██╗ ██╗       ██████╗  ███╗   ██╗  ██████╗
 ██╔══██╗ ██║   ██║ ██║      ██╔═══██╗ ████╗  ██║ ██╔════╝
