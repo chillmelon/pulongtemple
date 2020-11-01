@@ -389,9 +389,9 @@
       pages[m].animate({
         opacity: 0
       }, 600);
-      // pages[n].animate({
-      //   opacity: 1
-      // }, 600);
+      pages[n].animate({
+        opacity: 1
+      }, 600);
     });
 
   </script>
