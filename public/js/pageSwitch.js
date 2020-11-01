@@ -263,8 +263,12 @@
                     }
                     cpage.parentNode.style[transform]='translateZ(-'+zh+'px) rotate'+prop+'('+cp*90*fe+'deg)';
                     cpage.style[transform]='rotate'+prop+'(0) translateZ('+zh+'px)';
+                    // opacity
+                    cpage.style.opacity = 1 - Math.abs(cp);
                     if(tpage){
                         tpage.style[transform]='rotate'+prop+'('+(fix*90)+'deg) translateZ('+zh+'px)';
+                        // opacity (-0.0001 to check stacking)
+                        tpage.style.opacity = Math.abs(cp) - 0.0001;
                     }
                 }else TRANSITION['scroll'+name].apply(this,arguments);
             }

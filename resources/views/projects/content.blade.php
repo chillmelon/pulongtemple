@@ -385,14 +385,6 @@
       resetMT(1);
     });
 
-    pw.on('before', function (m, n) {
-      pages[m].animate({
-        opacity: 0
-      }, 600);
-      pages[n].animate({
-        opacity: 1
-      }, 600);
-    });
 
   </script>
 
